@@ -1,0 +1,812 @@
+© 2000-2019 QIAGEN. All rights reserved.
+
+Analysis Details for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Workspace	My Projects
+Project	hdMouse_Microarray_Final
+Analysis	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Date	Tue May 28 04:27:19 PDT 2019
+Analysis ID	17865904
+
+Analysis Settings
+Cutoff before duplicate resolution	true
+Resolve duplicate on	Expression logfoldchange
+Color using	Expression logfoldchange
+Cutoff for Expression logfoldchange	--
+Cutoff for Expression pvalue	--
+Reference set	Mouse Genome 430 2.0 Array
+Relationship to include	Direct and Indirect
+Includes Endogenous Chemicals	No
+Optional Analyses	My Pathways My List
+Filter Summary	
+Consider only molecules and/or relationships where
+(species = Mouse OR Human OR Rat) AND
+(confidence = Experimentally Observed)
+
+Canonical Pathways for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Ingenuity Canonical Pathways	 -log(p-value)	zScore	Ratio	Molecules
+Glucocorticoid Receptor Signaling	-0E00	NaN	3.13E-03	POLR2A,	
+Synaptogenesis Signaling Pathway	2.02E-01	NaN	3.24E-03	EPHA10,	
+Neuroinflammation Signaling Pathway	2.3E-01	NaN	3.60E-03	S100B,	
+G-Protein Coupled Receptor Signaling	2.39E-01	NaN	3.72E-03	ENPP6,	
+Protein Ubiquitination Pathway	2.54E-01	NaN	3.92E-03	UCHL1,	
+Colorectal Cancer Metastasis Signaling	2.56E-01	NaN	3.95E-03	Cdc42,	
+Cardiac Hypertrophy Signaling	2.73E-01	NaN	4.18E-03	Cdc42,	
+Phospholipase C Signaling	2.84E-01	NaN	4.35E-03	Cdc42,	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	2.88E-01	NaN	4.41E-03	BMP4,	
+Superpathway of Inositol Phosphate Compounds	2.9E-01	NaN	4.44E-03	EYA4,	
+Integrin Signaling	3.03E-01	NaN	4.63E-03	Cdc42,	
+AMPK Signaling	3.04E-01	NaN	4.65E-03	CFTR,	
+CREB Signaling in Neurons	3.04E-01	NaN	4.65E-03	POLR2A,	
+Thrombin Signaling	3.06E-01	NaN	4.67E-03	Cdc42,	
+cAMP-mediated signaling	3.14E-01	NaN	4.81E-03	ENPP6,	
+mTOR Signaling	3.17E-01	NaN	4.85E-03	Cdc42,	
+IL-8 Signaling	3.25E-01	NaN	4.98E-03	Cdc42,	
+Leukocyte Extravasation Signaling	3.34E-01	NaN	5.13E-03	CLDN14,	
+Osteoarthritis Pathway	3.36E-01	NaN	5.15E-03	CASQ1,	
+Endothelin-1 Signaling	3.39E-01	NaN	5.21E-03	CASQ1,	
+3-phosphoinositide Biosynthesis	3.41E-01	NaN	5.24E-03	EYA4,	
+Calcium Signaling	3.43E-01	NaN	5.26E-03	CASQ1,	
+ILK Signaling	3.43E-01	NaN	5.26E-03	Cdc42,	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	3.48E-01	NaN	5.35E-03	Cdc42,	
+Cardiac Hypertrophy Signaling (Enhanced)	3.55E-01	NaN	4.25E-03	ENPP6,IL17B	
+NF-κB Signaling	3.64E-01	NaN	5.62E-03	BMP4,	
+Ephrin Receptor Signaling	3.65E-01	NaN	5.65E-03	EPHA10,	
+CXCR4 Signaling	3.67E-01	NaN	5.68E-03	Cdc42,	
+Systemic Lupus Erythematosus Signaling	3.67E-01	NaN	5.68E-03	TNFRSF13C,	
+Germ Cell-Sertoli Cell Junction Signaling	3.69E-01	NaN	5.71E-03	Cdc42,	
+Glioblastoma Multiforme Signaling	3.69E-01	NaN	5.71E-03	Cdc42,	
+Sertoli Cell-Sertoli Cell Junction Signaling	3.73E-01	NaN	5.78E-03	CLDN14,	
+Hepatic Cholestasis	3.79E-01	NaN	5.88E-03	IL17B,	
+RhoGDI Signaling	3.79E-01	NaN	5.88E-03	Cdc42,	
+Tec Kinase Signaling	3.82E-01	NaN	5.95E-03	Cdc42,	
+Gαq Signaling	3.93E-01	NaN	6.13E-03	Cdc42,	
+Tight Junction Signaling	4.05E-01	NaN	6.37E-03	CLDN14,	
+Agranulocyte Adhesion and Diapedesis	4.14E-01	NaN	6.54E-03	CLDN14,	
+Relaxin Signaling	4.14E-01	NaN	6.54E-03	ENPP6,	
+Endocannabinoid Cancer Inhibition Pathway	4.16E-01	NaN	6.58E-03	CASQ1,	
+D-myo-inositol-5-phosphate Metabolism	4.23E-01	NaN	6.71E-03	EYA4,	
+Hereditary Breast Cancer Signaling	4.23E-01	NaN	6.71E-03	POLR2A,	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	4.23E-01	NaN	6.71E-03	IL17B,	
+3-phosphoinositide Degradation	4.32E-01	NaN	6.90E-03	EYA4,	
+Granulocyte Adhesion and Diapedesis	4.32E-01	NaN	6.90E-03	CLDN14,	
+Human Embryonic Stem Cell Pluripotency	4.39E-01	NaN	7.04E-03	BMP4,	
+STAT3 Pathway	4.59E-01	NaN	7.46E-03	MAP3K21,	
+Molecular Mechanisms of Cancer	4.61E-01	NaN	5.18E-03	Cdc42,BMP4	
+Estrogen Receptor Signaling	4.65E-01	NaN	7.58E-03	POLR2A,	
+Androgen Signaling	4.67E-01	NaN	7.63E-03	POLR2A,	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	4.67E-01	NaN	7.63E-03	EYA4,	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	4.67E-01	NaN	7.63E-03	EYA4,	
+Cardiac β-adrenergic Signaling	4.7E-01	NaN	7.69E-03	ENPP6,	
+Role of NANOG in Mammalian Embryonic Stem Cell Pluripotency	4.73E-01	NaN	7.75E-03	BMP4,	
+Adipogenesis pathway	4.84E-01	NaN	8.00E-03	BMP4,	
+Endocannabinoid Neuronal Synapse Pathway	4.84E-01	NaN	8.00E-03	FAAH,	
+Iron homeostasis signaling pathway	4.93E-01	NaN	8.20E-03	BMP4,	
+Protein Kinase A Signaling	4.94E-01	NaN	5.49E-03	DUSP3,ENPP6	
+Phagosome Formation	4.96E-01	NaN	8.26E-03	Cdc42,	
+Gustation Pathway	5.01E-01	NaN	8.40E-03	ENPP6,	
+Mouse Embryonic Stem Cell Pluripotency	5.17E-01	NaN	8.77E-03	BMP4,	
+Cholecystokinin/Gastrin-mediated Signaling	5.2E-01	NaN	8.85E-03	Cdc42,	
+Sumoylation Pathway	5.76E-01	NaN	1.03E-02	Cdc42,	
+TGF-β Signaling	5.88E-01	NaN	1.06E-02	BMP4,	
+NER Pathway	6.13E-01	NaN	1.14E-02	POLR2A,	
+Factors Promoting Cardiogenesis in Vertebrates	6.17E-01	NaN	1.15E-02	BMP4,	
+Glioma Invasiveness Signaling	6.21E-01	NaN	1.16E-02	Cdc42,	
+Regulation of Actin-based Motility by Rho	6.26E-01	NaN	1.18E-02	Cdc42,	
+BMP signaling pathway	6.49E-01	NaN	1.25E-02	BMP4,	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	6.59E-01	NaN	1.28E-02	TNFRSF13C,	
+Basal Cell Carcinoma Signaling	7.12E-01	NaN	1.47E-02	BMP4,	
+Actin Nucleation by ARP-WASP Complex	7.17E-01	NaN	1.49E-02	Cdc42,	
+Communication between Innate and Adaptive Immune Cells	7.29E-01	NaN	1.54E-02	TNFRSF13C,	
+Axonal Guidance Signaling	7.38E-01	NaN	6.44E-03	EPHA10,BMP4,SEMA5A	
+Signaling by Rho Family GTPases	7.41E-01	NaN	8.16E-03	Cdc42,MAP3K21	
+Huntington's Disease Signaling	7.57E-01	NaN	8.37E-03	POLR2A,CASQ1	
+Ephrin A Signaling	7.61E-01	NaN	1.67E-02	EPHA10,	
+Semaphorin Signaling in Neurons	7.88E-01	NaN	1.79E-02	Cdc42,	
+Assembly of RNA Polymerase II Complex	8.5E-01	NaN	2.08E-02	POLR2A,	
+Triacylglycerol Degradation	9.04E-01	NaN	2.38E-02	FAAH,	
+B Cell Activating Factor Signaling	9.14E-01	NaN	2.44E-02	TNFRSF13C,	
+Mechanisms of Viral Exit from Host Cells	9.34E-01	NaN	2.56E-02	LMNB1,	
+tRNA Splicing	9.34E-01	NaN	2.56E-02	ENPP6,	
+HMGB1 Signaling	1.01E00	NaN	1.20E-02	Cdc42,IL17B	
+Nucleotide Excision Repair Pathway	1.02E00	NaN	3.12E-02	POLR2A,	
+B Cell Development	1.12E00	NaN	4.00E-02	RAG1,	
+Sphingosine-1-phosphate Signaling	1.23E00	NaN	1.60E-02	Cdc42,CASQ1	
+Cardiomyocyte Differentiation via BMP Receptors	1.28E00	NaN	5.88E-02	BMP4,	
+Parkinson's Signaling	1.31E00	NaN	6.25E-02	UCHL1,	
+Granzyme B Signaling	1.33E00	NaN	6.67E-02	LMNB1,	
+Methylglyoxal Degradation I	2.02E00	NaN	3.33E-01	HAGHL,	
+Primary Immunodeficiency Signaling	2.24E00	NaN	5.56E-02	RAG1,TNFRSF13C	
+Anandamide Degradation	2.5E00	NaN	1.00E00	FAAH,	
+
+Upstream Regulators for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Analysis	ID	Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Notes	Bias Term	Bias-corrected z-score	p-value of overlap	Target molecules in dataset	Mechanistic Network	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	KAT5	 	transcription regulator	 	 	 	 	 	1.49E-03	CFTR,PCDH15,RAG1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	PAX7	 	transcription regulator	 	 	 	 	 	1.49E-03	EYA4,GALNT13,OLFM1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	mir-142	 	microrna	 	 	 	 	 	1.51E-03	RAG1,TNFRSF13C	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	SPPL2A	 	peptidase	 	 	 	 	 	3.23E-03	TNFRSF13C	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	Uchl1os	 	other	 	 	 	 	 	3.23E-03	UCHL1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	NSD1	 	transcription regulator	 	 	 	 	 	6.45E-03	POLR2A	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ZDHHC8	 	enzyme	 	 	 	 	 	6.45E-03	Cdc42	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ZNF608	 	other	 	 	 	 	 	6.45E-03	RAG1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	YY1	 	transcription regulator	 	 	 	 	 	7.03E-03	BMP4,CFTR,LMNB1,TNFRSF13C	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	CHST15	 	enzyme	 	 	 	 	 	9.66E-03	RAG1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	HMX2	 	transcription regulator	 	 	 	 	 	9.66E-03	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	MAPKAPK5	 	kinase	 	 	 	 	 	9.66E-03	RAG1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	UTRN	 	transmembrane receptor	 	 	 	 	 	9.66E-03	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	NRL	 	transcription regulator	 	 	 	 	 	9.67E-03	BMP4,OLFM1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	CHD4	 	enzyme	 	 	 	 	 	1.27E-02	CASQ1,SMOC1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ARID2	 	transcription regulator	 	 	 	 	 	1.29E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ATP8B1	 	transporter	 	 	 	 	 	1.29E-02	CFTR	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	CD74	 	transmembrane receptor	 	 	 	 	 	1.29E-02	TNFRSF13C	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	EDAR	 	transmembrane receptor	 	 	 	 	 	1.29E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	LRP4	 	other	 	 	 	 	 	1.29E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	PHF6	 	transcription regulator	 	 	 	 	 	1.29E-02	POLR2A	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	RGS16	 	other	 	 	 	 	 	1.29E-02	IL17B	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	TRDN	 	other	 	 	 	 	 	1.29E-02	CASQ1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	WISP3	 	growth factor	 	 	 	 	 	1.29E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	STX2	 	transporter	 	 	 	 	 	1.60E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	TRPC3	 	ion channel	 	 	 	 	 	1.60E-02	S100B	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ESR2	 	ligand-dependent nuclear receptor	 	 	 	 	 	1.86E-02	BMP4,CADM3,EYA4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ELP1	 	other	 	 	 	 	 	1.92E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	OLIG2	 	transcription regulator	 	 	 	 	 	1.92E-02	S100B	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	TBX1	 	transcription regulator	 	 	 	 	 	1.92E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	REST	 	transcription regulator	 	 	 	 	 	2.03E-02	S100B,UCHL1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	LRP2	 	transporter	 	 	 	 	 	2.24E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	MED12	 	transcription regulator	 	 	 	 	 	2.24E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	PDZK1	 	transporter	 	 	 	 	 	2.24E-02	SLC34A3	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	IHH	 	enzyme	 	 	 	 	 	2.56E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	LTBP4	 	growth factor	 	 	 	 	 	2.56E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	MSX1	 	transcription regulator	 	 	 	 	 	2.56E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	RGS19	 	other	 	 	 	 	 	2.56E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	HSPB8	 	kinase	 	 	 	 	 	2.87E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	WWP2	 	enzyme	 	 	 	 	 	2.87E-02	POLR2A	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	MYB	 	transcription regulator	 	 	 	 	 	3.08E-02	RAG1,TNFRSF13C	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	Creb	 	group	 	 	 	 	 	3.14E-02	Abhd1,ACY3,GPR85	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	FFAR3	 	g-protein coupled receptor	 	 	 	 	 	3.18E-02	SMOC1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	NR2E3	 	ligand-dependent nuclear receptor	 	 	 	 	 	3.18E-02	OLFM1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	FRS2	 	kinase	 	 	 	 	 	3.50E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	NKX2-3	 	transcription regulator	 	 	 	 	 	3.81E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	BMP4	2.622	growth factor	 	 	 	 	 	4.07E-02	BMP4,LCP1	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	FABP1	 	transporter	 	 	 	 	 	4.12E-02	FAAH	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	IL-1R	 	group	 	 	 	 	 	4.12E-02	S100B	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	TMSB4	 	group	 	 	 	 	 	4.12E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	DKK1	 	growth factor	 	 	 	 	 	4.43E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	FGF9	 	growth factor	 	 	 	 	 	4.43E-02	BMP4	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	HEXIM1	 	transcription regulator	 	 	 	 	 	4.43E-02	POLR2A	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	ACSL5	 	enzyme	 	 	 	 	 	4.74E-02	GALNT13	 	
+Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	 	LILRB1	 	transmembrane receptor	 	 	 	 	 	4.74E-02	UCHL1	 	
+
+Causal Networks for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+
+Diseases and Bio Functions for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Cell Morphology, Humoral Immune Response, Lymphoid Tissue Structure and Development	morphology	Morphology of B lymphocytes	2.11E-04	 	 	 	 	RAG1,Cdc42,TNFRSF13C,LCP1	4	
+Cell Morphology, Hematological System Development and Function, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development, Tissue Morphology	abnormal morphology	Abnormal morphology of marginal-zone B lymphocytes	2.72E-04	 	 	 	 	TNFRSF13C,LCP1	2	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	familial non-syndromic sensorineural hearing impairment	Familial non-syndromic sensorineural hearing impairment	3.14E-04	 	 	 	 	CLDN14,EYA4,PCDH15	3	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of eicosanoid	3.48E-04	 	 	 	 	CFTR,FAAH	2	
+Developmental Disorder, Neurological Disease	intellectual disability with ataxia	Intellectual disability with ataxia	5.30E-04	 	 	 	 	ATP8A2,NALCN	2	
+Organismal Development	morphology	Morphology of head	5.60E-04	 	 	 	 	LMNB1,INSM1,NCAM2,ATP8A2,NALCN,RAG1,GPR85,BMP4,SCG5,EYA4,PCDH15,CFTR,SEMA5A	13	
+Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Tissue Morphology	quantity	Quantity of transitional type 1 B lymphocytes	6.35E-04	 	 	 	 	Cdc42,TNFRSF13C	2	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Respiratory Disease, Respiratory System Development and Function	abnormal morphology	Abnormal morphology of nose	9.90E-04	 	 	 	 	BMP4,INSM1,CFTR	3	
+Cell Cycle	premature senescence	Premature senescence of cells	9.90E-04	 	 	 	 	LMNB1,BMP4,FAAH	3	
+Cell Morphology	sprouting	Sprouting	9.98E-04	Increased	2.412	bias	1.450	LMNB1,UCHL1,Cdc42,BMP4,NCAM2,S100B,SEMA5A	7	
+Cell Morphology, Cellular Development	branching	Branching of central nervous system cells	1.00E-03	 	 	 	 	Cdc42,BMP4	2	
+Cellular Movement, Hematological System Development and Function	cell movement	Cell movement of hematopoietic progenitor cells	1.24E-03	 	 	 	 	Cdc42,BMP4,LCP1	3	
+Cellular Function and Maintenance	movement	Movement of Nucleus	1.45E-03	 	 	 	 	LMNB1,Cdc42	2	
+Neurological Disease	conduction	Abnormal conduction by nerves	2.18E-03	 	 	 	 	RAG1,NALCN	2	
+Embryonic Development, Organ Development, Organismal Development, Tissue Development	development	Development of sensory organ	2.32E-03	 	 	 	 	RAG1,BMP4,EYA4,PCDH15,NCAM2,ATP8A2,SMOC1,SEMA5A	8	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	formation	Formation of muscle cells	2.35E-03	 	 	 	 	LMNB1,UCHL1,CASQ1,S100B	4	
+Cell Morphology, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development	abnormal morphology	Abnormal morphology of B lymphocytes	2.38E-03	 	 	 	 	RAG1,TNFRSF13C,LCP1	3	
+Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of head	2.38E-03	 	 	 	 	RAG1,LMNB1,BMP4,INSM1,SCG5,EYA4,NCAM2,ATP8A2,NALCN,CFTR,SEMA5A	11	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	autosomal recessive prelingual nonsyndromic sensorineural hearing loss	Autosomal recessive prelingual nonsyndromic sensorineural hearing loss	2.81E-03	 	 	 	 	CLDN14,PCDH15	2	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance	reorganization	Reorganization of actin filaments	3.04E-03	 	 	 	 	Cdc42,LCP1	2	
+Auditory Disease, Auditory and Vestibular System Development and Function, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of eustachian tube	3.16E-03	 	 	 	 	EYA4	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of line of schwalbe	3.16E-03	 	 	 	 	BMP4	1	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Respiratory Disease, Respiratory System Development and Function	abnormal morphology	Abnormal morphology of paranasal sinus	3.16E-03	 	 	 	 	CFTR	1	
+Cellular Compromise	acidification	Acidification of trans Golgi network	3.16E-03	 	 	 	 	CFTR	1	
+Endocrine System Disorders, Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	acute inflammation	Acute inflammation of pancreas	3.16E-03	 	 	 	 	CFTR	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	adult onset autosomal dominant leukodystrophy	Adult onset autosomal dominant leukodystrophy	3.16E-03	 	 	 	 	LMNB1	1	
+Hematological Disease, Immunological Disease	alpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity	Alpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity	3.16E-03	 	 	 	 	RAG1	1	
+Cell Death and Survival, Embryonic Development	apoptosis	Apoptosis of limb bud cells	3.16E-03	 	 	 	 	BMP4	1	
+Cell Cycle	double negative stage 3	Arrest in double negative stage 3 of thymocytes	3.16E-03	 	 	 	 	ZBTB1	1	
+Endocrine System Disorders, Gastrointestinal Disease, Organ Morphology, Organismal Injury and Abnormalities	atrophy	Atrophy of pancreatic acinus	3.16E-03	 	 	 	 	CFTR	1	
+Cell-To-Cell Signaling and Interaction, Skeletal and Muscular System Development and Function	attachment	Attachment of bone cell lines	3.16E-03	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction	attachment	Attachment of hematopoietic progenitor cells	3.16E-03	 	 	 	 	BMP4	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	autosomal dominant 10 deafness	Autosomal dominant 10 deafness	3.16E-03	 	 	 	 	EYA4	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	Usher syndrome type 1F	Autosomal recessive Usher syndrome type 1F	3.16E-03	 	 	 	 	PCDH15	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	autosomal recessive deafness type 23	Autosomal recessive deafness type 23	3.16E-03	 	 	 	 	PCDH15	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	autosomal recessive deafness type 29	Autosomal recessive deafness type 29	3.16E-03	 	 	 	 	CLDN14	1	
+Connective Tissue Disorders, Developmental Disorder, Endocrine System Disorders, Hematological Disease, Hereditary Disorder, Metabolic Disease, Nutritional Disease, Organismal Injury and Abnormalities, Renal and Urological Disease, Skeletal and Muscular Disorders	autosomal recessive hypophosphatemic rickets with hypercalciuria	Autosomal recessive hypophosphatemic rickets with hypercalciuria	3.16E-03	 	 	 	 	SLC34A3	1	
+Endocrine System Development and Function, Lipid Metabolism, Small Molecule Biochemistry	binding	Binding of anandamide	3.16E-03	 	 	 	 	FAAH	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR DeltaF508 homozygous mutation positive cystic fibrosis	CFTR DeltaF508 homozygous mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR G1244E mutation positive cystic fibrosis	CFTR G1244E mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR G1349D mutation positive cystic fibrosis	CFTR G1349D mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR G178R mutation positive cystic fibrosis	CFTR G178R mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR G551D mutation positive cystic fibrosis	CFTR G551D mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR G551S mutation positive cystic fibrosis	CFTR G551S mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR R117H mutation positive cystic fibrosis	CFTR R117H mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR S1251N mutation positive cystic fibrosis	CFTR S1251N mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR S1255P mutation positive cystic fibrosis	CFTR S1255P mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR S549N mutation positive cystic fibrosis	CFTR S549N mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities, Respiratory Disease	CFTR S549R mutation positive cystic fibrosis	CFTR S549R mutation positive cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	cerebellar ataxia, mental retardation, and dysequilibrium syndrome type 4	Cerebellar ataxia, mental retardation, and dysequilibrium syndrome type 4	3.16E-03	 	 	 	 	ATP8A2	1	
+Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	childhood-onset neurodegeneration with optic atrophy	Childhood-onset neurodegeneration with optic atrophy	3.16E-03	 	 	 	 	UCHL1	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	chondrogenesis	Chondrogenesis of chondroprogenitor cells	3.16E-03	 	 	 	 	BMP4	1	
+Cellular Development	commitment	Commitment of adipoblasts	3.16E-03	 	 	 	 	BMP4	1	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	common variable immunodeficiency type 4	Common variable immunodeficiency type 4	3.16E-03	 	 	 	 	TNFRSF13C	1	
+Connective Tissue Disorders, Developmental Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	congenital contractures of the limbs and face, hypotonia, and developmental delay	Congenital contractures of the limbs and face, hypotonia, and developmental delay	3.16E-03	 	 	 	 	NALCN	1	
+Lipid Metabolism, Small Molecule Biochemistry	conjugation	Conjugation of arachidonic acid	3.16E-03	 	 	 	 	FAAH	1	
+Lipid Metabolism, Small Molecule Biochemistry	conversion	Conversion of eicosapentenoic acid	3.16E-03	 	 	 	 	CFTR	1	
+Cardiovascular Disease, Cardiovascular System Development and Function, Hereditary Disorder, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	dilated cardiomyopathy 1J	Dilated cardiomyopathy 1J	3.16E-03	 	 	 	 	EYA4	1	
+Ophthalmic Disease, Organismal Injury and Abnormalities	nonexudative age-related macular degeneration	Early stage nonexudative age-related macular degeneration	3.16E-03	 	 	 	 	BMP4	1	
+Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	ecchymosis	Ecchymosis	3.16E-03	 	 	 	 	SCG5	1	
+Molecular Transport	efflux	Efflux of hydrogen	3.16E-03	 	 	 	 	CFTR	1	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities	ependymoma	Ependymoma in fourth cerebral ventricle	3.16E-03	 	 	 	 	CFTR	1	
+Digestive System Development and Function	filling	Filling of crypt	3.16E-03	 	 	 	 	CFTR	1	
+Nervous System Development and Function, Tissue Development	formation	Formation of fiber tract	3.16E-03	 	 	 	 	Cdc42	1	
+Cardiovascular System Development and Function, Embryonic Development, Organ Development, Organismal Development, Renal and Urological System Development and Function, Tissue Development	formation	Formation of glomerular capillary	3.16E-03	 	 	 	 	BMP4	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	gracile axonal distrophy	Gracile axonal distrophy	3.16E-03	 	 	 	 	UCHL1	1	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	growth	Growth of retinal axons	3.16E-03	 	 	 	 	SEMA5A	1	
+Cell Morphology, Organismal Injury and Abnormalities, Tissue Morphology	hypertrophy	Hypertrophy of Muller glia	3.16E-03	 	 	 	 	Cdc42	1	
+Digestive System Development and Function, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	hypertrophy	Hypertrophy of ileum	3.16E-03	 	 	 	 	CFTR	1	
+Connective Tissue Disorders, Developmental Disorder, Gastrointestinal Disease, Hereditary Disorder, Neurological Disease, Organismal Development, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	infantile hypotonia with psychomotor retardation and characteristic facies 1	Infantile hypotonia with psychomotor retardation and characteristic facies 1	3.16E-03	 	 	 	 	NALCN	1	
+Inflammatory Response	inflammation	Inflammation of lumen	3.16E-03	 	 	 	 	CFTR	1	
+Cardiovascular Disease, Organismal Injury and Abnormalities	atherosclerosis	Initiation of atherosclerosis	3.16E-03	 	 	 	 	RAG1	1	
+Embryonic Development, Organ Development, Organismal Development, Tissue Development	formation	Initiation of formation of Rathke's pouch	3.16E-03	 	 	 	 	BMP4	1	
+Connective Tissue Disorders, Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	intellectual disability with episodic ataxia and congenital arthrogryposis	Intellectual disability with episodic ataxia and congenital arthrogryposis	3.16E-03	 	 	 	 	NALCN	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	internalization	Internalization of anandamide	3.16E-03	 	 	 	 	FAAH	1	
+Cell Morphology, Hematological Disease, Hematopoiesis, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development	lack	Lack of transitional B lymphocytes	3.16E-03	 	 	 	 	TNFRSF13C	1	
+Endocrine System Development and Function, Lipid Metabolism, Small Molecule Biochemistry	metabolism	Metabolism of anandamide	3.16E-03	 	 	 	 	FAAH	1	
+Lipid Metabolism, Small Molecule Biochemistry	metabolism	Metabolism of eicosapentenoic acid	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Ophthalmic Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	microphthalmia with limb anomalies	Microphthalmia with limb anomalies	3.16E-03	 	 	 	 	SMOC1	1	
+Cellular Movement, Nervous System Development and Function	migration	Migration of neocortical neurons	3.16E-03	 	 	 	 	BMP4	1	
+Cardiovascular System Development and Function, Tissue Morphology	morphology	Morphology of high endothelial postcapillary venule	3.16E-03	 	 	 	 	BMP4	1	
+DNA Replication, Recombination, and Repair	mutagenesis	Mutagenesis of plasmid	3.16E-03	 	 	 	 	POLR2A	1	
+Hematological Disease, Organismal Injury and Abnormalities, Renal and Urological Disease	neonatal hypertrypsinemia	Neonatal hypertrypsinemia	3.16E-03	 	 	 	 	CFTR	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	obstruction	Obstruction of interlobular duct	3.16E-03	 	 	 	 	CFTR	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	obstruction	Obstruction of intralobular duct	3.16E-03	 	 	 	 	CFTR	1	
+Connective Tissue Disorders, Developmental Disorder, Gastrointestinal Disease, Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	orofacial cleft 11	Orofacial cleft 11	3.16E-03	 	 	 	 	BMP4	1	
+Cellular Movement, Nervous System Development and Function	pathfinding	Pathfinding of retinal axons	3.16E-03	 	 	 	 	SEMA5A	1	
+Cell Cycle	premature senescence	Premature senescence of decidual cells	3.16E-03	 	 	 	 	FAAH	1	
+Cellular Function and Maintenance, Cellular Growth and Proliferation, Nervous System Development and Function	production	Production of olfactory receptor neurons	3.16E-03	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function	recognition	Recognition by cytotoxic T cells	3.16E-03	 	 	 	 	RAG1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Movement	recruitment	Recruitment of astrocytes	3.16E-03	 	 	 	 	Cdc42	1	
+Cell Morphology, Hair and Skin Development and Function	regulatory volume decrease	Regulatory volume decrease of epithelial cell lines	3.16E-03	 	 	 	 	CFTR	1	
+Lipid Metabolism, Small Molecule Biochemistry	retroconversion	Retroconversion of docosahexaenoic acid	3.16E-03	 	 	 	 	CFTR	1	
+Endocrine System Disorders, Metabolic Disease, Organismal Injury and Abnormalities	Cushing syndrome	Severe Cushing syndrome	3.16E-03	 	 	 	 	SCG5	1	
+Embryonic Development, Endocrine System Development and Function, Organ Development, Organ Morphology, Organismal Development, Tissue Development, Tissue Morphology	size	Size of adrenal cortex tissue	3.16E-03	 	 	 	 	SCG5	1	
+Nervous System Development and Function	stellation	Stellation of eye cell lines	3.16E-03	 	 	 	 	S100B	1	
+Nervous System Development and Function	stellation	Stellation of nervous tissue cell lines	3.16E-03	 	 	 	 	S100B	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	susceptibility to autosomal dominant Parkinson disease 5	Susceptibility to autosomal dominant Parkinson disease 5	3.16E-03	 	 	 	 	UCHL1	1	
+Psychological Disorders	susceptibility to drug addiction	Susceptibility to drug addiction	3.16E-03	 	 	 	 	FAAH	1	
+Endocrine System Disorders, Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	susceptibility to idiopathic pancreatitis	Susceptibility to idiopathic pancreatitis	3.16E-03	 	 	 	 	CFTR	1	
+Metabolic Disease, Organismal Injury and Abnormalities	sweat chloride elevation without cystic fibrosis	Sweat chloride elevation without cystic fibrosis	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Ophthalmic Disease, Organismal Injury and Abnormalities	syndromic microphthalmia 6	Syndromic microphthalmia 6	3.16E-03	 	 	 	 	BMP4	1	
+Organ Morphology	thickening	Thickening of mucus	3.16E-03	 	 	 	 	CFTR	1	
+Tissue Morphology	thickness	Thickness of interstitial tissue	3.16E-03	 	 	 	 	CFTR	1	
+Embryonic Development	transport	Transport of embryo	3.16E-03	 	 	 	 	FAAH	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of anandamide	3.16E-03	 	 	 	 	FAAH	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of eicosapentenoic acid	3.16E-03	 	 	 	 	CFTR	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of linoleic acid	3.16E-03	 	 	 	 	CFTR	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	Usher syndrome type 1G	Usher syndrome type 1G	3.16E-03	 	 	 	 	PCDH15	1	
+Cellular Assembly and Organization, Neurological Disease, Tissue Morphology	vacuolar degeneration	Vacuolar degeneration of white matter	3.16E-03	 	 	 	 	LMNB1	1	
+Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	vacuolar myopathy with CASQ1 aggregates	Vacuolar myopathy with CASQ1 aggregates	3.16E-03	 	 	 	 	CASQ1	1	
+Nervous System Development and Function	vestibulocollic reflex	Vestibulocollic reflex	3.16E-03	 	 	 	 	BMP4	1	
+Digestive System Development and Function, Organ Morphology, Organismal Development	volume	Volume of pancreatic acinus	3.16E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	Worster Drought syndrome	Worster Drought syndrome	3.16E-03	 	 	 	 	TMTC4	1	
+Embryonic Development, Organ Development, Organismal Development, Respiratory System Development and Function, Tissue Development	development	Development of nose	3.52E-03	 	 	 	 	BMP4,NCAM2	2	
+Digestive System Development and Function, Organ Development	function	Function of intestine	3.52E-03	 	 	 	 	CFTR,LGALS2	2	
+Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	formation	Formation of muscle	3.57E-03	 	 	 	 	LMNB1,UCHL1,BMP4,CASQ1,S100B,IL17B	6	
+Auditory and Vestibular System Development and Function, Embryonic Development, Organ Development, Organismal Development, Tissue Development	development	Development of ear	3.71E-03	 	 	 	 	BMP4,EYA4,PCDH15,ATP8A2	4	
+Nervous System Development and Function	morphology	Morphology of nervous system	3.74E-03	 	 	 	 	RAG1,GPR85,LMNB1,Cdc42,BMP4,SCG5,PCDH15,NCAM2,ATP8A2,S100B,SEMA5A	11	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of inner nuclear layer	3.77E-03	 	 	 	 	BMP4,SEMA5A	2	
+Cell Morphology, Cellular Development	branching	Branching of cells	3.84E-03	Increased	2.412	bias	1.446	LMNB1,UCHL1,Cdc42,BMP4,NCAM2,S100B	6	
+Embryonic Development, Nervous System Development and Function, Neurological Disease, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of neurosensory retina	4.11E-03	 	 	 	 	BMP4,ATP8A2,SEMA5A	3	
+Cellular Assembly and Organization, Cellular Function and Maintenance	organization	Organization of actin filaments	4.11E-03	 	 	 	 	Cdc42,PCDH15,LCP1	3	
+Cellular Function and Maintenance	movement	Movement of organelle	4.34E-03	 	 	 	 	LMNB1,Cdc42,SPEF2	3	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of retinal layer	4.70E-03	 	 	 	 	BMP4,ATP8A2,SEMA5A	3	
+Molecular Transport	transport	Transport of bicarbonate	4.87E-03	 	 	 	 	CYB5R2,CFTR	2	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of retina	4.87E-03	 	 	 	 	RAG1,BMP4,ATP8A2,SEMA5A	4	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	cell-cell adhesion	Cell-cell adhesion	5.45E-03	 	 	 	 	Cdc42,NCAM2,LGALS2,CADM3	4	
+Embryonic Development, Organismal Development, Tissue Development	branching morphogenesis	Branching morphogenesis of epithelial tubule	5.46E-03	 	 	 	 	BMP4,SEMA5A	2	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Cellular Function and Maintenance	organization	Organization of adherens junctions	5.46E-03	 	 	 	 	Cdc42,CADM3	2	
+Nervous System Development and Function	electrophysiology	Electrophysiology of eye	5.61E-03	 	 	 	 	BMP4,ATP8A2,SEMA5A	3	
+Embryonic Development, Nervous System Development and Function, Neurological Disease, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of ganglion cell layer	5.77E-03	 	 	 	 	BMP4,SEMA5A	2	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Nervous System Development and Function, Organismal Development, Tissue Development	branching	Branching of neurites	5.93E-03	Increased	2.200	bias	1.286	LMNB1,UCHL1,Cdc42,NCAM2,S100B	5	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of small cecum	6.32E-03	 	 	 	 	CFTR	1	
+Respiratory Disease	vital capacity	Abnormal vital capacity	6.32E-03	 	 	 	 	CFTR	1	
+Cell Morphology, Cellular Assembly and Organization	accumulation	Accumulation of synaptic vesicles	6.32E-03	 	 	 	 	UCHL1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Compromise, Tumor Morphology	adhesion	Adhesion of ovarian cancer cells	6.32E-03	 	 	 	 	BMP4	1	
+Cell Death and Survival	apoptosis	Apoptosis of stromal fibroblast cells	6.32E-03	 	 	 	 	BMP4	1	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression of myeloma cell lines	6.32E-03	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction	binding	Binding of Pseudomonas aeruginosa	6.32E-03	 	 	 	 	CFTR	1	
+Cell Morphology, Organismal Injury and Abnormalities	blebbing	Blebbing of nucleus	6.32E-03	 	 	 	 	LMNB1	1	
+Cell Morphology, Cellular Development	branching	Branching of astrocytes	6.32E-03	 	 	 	 	BMP4	1	
+Inflammatory Response	colitis related systemic inflammation	Colitis related systemic inflammation	6.32E-03	 	 	 	 	FAAH	1	
+Developmental Disorder, Hereditary Disorder, Immunological Disease, Metabolic Disease, Organismal Injury and Abnormalities	combined cellular and humoral immune defects with granulomas	Combined cellular and humoral immune defects with granulomas	6.32E-03	 	 	 	 	RAG1	1	
+Cellular Development	commitment	Commitment of embryonic cell lines	6.32E-03	 	 	 	 	BMP4	1	
+Cellular Development	commitment	Commitment of fibroblast cell lines	6.32E-03	 	 	 	 	BMP4	1	
+Developmental Disorder, Endocrine System Disorders, Organismal Injury and Abnormalities, Reproductive System Disease	congenital bilateral aplasia of vas deferens	Congenital bilateral aplasia of vas deferens	6.32E-03	 	 	 	 	CFTR	1	
+Lipid Metabolism, Small Molecule Biochemistry	conversion	Conversion of linoleic acid	6.32E-03	 	 	 	 	CFTR	1	
+Cell Cycle, Cellular Development, Respiratory System Development and Function	senescence	Delay in initiation of senescence of lung cell lines	6.32E-03	 	 	 	 	LMNB1	1	
+Cardiovascular System Development and Function, Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	development	Development of vascular smooth muscle cells	6.32E-03	 	 	 	 	LMNB1	1	
+Cellular Development, Endocrine System Development and Function	differentiation	Differentiation of chromaffin cells	6.32E-03	 	 	 	 	INSM1	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	digenic Usher syndrome type 1D/F	Digenic Usher syndrome type 1D/F	6.32E-03	 	 	 	 	PCDH15	1	
+Cellular Compromise, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	dysfunction	Dysfunction of retinal ganglion cells	6.32E-03	 	 	 	 	SEMA5A	1	
+Gastrointestinal Disease, Hematological Disease, Hepatic System Disease, Immunological Disease, Organismal Injury and Abnormalities	eosinophilia	Eosinophilia of liver	6.32E-03	 	 	 	 	RAG1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation, Nervous System Development and Function	excitation	Excitation of dopaminergic neurons	6.32E-03	 	 	 	 	FAAH	1	
+Organismal Injury and Abnormalities	fibrosis	Fibrosis of submesothelial compact zone	6.32E-03	 	 	 	 	RAG1	1	
+Embryonic Development, Organismal Development, Tissue Development	formation	Formation of allantois	6.32E-03	 	 	 	 	BMP4	1	
+Embryonic Development, Organismal Development, Tissue Development	formation	Formation of primitive node	6.32E-03	 	 	 	 	BMP4	1	
+Cell Death and Survival	fragmentation	Fragmentation of megakaryocytes	6.32E-03	 	 	 	 	Cdc42	1	
+Lipid Metabolism, Small Molecule Biochemistry	hydrolysis	Hydrolysis of anandamide	6.32E-03	 	 	 	 	FAAH	1	
+Hereditary Disorder, Ophthalmic Disease, Organismal Injury and Abnormalities	hydrophthalmos	Hydrophthalmos	6.32E-03	 	 	 	 	BMP4	1	
+Lipid Metabolism, Small Molecule Biochemistry	incorporation	Incorporation of linoleic acid	6.32E-03	 	 	 	 	CFTR	1	
+Cell-To-Cell Signaling and Interaction, Respiratory System Development and Function	intercellular communication	Intercellular communication of airway epithelial cells	6.32E-03	 	 	 	 	CFTR	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	lack	Lack of sinus venosus sclerae	6.32E-03	 	 	 	 	BMP4	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	lack	Lack of trabecular reticulum	6.32E-03	 	 	 	 	BMP4	1	
+Cellular Development	lifespan	Lifespan of blood platelets	6.32E-03	 	 	 	 	Cdc42	1	
+Cellular Function and Maintenance, Cellular Movement, Hematological System Development and Function, Humoral Immune Response, Immune Cell Trafficking, Lymphoid Tissue Structure and Development	localization	Localization of follicular B lymphocytes	6.32E-03	 	 	 	 	TNFRSF13C	1	
+Cell Death and Survival, Cell Morphology, Hematological System Development and Function, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development, Tissue Morphology	loss	Loss of marginal-zone B lymphocytes	6.32E-03	 	 	 	 	LCP1	1	
+Cell Death and Survival, Cell Morphology, Hematopoiesis	loss	Loss of multipotential hemopoietic progenitor cells	6.32E-03	 	 	 	 	RAG1	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	meconium ileus	Meconium ileus	6.32E-03	 	 	 	 	CFTR	1	
+Cellular Movement	migration	Migration of epicardial cells	6.32E-03	 	 	 	 	LMNB1	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	opacity	Opacity of vitreous body	6.32E-03	 	 	 	 	BMP4	1	
+Embryonic Development, Organismal Development, Tissue Development, Tissue Morphology	outgrowth	Outgrowth of genital tubercle	6.32E-03	 	 	 	 	BMP4	1	
+Cell Morphology	polarity	Polarity of neutrophils	6.32E-03	 	 	 	 	Cdc42	1	
+Cell Morphology	polarization	Polarization of fibroblasts	6.32E-03	 	 	 	 	Cdc42	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Tissue Development	proliferation	Proliferation of stromal fibroblast cells	6.32E-03	 	 	 	 	BMP4	1	
+Cardiovascular Disease, Organismal Injury and Abnormalities, Tissue Morphology	quantity	Quantity of fibrous plaque	6.32E-03	 	 	 	 	RAG1	1	
+Cell Cycle	quiescence	Quiescence of stem cell lines	6.32E-03	 	 	 	 	BMP4	1	
+Nervous System Development and Function	stellation	Stellation of tumor cell lines	6.32E-03	 	 	 	 	S100B	1	
+Cell Morphology, Cellular Development, Embryonic Development, Nervous System Development and Function, Tissue Development	stratification	Stratification of neurons	6.32E-03	 	 	 	 	LMNB1	1	
+Cell Death and Survival, Nervous System Development and Function	survival	Survival of olfactory receptor neurons	6.32E-03	 	 	 	 	BMP4	1	
+Gene Expression	transcription	Transcription of U1 snRNA	6.32E-03	 	 	 	 	POLR2A	1	
+Cancer, Embryonic Development, Organismal Injury and Abnormalities	transformation	Transformation of embryonic stem cells	6.32E-03	 	 	 	 	BMP4	1	
+Cancer, Embryonic Development	transformation	Transformation of otic placode	6.32E-03	 	 	 	 	BMP4	1	
+Cancer, Embryonic Development	transformation	Transformation of preplacodal ectoderm	6.32E-03	 	 	 	 	BMP4	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of docosahexaenoic acid	6.32E-03	 	 	 	 	CFTR	1	
+Cell Morphology, Hematological Disease, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development	lack	Lack of B lymphocytes	6.42E-03	 	 	 	 	RAG1,TNFRSF13C	2	
+Respiratory Disease, Respiratory System Development and Function	abnormal morphology	Abnormal morphology of respiratory system	6.71E-03	 	 	 	 	RAG1,LMNB1,INSM1,BMP4,CFTR	5	
+Cellular Assembly and Organization	formation	Formation of actin bundles	6.75E-03	 	 	 	 	PCDH15,LCP1	2	
+Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	formation	Formation of smooth muscle	6.75E-03	 	 	 	 	LMNB1,BMP4	2	
+Cellular Assembly and Organization, Cellular Function and Maintenance	organization	Organization of filaments	7.03E-03	 	 	 	 	Cdc42,PCDH15,ATP8A2,LCP1	4	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Humoral Immune Response, Lymphoid Tissue Structure and Development	expansion	Expansion of B lymphocytes	7.09E-03	 	 	 	 	TNFRSF13C,LCP1	2	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction	adhesion	Adhesion of endothelial cell lines	7.44E-03	 	 	 	 	LGALS2,IL17B	2	
+Cellular Compromise	disassembly	Disassembly of actin filaments	7.44E-03	 	 	 	 	S100B,SEMA5A	2	
+Cellular Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development	maturation	Maturation of B lymphocytes	7.44E-03	 	 	 	 	TNFRSF13C,LCP1	2	
+Endocrine System Development and Function, Endocrine System Disorders, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Disease	abnormal morphology	Abnormal morphology of pituitary gland	7.80E-03	 	 	 	 	BMP4,SCG5	2	
+Nervous System Development and Function	fasciculation	Fasciculation of neurons	7.80E-03	 	 	 	 	BMP4,SEMA5A	2	
+Nervous System Development and Function	sensation	Sensation	7.87E-03	 	 	 	 	UCHL1,BMP4,EYA4,PCDH15,FAAH	5	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of B lymphocytes	7.98E-03	 	 	 	 	RAG1,TNFRSF13C,ZBTB1,LCP1	4	
+Developmental Disorder, Endocrine System Disorders, Organismal Injury and Abnormalities, Reproductive System Disease	congenital anomaly of testis	Congenital anomaly of testis	8.91E-03	 	 	 	 	SCG5,CFTR	2	
+Cell Morphology, Nervous System Development and Function	morphology	Morphology of astrocytes	8.91E-03	 	 	 	 	BMP4,S100B	2	
+Respiratory System Development and Function	morphology	Morphology of respiratory tract	9.01E-03	 	 	 	 	LMNB1,INSM1,BMP4,CFTR	4	
+Cardiovascular System Development and Function, Organismal Development	patterning	Patterning of blood vessel	9.30E-03	 	 	 	 	BMP4,SEMA5A	2	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	induction	Abnormal induction of lens	9.46E-03	 	 	 	 	BMP4	1	
+Digestive System Development and Function, Endocrine System Disorders, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of dilated pancreatic duct	9.46E-03	 	 	 	 	CFTR	1	
+Developmental Disorder, Hereditary Disorder, Immunological Disease, Metabolic Disease, Organismal Injury and Abnormalities	Omenn syndrome	Autosomal recessive Omenn syndrome	9.46E-03	 	 	 	 	RAG1	1	
+Respiratory Disease	bronchiectasis type 1	Bronchiectasis type 1	9.46E-03	 	 	 	 	CFTR	1	
+Cell Morphology, Cellular Movement, Embryonic Development	cell spreading	Cell spreading of trophoblast cells	9.46E-03	 	 	 	 	FAAH	1	
+Molecular Transport	co-transport	Co-transport of phosphate	9.46E-03	 	 	 	 	SLC34A3	1	
+Cellular Development, Embryonic Development	commitment	Commitment of mesodermal cells	9.46E-03	 	 	 	 	BMP4	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	concentration	Concentration of oleoylethanolamide	9.46E-03	 	 	 	 	FAAH	1	
+Embryonic Development, Organismal Development, Reproductive System Development and Function	implantation	Delay in implantation	9.46E-03	 	 	 	 	FAAH	1	
+Cell Cycle, Cellular Development, Connective Tissue Development and Function	senescence	Delay in initiation of senescence of fibroblast cell lines	9.46E-03	 	 	 	 	LMNB1	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of germinal center B lymphocytes	9.46E-03	 	 	 	 	LCP1	1	
+Cellular Development, Connective Tissue Development and Function, Tissue Development	differentiation	Differentiation of tenocyte	9.46E-03	 	 	 	 	BMP4	1	
+Neurological Disease	epileptogenesis	Epileptogenesis	9.46E-03	 	 	 	 	S100B	1	
+Energy Production, Molecular Transport, Nucleic Acid Metabolism, Small Molecule Biochemistry	flux	Flux of ATP	9.46E-03	 	 	 	 	SLC34A3	1	
+Cancer, Gastrointestinal Disease, Hereditary Disorder, Organismal Injury and Abnormalities	hereditary mixed polyposis syndrome	Hereditary mixed polyposis syndrome	9.46E-03	 	 	 	 	SCG5	1	
+Lipid Metabolism, Small Molecule Biochemistry	incorporation	Incorporation of docosahexaenoic acid	9.46E-03	 	 	 	 	CFTR	1	
+Cell Morphology, Cellular Movement, Hair and Skin Development and Function, Nervous System Development and Function	innervation	Innervation of Merkel cells	9.46E-03	 	 	 	 	BMP4	1	
+Cellular Movement	invasion	Invasion by Salmonella typhimurium SL1344	9.46E-03	 	 	 	 	Cdc42	1	
+Cell Morphology, Hematological Disease, Hematological System Development and Function, Humoral Immune Response, Immunological Disease, Lymphoid Tissue Structure and Development, Tissue Morphology	lack	Lack of marginal-zone B lymphocytes	9.46E-03	 	 	 	 	TNFRSF13C	1	
+Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Morphology	lack	Lack of thymus cortex	9.46E-03	 	 	 	 	RAG1	1	
+Cellular Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Development	maturation	Maturation of marginal-zone B lymphocytes	9.46E-03	 	 	 	 	LCP1	1	
+Connective Tissue Disorders, Hematological Disease, Organismal Injury and Abnormalities	mild thrombocytopenia	Mild thrombocytopenia	9.46E-03	 	 	 	 	Cdc42	1	
+Cellular Movement, Hematological System Development and Function, Humoral Immune Response, Immune Cell Trafficking	movement	Movement of pro-B lymphocytes	9.46E-03	 	 	 	 	LCP1	1	
+Organismal Injury and Abnormalities	obstruction	Obstruction of lumen	9.46E-03	 	 	 	 	CFTR	1	
+Embryonic Development, Organismal Development, Tissue Development	outgrowth	Outgrowth of metanephric bud	9.46E-03	 	 	 	 	BMP4	1	
+Cell Cycle	quiescence	Quiescence of nervous tissue cell lines	9.46E-03	 	 	 	 	BMP4	1	
+Organismal Development	regeneration	Regeneration of digit	9.46E-03	 	 	 	 	BMP4	1	
+Cellular Function and Maintenance	rotation	Rotation of Nucleus	9.46E-03	 	 	 	 	LMNB1	1	
+Cell Morphology, Cellular Assembly and Organization	size	Size of centrosome	9.46E-03	 	 	 	 	CFTR	1	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Organ Morphology, Organismal Development, Tissue Morphology	size	Size of cervical lymph node	9.46E-03	 	 	 	 	RAG1	1	
+Developmental Disorder, Hereditary Disorder, Immunological Disease, Metabolic Disease, Organismal Injury and Abnormalities	T-cell negative B-cell negative NK-cell positive autosomal recessive severe combined immunodeficiency	T-cell negative B-cell negative NK-cell positive autosomal recessive severe combined immunodeficiency	9.46E-03	 	 	 	 	RAG1	1	
+Cellular Development	transdifferentiation	Transdifferentiation of pancreatic cancer cell lines	9.46E-03	 	 	 	 	INSM1	1	
+Carbohydrate Metabolism, Molecular Transport, Small Molecule Biochemistry	transport	Transport of sucrose	9.46E-03	 	 	 	 	SLC45A3	1	
+Cellular Movement	cellular infiltration	Cellular infiltration	9.50E-03	 	-0.218	 	-0.527	RAG1,LMNB1,Cdc42,CFTR,S100B,Nbdy	6	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Development	differentiation	Differentiation of erythroid cells	9.69E-03	 	 	 	 	Cdc42,BMP4	2	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Morphology	morphology	Morphology of lymph follicle	9.86E-03	 	 	 	 	RAG1,TNFRSF13C,LCP1	3	
+Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Tissue Morphology	quantity	Quantity of pre-B lymphocytes	1.00E-02	 	 	 	 	RAG1,Cdc42,TNFRSF13C	3	
+Endocrine System Disorders, Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	chronic pancreatitis	Chronic pancreatitis	1.01E-02	 	 	 	 	UCHL1,CFTR	2	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	outgrowth	Outgrowth of neurites	1.03E-02	 	1.109	bias	 	LMNB1,Cdc42,BMP4,NCAM2,SEMA5A	5	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	uptake	Uptake of lipid	1.04E-02	 	 	 	 	Cdc42,CFTR,FAAH	3	
+Molecular Transport	transport	Transport of anion	1.08E-02	 	 	 	 	CYB5R2,SLC34A3,CFTR	3	
+Cell Death and Survival	apoptosis	Apoptosis of thymocytes	1.10E-02	 	 	 	 	RAG1,BMP4,Cdc42	3	
+Embryonic Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	formation	Formation of lymphoid tissue	1.17E-02	 	 	 	 	RAG1,SCG5,TNFRSF13C,ZBTB1,LCP1	5	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	development	Development of B lymphocytes	1.17E-02	 	 	 	 	RAG1,Cdc42,TNFRSF13C	3	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Nervous System Development and Function, Organismal Development, Tissue Development	axonogenesis	Axonogenesis	1.20E-02	 	 	 	 	Cdc42,UCHL1,ATP8A2,S100B	4	
+Embryonic Development, Nervous System Development and Function, Neurological Disease, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of thin ganglion cell layer	1.26E-02	 	 	 	 	BMP4	1	
+Cell Death and Survival	anoikis	Anoikis of cervical cancer cell lines	1.26E-02	 	 	 	 	UCHL1	1	
+Cellular Compromise, Organismal Injury and Abnormalities	atrophy	Atrophy of acinar gland cells	1.26E-02	 	 	 	 	CFTR	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	juvenile Parkinson disease	Autosomal recessive juvenile Parkinson disease	1.26E-02	 	 	 	 	UCHL1	1	
+Cardiovascular System Development and Function, Digestive System Development and Function, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	bile duct proliferation	Bile duct proliferation	1.26E-02	 	 	 	 	CFTR	1	
+Embryonic Development, Organismal Development, Respiratory System Development and Function	development	Bronchial development	1.26E-02	 	 	 	 	BMP4	1	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	cell-cell adhesion	Cell-cell adhesion of endothelial cell lines	1.26E-02	 	 	 	 	LGALS2	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Respiratory System Development and Function	cell-cell adhesion	Cell-cell adhesion of lung cell lines	1.26E-02	 	 	 	 	LGALS2	1	
+Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response, Lymphoid Tissue Structure and Development	chemotaxis	Chemotaxis of peripheral T lymphocyte	1.26E-02	 	 	 	 	LCP1	1	
+RNA Post-Transcriptional Modification	cleavage	Cleavage of mRNA	1.26E-02	 	 	 	 	POLR2A	1	
+Embryonic Development, Organismal Development, Tissue Development, Tissue Morphology	closure	Closure of optic fissure	1.26E-02	 	 	 	 	BMP4	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry, Vitamin and Mineral Metabolism	concentration	Concentration of palmitoylethanolamide	1.26E-02	 	 	 	 	FAAH	1	
+Cellular Growth and Proliferation, Skeletal and Muscular System Development and Function	cytostasis	Cytostasis of smooth muscle cells	1.26E-02	 	 	 	 	BMP4	1	
+Cardiovascular System Development and Function	development	Development of vascular plexus	1.26E-02	 	 	 	 	Cdc42	1	
+Cellular Development, Embryonic Development, Organismal Development, Tissue Development	differentiation	Differentiation of syncytiotrophoblast	1.26E-02	 	 	 	 	BMP4	1	
+Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	ectopic pupil	Ectopic pupil	1.26E-02	 	 	 	 	BMP4	1	
+Tissue Development	filling	Filling of lumen	1.26E-02	 	 	 	 	CFTR	1	
+Cell Morphology, Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Cellular Function and Maintenance	formation	Formation of actin filopodia	1.26E-02	 	 	 	 	Cdc42	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Respiratory System Development and Function, Tissue Development	formation	Formation of olfactory receptor neurons	1.26E-02	 	 	 	 	NCAM2	1	
+Endocrine System Disorders, Gastrointestinal Disease, Hereditary Disorder, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	hereditary chronic pancreatitis	Hereditary chronic pancreatitis	1.26E-02	 	 	 	 	CFTR	1	
+Lipid Metabolism, Small Molecule Biochemistry	hydrolysis	Hydrolysis of 2-arachidonoylglycerol	1.26E-02	 	 	 	 	FAAH	1	
+Inflammatory Response	hypercytokinemia	Hypercytokinemia	1.26E-02	 	 	 	 	RAG1	1	
+Cellular Compromise, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	injury	Injury of hepatocytes	1.26E-02	 	 	 	 	FAAH	1	
+Developmental Disorder, Embryonic Development, Endocrine System Development and Function, Endocrine System Disorders, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Disease, Tissue Morphology	lack	Lack of Rathke's pouch	1.26E-02	 	 	 	 	BMP4	1	
+Auditory Disease, Auditory and Vestibular System Development and Function, Connective Tissue Development and Function, Connective Tissue Disorders, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders, Skeletal and Muscular System Development and Function, Tissue Development	lack	Lack of horizontal semicircular canal	1.26E-02	 	 	 	 	BMP4	1	
+Cell Morphology, Hematological Disease, Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development	lack	Lack of natural killer T lymphocytes	1.26E-02	 	 	 	 	RAG1	1	
+Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Morphology	lack	Lack of thymus medulla	1.26E-02	 	 	 	 	RAG1	1	
+Cellular Function and Maintenance, Cellular Movement, Hematological System Development and Function, Humoral Immune Response, Immune Cell Trafficking, Inflammatory Response, Lymphoid Tissue Structure and Development	localization	Localization of marginal-zone B lymphocytes	1.26E-02	 	 	 	 	TNFRSF13C	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	migration	Migration of dermal dendritic cells	1.26E-02	 	 	 	 	Cdc42	1	
+Cell Death and Survival	necroptosis	Necroptosis of pancreatic cancer cell lines	1.26E-02	 	 	 	 	UCHL1	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Respiratory System Development and Function, Tissue Development	neurogenesis	Neurogenesis of olfactory epithelial cells	1.26E-02	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function, Skeletal and Muscular System Development and Function	neurotransmission	Neurotransmission of neuromuscular junctions	1.26E-02	 	 	 	 	UCHL1	1	
+Neurological Disease, Organismal Injury and Abnormalities	seizures	Onset of seizures	1.26E-02	 	 	 	 	RAG1	1	
+Cell Morphology	polarization	Polarization of peripheral T lymphocyte	1.26E-02	 	 	 	 	LCP1	1	
+Cell Cycle	premature senescence	Premature senescence of lung cancer cell lines	1.26E-02	 	 	 	 	BMP4	1	
+Hair and Skin Development and Function, Nervous System Development and Function, Organ Morphology, Tissue Morphology	quantity	Quantity of Merkel cells	1.26E-02	 	 	 	 	BMP4	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	reabsorption	Reabsorption of cholesterol	1.26E-02	 	 	 	 	Cdc42	1	
+Cell Cycle, DNA Replication, Recombination, and Repair	recombination	Recombination of plasmid	1.26E-02	 	 	 	 	RAG1	1	
+Cellular Assembly and Organization, Nervous System Development and Function	replenishment	Replenishment of synaptic vesicles	1.26E-02	 	 	 	 	Cdc42	1	
+Cell Cycle	senescence	Senescence of eye cell lines	1.26E-02	 	 	 	 	BMP4	1	
+Auditory and Vestibular System Development and Function, Connective Tissue Development and Function, Organ Morphology, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	size	Size of horizontal semicircular canal	1.26E-02	 	 	 	 	BMP4	1	
+Dermatological Diseases and Conditions, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	ulcerative dermatitis	Ulcerative dermatitis	1.26E-02	 	 	 	 	RAG1	1	
+Cell Morphology, Reproductive System Development and Function	whole-cell conductance	Whole-cell conductance of oocytes	1.26E-02	 	 	 	 	CFTR	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	organization	Microtubule dynamics	1.29E-02	Increased	2.601	bias	1.387	LMNB1,UCHL1,Cdc42,BMP4,PCDH15,NCAM2,ATP8A2,S100B,LCP1,OLFM1,SEMA5A	11	
+Nervous System Development and Function, Visual System Development and Function	electrophysiology	Electrophysiology of retinal rods	1.31E-02	 	 	 	 	ATP8A2,SEMA5A	2	
+Tissue Development	morphogenesis	Morphogenesis of epithelial tissue	1.32E-02	 	 	 	 	BMP4,PCDH15,SEMA5A	3	
+Cellular Movement, Nervous System Development and Function	migration	Migration of neurons	1.34E-02	 	 	 	 	LMNB1,Cdc42,BMP4,PCDH15	4	
+Organ Development, Visual System Development and Function	function	Function of retina	1.36E-02	 	 	 	 	Cdc42,PCDH15	2	
+Cell Morphology	polarization	Polarization of T lymphocytes	1.36E-02	 	 	 	 	Cdc42,LCP1	2	
+Organismal Development	development	Development of endocrine gland	1.37E-02	 	 	 	 	BMP4,INSM1,SCG5	3	
+Developmental Disorder, Organismal Injury and Abnormalities, Reproductive System Disease	congenital malformation of genital organs	Congenital malformation of genital organs	1.46E-02	 	 	 	 	CLDN14,SCG5,CFTR	3	
+Respiratory System Development and Function	development	Respiratory system development	1.47E-02	 	 	 	 	LMNB1,BMP4,NCAM2,CFTR,SPEF2	5	
+Cell Cycle	senescence	Senescence of connective tissue cells	1.50E-02	 	 	 	 	LMNB1,FAAH	2	
+Behavior, Organismal Functions	walking	Walking	1.50E-02	 	 	 	 	UCHL1,PCDH15	2	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	proliferation	Proliferation of neuronal cells	1.52E-02	 	1.129	bias	0.078	RAG1,LMNB1,Cdc42,BMP4,NCAM2,SEMA5A	6	
+Embryonic Development, Hematological System Development and Function, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	formation	Formation of germinal center	1.55E-02	 	 	 	 	TNFRSF13C,LCP1	2	
+Nervous System Development and Function	righting reflex	Righting reflex	1.55E-02	 	 	 	 	PCDH15,FAAH	2	
+Cellular Assembly and Organization	organization	Organization of cellular membrane	1.55E-02	 	 	 	 	Cdc42,FCHO1,CFTR,CADM3	4	
+Embryonic Development, Organismal Development	morphogenesis	Morphogenesis of head	1.57E-02	 	 	 	 	BMP4,EYA4,ATP8A2,SPEF2	4	
+Digestive System Development and Function, Gastrointestinal Disease, Hepatic System Development and Function, Hepatic System Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of dilated gall bladder	1.57E-02	 	 	 	 	CFTR	1	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Respiratory Disease, Respiratory System Development and Function, Tissue Morphology	abnormal morphology	Abnormal morphology of nasal mucosa	1.57E-02	 	 	 	 	CFTR	1	
+Auditory Disease, Auditory and Vestibular System Development and Function, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of tympanic membrane	1.57E-02	 	 	 	 	EYA4	1	
+Dermatological Diseases and Conditions, Hair and Skin Development and Function, Organ Morphology, Organismal Injury and Abnormalities	pigmentation	Abnormal pigmentation of skin	1.57E-02	 	 	 	 	RAG1	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organ Morphology, Organismal Development, Tissue Development, Visual System Development and Function	abnormal size	Abnormal size of eye	1.57E-02	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Hematopoiesis, Immune Cell Trafficking, Inflammatory Response	aggregation	Aggregation of thymocytes	1.57E-02	 	 	 	 	RAG1	1	
+Ophthalmic Disease, Organismal Injury and Abnormalities	anterior adhesions of iris	Anterior adhesions of iris	1.57E-02	 	 	 	 	BMP4	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Arrest in differentiation of thymocytes	1.57E-02	 	 	 	 	BMP4	1	
+Connective Tissue Disorders, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	bone nodule	Bone nodule	1.57E-02	 	 	 	 	BMP4	1	
+Hematological Disease, Organismal Injury and Abnormalities	bruising	Bruising of tissue	1.57E-02	 	 	 	 	SCG5	1	
+Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation, Hematological System Development and Function, Humoral Immune Response	co-stimulation	Co-stimulation of B lymphocytes	1.57E-02	 	 	 	 	TNFRSF13C	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Development	differentiation	Differentiation of colony-forming erythroid cells	1.57E-02	 	 	 	 	BMP4	1	
+Cellular Development	differentiation	Differentiation of lung cell lines	1.57E-02	 	 	 	 	BMP4	1	
+Cancer, Cellular Development, Organismal Injury and Abnormalities, Tumor Morphology	differentiation	Differentiation of myelomonocytic progenitor cells	1.57E-02	 	 	 	 	BMP4	1	
+Cell Morphology	elongation	Elongation of embryonic cell lines	1.57E-02	 	 	 	 	Cdc42	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Organ Development, Organismal Development, Reproductive System Development and Function, Tissue Development	formation	Formation of primordial germ cells	1.57E-02	 	 	 	 	BMP4	1	
+Hereditary Disorder, Ophthalmic Disease, Organismal Injury and Abnormalities	keratoconus type 1	Keratoconus type 1	1.57E-02	 	 	 	 	IL17B	1	
+Nervous System Development and Function, Neurological Disease, Ophthalmic Disease	lack	Lack of optic nerve	1.57E-02	 	 	 	 	BMP4	1	
+Cell Cycle, Skeletal and Muscular System Development and Function	mitosis	Mitosis of PASMC cells	1.57E-02	 	 	 	 	BMP4	1	
+Cell Morphology, Digestive System Development and Function, Organ Morphology, Organismal Development	morphology	Morphology of delta islet cells	1.57E-02	 	 	 	 	SCG5	1	
+Cell Cycle	premature senescence	Premature senescence of carcinoma cell lines	1.57E-02	 	 	 	 	BMP4	1	
+Organ Morphology, Tissue Morphology	quantity	Quantity of acinar gland cells	1.57E-02	 	 	 	 	CFTR	1	
+Cellular Function and Maintenance, Molecular Transport	reabsorption	Reabsorption of phosphate	1.57E-02	 	 	 	 	SLC34A3	1	
+Organismal Injury and Abnormalities, Renal and Urological Disease	proteinuria	Severe proteinuria	1.57E-02	 	 	 	 	TNFRSF13C	1	
+Infectious Diseases	shedding	Shedding of rotavirus	1.57E-02	 	 	 	 	RAG1	1	
+Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	sporadic Parkinson disease	Sporadic Parkinson disease	1.57E-02	 	 	 	 	UCHL1	1	
+Cancer, Organismal Injury and Abnormalities	sarcoma	Sarcoma	1.58E-02	 	 	 	 	RAG1,BMP4,INSM1,PCDH15,TMEM132C,ATP8A2,CFTR,CADM3,IL17B,SEMA5A	10	
+Auditory and Vestibular System Development and Function, Nervous System Development and Function	hearing	Hearing	1.63E-02	 	 	 	 	BMP4,EYA4,PCDH15	3	
+Cancer, Organismal Injury and Abnormalities, Respiratory Disease	adenocarcinoma	Adenocarcinoma in right upper lobe of lung	1.64E-02	 	 	 	 	GPR85,MAP3K21,EYA4,PCDH15,NALCN	5	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of thymocytes	1.65E-02	 	 	 	 	RAG1,BMP4	2	
+Cellular Movement	cell movement	Cell movement	1.67E-02	Increased	2.057	bias	0.575	DUSP3,NAALADL2,LMNB1,UCHL1,Cdc42,INSM1,S100B,IL17B,LCP1,FAAH,RAG1,BMP4,PCDH15,CFTR,SEMA5A,Nbdy	16	
+Cell Morphology, Nervous System Development and Function	morphology	Morphology of neuroglia	1.68E-02	 	 	 	 	RAG1,BMP4,S100B	3	
+Cell Morphology, Hematopoiesis	morphology	Morphology of hematopoietic progenitor cells	1.76E-02	 	 	 	 	RAG1,Cdc42,TNFRSF13C	3	
+Cell-To-Cell Signaling and Interaction	intercellular communication	Intercellular communication	1.79E-02	 	 	 	 	CFTR,IL17B,SEMA5A	3	
+Cell Death and Survival	apoptosis	Apoptosis of T lymphocytes	1.80E-02	 	 	 	 	RAG1,Cdc42,BMP4,LGALS2	4	
+Cancer, Cell Death and Survival, Organismal Injury and Abnormalities, Tumor Morphology	cell viability	Cell viability of cancer cells	1.80E-02	 	 	 	 	BMP4,TNFRSF13C	2	
+Cellular Movement, Hematological Disease, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Respiratory Disease	eosinophilia	Eosinophilia of lung	1.80E-02	 	 	 	 	RAG1,Nbdy	2	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	abnormal morphology	Abnormal morphology of cervix	1.88E-02	 	 	 	 	CFTR	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	aggregation	Aggregation of macrophages	1.88E-02	 	 	 	 	RAG1	1	
+Cancer, Cell Death and Survival, Organismal Injury and Abnormalities, Tumor Morphology	cell viability	Cell viability of myeloma cells	1.88E-02	 	 	 	 	BMP4	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	cellular infiltration	Cellular infiltration by tumor-associated macrophages	1.88E-02	 	 	 	 	S100B	1	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of myeloma cell lines	1.88E-02	 	 	 	 	BMP4	1	
+Lipid Metabolism, Small Molecule Biochemistry	conversion	Conversion of arachidonic acid	1.88E-02	 	 	 	 	CFTR	1	
+Cell Cycle, Cellular Movement	cytokinesis	Cytokinesis of oocytes	1.88E-02	 	 	 	 	Cdc42	1	
+Cellular Development, Connective Tissue Development and Function, Tissue Development	differentiation	Differentiation of osteoprogenitor cells	1.88E-02	 	 	 	 	BMP4	1	
+Cell Cycle, Hematological System Development and Function	cell cycle progression	Entry into cell cycle progression of T lymphocytes	1.88E-02	 	 	 	 	Cdc42	1	
+Digestive System Development and Function	formation	Formation of palate	1.88E-02	 	 	 	 	BMP4	1	
+Embryonic Development	frequency	Frequency of embryonic stem cells	1.88E-02	 	 	 	 	BMP4	1	
+Respiratory Disease	hemothorax	Hemothorax	1.88E-02	 	 	 	 	SCG5	1	
+Developmental Disorder, Hereditary Disorder, Ophthalmic Disease, Organismal Injury and Abnormalities	hypoplasia	Hypoplasia of iris	1.88E-02	 	 	 	 	BMP4	1	
+Cell Morphology, Skeletal and Muscular System Development and Function	mineralization	Mineralization of bone cell lines	1.88E-02	 	 	 	 	BMP4	1	
+Connective Tissue Development and Function, Embryonic Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	morphogenesis	Morphogenesis of cranial suture	1.88E-02	 	 	 	 	BMP4	1	
+Cell Morphology	morphology	Morphology of yeast	1.88E-02	 	 	 	 	LCP1	1	
+Cell Death and Survival, Cellular Compromise, Neurological Disease, Organismal Injury and Abnormalities, Tissue Morphology	neurodegeneration	Neurodegeneration of granule cells	1.88E-02	 	 	 	 	RAG1	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	number	Number of stereocilia	1.88E-02	 	 	 	 	BMP4	1	
+Connective Tissue Disorders, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	oligoarticular juvenile idiopathic arthritis	Oligoarticular juvenile idiopathic arthritis	1.88E-02	 	 	 	 	RAG1	1	
+Auditory Disease, Inflammatory Disease, Organismal Injury and Abnormalities	otitis media with effusion	Otitis media with effusion	1.88E-02	 	 	 	 	EYA4	1	
+Neurological Disease	pathological denervation	Pathological denervation of neuromuscular junctions	1.88E-02	 	 	 	 	UCHL1	1	
+Embryonic Development, Tissue Development	patterning	Patterning of epithelial tissue	1.88E-02	 	 	 	 	Cdc42	1	
+Cell Cycle, DNA Replication, Recombination, and Repair	recombination	Recombination of gene	1.88E-02	 	 	 	 	RAG1	1	
+Tissue Morphology	thickening	Thickening of glomerular basement membrane	1.88E-02	 	 	 	 	BMP4	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Arrest in differentiation of lymphocytes	1.96E-02	 	 	 	 	BMP4,TNFRSF13C	2	
+Cellular Development, Cellular Growth and Proliferation, Respiratory System Development and Function	proliferation	Proliferation of lung cell lines	2.01E-02	 	 	 	 	LMNB1,BMP4	2	
+Auditory and Vestibular System Development and Function, Organ Morphology, Organismal Development	morphology	Morphology of ear	2.07E-02	 	 	 	 	BMP4,EYA4,PCDH15	3	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of lateral plate mesoderm	2.19E-02	 	 	 	 	BMP4	1	
+Cancer, Cell-To-Cell Signaling and Interaction, Organismal Injury and Abnormalities	activation	Activation of chronic lymphocytic leukemia cells	2.19E-02	 	 	 	 	TNFRSF13C	1	
+Nervous System Development and Function	arousal	Arousal	2.19E-02	 	 	 	 	FAAH	1	
+Connective Tissue Disorders, Developmental Disorder, Gastrointestinal Disease, Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	autosomal dominant cleft lip with or without cleft palate	Autosomal dominant cleft lip with or without cleft palate	2.19E-02	 	 	 	 	BMP4	1	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	B-cell lymphomagenesis	B-cell lymphomagenesis	2.19E-02	 	 	 	 	UCHL1	1	
+Cellular Compromise, Nervous System Development and Function, Neurological Disease	degeneration	Degeneration of myelin sheath	2.19E-02	 	 	 	 	RAG1	1	
+Cellular Development, Endocrine System Development and Function	differentiation	Differentiation of alpha islet cells	2.19E-02	 	 	 	 	INSM1	1	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Tissue Development	differentiation	Differentiation of lymphohematopoietic progenitor cells	2.19E-02	 	 	 	 	BMP4	1	
+Cell Morphology, Connective Tissue Development and Function	elongation	Elongation of fibroblast cell lines	2.19E-02	 	 	 	 	Cdc42	1	
+Endocrine System Disorders, Gastrointestinal Disease, Organismal Injury and Abnormalities	exocrine pancreatic insufficiency	Exocrine pancreatic insufficiency	2.19E-02	 	 	 	 	CFTR	1	
+Carbohydrate Metabolism, Lipid Metabolism, Small Molecule Biochemistry	hydrolysis	Hydrolysis of lysophosphatidylcholine	2.19E-02	 	 	 	 	ENPP6	1	
+Gastrointestinal Disease, Inflammatory Response, Organismal Injury and Abnormalities	inflammation	Inflammation of submandibular gland	2.19E-02	 	 	 	 	CFTR	1	
+Cell Morphology, Endocrine System Disorders, Organ Morphology, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	lack	Lack of primordial germ cells	2.19E-02	 	 	 	 	BMP4	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	localization	Localization of nucleus	2.19E-02	 	 	 	 	Cdc42	1	
+Cell Death and Survival	necroptosis	Necroptosis of colorectal cancer cell lines	2.19E-02	 	 	 	 	UCHL1	1	
+Carbohydrate Metabolism, Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	translocation	Translocation of phosphatidylserine	2.19E-02	 	 	 	 	ATP8A2	1	
+Molecular Transport	transport	Transport of iodide	2.19E-02	 	 	 	 	CFTR	1	
+Cell Death and Survival	cell viability	Cell viability of neuroblastoma cell lines	2.24E-02	 	 	 	 	SCG5,S100B	2	
+Cell Death and Survival, Organismal Injury and Abnormalities, Renal and Urological Disease	apoptosis	Apoptosis of kidney cells	2.35E-02	 	 	 	 	RAG1,Cdc42	2	
+Humoral Immune Response, Protein Synthesis	quantity	Quantity of IgG2b	2.35E-02	 	 	 	 	TNFRSF13C,LGALS2	2	
+Ophthalmic Disease, Organismal Injury and Abnormalities	retinal degeneration	Retinal degeneration	2.45E-02	 	 	 	 	Cdc42,BMP4,PCDH15,ATP8A2	4	
+Neurological Disease	neurological disorder	Early-onset neurological disorder	2.50E-02	 	 	 	 	CLDN14,UCHL1,PCDH15	3	
+Developmental Disorder, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of amniotic cavity	2.50E-02	 	 	 	 	BMP4	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of ocular posterior segment	2.50E-02	 	 	 	 	BMP4	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of pupil	2.50E-02	 	 	 	 	BMP4	1	
+Digestive System Development and Function, Endocrine System Disorders, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of small pancreas	2.50E-02	 	 	 	 	CFTR	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of thin inner nuclear layer	2.50E-02	 	 	 	 	BMP4	1	
+Vitamin and Mineral Metabolism	abnormal quantity	Abnormal quantity of mineral	2.50E-02	 	 	 	 	SCG5	1	
+Cellular Assembly and Organization	accumulation	Accumulation of zymogen granules	2.50E-02	 	 	 	 	CFTR	1	
+Cell Morphology	budding	Budding of cells	2.50E-02	 	 	 	 	BMP4	1	
+Embryonic Development, Organismal Development, Tissue Development	development	Development of extraembryonic mesoderm	2.50E-02	 	 	 	 	BMP4	1	
+Cellular Development, Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	differentiation	Differentiation of calvarial cells	2.50E-02	 	 	 	 	BMP4	1	
+Cellular Assembly and Organization	formation	Formation of membrane rafts	2.50E-02	 	 	 	 	Cdc42	1	
+Auditory Disease, Developmental Disorder, Endocrine System Disorders, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Reproductive System Disease	gonadal dysgenesis with auditory dysfunction, autosomal recessive inheritance	Gonadal dysgenesis with auditory dysfunction, autosomal recessive inheritance	2.50E-02	 	 	 	 	CLDN14	1	
+Lipid Metabolism, Small Molecule Biochemistry	metabolism	Metabolism of linoleic acid	2.50E-02	 	 	 	 	CFTR	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	migration	Migration of bone marrow-derived neutrophils	2.50E-02	 	 	 	 	Cdc42	1	
+Cell Cycle, Cellular Development, Respiratory System Development and Function	premature senescence	Premature senescence of lung cell lines	2.50E-02	 	 	 	 	LMNB1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Nervous System Development and Function	recruitment	Recruitment of microglia	2.50E-02	 	 	 	 	Cdc42	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	Usher syndrome type 1B	Usher syndrome type 1B	2.50E-02	 	 	 	 	PCDH15	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Nervous System Development and Function, Organismal Development, Tissue Development	branching	Branching of axons	2.59E-02	 	 	 	 	Cdc42,S100B	2	
+Organismal Injury and Abnormalities	degeneration	Organ Degeneration	2.63E-02	 	-1.964	bias	 	RAG1,Cdc42,BMP4,SCG5,PCDH15,ATP8A2	6	
+Cellular Movement	cell movement	Cell movement of neuroglia	2.65E-02	 	 	 	 	LMNB1,Cdc42	2	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	growth	Growth of axons	2.67E-02	 	 	 	 	LMNB1,Cdc42,SEMA5A	3	
+Organismal Injury and Abnormalities, Renal and Urological Disease	proteinuria	Proteinuria	2.67E-02	 	 	 	 	RAG1,BMP4,TNFRSF13C	3	
+Cellular Growth and Proliferation, Lymphoid Tissue Structure and Development	expansion	Expansion of lymphatic system cells	2.70E-02	 	 	 	 	BMP4,TNFRSF13C,LCP1	3	
+Organismal Injury and Abnormalities	calcinosis	Calcinosis	2.71E-02	 	 	 	 	SLC34A3,SCG5	2	
+Cell-To-Cell Signaling and Interaction	aggregation	Aggregation of epithelial cells	2.81E-02	 	 	 	 	RAG1	1	
+Cell Cycle, Connective Tissue Development and Function	G0/G1 phase transition	Arrest in G0/G1 phase transition of fibroblast cell lines	2.81E-02	 	 	 	 	BMP4	1	
+Cellular Movement	beat	Beat of cilia	2.81E-02	 	 	 	 	CFTR	1	
+Cardiovascular Disease, Organismal Injury and Abnormalities	calcinosis	Calcinosis of heart	2.81E-02	 	 	 	 	SCG5	1	
+Cardiovascular System Development and Function, Embryonic Development, Organ Development, Organismal Development, Tissue Development	development	Development of cardiac conduction system	2.81E-02	 	 	 	 	Cdc42	1	
+Cancer, Immunological Disease, Organismal Injury and Abnormalities	development	Development of thymoma	2.81E-02	 	 	 	 	RAG1	1	
+Cellular Development, Nervous System Development and Function, Tissue Development	differentiation	Differentiation of cholinergic neurons	2.81E-02	 	 	 	 	BMP4	1	
+Connective Tissue Disorders, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Respiratory Disease	pulmonary interstitial fibrosis	Pulmonary interstitial fibrosis	2.81E-02	 	 	 	 	CFTR	1	
+Hematological System Development and Function, Hematopoiesis, Tissue Morphology	quantity	Quantity of LSK cells	2.81E-02	 	 	 	 	ZBTB1	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	quantity	Quantity of linoleic acid	2.81E-02	 	 	 	 	CFTR	1	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	recessive common variable immune deficiency	Recessive common variable immune deficiency	2.81E-02	 	 	 	 	TNFRSF13C	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	regionalization	Regionalization of telencephalon	2.81E-02	 	 	 	 	BMP4	1	
+Cellular Movement, Nervous System Development and Function	scattering	Scattering of neurons	2.81E-02	 	 	 	 	PCDH15	1	
+Cellular Function and Maintenance, Molecular Transport	secretion	Secretion of chloride	2.81E-02	 	 	 	 	CFTR	1	
+Cell Morphology	morphology	Morphology of cellular protrusions	2.83E-02	 	 	 	 	LMNB1,PCDH15,SEMA5A,LCP1	4	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	auditory evoked potential	Auditory evoked potential	2.84E-02	 	 	 	 	BMP4,EYA4	2	
+Cellular Movement	migration	Migration of brain cells	2.90E-02	 	 	 	 	Cdc42,BMP4	2	
+Humoral Immune Response, Protein Synthesis	quantity	Quantity of IgG3	2.97E-02	 	 	 	 	TNFRSF13C,LGALS2	2	
+Cellular Movement	scattering	Scattering	2.97E-02	 	 	 	 	LMNB1,PCDH15	2	
+Nervous System Development and Function, Tissue Morphology	quantity	Quantity of neurons	2.98E-02	 	-1.513	bias	-2.379	RAG1,LMNB1,INSM1,BMP4,PCDH15	5	
+Cancer, Organismal Injury and Abnormalities	connective or soft tissue tumor	Connective or soft tissue tumor	3.01E-02	 	 	 	 	RAG1,BMP4,INSM1,PCDH15,TMEM132C,ATP8A2,CFTR,CADM3,IL17B,OLFM1,SEMA5A	11	
+Organismal Injury and Abnormalities, Respiratory Disease	bronchopathy	Bronchopathy	3.05E-02	 	 	 	 	POLR2A,CFTR,LCP1	3	
+Cellular Movement	cellular infiltration	Cellular infiltration by myeloid cells	3.08E-02	 	-0.985	 	-1.395	LMNB1,Cdc42,CFTR,S100B	4	
+Auditory Disease, Organismal Injury and Abnormalities	abnormality	Abnormality of ear	3.09E-02	 	 	 	 	RAG1,BMP4,EYA4	3	
+Connective Tissue Disorders, Organismal Injury and Abnormalities, Tissue Morphology	distribution	Abnormal distribution of adipose tissue	3.12E-02	 	 	 	 	SCG5	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of inner plexiform layer	3.12E-02	 	 	 	 	SEMA5A	1	
+Ophthalmic Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of lacrimal gland	3.12E-02	 	 	 	 	CFTR	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of photoreceptor layer	3.12E-02	 	 	 	 	BMP4	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Nervous System Development and Function, Organ Morphology, Organismal Development, Tissue Development	branching	Branching of hippocampal neurons	3.12E-02	 	 	 	 	Cdc42	1	
+Carbohydrate Metabolism, Lipid Metabolism, Small Molecule Biochemistry	catabolism	Catabolism of glycerophospholipid	3.12E-02	 	 	 	 	ENPP6	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	cellular infiltration	Cellular infiltration by microglia	3.12E-02	 	 	 	 	LMNB1	1	
+Post-Translational Modification, Protein Trafficking	heterodimerization	Heterodimerization of protein	3.12E-02	 	 	 	 	Cdc42	1	
+Cell Morphology, Hematological Disease, Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development	lack	Lack of CD4+ T-lymphocytes	3.12E-02	 	 	 	 	RAG1	1	
+Cell Morphology, Hematological Disease, Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development	lack	Lack of CD8+ T lymphocyte	3.12E-02	 	 	 	 	RAG1	1	
+Small Molecule Biochemistry	metabolism	Metabolism of choline	3.12E-02	 	 	 	 	ENPP6	1	
+Cellular Movement, Embryonic Development	migration	Migration of trophoblast cells	3.12E-02	 	 	 	 	FAAH	1	
+Cell Death and Survival	necroptosis	Necroptosis of leukemia cell lines	3.12E-02	 	 	 	 	UCHL1	1	
+Neurological Disease, Organismal Injury and Abnormalities	neurodegeneration	Neurodegeneration of hippocampal CA3 region	3.12E-02	 	 	 	 	RAG1	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance, Nervous System Development and Function, Tissue Development	organization	Organization of neurofilaments	3.12E-02	 	 	 	 	ATP8A2	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	persistence	Persistence of hyaloid capillary system	3.12E-02	 	 	 	 	BMP4	1	
+Auditory Disease, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	retinitis pigmentosa-deafness syndrome	Retinitis pigmentosa-deafness syndrome	3.12E-02	 	 	 	 	PCDH15	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	thinning	Thinning of cornea	3.12E-02	 	 	 	 	BMP4	1	
+Organismal Injury and Abnormalities, Renal and Urological Disease	urination disorder	Urination disorder	3.30E-02	 	-1.067	bias	 	RAG1,BMP4,SLC34A3,TNFRSF13C	4	
+Organismal Injury and Abnormalities, Tissue Morphology	abnormal morphology	Abnormal morphology of epithelial tissue	3.32E-02	 	 	 	 	RAG1,INSM1,BMP4,ATP8A2,CFTR	5	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	proliferation	Proliferation of thymocytes	3.36E-02	 	 	 	 	RAG1,BMP4	2	
+Cellular Assembly and Organization, Cellular Function and Maintenance	organization	Organization of cytoplasm	3.42E-02	Increased	2.606	bias	1.393	LMNB1,UCHL1,Cdc42,BMP4,PCDH15,NCAM2,CASQ1,ATP8A2,S100B,LCP1,OLFM1,SEMA5A	12	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	auditory evoked potential	Abnormal auditory evoked potential	3.43E-02	 	 	 	 	EYA4	1	
+Cell Morphology, Embryonic Development, Nervous System Development and Function, Neurological Disease, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Tissue Morphology, Visual System Development and Function	abnormal morphology	Abnormal morphology of amacrine cells	3.43E-02	 	 	 	 	SEMA5A	1	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of submandibular gland	3.43E-02	 	 	 	 	CFTR	1	
+Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry, Vitamin and Mineral Metabolism	abnormal quantity	Abnormal quantity of vitamin D	3.43E-02	 	 	 	 	SLC34A3	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	aggregation	Aggregation of dendritic cells	3.43E-02	 	 	 	 	RAG1	1	
+Hematological Disease, Infectious Diseases	bacteremia	Bacteremia	3.43E-02	 	 	 	 	RAG1	1	
+Cell Morphology, Connective Tissue Development and Function	cell rounding	Cell rounding of fibroblast cell lines	3.43E-02	 	 	 	 	Cdc42	1	
+Embryonic Development, Organismal Development, Tissue Development	development	Development of allantois	3.43E-02	 	 	 	 	BMP4	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of common lymphoid progenitor cells	3.43E-02	 	 	 	 	ZBTB1	1	
+Cellular Development	differentiation	Differentiation of prostate cancer cell lines	3.43E-02	 	 	 	 	BMP4	1	
+Dental Disease, Digestive System Development and Function, Gastrointestinal Disease, Hereditary Disorder, Organismal Development, Organismal Injury and Abnormalities	familial hypodontia	Familial hypodontia	3.43E-02	 	 	 	 	BMP4	1	
+Cellular Development, Nervous System Development and Function, Tissue Development	fate determination	Fate determination of neurons	3.43E-02	 	 	 	 	Cdc42	1	
+Embryonic Development, Organismal Development, Tissue Development	formation	Formation of prostatic bud	3.43E-02	 	 	 	 	BMP4	1	
+Cell Cycle, Connective Tissue Development and Function	G1/S phase transition	G1/S phase transition of fibroblasts	3.43E-02	 	 	 	 	Cdc42	1	
+Cell Morphology	length	Length of filopodia	3.43E-02	 	 	 	 	LCP1	1	
+Embryonic Development, Organ Development, Organ Morphology, Organismal Development, Reproductive System Development and Function, Tissue Development	morphogenesis	Morphogenesis of prostate gland	3.43E-02	 	 	 	 	BMP4	1	
+DNA Replication, Recombination, and Repair	nicking	Nicking of DNA	3.43E-02	 	 	 	 	RAG1	1	
+Cell Morphology, Cellular Assembly and Organization	polarization	Polarization of microtubule organizing centers	3.43E-02	 	 	 	 	Cdc42	1	
+Cardiovascular System Development and Function, Embryonic Development, Organismal Development, Tissue Development	septation	Septation of outflow tract	3.43E-02	 	 	 	 	BMP4	1	
+Cell-To-Cell Signaling and Interaction, Drug Metabolism, Small Molecule Biochemistry	synthesis	Synthesis of norepinephrine	3.43E-02	 	 	 	 	INSM1	1	
+Neurological Disease, Organismal Injury and Abnormalities	astrocytosis	Astrocytosis	3.43E-02	 	 	 	 	LMNB1,S100B	2	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Organ Morphology, Tissue Morphology	size	Size of lymphoid organ	3.43E-02	 	 	 	 	RAG1,Cdc42	2	
+Embryonic Development, Organismal Development	development	Development of head	3.43E-02	 	 	 	 	RAG1,BMP4,EYA4,PCDH15,NCAM2,ATP8A2,SPEF2,SMOC1,SEMA5A	9	
+Cancer, Organismal Injury and Abnormalities	soft tissue sarcoma cancer	Soft tissue sarcoma	3.45E-02	 	 	 	 	RAG1,INSM1,ATP8A2,TMEM132C,CFTR,CADM3,IL17B,SEMA5A	8	
+Molecular Transport	transport	Transport of inorganic anion	3.57E-02	 	 	 	 	SLC34A3,CFTR	2	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development, Visual System Development and Function	formation	Formation of eye	3.60E-02	 	 	 	 	RAG1,BMP4,ATP8A2,SMOC1,SEMA5A	5	
+Digestive System Development and Function, Gastrointestinal Disease, Hepatic System Development and Function, Hepatic System Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	hepatomegaly	Hepatomegaly	3.71E-02	 	 	 	 	RAG1,SCG5	2	
+Cardiovascular System Development and Function, Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	angiogenesis	Angiogenesis of muscle	3.73E-02	 	 	 	 	IL17B	1	
+Cell Death and Survival, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	cell death	Cell death of hepatic stellate cells	3.73E-02	 	 	 	 	FAAH	1	
+Cell Morphology, Embryonic Development	cell rounding	Cell rounding of embryonic cell lines	3.73E-02	 	 	 	 	Cdc42	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Nervous System Development and Function	cell-cell adhesion	Cell-cell adhesion of neurons	3.73E-02	 	 	 	 	NCAM2	1	
+Digestive System Development and Function, Gastrointestinal Disease, Hepatic System Development and Function, Hepatic System Disease, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organ Development, Organismal Injury and Abnormalities	chronic autoimmune hepatitis	Chronic autoimmune hepatitis	3.73E-02	 	 	 	 	TNFRSF13C	1	
+Endocrine System Development and Function, Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry	concentration	Concentration of anandamide	3.73E-02	 	 	 	 	FAAH	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, DNA Replication, Recombination, and Repair, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	immunoglobulin V(D)J recombination	Immunoglobulin V(D)J recombination	3.73E-02	 	 	 	 	RAG1	1	
+Auditory Disease, Inflammatory Response, Organismal Injury and Abnormalities	inflammation	Inflammation of ear	3.73E-02	 	 	 	 	RAG1	1	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	lack	Lack of blood island	3.73E-02	 	 	 	 	BMP4	1	
+Cell Cycle, Cellular Development, Connective Tissue Development and Function	oncogene-induced senescence	Oncogene-induced senescence of fibroblast cell lines	3.73E-02	 	 	 	 	LMNB1	1	
+
+Tox Functions for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Cardiac Dilation, Cardiac Enlargement	dilated cardiomyopathy 1J	Dilated cardiomyopathy 1J	3.16E-03	 	 	 	 	EYA4	1	
+Biliary Hyperplasia	bile duct proliferation	Bile duct proliferation	1.26E-02	 	 	 	 	CFTR	1	
+Liver Damage	injury	Injury of hepatocytes	1.26E-02	 	 	 	 	FAAH	1	
+Renal Necrosis/Cell Death	apoptosis	Apoptosis of kidney cells	2.35E-02	 	 	 	 	RAG1,Cdc42	2	
+Liver Enlargement	hepatomegaly	Hepatomegaly	3.71E-02	 	 	 	 	RAG1,SCG5	2	
+Liver Necrosis/Cell Death	cell death	Cell death of hepatic stellate cells	3.73E-02	 	 	 	 	FAAH	1	
+Liver Damage, Liver Inflammation/Hepatitis	chronic autoimmune hepatitis	Chronic autoimmune hepatitis	3.73E-02	 	 	 	 	TNFRSF13C	1	
+Cardiac Infarction	susceptibility to myocardial infarction	Susceptibility to myocardial infarction	3.73E-02	 	 	 	 	LGALS2	1	
+Liver Damage	hepatic injury	Hepatic injury	3.78E-02	 	 	 	 	RAG1,TNFRSF13C,FAAH	3	
+Glomerular Injury, Renal Necrosis/Cell Death	apoptosis	Apoptosis of mesangial cells	4.95E-02	 	 	 	 	RAG1	1	
+Liver Damage, Liver Inflammation/Hepatitis	chronic hepatitis	Chronic hepatitis	6.12E-02	 	 	 	 	RAG1,TNFRSF13C	2	
+Glomerular Injury, Renal Damage	injury	Injury of renal glomerulus	7.04E-02	 	 	 	 	BMP4	1	
+Liver Inflammation/Hepatitis	inflammation	Inflammation of liver	1.21E-01	 	 	 	 	RAG1,SCG5,TNFRSF13C	3	
+Liver Hyperplasia/Hyperproliferation	liver tumor	Liver tumor	1.40E-01	 	 	 	 	EPHA10,DUSP3,NAALADL2,LMNB1,UCHL1,INSM1,HAGHL,ATP8A2,NCAM2,NALCN,CADM3,SMOC1,LCP1,FAAH,RAG1,MAP3K21,SLC45A3,SLC34A3,EYA4,PCDH15,TMEM132C,CFTR,GALNT13,OLFM1	24	
+Renal Atrophy	atrophy of kidney	Atrophy of kidney	1.41E-01	 	 	 	 	BMP4	1	
+Liver Cholestasis	progressive familial intrahepatic cholestasis type 1	Progressive familial intrahepatic cholestasis type 1	1.49E-01	 	 	 	 	CFTR	1	
+Liver Inflammation/Hepatitis, Liver Steatosis	steatohepatitis	Steatohepatitis	1.58E-01	 	 	 	 	SCG5	1	
+Increased Levels of Alkaline Phosphatase	activation	Increased activation of alkaline phosphatase	1.87E-01	 	 	 	 	BMP4	1	
+Liver Necrosis/Cell Death	necrosis	Necrosis of liver	2.30E-01	 	 	 	 	SCG5,FAAH	2	
+Renal Damage, Renal Tubule Injury	proximal tubular toxicity	Proximal tubular toxicity	2.37E-01	 	 	 	 	BMP4	1	
+Renal Hydronephrosis	hydronephrosis	Hydronephrosis	2.51E-01	 	 	 	 	BMP4	1	
+Increased Levels of Red Blood Cells	quantity	Increased Levels of Red Blood Cells	2.61E-01	 	 	 	 	BMP4	1	
+Hepatocellular carcinoma, Liver Hyperplasia/Hyperproliferation	development	Development of hepatocellular carcinoma	2.65E-01	 	 	 	 	RAG1	1	
+Glomerular Injury	abnormal morphology	Abnormal morphology of renal glomerulus	2.91E-01	 	 	 	 	BMP4	1	
+Liver Necrosis/Cell Death	cell death	Cell death of hepatocytes	4.29E-01	 	 	 	 	FAAH	1	
+Liver Hyperplasia/Hyperproliferation	cancer	Liver cancer	4.73E-01	 	 	 	 	DUSP3,NAALADL2,UCHL1,INSM1,HAGHL,ATP8A2,NCAM2,NALCN,CADM3,SMOC1,RAG1,MAP3K21,SLC45A3,EYA4,PCDH15,TMEM132C,CFTR,GALNT13	18	
+Liver Hyperplasia/Hyperproliferation	liver carcinoma	Liver carcinoma	5.41E-01	 	 	 	 	DUSP3,NAALADL2,INSM1,HAGHL,ATP8A2,NCAM2,NALCN,CADM3,SMOC1,RAG1,MAP3K21,SLC45A3,EYA4,PCDH15,TMEM132C,CFTR,GALNT13	17	
+Cardiac Enlargement	enlargement	Enlargement of heart	1.00E00	 	 	 	 	SCG5,EYA4	2	
+Renal Inflammation, Renal Nephritis	nephritis	Nephritis	1.00E00	 	 	 	 	RAG1	1	
+
+Regulator Effects for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+
+Networks for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+ID	Analysis	Molecules in Network	Score	Focus Molecules	Top Diseases and Functions	
+1	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	ACY3,Abhd1,Akt,BMP4,CFTR,Cdc42,Creb,DUSP3,EDAR,ELP1,ERK1/2,FAAH,GPR85,Histone h3,IL17B,IgG,IgG1,IgG2b,Igg3,Igm,LCP1,LGALS2,LMNB1,MRGPRX1,NAALADL2,NFkB (complex),NSD1,POLR2A,PRR5,RAG1,S100B,SLC22A17,SLC9A5,SPPL2A,TNFRSF13C	37	17	Cell Morphology, Humoral Immune Response, Lymphoid Tissue Structure and Development	
+2	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	ACAA2,ANXA6,ATP8A2,AZGP1,BCL2L1,CADM3,CYB5R2,ETS2,EYA4,FGF9,GPR85,HADH,INKA2,INSM1,LDHB,LPP,MIR17HG,PFKM,PRMT5,PTEN,RAD50,RPL5,RPS18,SCG5,SLC45A3,SMAD6,SMARCA4,SMOC1,STXBP4,TACSTD2,TBPL1,TP53,TP63,Tmsb4x (includes others),UCHL1	21	11	Cancer, Organismal Injury and Abnormalities, Cell Morphology	
+3	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	ABCA1,APC,APOE,Alp,CASQ1,CDKN2A,CNR1,CTNNB1,CYP19A1,DKK1,DNMT3B,EZH2,GALNT13,HMGCR,HSF1,IGHM,KAT5,LGALS3,LHX2,NANOG,NCAM2,OLFM1,PAX7,PCDH15,PECAM1,POU5F1,PRKCB,RGS16,RUNX2,SEMA5A,SIRT1,SOX11,SOX4,SOX9,TRDN	10	6	Tissue Development, Cancer, Cellular Development	
+4	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	TAF6,ZSWIM7	2	1	Developmental Disorder, Hereditary Disorder, Neurological Disease	
+5	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	SUMO2,ZBTB1	2	1	Cell Cycle, Cellular Development, Embryonic Development	
+6	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	CLDN14,CLDN6	2	1	Auditory Disease, Hereditary Disorder, Neurological Disease	
+7	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	4930502E18Rik_NM_029142.1,PCGF6	2	1	Cellular Assembly and Organization, DNA Replication, Recombination, and Repair, Cancer	
+8	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	DNMT3A,ENPP6,PKD1	2	1	Lipid Metabolism, Small Molecule Biochemistry, Cancer	
+9	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	EPS15,FCHO1,GATA2	2	1	Cellular Assembly and Organization, Cellular Function and Maintenance, Cancer	
+10	Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM	FGF23,PDZK1,PTH,SLC34A3	2	1	Cellular Function and Maintenance, Molecular Transport, Small Molecule Biochemistry	
+
+My Lists for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+My Lists	 -log(p-value)	Ratio	Molecules 
+
+Tox Lists for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+Ingenuity Toxicity Lists	 -log(p-value)	Ratio	Molecules 
+Increases Liver Damage	1.48E00	2.22E-02	RAG1,FAAH
+Increases Liver Hepatitis	6.54E-01	1.27E-02	RAG1
+Increases Glomerular Injury	6.39E-01	1.22E-02	BMP4
+Liver Necrosis/Cell Death	5.98E-01	6.54E-03	SCG5,FAAH
+Increases Renal Damage	5.92E-01	1.08E-02	BMP4
+TGF-β Signaling	5.8E-01	1.04E-02	BMP4
+Decreases Transmembrane Potential of Mitochondria and Mitochondrial Membrane	5.23E-01	8.93E-03	LGALS2
+Increases Liver Hyperplasia/Hyperproliferation	4.98E-01	8.33E-03	RAG1
+Hepatic Cholestasis	3.73E-01	5.78E-03	IL17B
+NF-κB Signaling	3.41E-01	5.24E-03	BMP4
+Renal Necrosis/Cell Death	2.96E-01	3.76E-03	RAG1,Cdc42
+Liver Proliferation	2.7E-01	4.15E-03	BMP4
+Cardiac Necrosis/Cell Death	2.38E-01	3.7E-03	S100B
+Cardiac Hypertrophy	0E00	2.84E-03	BMP4
+
+My Pathways for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+My Pathways	 -log(p-value)	Ratio	Molecules 
+
+Analysis Ready Molecules for My Projects->hdMouse_Microarray_Final->Q175_6mo_Glt1_Multiprobe - 2019-05-28 07:27 AM
+ID	Symbol	Expr Log Ratio	Expr p-value
+1429934_at	4930502E18Rik	1.46341270237616	0.0126236959148459
+1418148_at	Abhd1	2.23226901873179	3.88245911289029E-5
+1448539_a_at	ACY3	1.58593393053708	3.1042034971384E-5
+1460294_at	ATP8A2	1.51290834822765	0.00484214565571421
+1422912_at	BMP4	2.62189650734715	1.19929933140281E-5
+1418921_at	CADM3	0.660503487359009	0.035236572703442
+1422598_at	CASQ1	1.27827814357414	0.0110812131663211
+1443941_at	CCDC149	0.750417315503094	0.00195029035767152
+1435807_at	Cdc42	1.39524795668353	6.93429009931043E-5
+1420579_s_at	CFTR	1.19131826935973	0.0246674948683381
+1420345_at	CLDN14	1.22890566900872	0.0145702692804197
+1459448_at	CYB5R2	1.21401847622967	0.0234081240898293
+1425608_at	DUSP3	0.843826375795063	0.0214238267537209
+1439743_at	ELFN2	1.09707904758645	0.00686007002127359
+1438785_at	ENPP6	1.15083684119397	0.0293809763341595
+1436093_at	EPHA10	0.785094765179137	0.0126729423560556
+1456647_a_at	EYA4	1.04914764763509	0.0126729423560556
+1434091_at	FAAH	1.4171761469109	0.00370695769937973
+1436078_at	FCHO1	1.6416292821995	0.00448313440289992
+1419376_at	FIBIN	1.81154950464031	1.35143112305499E-6
+1439899_at	GALNT13	1.68024862735724	0.0293809763341595
+1443190_at	Gm14133	1.71140423122863	2.69232259113516E-4
+1424897_at	GPR85	0.912492841229678	0.0126236959148459
+1428630_x_at	HAGHL	0.599577148722037	0.0122109089827329
+1431693_a_at	IL17B	1.35239504050256	1.59389071211236E-5
+1426987_at	Inafm2	0.463475744461221	0.0234081240898293
+1444723_at	INKA2	1.48384495878	0.00342900343845213
+1455865_at	INSM1	1.4175097652635	3.26521956949342E-4
+1437528_x_at	KIAA1024L	1.32343669617331	0.00669231828940458
+1448160_at	LCP1	1.12956501143428	0.0149765451499705
+1417079_s_at	LGALS2	1.08167109513838	0.0394423593886307
+1423520_at	LMNB1	-1.03910205918741	0.0189395396706037
+1441213_at	MAP3K21	1.57038529060839	6.63935568795482E-4
+1430934_at	NAALADL2	0.784091187322533	0.0266309032033549
+1457423_at	NALCN	1.08409084453275	0.0205603429165098
+1430538_at	Nbdy	0.423918854264826	0.00484214565571421
+1425301_at	NCAM2	0.674954391923277	0.01538316510246
+1426562_a_at	OLFM1	0.994031574976409	0.00804914096549088
+1444317_at	PCDH15	1.57630216537453	0.0357229571448
+1422311_a_at	POLR2A	0.658277910708749	0.0489211661624189
+1450680_at	RAG1	1.38609408100473	0.0228143813826997
+1454715_at	RALYL	1.93220086771194	4.37239167922154E-5
+1419383_at	S100B	0.550258949161268	1.32376755358932E-4
+1423150_at	SCG5	0.396753703849487	0.00484214565571421
+1434776_at	SEMA5A	1.38048202103937	0.0267423161636613
+1439519_at	SLC34A3	1.24514602307046	0.0298908767820428
+1426663_s_at	SLC45A3	1.45532209782267	0.01538316510246
+1448321_at	SMOC1	0.801550988400493	6.66822406902702E-4
+1434292_at	Snhg11	2.11501501117658	0.00119742466334082
+1459122_at	SPEF2	1.67768718651285	0.0303312326713173
+1438698_at	TMEM132C	2.01578504365912	2.50469568237312E-5
+1428113_at	TMTC4	1.08827064625033	8.82469139202815E-6
+1419307_at	TNFRSF13C	2.25958013249807	6.69052910223496E-6
+1448260_at	UCHL1	1.86149400511498	5.88822416792829E-7
+1438110_at	ZBTB1	0.706995504500068	0.0177665952177087
+1428515_at	ZSWIM7	0.450199601779046	0.0298908767820428
+

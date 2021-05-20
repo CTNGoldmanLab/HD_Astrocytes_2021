@@ -1,0 +1,21 @@
+Pathway	ogModule	newModule
+Superpathway of Cholesterol Biosynthesis	2	1
+Metabolism of membrane lipid derivative	2	1
+TCF7L2 Signaling	2	1
+SREBF2 Signaling	2	1
+SREBF1 Signaling	2	1
+Synthesis of lipid	2	1
+Metabolism of cholesterol	2	1
+Morbidity or mortality	2	1
+Quantity of synaptic vesicles	1	2
+Cognition	1	2
+Learning	1	2
+Morphology of nervous system	1	2
+Motor dysfunction or movement disorder	3	3
+TP53 Signaling	3	3
+BDNF Signaling	3	3
+Migration of microvascular endothelial cells	3	3
+Density of dendritic spines	0	4
+Cell-cell contact	0	4
+Development of neurons	0	4
+Axonogenesis	0	4

@@ -1,0 +1,970 @@
+© 2000-2019 QIAGEN. All rights reserved.
+
+Analysis Details for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Workspace	My Projects
+Project	hdMouse_Microarray_Final
+Analysis	R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Date	Mon Oct 21 06:57:53 PDT 2019
+Analysis ID	18427485
+
+Analysis Settings
+Cutoff before duplicate resolution	true
+Resolve duplicate on	Expression logfoldchange
+Color using	Expression logfoldchange
+Cutoff for Expression logfoldchange	--
+Cutoff for Expression pvalue	--
+Reference set	Mouse Genome 430 2.0 Array
+Relationship to include	Direct and Indirect
+Includes Endogenous Chemicals	Yes
+Optional Analyses	My Pathways My List
+Filter Summary	
+Consider only molecules and/or relationships where
+(confidence = Experimentally Observed) AND
+(mol. types = biologic drug OR canonical pathway OR chemical - endogenous mammalian OR chemical - endogenous non-mammalian OR chemical - kinase inhibitor OR chemical - other OR chemical - protease inhibitor OR chemical drug OR chemical reagent OR chemical toxicant OR complex OR cytokine OR disease OR enzyme OR function OR G-protein coupled receptor OR group OR growth factor OR ion channel OR kinase OR ligand-dependent nuclear receptor OR mature microRNA OR microRNA OR other OR peptidase OR phosphatase OR transcription regulator OR translation regulator OR transmembrane receptor OR transporter)
+
+Canonical Pathways for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Ingenuity Canonical Pathways	 -log(p-value)	zScore	Ratio	Molecules
+Glucocorticoid Receptor Signaling	2.57E-01		3.27E-03	STAT1	
+Protein Ubiquitination Pathway	3.1E-01		3.91E-03	USP18	
+Colorectal Cancer Metastasis Signaling	3.32E-01		4.18E-03	STAT1	
+EIF2 Signaling	4.03E-01		5.21E-03	EIF2AK2	
+Gap Junction Signaling	4.12E-01		5.35E-03	TJP2	
+ERK/MAPK Signaling	4.21E-01		5.49E-03	STAT1	
+PPARα/RXRα Activation	4.29E-01		5.62E-03	HELZ2	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.34E-01		5.71E-03	STAT1	
+Sertoli Cell-Sertoli Cell Junction Signaling	4.38E-01		5.78E-03	TJP2	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	4.42E-01		5.85E-03	STAT1	
+Hepatic Cholestasis	4.44E-01		5.88E-03	TJP2	
+NF-κB Signaling	4.51E-01		5.99E-03	EIF2AK2	
+Tight Junction Signaling	4.72E-01		6.37E-03	TJP2	
+Th1 and Th2 Activation Pathway	4.98E-01		6.85E-03	STAT1	
+Granulocyte Adhesion and Diapedesis	5.01E-01		6.90E-03	SDC3	
+IL-15 Production	5.89E-01		8.77E-03	STAT1	
+Renin-Angiotensin Signaling	5.89E-01		8.77E-03	STAT1	
+p38 MAPK Signaling	5.99E-01		9.01E-03	STAT1	
+Pancreatic Adenocarcinoma Signaling	6.2E-01		9.52E-03	STAT1	
+Th1 Pathway	6.38E-01		1.00E-02	STAT1	
+Type I Diabetes Mellitus Signaling	6.46E-01		1.02E-02	STAT1	
+TGF-β Signaling	6.62E-01		1.06E-02	IRF7	
+HIPPO signaling	7.15E-01		1.22E-02	TJP2	
+NF-κB Activation by Viruses	7.2E-01		1.23E-02	EIF2AK2	
+Role of BRCA1 in DNA Damage Response	7.24E-01		1.25E-02	STAT1	
+Prolactin Signaling	7.29E-01		1.27E-02	STAT1	
+IL-3 Signaling	7.39E-01		1.30E-02	STAT1	
+IL-7 Signaling Pathway	7.66E-01		1.39E-02	STAT1	
+Toll-like Receptor Signaling	7.77E-01		1.43E-02	EIF2AK2	
+GM-CSF Signaling	7.83E-01		1.45E-02	STAT1	
+Growth Hormone Signaling	7.94E-01		1.49E-02	STAT1	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	7.94E-01		1.49E-02	STAT1	
+Pyridoxal 5'-phosphate Salvage Pathway	8.13E-01		1.56E-02	EIF2AK2	
+TREM1 Signaling	8.13E-01		1.56E-02	NLRC5	
+T Helper Cell Differentiation	8.19E-01		1.59E-02	STAT1	
+Neuroinflammation Signaling Pathway	8.23E-01		7.58E-03	IRF7,STAT1	
+Thrombopoietin Signaling	8.25E-01		1.61E-02	STAT1	
+CNTF Signaling	8.74E-01		1.82E-02	STAT1	
+EGF Signaling	8.81E-01		1.85E-02	STAT1	
+iNOS Signaling	9.65E-01		2.27E-02	STAT1	
+Oncostatin M Signaling	9.84E-01		2.38E-02	STAT1	
+Pyrimidine Ribonucleotides De Novo Biosynthesis	1E00		2.50E-02	CMPK2	
+Pyrimidine Ribonucleotides Interconversion	1.03E00		2.63E-02	CMPK2	
+IL-9 Signaling	1.1E00		3.12E-02	STAT1	
+Role of JAK2 in Hormone-like Cytokine Signaling	1.11E00		3.23E-02	STAT1	
+Antigen Presentation Pathway	1.17E00		3.70E-02	NLRC5	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	1.2E00		4.00E-02	STAT1	
+IL-22 Signaling	1.22E00		4.17E-02	STAT1	
+Tec Kinase Signaling	1.23E00		1.32E-02	STAT1,STAT2	
+Dendritic Cell Maturation	1.24E00		1.33E-02	STAT1,STAT2	
+Pyrimidine Deoxyribonucleotides De Novo Biosynthesis I	1.27E00		4.76E-02	CMPK2	
+IL-12 Signaling and Production in Macrophages	1.47E00		1.80E-02	JMJD6,STAT1	
+Salvage Pathways of Pyrimidine Ribonucleotides	1.65E00		2.25E-02	CMPK2,EIF2AK2	
+Death Receptor Signaling	1.68E00		2.33E-02	PARP12,PARP14	
+Role of Lipids/Lipid Rafts in the Pathogenesis of Influenza	1.69E00		1.25E-01	RSAD2	
+PDGF Signaling	1.69E00		2.35E-02	EIF2AK2,STAT1	
+JAK/Stat Signaling	1.75E00		2.53E-02	STAT1,STAT2	
+FLT3 Signaling in Hematopoietic Progenitor Cells	1.76E00		2.56E-02	STAT1,STAT2	
+T Cell Exhaustion Signaling Pathway	2.27E00		2.19E-02	IRF9,STAT1,STAT2	
+Retinoic acid Mediated Apoptosis Signaling	2.31E00		5.00E-02	PARP12,PARP14	
+Role of PKR in Interferon Induction and Antiviral Response	2.31E00		5.00E-02	EIF2AK2,STAT1	
+UVA-Induced MAPK Signaling	2.73E00		3.19E-02	PARP12,PARP14,STAT1	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	2.87E00		9.52E-02	STAT1,STAT2	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	3.4E00		2.99E-02	DDX58,EIF2AK2,IRF7,OAS2	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	3.44E00	2.23606797749979	2.10E-02	IFIT2,IRF7,IRF9,STAT1,STAT2	
+Role of RIG1-like Receptors in Antiviral Innate Immunity	4.15E00		9.68E-02	DDX58,DHX58,IRF7	
+Interferon Signaling	6.05E00		1.38E-01	IFI35,IRF9,STAT1,STAT2	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	1.23E01	2.1213203435596424	1.60E-01	DDX58,DHX58,IFIT2,IRF7,IRF9,STAT1,STAT2,ZBP1	
+
+Upstream Regulators for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Analysis	ID	Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Notes	Bias Term	Bias-corrected z-score	p-value of overlap	Target molecules in dataset	Mechanistic Network	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF7	1.812	transcription regulator	Activated	4.891	bias	0.636	 	1.64E-42	CMPK2,DDX58,DHX58,HELZ2,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,Mx1,OAS2,OASL,Oasl2,PARP12,PARP14,RSAD2,RTP4,STAT1,STAT2,Trim30a/Trim30d,USP18,XAF1,ZBP1	IFNB1,IL1B,IRF3,IRF7,IRF9,Interferon alpha,SIRT1,SPI1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PNPT1	 	enzyme	Inhibited	-4.333	bias	-0.518	 	5.54E-39	CMPK2,DDX58,EIF2AK2,IFI16,IFIT1B,IRF7,Irgm1,LGALS3BP,Oasl2,PARP12,PARP14,RNF213,RTP4,Sp100,STAT1,STAT2,Trim30a/Trim30d,USP18,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF3	 	transcription regulator	Activated	4.785	bias	0.490	2.443	4.16E-38	CMPK2,DDX58,DHX58,EIF2AK2,HELZ2,IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,Irgm1,Mx1,NLRC5,OAS2,OASL,Oasl2,PARP12,PARP14,RSAD2,STAT1,STAT2,Trim30a/Trim30d,USP18,ZBP1	IFN type 1,IFNA1/IFNA13,IFNB1,IL1B,IRF3,IRF7,SIRT1,SPI1,STAT2,STAT3,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Ifnar	 	group	Activated	4.488	bias	0.592	 	1.63E-37	DDX58,EIF2AK2,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,Mx1,NLRC5,OAS2,OASL,RNF213,RSAD2,Sp100,STAT1,STAT2,USP18,XAF1,ZBP1	IFNB1,IFNG,IRF1,IRF3,IRF5,IRF7,IRF9,Ifnar,STAT1,STAT2,STAT3,poly rI:rC-RNA	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNB1	 	cytokine	Activated	4.040	 	0.233	3.098	2.91E-31	CMPK2,DDX58,DHX58,EIF2AK2,IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,Mx1,OAS2,Oasl2,PARP12,PARP14,RSAD2,STAT1,STAT2,Trim30a/Trim30d,USP18,XAF1,ZBP1	IFNAR1,IFNB1,IRF3,IRF7,IRF9,Interferon alpha,JAK1,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	STAT1	0.706	transcription regulator	Activated	4.406	bias	0.439	2.472	1.12E-30	CMPK2,EIF2AK2,HERC6,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,Mx1,NLRC5,OAS2,OASL,Oasl2,RNF213,RSAD2,RTP4,SLFN5,STAT1,STAT2,USP18,XAF1,ZBP1	IFNG,IRF1,IRF9,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ACKR2	 	g-protein coupled receptor	Inhibited	-3.873	bias	-0.574	 	1.07E-29	DDX58,DHX58,EIF2AK2,IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,OAS2,OASL,Oasl2,RSAD2,STAT1,STAT2,USP18	ACKR2,Immunoglobulin,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM24	 	transcription regulator	Inhibited	-4.186	bias	-0.591	 	1.60E-29	CMPK2,DDX58,DHX58,HERC6,Ifi27l2a/Ifi27l2b,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,LGALS3BP,OASL,PARP12,RTP4,STAT1,STAT2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNL1	 	cytokine	Activated	3.960	bias	0.589	 	1.69E-29	CMPK2,DDX58,EIF2AK2,HERC6,IFI35,IFIT2,IRF9,LGALS3BP,OAS2,OASL,RSAD2,RTP4,STAT1,STAT2,USP18,XAF1	IFNL1,IRF9,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Interferon alpha	 	group	Activated	4.307	bias	0.415	2.519	2.36E-29	DDX58,DHX58,EIF2AK2,HELZ2,HERC6,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Mx1,OAS2,Oasl2,PARP12,PARP14,RNF213,RSAD2,RTP4,SLFN5,STAT1,STAT2,USP18,ZBP1	IFNB1,IRF3,IRF7,IRF9,Interferon alpha,JAK1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFN Beta	 	group	Activated	4.022	bias	0.483	2.082	3.11E-27	DDX58,EIF2AK2,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Mx1,OAS2,OASL,RSAD2,STAT1,STAT2,USP18,XAF1,ZBP1	IFN Beta,IRF1,IRF7,IRF9,Ifnar,MAPK1,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNAR1	 	transmembrane receptor	Activated	3.257	bias	0.403	1.944	1.34E-25	CMPK2,EIF2AK2,IFI16,IFIT1B,IFIT2,IRF7,Mx1,OAS2,OASL,Oasl2,PARP12,RSAD2,RTP4,Sp100,STAT1,USP18,XAF1	IFNAR1,IFNB1,IL1B,IRF3,IRF9,MYC,SIRT1,SPI1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PTGER4	 	g-protein coupled receptor	Inhibited	-4.088	 	-0.139	-3.521	1.06E-24	CMPK2,DDX58,HERC6,IFI16,IFI35,IFIT1B,IFIT2,IRF7,Irgm1,Mx1,PARP14,RNF213,RSAD2,RTP4,SLFN5,USP18,XAF1	IFNG,IRF1,MYC,PTGER4,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	STAT2	0.577	transcription regulator	Activated	2.374	bias	0.371	1.493	6.78E-24	IFI35,IFIT1B,IFIT2,IRF7,IRF9,Mx1,OAS2,Oasl2,RSAD2,RTP4,STAT1,USP18,ZBP1	IFNAR1,IRF9,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAVS	 	other	Activated	3.563	bias	0.582	 	2.28E-23	CMPK2,DDX58,DHX58,IFIT1B,IFIT2,IRF7,OAS2,OASL,Oasl2,PARP12,RSAD2,STAT1,STAT2	DDX58,IFNB1,IRF3,IRF5,IRF7,MAVS,STAT1,STAT3,TBK1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA2	 	cytokine	Activated	4.043	bias	0.521	 	2.49E-22	CMPK2,DDX58,EIF2AK2,HERC6,IFI16,IFI35,IFIT2,IRF7,IRF9,LGALS3BP,OAS2,PARP12,RSAD2,STAT1,USP18,XAF1,ZBP1	IFNA2,MAPK1,MYC,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	poly rI:rC-RNA	 	biologic drug	Activated	4.396	bias	0.457	2.387	6.52E-21	DDX58,DHX58,EIF2AK2,IFI16,IFIT1B,IFIT2,IRF7,IRF9,Mx1,NLRC5,OAS2,OASL,Oasl2,PARP14,RSAD2,Sp100,STAT1,STAT2,Trim30a/Trim30d,ZBP1	IFN Beta,IFN type 1,IFNB1,IRF1,IRF3,IRF7,MAVS,STAT1,STAT2,STAT3,STAT4,poly rI:rC-RNA	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SIRT1	 	transcription regulator	Inhibited	-4.359	bias	-0.268	-3.192	2.06E-20	CMPK2,DDX58,DHX58,HELZ2,IFIT1B,IRF7,Irgm1,LGALS3BP,NLRC5,OAS2,Oasl2,PARP12,PARP14,RNF213,RSAD2,RTP4,STAT1,Trim30a/Trim30d,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RNASEH2A	 	enzyme	 	 	 	 	 	2.86E-20	DDX58,IFI16,Ifi27l2a/Ifi27l2b,IFI35,IFIT1B,IFIT2,IRF7,IRF9,OASL,RSAD2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PRL	 	cytokine	Activated	4.123	bias	0.415	2.413	4.87E-20	CMPK2,DDX58,DHX58,EIF2AK2,HELZ2,HERC6,IFI35,IRF7,IRF9,OAS2,PARP12,PARP14,RSAD2,STAT1,STAT2,USP18,XAF1	IRF1,IRF7,MAPK1,PRL,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF5	 	transcription regulator	Activated	3.397	bias	0.441	1.900	2.09E-19	CMPK2,DDX58,DHX58,IFIT2,IRF7,OAS2,OASL,Oasl2,PARP12,RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DNASE2	 	enzyme	 	-1.982	bias	-0.636	 	2.69E-19	DHX58,IFIT1B,IRF7,Mx1,Oasl2,RSAD2,RTP4,Sp100,USP18,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF1	 	transcription regulator	Activated	3.516	bias	0.455	1.918	1.37E-18	CMPK2,DDX58,EIF2AK2,HELZ2,IFI35,IFIT2,IRF7,IRF9,OAS2,OASL,RSAD2,STAT1,STAT2,XAF1	IFN Beta,IFNG,IRF1,IRF3,IRF7,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFN type 1	 	group	Activated	3.109	bias	0.405	1.850	3.80E-18	DDX58,DHX58,EIF2AK2,IFI16,IFIT1B,IFIT2,Mx1,OASL,STAT1,STAT2	IFN type 1,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA1/IFNA13	 	cytokine	Activated	3.087	bias	0.382	1.908	5.05E-18	DHX58,EIF2AK2,IFIT2,IRF7,Mx1,OAS2,RSAD2,STAT1,STAT2,ZBP1	IFNA1/IFNA13,IRF9,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	STAT3	 	transcription regulator	Inhibited	-2.863	bias	0.308	-4.127	5.84E-18	CMPK2,EIF2AK2,HERC6,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,Mx1,OAS2,OASL,RSAD2,SLFN5,STAT1,STAT2,USP18,XAF1	IFNAR1,IFNG,IL1B,IRF1,IRF3,IRF9,MYC,SIRT1,SPI1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL21	 	cytokine	Activated	3.606	bias	0.455	1.967	4.69E-17	CMPK2,EIF2AK2,HERC6,IFI16,IFIT1B,IFIT2,IRF7,Irgm1,OAS2,OASL,RSAD2,STAT2,USP18	IFNG,IL21,IRF1,IRF9,Immunoglobulin,MYC,MYD88,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNG	 	cytokine	Activated	4.706	bias	0.257	3.495	8.92E-17	CMPK2,DDX58,EIF2AK2,HERC6,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,LGALS3BP,Mx1,NLRC5,OAS2,OASL,PARP14,RSAD2,RTP4,SLFN5,STAT1,STAT2,USP18,XAF1	IFNG,IL21,IRF1,IRF7,IRF9,MAPK1,MYC,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DDX58	0.602	enzyme	Activated	2.297	bias	0.566	 	1.69E-16	DDX58,EIF2AK2,IFI35,IFIT1B,IFIT2,IRF7,Mx1,RSAD2,STAT1,STAT2	DDX58,IFN type 1,IRF3,IRF7,IRF9,Interferon alpha,MAVS,MYC,STAT1,STAT2,STAT3,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Ifn	 	group	Activated	3.249	bias	0.450	1.788	3.63E-16	DDX58,DHX58,EIF2AK2,IFI16,IRF7,Mx1,OAS2,OASL,RSAD2,STAT1,ZBP1	Ifn,Ifnar,STAT1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NKX2-3	 	transcription regulator	Inhibited	-3.606	 	0.027	-3.704	1.26E-15	CMPK2,DDX58,DHX58,EIF2AK2,HELZ2,PARP12,PARP14,RNF213,RTP4,STAT1,STAT2,USP18,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TLR9	 	transmembrane receptor	Activated	3.406	bias	0.494	1.723	1.26E-15	IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Mx1,OAS2,Oasl2,RSAD2,STAT1,STAT2,USP18	IFNB1,IRF1,IRF3,IRF7,IRF9,Interferon alpha,MYC,STAT1,STAT2,STAT3,TLR7,TLR9	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Irgm1	0.600	other	Inhibited	-3.000	bias	-0.636	 	1.56E-15	IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,OAS2,OASL,RSAD2,USP18	IL1B,IRF3,Irgm1,SIRT1,SPI1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TLR3	 	transmembrane receptor	Activated	2.778	bias	0.579	 	2.34E-15	CMPK2,DDX58,DHX58,EIF2AK2,IFI16,IFIT2,IRF7,Mx1,OASL,Oasl2,RSAD2,STAT1,USP18	IFN type 1,IFNB1,IRF3,IRF5,IRF7,STAT3,STAT4,TICAM1,TLR3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFN alpha/beta	 	group	Activated	3.120	bias	0.495	1.576	3.48E-15	IFI16,Ifi27l2a/Ifi27l2b,IFIT2,IRF7,Irgm1,Mx1,RSAD2,Sp100,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SOCS1	 	other	Inhibited	-3.119	bias	-0.514	 	6.29E-15	DDX58,IFI16,IFIT1B,IFIT2,IRF7,Mx1,OAS2,Oasl2,RSAD2,STAT1,USP18	IFNB1,IRF3,IRF7,IRF9,MYC,SOCS1,STAT1,STAT2,STAT3,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ribavirin	 	chemical drug	Activated	2.828	bias	0.354	1.828	7.57E-15	DDX58,EIF2AK2,IFIT2,IRF7,OASL,RSAD2,STAT1,USP18	IFNG,IRF1,STAT1,STAT3,ribavirin	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	FADD	 	other	Activated	3.118	bias	0.297	2.192	1.34E-14	DDX58,DHX58,EIF2AK2,IFIT1B,IFIT2,IRF7,Mx1,Sp100,STAT1,STAT2	FADD,IRF3,IRF7,MAVS	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	STAT6	 	transcription regulator	Inhibited	-2.949	 	0.070	-3.218	3.60E-14	CMPK2,DHX58,EIF2AK2,IFI16,IFIT1B,IRF7,IRF9,Irgm1,LGALS3BP,Mx1,OASL,RNF213,STAT2,Trim30a/Trim30d,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL1RN	 	cytokine	Inhibited	-3.162	bias	-0.470	-1.675	4.36E-14	DDX58,HERC6,IRF7,IRF9,OAS2,OASL,RSAD2,RTP4,STAT2,USP18	IFNG,IFNL1,IL1RN,IRF1,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF9	0.754	transcription regulator	 	1.987	 	0.076	1.835	4.92E-14	IFIT2,IRF7,OAS2,Oasl2,RTP4,STAT1,STAT2,ZBP1	IRF7,IRF9,Interferon alpha,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAPK1	 	kinase	Inhibited	-3.719	 	0.034	-3.845	5.09E-14	DDX58,EIF2AK2,IFI16,IFI35,IFIT2,IRF7,IRF9,LGALS3BP,OAS2,OASL,PARP12,STAT1,STAT2,USP18	IRF1,MAPK1,MYC,PRL,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	APP	 	other	Activated	4.088	 	0.208	3.238	5.34E-14	CMPK2,DDX58,HERC6,HPCA,IFI16,IFI35,IFIT1B,IFIT2,IRF7,Irgm1,Mx1,Nrgn,PARP14,RNF213,RSAD2,RTP4,SLFN5,USP18,XAF1	APP,MYC,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TREX1	 	enzyme	Inhibited	-2.388	bias	-0.521	 	1.18E-13	IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,OASL,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TMEM173	 	other	Activated	2.586	bias	0.636	 	1.21E-13	IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IRF7,Mx1,OASL,RSAD2,USP18	IRF3,IRF5,IRF7,STAT1,TBK1,TMEM173	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	lipopolysaccharide	 	chemical drug	Activated	4.821	bias	0.287	3.439	1.36E-13	CMPK2,DDX58,DHX58,EIF2AK2,IFI16,IFI35,IFIT1B,IFIT2,IRF7,IRF9,Irgm1,LGALS3BP,Mx1,NLRC5,OAS2,OASL,PARP12,PARP14,RSAD2,STAT1,STAT2,Trim30a/Trim30d,USP18,XAF1	IFN Beta,IFNB1,IFNG,IRF1,IRF3,IRF7,MAPK1,STAT1,STAT2,STAT3,lipopolysaccharide	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CNOT7	 	transcription regulator	 	 	 	 	 	1.42E-13	CMPK2,HERC6,IFI35,LGALS3BP,OAS2,PARP12,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SASH1	 	other	Activated	3.000	bias	0.636	 	1.71E-13	CMPK2,HELZ2,IFIT1B,IFIT2,IRF7,OASL,RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CGAS	 	enzyme	Activated	2.412	bias	0.636	 	2.36E-13	IFIT1B,IFIT2,IRF7,Mx1,RSAD2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TICAM1	 	other	Activated	3.109	bias	0.603	 	5.95E-13	CMPK2,DDX58,IFI16,IFIT1B,IFIT2,IRF7,Irgm1,Mx1,OASL,RSAD2	IRF3,IRF5,IRF7,MYC,MYD88,NFATC2,SPI1,STAT1,STAT3,TBK1,TICAM1,TLR4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TBK1	 	kinase	 	0.399	bias	0.310	-0.392	5.99E-13	CMPK2,IFIT1B,IFIT2,IRF7,Mx1,OAS2,OASL,Oasl2,RSAD2	IRF3,IRF5,IRF7,IRF9,STAT1,STAT2,STAT3,TBK1,TMEM173	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SAMSN1	 	other	Activated	3.000	bias	0.607	 	1.31E-12	CMPK2,HELZ2,IFIT1B,IFIT2,IRF7,OASL,RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	FZD9	 	g-protein coupled receptor	Activated	2.425	bias	0.636	 	2.03E-12	IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IRF7,Oasl2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	JAK1	 	kinase	Activated	2.236	bias	0.566	 	2.35E-12	EIF2AK2,IFIT2,IRF7,IRF9,Oasl2,STAT1,STAT2,USP18	IRF9,JAK1,MAPK1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TLR7	 	transmembrane receptor	Activated	2.975	bias	0.611	 	6.20E-12	IFI35,IFIT1B,IRF7,IRF9,Mx1,OAS2,RSAD2,STAT1,STAT2	IFNA1/IFNA13,IRF1,IRF3,IRF7,IRF9,Interferon alpha,MYC,STAT1,STAT2,STAT3,TLR7	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DOCK8	 	other	Activated	2.828	bias	0.636	 	6.92E-12	CMPK2,HELZ2,IFIT1B,IFIT2,IRF7,RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	oblimersen	 	biologic drug	Activated	2.646	bias	0.576	 	1.51E-11	IFI16,IFI35,IRF7,OAS2,OASL,RSAD2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TLR4	 	transmembrane receptor	Activated	2.571	bias	0.443	1.431	1.95E-11	CMPK2,HELZ2,IFI16,IFIT1B,IFIT2,IRF7,Irgm1,Mx1,OASL,RSAD2,STAT1,STAT2	IRF3,IRF7,MYC,NFATC2,STAT1,STAT3,TICAM1,TLR4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TGM2	 	enzyme	Activated	3.162	bias	0.267	2.319	4.11E-11	IFI35,IFIT2,IRF9,OAS2,OASL,PARP14,RNF213,SLFN5,STAT1,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	E. coli B4 lipopolysaccharide	 	chemical toxicant	Activated	3.248	bias	0.397	1.960	7.80E-11	DDX58,IFI16,IFI35,IFIT1B,Mx1,Oasl2,RSAD2,RTP4,Trim30a/Trim30d,USP18,ZBP1	E. coli B4 lipopolysaccharide,IRF3,IRF7,SOCS1,STAT2,STAT3,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mitoxantrone	 	chemical drug	 	 	 	 	 	1.17E-10	IFI16,IFIT2,IRF7,Mx1,OAS2,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG ODN 2006	 	chemical reagent	Activated	2.621	bias	0.382	1.620	1.43E-10	IFI35,IFIT2,IRF7,IRF9,OASL,RSAD2,STAT1	CpG ODN 2006,IRF1,IRF7,MYC,MYD88,STAT1,STAT3,TLR9	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAPKAP1	 	other	Activated	2.236	bias	0.545	 	2.14E-10	IFI16,IFIT2,Mx1,OAS2,SLFN5	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SPI1	 	transcription regulator	Activated	2.828	bias	0.280	2.036	2.41E-10	CMPK2,HELZ2,IFIT1B,IFIT2,IRF7,IRF9,OASL,PARP12,RSAD2,USP18	IL1B,IRF3,SIRT1,SPI1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA4	 	cytokine	Activated	2.449	bias	0.636	 	2.72E-10	IFIT2,Irgm1,OASL,RSAD2,USP18,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL4	 	cytokine	Inhibited	-3.450	bias	0.331	-4.666	4.27E-10	CMPK2,DHX58,EIF2AK2,IFI16,IFIT1B,IRF7,IRF9,Irgm1,LGALS3BP,Mx1,OASL,RNF213,STAT1,STAT2,Trim30a/Trim30d,ZBP1	IL4,STAT6	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	tretinoin	 	chemical - endogenous mammalian	Activated	3.652	 	0.223	2.702	5.36E-10	DDX58,DHX58,EIF2AK2,IFI16,IFI35,IFIT2,IRF9,LGALS3BP,Nrgn,OAS2,OASL,PARP14,RNF213,RTP4,SLFN5,STAT1,STAT2,USP18,XAF1	IFNG,IRF1,MAPK1,STAT1,STAT3,tretinoin	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TNK1	 	kinase	Activated	2.236	bias	0.636	 	6.59E-10	IFI16,IFIT1B,IFIT2,IRF7,OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNLR1	 	transmembrane receptor	 	 	 	 	 	9.29E-10	CMPK2,IFIT1B,IFIT2,IRF7,OASL,RSAD2	IFNLR1,MYC,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EIF2AK2	1.021	kinase	Activated	2.611	bias	0.557	 	1.04E-09	DDX58,EIF2AK2,IFI35,LGALS3BP,PARP12,STAT1,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NFATC2	 	transcription regulator	Activated	3.000	bias	0.314	2.058	1.21E-09	CMPK2,HELZ2,IFIT1B,IFIT2,IRF7,OASL,RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNL4	 	cytokine	Activated	2.000	bias	0.636	 	1.56E-09	DDX58,DHX58,OAS2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNL3	 	cytokine	Activated	2.230	bias	0.636	 	3.54E-09	DDX58,Mx1,RSAD2,STAT1,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNAR2	 	transmembrane receptor	 	 	 	 	 	1.23E-08	DDX58,Mx1,OAS2,USP18,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	JAK1/2	 	group	 	0.128	bias	0.616	 	1.73E-08	CTXN1,EIF2AK2,HPCA,IRF7,Nrgn,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAP3K7	 	kinase	 	0.816	 	0.233	0.245	2.09E-08	DDX58,IFIT2,IRF7,OAS2,OASL,XAF1	IRF5,MAP3K7	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	imiquimod	 	chemical drug	Activated	2.443	bias	0.515	 	3.26E-08	IFI35,IRF7,OASL,RNF213,RSAD2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	JAK	 	group	Activated	2.236	bias	0.467	1.193	5.12E-08	DDX58,EIF2AK2,IFIT2,RSAD2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PARP9	 	enzyme	 	1.980	bias	0.561	 	1.04E-07	IFIT2,IRF7,OAS2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	1,2-dioleoyloxy-3-(trimethylammonium)propane	 	chemical reagent	 	 	 	 	 	1.79E-07	IFIT1B,IRF7,Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ELAVL1	 	other	Activated	2.449	bias	0.439	1.375	2.15E-07	IFI16,IRF9,Irgm1,LGALS3BP,OAS2,STAT1,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IKBKE	 	kinase	 	1.300	bias	0.429	0.345	2.34E-07	IFI16,IFIT2,IRF7,RSAD2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mir-21	 	microrna	Inhibited	-2.777	bias	-0.446	-1.537	3.20E-07	DHX58,IFI16,Irgm1,NLRC5,OAS2,Sp100,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ISGF3	 	complex	 	 	 	 	 	3.57E-07	IFIT2,IRF7,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	dexamethasone	 	chemical drug	Inhibited	-2.965	 	0.078	-3.243	3.81E-07	CMPK2,DDX58,HELZ2,Ifi27l2a/Ifi27l2b,IFI35,IFIT1B,IFIT2,IRF7,IRF9,LGALS3BP,OASL,PARP14,RSAD2,STAT1,STAT2,Trim30a/Trim30d,USP18,XAF1	IFNG,IRF1,PRL,STAT1,STAT3,dexamethasone	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	Activated	2.429	bias	0.636	 	3.83E-07	CMPK2,IFIT1B,IFIT2,OASL,RSAD2,SLFN5	IRF3,IRF7,NFATC2,SPI1,STAT3,TLR4,salmonella minnesota R595 lipopolysaccharides	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNE	 	cytokine	Activated	2.000	bias	0.636	 	8.74E-07	IFIT2,STAT1,USP18,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL10RA	 	transmembrane receptor	Inhibited	-2.828	 	0.039	-2.939	1.05E-06	IFI16,IRF7,Irgm1,NLRC5,RNF213,RSAD2,STAT1,ZBP1	IL10RA,IRF9,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MYD88	 	other	Activated	2.537	bias	0.574	 	1.25E-06	CMPK2,IFIT1B,IFIT2,IRF7,OASL,RSAD2,USP18	IL1B,IRF3,IRF7,MYC,MYD88,NFATC2,SIRT1,SPI1,STAT1,STAT3,TLR4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFIH1	 	enzyme	 	 	 	 	 	1.96E-06	IRF7,Mx1,OAS2,RSAD2	IFIH1,IRF3,IRF5,IRF7,STAT1,TBK1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PML	 	transcription regulator	Activated	2.425	 	-0.014	2.460	2.11E-06	HERC6,IFI35,IRF7,Mx1,OAS2,STAT1	MYC,PML,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TCR	 	complex	 	 	 	 	 	2.69E-06	ARPP21,DDX58,DHX58,IFIT2,IRF7,OASL,RSAD2,STAT1	IRF5,MAP3K7,NFATC2,TCR	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PAF1	 	other	Activated	2.000	bias	0.636	 	2.77E-06	DDX58,HELZ2,OAS2,OASL	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NSD2	 	enzyme	 	 	 	 	 	3.09E-06	IFIT1B,IRF7,Mx1,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	stallimycin	 	biologic drug	 	1.954	bias	0.603	 	3.09E-06	IFI16,IFIT2,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	6-aminopyrazolopyrimidine derivative compound II	 	chemical - kinase inhibitor	 	 	 	 	 	3.88E-06	IFIT1B,IRF7,Oasl2	6-aminopyrazolopyrimidine derivative compound II,IRF3,IRF5,IRF7,STAT1,TBK1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	bromodeoxyuridine	 	chemical drug	 	1.954	bias	0.608	 	6.16E-06	IFI16,IFIT2,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNK	 	cytokine	 	 	 	 	 	6.39E-06	EIF2AK2,STAT1,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	pegintron	 	biologic drug	 	 	 	 	 	7.01E-06	DDX58,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	phosphatidylethanolamine	 	chemical - endogenous mammalian	 	 	 	 	 	7.01E-06	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	poly dA-dT	 	chemical reagent	 	 	 	 	 	7.98E-06	RSAD2,STAT1,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NRAS	 	enzyme	Inhibited	-2.425	bias	-0.250	-1.818	8.47E-06	IFI16,IFI35,IFIT1B,Irgm1,STAT1,USP18	MYC,NRAS,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IKZF3	 	transcription regulator	Inhibited	-2.000	bias	-0.537	 	1.19E-05	DDX58,IRF7,RNF213,RTP4	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF8	 	transcription regulator	 	 	 	 	 	1.35E-05	DDX58,IFIT1B,IFIT2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG ODN 2216	 	chemical reagent	 	 	 	 	 	1.42E-05	IFIT1B,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	STAT4	 	transcription regulator	Activated	2.449	bias	0.636	 	2.30E-05	DDX58,IFIT1B,IFIT2,Mx1,STAT1,Trim30a/Trim30d	DDX58,STAT3,STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFI16	2.363	transcription regulator	 	1.969	bias	0.558	 	3.22E-05	DDX58,IFI16,Mx1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	FCER1G	 	transmembrane receptor	 	 	 	 	 	3.49E-05	IFIT2,Mx1,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	VCAN	 	other	Activated	2.219	 	0.050	2.109	3.85E-05	IFIT2,OAS2,PARP14,STAT1,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CC-122	 	chemical drug	 	 	 	 	 	4.19E-05	DDX58,IRF7	CC-122,IKZF3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	poly(dG-dC)	 	chemical reagent	 	 	 	 	 	4.19E-05	RSAD2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	GAPDH	 	enzyme	 	 	 	 	 	5.01E-05	IFIT2,OAS2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TNFSF10	 	cytokine	Activated	2.000	 	0.086	1.828	5.25E-05	EIF2AK2,IFI16,IRF9,STAT1	MAPK1,STAT3,TNFSF10	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	filgrastim	 	biologic drug	Inhibited	-2.626	 	-0.110	-2.337	5.65E-05	DDX58,IFIT2,OASL,PARP14,RSAD2,STAT1,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	aldesleukin	 	biologic drug	 	 	 	 	 	6.92E-05	IFI35,IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	pristane	 	chemical toxicant	 	 	 	 	 	7.65E-05	IFI16,IRF7,Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ZNF395	 	other	 	 	 	 	 	1.04E-04	IFI16,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BTK	 	kinase	Inhibited	-2.000	 	0.123	-2.247	1.19E-04	IFI35,IRF9,OAS2,STAT1	BTK,MAPK1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mir-155	 	microrna	 	-1.960	bias	-0.413	-1.151	1.35E-04	IRF7,IRF9,Mx1,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA17	 	cytokine	 	 	 	 	 	1.46E-04	EIF2AK2,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Stat1-Stat2	 	complex	 	 	 	 	 	1.46E-04	EIF2AK2,IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	UBA7	 	enzyme	 	 	 	 	 	1.46E-04	DDX58,DHX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NCOA2	 	transcription regulator	 	1.961	bias	0.387	1.202	1.57E-04	IFIT1B,IFIT2,Mx1,OASL	NCOA2,NR3C1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Immunoglobulin	 	complex	 	-1.912	 	-0.002	-1.906	1.74E-04	EIF2AK2,IFIT1B,IFIT2,IRF7,Mx1,OAS2,RSAD2	Immunoglobulin,MYC,MYD88,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF2	 	transcription regulator	 	 	 	 	 	1.76E-04	EIF2AK2,IFI35,IRF7,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG ODN 1668	 	chemical reagent	 	 	 	 	 	1.78E-04	IRF7,STAT1,STAT2	CpG ODN 1668,IRF9,STAT1,STAT2	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL12A	 	cytokine	 	 	 	 	 	1.78E-04	IRF9,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL1B	 	cytokine	Activated	2.380	bias	0.270	1.737	1.84E-04	CMPK2,HELZ2,IFI16,IFIT1B,IRF7,OAS2,RSAD2,STAT1,USP18	IL1B,IL21,IRF3,IRF7,MYC,MYD88,SPI1,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MYC	 	transcription regulator	 	-1.036	bias	0.254	-1.741	2.09E-04	IFI16,IFI35,IFIT2,IRF7,IRF9,OASL,Oasl2,RSAD2,STAT1,USP18	MYC,STAT1,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SNCA	 	enzyme	 	-0.447	 	0.084	-0.634	2.46E-04	CTXN1,HPCA,IRF7,Nrgn,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL12B	 	cytokine	 	 	 	 	 	2.51E-04	IRF9,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TET2	 	enzyme	Inhibited	-2.000	bias	0.324	-2.648	2.75E-04	CMPK2,IFI16,IFIT2,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PCBP2	 	other	 	 	 	 	 	3.11E-04	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MUC1	 	other	 	 	 	 	 	3.41E-04	IFIT1B,OASL,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ATXN3	 	peptidase	 	 	 	 	 	3.80E-04	IFIT1B,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	fontolizumab	 	biologic drug	 	 	 	 	 	3.80E-04	IFI35,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CREBBP	 	transcription regulator	 	 	 	 	 	4.11E-04	IFIT1B,LGALS3BP,RSAD2,RTP4,SCN4B,USP18	CREBBP,EP300	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	decitabine	 	chemical drug	Activated	2.131	 	0.209	1.562	4.52E-04	EIF2AK2,IFI16,IFI35,IFIT2,IRF7,RTP4,STAT1,TJP2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF4	 	transcription regulator	 	-1.987	bias	-0.287	-1.416	4.72E-04	IRF7,IRF9,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	OSMR	 	transmembrane receptor	 	 	 	 	 	5.25E-04	DHX58,Irgm1,Oasl2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SB203580	 	chemical - kinase inhibitor	 	-1.633	bias	-0.516	 	5.52E-04	EIF2AK2,HPCA,IFI35,IFIT2,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Map3k7	 	kinase	 	 	 	 	 	6.07E-04	CMPK2,IFIT2,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAPK9	 	kinase	 	-0.655	bias	0.281	-1.207	6.66E-04	IFI16,IRF9,LGALS3BP,PARP14	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EP300	 	transcription regulator	 	 	 	 	 	6.91E-04	IFIT1B,LGALS3BP,RSAD2,RTP4,SCN4B,USP18	CREBBP,EP300	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAP2K6	 	kinase	 	 	 	 	 	6.97E-04	IFIT2,IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	miR-199a-5p (and other miRNAs w/seed CCAGUGU)	 	mature microrna	 	 	 	 	 	7.96E-04	CMPK2,RSAD2,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	2-aminopurine	 	chemical reagent	 	 	 	 	 	8.21E-04	DDX58,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mezerein	 	chemical - endogenous non-mammalian	 	 	 	 	 	8.21E-04	IRF9,OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BRCA1	 	transcription regulator	 	 	 	 	 	8.49E-04	DDX58,IFIT2,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Ifn gamma	 	complex	 	 	 	 	 	1.10E-03	EIF2AK2,STAT1,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL12 (complex)	 	complex	 	 	 	 	 	1.14E-03	IFIT1B,IFIT2,Mx1,Trim30a/Trim30d	IL12 (complex),STAT4	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BCOR	 	transcription regulator	 	 	 	 	 	1.16E-03	DDX58,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM21	 	enzyme	 	 	 	 	 	1.16E-03	IRF7,Trim30a/Trim30d	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	fucoidin	 	chemical reagent	 	 	 	 	 	1.16E-03	IFIT1B,IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RARA	 	ligand-dependent nuclear receptor	 	-0.447	 	0.013	-0.476	1.63E-03	IFIT1B,LGALS3BP,RSAD2,RTP4,STAT1	CREBBP,EP300,RARA	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	KDM6B	 	enzyme	 	 	 	 	 	1.71E-03	OASL,Oasl2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	isobutylmethylxanthine	 	chemical toxicant	 	 	 	 	 	1.77E-03	IFIT2,IRF7,STAT1,STAT2	MAPK1,STAT3,isobutylmethylxanthine	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RNASEL	 	enzyme	 	 	 	 	 	1.86E-03	EIF2AK2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	USP18	2.255	peptidase	 	 	 	 	 	1.86E-03	IRF7,IRF9	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CHUK	 	kinase	 	1.969	bias	0.514	 	1.94E-03	IFI16,IFI35,IFIT1B,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TNF	 	cytokine	Activated	2.196	 	0.214	1.500	2.01E-03	DDX58,EIF2AK2,HPCA,IFI16,IFIT1B,IRF7,Mx1,OAS2,OASL,PARP14,STAT1	IFN Beta,IRF1,IRF7,Immunoglobulin,SOCS1,STAT1,STAT2,STAT3,STAT4,TNF	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PLK2	 	kinase	 	 	 	 	 	2.19E-03	CMPK2,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NPC2	 	transporter	 	 	 	 	 	2.36E-03	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PLK4	 	kinase	 	 	 	 	 	2.36E-03	CMPK2,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TAB1	 	enzyme	 	 	 	 	 	2.36E-03	IRF7,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG 10101	 	chemical drug	 	 	 	 	 	2.68E-03	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ETP-46464	 	chemical reagent	 	 	 	 	 	2.68E-03	OASL	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PTGES2	 	transcription regulator	 	 	 	 	 	2.68E-03	IRF9	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SLC15A4	 	transporter	 	 	 	 	 	2.68E-03	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	UBE2L6	 	enzyme	 	 	 	 	 	2.68E-03	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	USP13	 	peptidase	 	 	 	 	 	2.68E-03	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	recombinant interferon alpha	 	biologic drug	 	 	 	 	 	2.68E-03	RNF213	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BAK1	 	other	 	 	 	 	 	2.72E-03	IRF7,Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRAK1	 	kinase	 	 	 	 	 	2.72E-03	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	cigarette smoke	 	chemical toxicant	 	1.951	bias	0.426	1.121	2.93E-03	OAS2,OASL,Oasl2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	interferon beta-1a	 	biologic drug	 	 	 	 	 	3.01E-03	IFI35,IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL27	 	cytokine	 	 	 	 	 	3.25E-03	EIF2AK2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Insulin	 	group	 	 	 	 	 	4.24E-03	IFIT2,IRF7,LGALS3BP,STAT1,STAT2	Insulin,JAK1,MAPK1,STAT1,STAT2,STAT3	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RARB	 	ligand-dependent nuclear receptor	 	 	 	 	 	4.44E-03	DDX58,STAT1,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	 	 	 	4.74E-03	IRF7,PARP14,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IKBKG	 	kinase	 	 	 	 	 	5.06E-03	IFI16,IFIT1B,IRF7	IKBKG,IRF3,TMEM173	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RICTOR	 	other	 	1.964	bias	-0.468	2.883	5.06E-03	IFI16,IFIT2,Mx1,OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	rosiglitazone	 	chemical drug	 	-1.000	 	0.220	-1.440	5.20E-03	IFIT2,IRF7,OAS2,STAT1,STAT2	JAK1,MAPK1,STAT1,STAT2,STAT3,rosiglitazone	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	9-benzyl-8-hydroxy-2-(2-methoxyethoxy)adenine	 	chemical reagent	 	 	 	 	 	5.35E-03	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BMS-986126	 	chemical - kinase inhibitor	 	 	 	 	 	5.35E-03	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	COLEC12	 	transmembrane receptor	 	 	 	 	 	5.35E-03	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFN alpha receptor	 	complex	 	 	 	 	 	5.35E-03	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	KHDRBS2	 	other	 	 	 	 	 	5.35E-03	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MED6	 	transcription regulator	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MID2	 	other	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MKNK2	 	kinase	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MLST8	 	other	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SCARA3	 	transmembrane receptor	 	 	 	 	 	5.35E-03	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SCARA5	 	transmembrane receptor	 	 	 	 	 	5.35E-03	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM13	 	enzyme	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM32	 	transcription regulator	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM36	 	enzyme	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM5	 	enzyme	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM50	 	other	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM58	 	other	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM66	 	transcription regulator	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM67	 	other	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM9	 	enzyme	 	 	 	 	 	5.35E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	26s Proteasome	 	complex	 	 	 	 	 	6.22E-03	DDX58,IFI35,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PDCD1	 	phosphatase	 	 	 	 	 	6.45E-03	IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NR3C1	 	ligand-dependent nuclear receptor	Inhibited	-2.000	 	0.062	-2.125	6.63E-03	IFIT1B,IFIT2,JMJD6,Mx1,OASL,Trim30a/Trim30d	NCOA2,NR3C1	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NLRX1	 	other	 	 	 	 	 	6.73E-03	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	alefacept	 	biologic drug	 	 	 	 	 	7.02E-03	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EBI3	 	cytokine	 	 	 	 	 	7.31E-03	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MSC	 	transcription regulator	 	 	 	 	 	7.92E-03	IRF7,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Eif2	 	complex	 	 	 	 	 	8.01E-03	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	FSCN1	 	other	 	 	 	 	 	8.01E-03	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	HERC5	 	enzyme	 	 	 	 	 	8.01E-03	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	KPNA1	 	transporter	 	 	 	 	 	8.01E-03	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SATB1	 	transcription regulator	 	 	 	 	 	8.08E-03	HELZ2,IRF7,XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	levodopa	 	chemical - endogenous mammalian	Inhibited	-2.449	 	0.068	-2.616	8.13E-03	ARPP21,C2CD2L,CTXN1,HPCA,Oasl2,SCN4B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	BAX	 	transporter	 	 	 	 	 	8.22E-03	IRF7,Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG ODN 1826	 	chemical reagent	 	 	 	 	 	8.54E-03	IRF7,PARP14	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	UCP1	 	transporter	 	 	 	 	 	9.27E-03	DDX58,IFIT1B,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EFNA1	 	other	 	 	 	 	 	1.02E-02	HERC6,IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MAP2K3	 	kinase	 	 	 	 	 	1.05E-02	IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DNAJB4	 	other	 	 	 	 	 	1.07E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	GPR17	 	g-protein coupled receptor	 	 	 	 	 	1.07E-02	XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	HLA-B	 	transmembrane receptor	 	 	 	 	 	1.07E-02	OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL12RB1	 	transmembrane receptor	 	 	 	 	 	1.07E-02	OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Ifna4	 	other	 	 	 	 	 	1.07E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NLRP11	 	other	 	 	 	 	 	1.07E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SLCO1C1	 	transporter	 	 	 	 	 	1.07E-02	Nrgn	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	poly rI:rC-RNA HMW	 	chemical reagent	 	 	 	 	 	1.07E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	polyinosine-polycytidylic acid/polyethylenimine formulation	 	chemical reagent	 	 	 	 	 	1.07E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	sulfamethoxazole/trimethoprim	 	chemical drug	 	 	 	 	 	1.07E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	 	 	1.25E-02	RSAD2,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRAK4	 	kinase	 	 	 	 	 	1.27E-02	IFIT1B,IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IRF3 dimer	 	complex	 	 	 	 	 	1.33E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ISG15	 	other	 	 	 	 	 	1.33E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	KRAS	 	enzyme	 	-1.109	 	0.037	-1.192	1.43E-02	EIF2AK2,IRF9,STAT1,STAT2,Trim30a/Trim30d	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TCF4	 	transcription regulator	 	 	 	 	 	1.46E-02	DDX58,IFI16,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SOCS3	 	phosphatase	 	 	 	 	 	1.47E-02	IFIT2,OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RELA	 	transcription regulator	 	 	 	 	 	1.50E-02	IFIT1B,IRF7,Mx1,OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Tlr	 	group	 	 	 	 	 	1.51E-02	IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	R5020	 	chemical reagent	 	 	 	 	 	1.55E-02	LGALS3BP,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	5R-hydroxytriptolide	 	chemical drug	 	 	 	 	 	1.60E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA10	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA14	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA16	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA21	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA5	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA6	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA7	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNA8	 	cytokine	 	 	 	 	 	1.60E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SLC19A1	 	transporter	 	 	 	 	 	1.60E-02	Trim30a/Trim30d	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM8	 	other	 	 	 	 	 	1.60E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mito-TEMPO	 	chemical reagent	 	 	 	 	 	1.60E-02	Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SOX1	 	transcription regulator	 	 	 	 	 	1.63E-02	Oasl2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	H2AFY	 	other	 	 	 	 	 	1.85E-02	IRF7,TJP2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NR1H3	 	ligand-dependent nuclear receptor	 	 	 	 	 	1.86E-02	IFIT2,IRF7,ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	G3BP1	 	enzyme	 	 	 	 	 	1.86E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	HDAC11	 	transcription regulator	 	 	 	 	 	1.86E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RP 73401	 	chemical toxicant	 	 	 	 	 	1.86E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM25	 	transcription regulator	 	 	 	 	 	1.86E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SOX3	 	transcription regulator	 	 	 	 	 	1.90E-02	Oasl2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	REL	 	transcription regulator	 	 	 	 	 	1.90E-02	IFIT1B,PARP14,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	GMNN	 	transcription regulator	 	 	 	 	 	2.03E-02	Oasl2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	prednisolone	 	chemical drug	 	 	 	 	 	2.07E-02	IFIT1B,Irgm1,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NPC1	 	transporter	 	 	 	 	 	2.08E-02	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CYTOR	 	other	 	 	 	 	 	2.12E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DDB1	 	other	 	 	 	 	 	2.12E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	FBXO42	 	other	 	 	 	 	 	2.12E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SAMHD1	 	enzyme	 	 	 	 	 	2.12E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TBL1X	 	transcription regulator	 	 	 	 	 	2.12E-02	USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TBL1XR1	 	transcription regulator	 	 	 	 	 	2.12E-02	USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PDLIM2	 	other	 	 	 	 	 	2.27E-02	LGALS3BP,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IKZF1	 	transcription regulator	 	 	 	 	 	2.30E-02	IFI16,RNF213,RTP4	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NFKB1	 	transcription regulator	 	 	 	 	 	2.30E-02	IFIT1B,Mx1,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ANGPTL4	 	other	 	 	 	 	 	2.39E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CHRNA3	 	transmembrane receptor	 	 	 	 	 	2.39E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MTORC2	 	complex	 	 	 	 	 	2.39E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RNASEH2B	 	enzyme	 	 	 	 	 	2.39E-02	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TAP1	 	transporter	 	 	 	 	 	2.39E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ZBP1	1.575	other	 	 	 	 	 	2.39E-02	Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Histone h3	 	group	 	 	 	 	 	2.62E-02	Ifi27l2a/Ifi27l2b,IRF7,RSAD2,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DLK1	 	other	 	 	 	 	 	2.65E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IFNW1	 	cytokine	 	 	 	 	 	2.65E-02	ZBP1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SLC6A1	 	transporter	 	 	 	 	 	2.65E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TRIM38	 	other	 	 	 	 	 	2.65E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	VASP	 	other	 	 	 	 	 	2.65E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	aphidicolin	 	chemical toxicant	 	 	 	 	 	2.65E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	estriol	 	chemical - endogenous mammalian	 	 	 	 	 	2.65E-02	SDC3	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	GFI1	 	transcription regulator	 	 	 	 	 	2.67E-02	EIF2AK2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	sirolimus	 	chemical drug	Inhibited	-2.000	bias	-0.379	-1.241	2.82E-02	EIF2AK2,IRF7,IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	2'3'-cyclic guanosine monophosphate-adenosine monophosphate	 	chemical - endogenous mammalian	 	 	 	 	 	2.91E-02	RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MVP	 	other	 	 	 	 	 	2.91E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PIK3R2	 	kinase	 	 	 	 	 	2.91E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CLOCK	 	transcription regulator	 	 	 	 	 	2.92E-02	JMJD6,SCN4B,Trim30a/Trim30d	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL6	 	cytokine	 	1.951	bias	0.335	1.298	3.13E-02	IFI16,IFIT1B,IFIT2,IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	AFAP1-AS1	 	other	 	 	 	 	 	3.17E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DDB2	 	other	 	 	 	 	 	3.17E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NELFB	 	other	 	 	 	 	 	3.17E-02	Ifi27l2a/Ifi27l2b	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PLCG2	 	enzyme	 	 	 	 	 	3.17E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RMRP	 	other	 	 	 	 	 	3.17E-02	RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DUSP1	 	phosphatase	 	 	 	 	 	3.22E-02	CMPK2,HELZ2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PRKCA	 	kinase	 	 	 	 	 	3.22E-02	OASL,RSAD2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	CpG oligonucleotide	 	chemical drug	 	 	 	 	 	3.27E-02	JMJD6,Trim30a/Trim30d	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	3M-002	 	chemical reagent	 	 	 	 	 	3.43E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RYR2	 	ion channel	 	 	 	 	 	3.43E-02	SCN4B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	aroclor 1254	 	chemical toxicant	 	 	 	 	 	3.43E-02	Nrgn	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PARP1	 	enzyme	 	 	 	 	 	3.56E-02	LGALS3BP,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RAS	 	group	 	 	 	 	 	3.68E-02	STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DNAJC3	 	other	 	 	 	 	 	3.69E-02	Nrgn	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	IL18R1	 	transmembrane receptor	 	 	 	 	 	3.69E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NLRC5	1.483	transcription regulator	 	 	 	 	 	3.69E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Ptprd	 	phosphatase	 	 	 	 	 	3.69E-02	IFI35	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ZNF148	 	transcription regulator	 	 	 	 	 	3.69E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DHX9	 	enzyme	 	 	 	 	 	3.94E-02	XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	KIF1B	 	transporter	 	 	 	 	 	3.94E-02	XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RAG1	 	enzyme	 	 	 	 	 	3.94E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	melphalan	 	chemical drug	 	 	 	 	 	3.94E-02	XAF1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TERT	 	enzyme	 	 	 	 	 	4.10E-02	IFI16,IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	OSM	 	cytokine	 	1.941	 	0.215	1.524	4.15E-02	IFI35,IRF7,IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	3M-011	 	chemical reagent	 	 	 	 	 	4.20E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	DPH5	 	enzyme	 	 	 	 	 	4.20E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EIF2S1	 	translation regulator	 	 	 	 	 	4.20E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Smad2/3-Smad4	 	complex	 	 	 	 	 	4.20E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	Z-LLL-CHO	 	chemical - protease inhibitor	 	 	 	 	 	4.42E-02	IRF7,STAT1,STAT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	3-deoxy-2-octulosonic acid(2)-lipid A	 	chemical - endogenous non-mammalian	 	 	 	 	 	4.46E-02	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EMD	 	other	 	 	 	 	 	4.46E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	LAMA5	 	other	 	 	 	 	 	4.46E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MSR1	 	transmembrane receptor	 	 	 	 	 	4.46E-02	IFIT1B	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ORMDL3	 	other	 	 	 	 	 	4.46E-02	OAS2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	TOR1A	 	enzyme	 	 	 	 	 	4.46E-02	Nrgn	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	leptomycin B	 	chemical drug	 	 	 	 	 	4.46E-02	IFIT2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ssRNA40	 	chemical reagent	 	 	 	 	 	4.46E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SP110	 	transcription regulator	 	 	 	 	 	4.48E-02	IRF9,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	mibolerone	 	chemical drug	 	 	 	 	 	4.48E-02	IRF7,USP18	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	HNRNPA1	 	enzyme	 	 	 	 	 	4.72E-02	EIF2AK2	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PARG	 	enzyme	 	 	 	 	 	4.72E-02	LGALS3BP	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	RPA1	 	other	 	 	 	 	 	4.72E-02	ADGRG5	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	SGPL1	 	enzyme	 	 	 	 	 	4.72E-02	DDX58	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EBF1	 	transcription regulator	 	 	 	 	 	4.74E-02	IRF7,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	geldanamycin	 	chemical - endogenous non-mammalian	 	 	 	 	 	4.74E-02	IFIT2,STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	ACKR1	 	g-protein coupled receptor	 	 	 	 	 	4.97E-02	IFI16	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	EIF4EBP2	 	translation regulator	 	 	 	 	 	4.97E-02	IRF7	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	MLX	 	transcription regulator	 	 	 	 	 	4.97E-02	LGALS3BP	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	NUMB	 	other	 	 	 	 	 	4.97E-02	IFI16	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	PTPN22	 	phosphatase	 	 	 	 	 	4.97E-02	Mx1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	zidovudine	 	chemical drug	 	 	 	 	 	4.97E-02	STAT1	 	
+R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	 	P38 MAPK	 	group	 	 	 	 	 	5.00E-02	IRF7,STAT1,TJP2	 	
+
+Causal Networks for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+
+Diseases and Bio Functions for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Antimicrobial Response, Inflammatory Response	antiviral response	Antiviral response	4.35E-20	Increased	2.189	bias	1.194	EIF2AK2,RSAD2,DHX58,IFIT1B,OASL,STAT2,OAS2,DDX58,IFIT2,Ifi27l2a/Ifi27l2b,RTP4,IRF7,Mx1,STAT1,Oasl2,IFI16	16	
+Immunological Disease	systemic autoimmune syndrome	Systemic autoimmune syndrome	6.66E-18	 	 	 	 	EIF2AK2,RSAD2,IFIT1B,NLRC5,IFIT2,USP18,Trim30a/Trim30d,Ifi27l2a/Ifi27l2b,RTP4,IRF7,XAF1,SLFN5,STAT1,PARP14,LGALS3BP,SDC3,PARP12,DHX58,OASL,STAT2,OAS2,DDX58,HELZ2,HERC6,Irgm1,Oasl2,ZBP1,IFI16	28	
+Connective Tissue Disorders, Immunological Disease, Inflammatory Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	systemic lupus erythematosus	Systemic lupus erythematosus	1.26E-12	 	 	 	 	PARP12,EIF2AK2,RSAD2,DHX58,OASL,NLRC5,OAS2,DDX58,USP18,HERC6,IRF7,STAT1,ZBP1,IFI16	14	
+Endocrine System Disorders, Gastrointestinal Disease, Immunological Disease, Metabolic Disease, Organismal Injury and Abnormalities	insulin-dependent diabetes mellitus	Insulin-dependent diabetes mellitus	1.65E-12	 	 	 	 	IFIT1B,STAT2,IFIT2,Trim30a/Trim30d,Ifi27l2a/Ifi27l2b,RTP4,HERC6,Irgm1,IRF7,XAF1,STAT1,Oasl2,ZBP1,PARP14,IFI16	15	
+Infectious Diseases	replication	Replication of Herpesviridae	6.85E-12	 	-1.913	 	-1.297	PARP12,RSAD2,IRF9,OASL,STAT1,STAT2,DDX58,ZBP1	8	
+Infectious Diseases	infection	Infection of mammalia	5.53E-09	Decreased	-2.605	bias	-1.450	EIF2AK2,IRF9,DHX58,Irgm1,IRF7,OASL,STAT1,STAT2,DDX58,IFIT2,USP18	11	
+Infectious Diseases	replication	Replication of virus	1.12E-08	Decreased	-3.047	bias	-4.010	PARP12,EIF2AK2,RSAD2,IRF9,OASL,NLRC5,STAT2,DDX58,IRF7,Mx1,STAT1,Oasl2,ZBP1	13	
+Infectious Diseases	tuberculosis	Tuberculosis	1.12E-08	 	 	 	 	Irgm1,IRF7,STAT1,STAT2,IFI35,OAS2,IFIT2,IFI16	8	
+Infectious Diseases	replication	Replication of vesicular stomatitis virus	1.18E-08	Decreased	-2.273	bias	-1.300	PARP12,IRF9,OASL,Oasl2,STAT2,DDX58	6	
+Protein Synthesis	quantity	Quantity of IL-12 in blood	2.86E-08	 	-1.342	 	-0.976	DHX58,Irgm1,STAT1,IFIT2,LGALS3BP	5	
+Infectious Diseases	replication	Replication of RNA virus	3.33E-08	Decreased	-2.853	bias	-3.840	PARP12,EIF2AK2,RSAD2,IRF9,IRF7,Mx1,STAT1,OASL,Oasl2,NLRC5,STAT2,DDX58	12	
+Connective Tissue Disorders, Inflammatory Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	rheumatic disease	Rheumatic Disease	4.56E-08	 	 	 	 	PARP12,EIF2AK2,DHX58,RSAD2,OASL,NLRC5,OAS2,DDX58,USP18,HELZ2,HERC6,IRF7,SLFN5,STAT1,SCN4B,ZBP1,IFI16,SDC3	18	
+Inflammatory Response	innate immune response	Innate immune response	6.72E-08	 	1.982	bias	 	EIF2AK2,IRF7,Mx1,STAT1,NLRC5,DDX58,ZBP1,IFIT2	8	
+Cell Signaling	replication	Replication of viral replicon	9.41E-08	Decreased	-2.207	bias	-1.556	EIF2AK2,RSAD2,Mx1,OASL,IFI16	5	
+Dermatological Diseases and Conditions, Immunological Disease, Organismal Injury and Abnormalities	pemphigus foliaceus	Pemphigus foliaceus	2.95E-07	 	 	 	 	EIF2AK2,RSAD2,STAT1,OASL,OAS2	5	
+Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	psoriasis	Psoriasis	3.13E-07	 	 	 	 	RTP4,HERC6,RSAD2,IRF7,STAT1,OASL,IFI35,OAS2,DDX58,LGALS3BP,IFI16	11	
+Cancer, Dermatological Diseases and Conditions, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	cutaneous T-cell lymphoma	Cutaneous T-cell lymphoma	4.41E-07	 	 	 	 	RSAD2,IRF7,OASL,STAT1,IFI35,OAS2	6	
+Endocrine System Disorders, Gastrointestinal Disease, Metabolic Disease, Organismal Injury and Abnormalities	diabetes mellitus	Diabetes mellitus	7.24E-07	 	 	 	 	RSAD2,IFIT1B,STAT2,IFIT2,Trim30a/Trim30d,Ifi27l2a/Ifi27l2b,RTP4,HERC6,IRF7,Irgm1,XAF1,STAT1,Oasl2,PARP14,ZBP1,IFI16	16	
+Metabolic Disease, Organismal Injury and Abnormalities	glucose metabolism disorder	Glucose metabolism disorder	2.62E-06	 	 	 	 	EIF2AK2,RSAD2,IFIT1B,STAT2,IFIT2,Trim30a/Trim30d,Ifi27l2a/Ifi27l2b,RTP4,HERC6,IRF7,Irgm1,XAF1,STAT1,Oasl2,PARP14,ZBP1,IFI16	17	
+Antimicrobial Response, Inflammatory Response	antiviral response	Antiviral response of cells	4.54E-06	 	1.982	bias	1.252	EIF2AK2,DHX58,STAT1,DDX58	4	
+Infectious Diseases	replication	Replication of Simian virus 5 strain W3a	6.61E-06	 	 	 	 	IRF9,STAT2	2	
+Infectious Diseases	replication	Replication of human parainfluenza virus	6.61E-06	 	 	 	 	IRF9,STAT2	2	
+Infectious Diseases	infection	Viral Infection	9.06E-06	Decreased	-3.124	bias	-4.716	PARP12,EIF2AK2,IRF9,DHX58,RSAD2,OASL,NLRC5,STAT2,OAS2,DDX58,IFIT2,IRF7,Mx1,STAT1,Oasl2,IFI35,ZBP1	17	
+Protein Synthesis	quantity	Quantity of IFNG in blood	9.80E-06	 	-1.941	 	-1.596	DHX58,Irgm1,STAT1,LGALS3BP	4	
+Cell Cycle, Gene Expression	binding	Binding of interferon-stimulated response element	1.09E-05	 	 	 	 	IRF9,STAT1,DDX58	3	
+Cell Death and Survival	apoptosis	Apoptosis of fibrosarcoma cell lines	1.52E-05	 	 	 	 	EIF2AK2,STAT1,STAT2,DDX58	4	
+Antimicrobial Response, Cell-To-Cell Signaling and Interaction, Connective Tissue Development and Function, Inflammatory Response	antiviral response	Antiviral response of fibroblasts	1.98E-05	 	 	 	 	STAT1,DDX58	2	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of lymphoma cell lines	1.98E-05	 	 	 	 	STAT1,DDX58	2	
+Infectious Diseases	replication	Replication of human herpesvirus 1	2.11E-05	 	 	 	 	IRF9,OASL,STAT2	3	
+Inflammatory Response	interferon response	Interferon response	2.80E-05	 	 	 	 	EIF2AK2,IRF7,DDX58	3	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	mature T-cell neoplasm	Mature T-cell neoplasm	5.15E-05	 	 	 	 	RSAD2,IRF7,STAT1,OASL,STAT2,IFI35,OAS2,IFIT2	8	
+Infectious Diseases	replication	Replication of Flaviviridae	5.43E-05	 	-1.922	 	-1.969	EIF2AK2,RSAD2,OASL,DDX58	4	
+Infectious Diseases	infection	Infection of fibrosarcoma cell lines	6.58E-05	 	 	 	 	STAT1,STAT2	2	
+Infectious Diseases	replication	Replication of Myxoma virus	6.58E-05	 	 	 	 	EIF2AK2,STAT1	2	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	T-cell non-Hodgkin disease	T-cell non-Hodgkin lymphoma	6.62E-05	 	 	 	 	RSAD2,IRF7,STAT1,OASL,STAT2,IFI35,OAS2,IFIT2	8	
+Infectious Diseases	replication	Replication of Paramyxoviridae	1.10E-04	 	 	 	 	IRF9,OASL,STAT2	3	
+Infectious Diseases	replication	Replication of Human cytomegalovirus	1.38E-04	 	 	 	 	RSAD2,ZBP1	2	
+Protein Synthesis	quantity	Quantity of cytokine	1.48E-04	 	-1.190	 	-1.136	DHX58,Irgm1,STAT1,IFIT2,LGALS3BP,HELZ2	6	
+Hematological Disease, Immunological Disease	primary antiphospholipid antibody syndrome	Primary antiphospholipid antibody syndrome	1.63E-04	 	 	 	 	STAT1,OAS2,LGALS3BP	3	
+Infectious Diseases	replication	Replication of Influenza A virus	1.81E-04	Decreased	-2.178	bias	-3.222	EIF2AK2,RSAD2,Mx1,STAT1,NLRC5,DDX58	6	
+Neurological Disease, Organismal Injury and Abnormalities	calcification	Calcification of brain	1.83E-04	 	 	 	 	STAT1,USP18	2	
+Infectious Diseases	infection	Infection by chlamydia	2.35E-04	 	 	 	 	Irgm1,STAT1	2	
+Organismal Survival	survival	Survival of organism	2.78E-04	 	1.213	 	0.580	DHX58,RSAD2,IRF7,Irgm1,Mx1,STAT1,NLRC5,STAT2,DDX58,IFI16	10	
+Gene Expression	transactivation	Transactivation of RNA	3.66E-04	 	1.724	bias	0.962	EIF2AK2,IRF9,IRF7,STAT1,STAT2,DDX58,IFI16,JMJD6	8	
+Cell Cycle, Cellular Growth and Proliferation	antiproliferative response	Antiproliferative response of cells	5.07E-04	 	 	 	 	STAT1,STAT2	2	
+Connective Tissue Disorders, Infectious Diseases, Organismal Injury and Abnormalities	infection	Infection of fibroblasts	5.07E-04	 	 	 	 	EIF2AK2,DDX58	2	
+Protein Synthesis	quantity	Quantity of IL-12b in blood	5.07E-04	 	 	 	 	STAT1,IFIT2	2	
+Inflammatory Response	type I interferon response	Type I interferon response	5.07E-04	 	 	 	 	IRF7,DDX58	2	
+Infectious Diseases	replication	Replication of flavivirus	5.90E-04	 	 	 	 	RSAD2,OASL	2	
+Infectious Diseases	replication	Replication of Murine herpesvirus 4	6.80E-04	 	 	 	 	PARP12,DDX58	2	
+Infectious Diseases	replication	Replication of Hepatitis C virus	7.62E-04	 	 	 	 	EIF2AK2,RSAD2,DDX58	3	
+Cell Death and Survival, DNA Replication, Recombination, and Repair	fragmentation	Fragmentation of genomic DNA	7.75E-04	 	 	 	 	EIF2AK2,STAT1	2	
+Cellular Growth and Proliferation	cytostasis	Cytostasis of tumor cell lines	9.74E-04	 	1.452	bias	0.941	EIF2AK2,STAT1,DDX58,IFI16	4	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	activation	Activation of natural killer T lymphocytes	9.85E-04	 	 	 	 	STAT1,DDX58	2	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	non-Hodgkin disease	Non-Hodgkin lymphoma	1.00E-03	 	 	 	 	RSAD2,IRF7,STAT1,ARPP21,OASL,STAT2,IFI35,OAS2,RNF213,DDX58,IFIT2	11	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition	1.02E-03	 	1.490	 	1.154	Irgm1,STAT1,DDX58,IFI16	4	
+Cancer, Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	skin carcinoma	Skin carcinoma	1.11E-03	 	 	 	 	HERC6,DHX58,RSAD2,IRF7,STAT1,OASL,NLRC5,IFI35,OAS2,RNF213,CMPK2	11	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	lymphoma	Lymphoma	1.29E-03	 	 	 	 	RSAD2,IRF7,STAT1,ARPP21,OASL,STAT2,IFI35,OAS2,RNF213,DDX58,PARP14,IFIT2	12	
+Cell Cycle	replication	Replication of cells	1.30E-03	 	 	 	 	IRF7,Irgm1,STAT1	3	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of tumor cell lines	1.44E-03	 	 	 	 	STAT1,DDX58,IFI16	3	
+Cancer, Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	basal cell carcinoma	Basal cell carcinoma	1.45E-03	 	 	 	 	RSAD2,IRF7,STAT1,OASL,NLRC5,IFI35,OAS2	7	
+Cellular Growth and Proliferation	cytostasis	Cytostasis	1.61E-03	Increased	2.088	 	1.613	EIF2AK2,Irgm1,STAT1,DDX58,IFI16	5	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of T lymphocytes	1.71E-03	 	 	 	 	RSAD2,STAT1,STAT2,DDX58,USP18,JMJD6	6	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Morphology	number	Number of activated T lymphocyte	1.76E-03	 	 	 	 	STAT1,DDX58	2	
+Protein Synthesis	quantity	Quantity of protein in blood	1.93E-03	 	-0.483	 	-0.353	DHX58,Irgm1,STAT1,IFIT2,LGALS3BP,SDC3,HELZ2	7	
+Cellular Development, Cellular Growth and Proliferation	proliferation	Proliferation of fibrosarcoma cell lines	2.07E-03	 	 	 	 	STAT1,STAT2	2	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	hematopoiesis	Hematopoiesis of phagocytes	2.19E-03	 	 	 	 	IRF7,STAT1,IFI16,USP18	4	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	development	Development of TREG cells	2.23E-03	 	 	 	 	STAT1,DDX58	2	
+Cancer, Hematological Disease, Organismal Injury and Abnormalities	hyperplasia	Hyperplasia of hematopoietic progenitor cells	2.23E-03	 	 	 	 	Irgm1,STAT1	2	
+Cell Cycle, Gene Expression	binding	Binding of E box motif	2.57E-03	 	 	 	 	STAT1,IFI16	2	
+Infectious Diseases	activation	Activation of hepatitis B virus	2.60E-03	 	 	 	 	STAT1	1	
+Organismal Development	aging	Aging of brain	2.60E-03	 	 	 	 	EIF2AK2	1	
+Cell Cycle, Cellular Growth and Proliferation	antiproliferative response	Antiproliferative response of fibrosarcoma cell lines	2.60E-03	 	 	 	 	STAT2	1	
+Antimicrobial Response, Cell-To-Cell Signaling and Interaction, Inflammatory Response	antiviral response	Antiviral response of macrophages	2.60E-03	 	 	 	 	DDX58	1	
+Cell Morphology, Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	architecture	Architecture of junctional complexes	2.60E-03	 	 	 	 	TJP2	1	
+Cell Cycle, Reproductive System Development and Function	G2/M phase transition	Arrest in G2/M phase transition of gonadal cell lines	2.60E-03	 	 	 	 	EIF2AK2	1	
+Hereditary Disorder, Infectious Diseases, Organismal Injury and Abnormalities	autosomal dominant atypical mycobacteriosis	Autosomal dominant atypical mycobacteriosis	2.60E-03	 	 	 	 	STAT1	1	
+Hereditary Disorder, Infectious Diseases, Organismal Injury and Abnormalities	autosomal recessive susceptibility to mycobacterial and viral infections	Autosomal recessive susceptibility to mycobacterial and viral infections	2.60E-03	 	 	 	 	STAT1	1	
+Cell Death and Survival	cell death	Cell death of satellite cells	2.60E-03	 	 	 	 	SDC3	1	
+Carbohydrate Metabolism, Lipid Metabolism, Small Molecule Biochemistry	conjugation	Conjugation of phosphatidylethanolamine	2.60E-03	 	 	 	 	Irgm1	1	
+Cancer, Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation, Organismal Injury and Abnormalities, Tumor Morphology	contact growth inhibition	Contact growth inhibition of acute promyelocytic leukemia cells	2.60E-03	 	 	 	 	DDX58	1	
+Cell Cycle	G0/G1 phase transition	Delay in G0/G1 phase transition of leukemia cell lines	2.60E-03	 	 	 	 	STAT1	1	
+Dermatological Diseases and Conditions, Hereditary Disorder, Immunological Disease, Infectious Diseases, Organismal Injury and Abnormalities	familial candidiasis type 7	Familial candidiasis type 7	2.60E-03	 	 	 	 	STAT1	1	
+Cellular Growth and Proliferation	growth	Growth of insect cells	2.60E-03	 	 	 	 	EIF2AK2	1	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	immunodeficiency 31A	Immunodeficiency 31A	2.60E-03	 	 	 	 	STAT1	1	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	immunodeficiency 39	Immunodeficiency 39	2.60E-03	 	 	 	 	IRF7	1	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	immunodeficiency 44	Immunodeficiency 44	2.60E-03	 	 	 	 	STAT2	1	
+Inflammatory Disease, Inflammatory Response, Neurological Disease, Organismal Injury and Abnormalities	inflammation	Inflammation of forebrain	2.60E-03	 	 	 	 	IRF9	1	
+Antimicrobial Response	inhibition	Inhibition of Reoviridae	2.60E-03	 	 	 	 	EIF2AK2	1	
+Cardiovascular Disease, Developmental Disorder, Hereditary Disorder, Organismal Injury and Abnormalities	long-QT syndrome 10	Long-QT syndrome 10	2.60E-03	 	 	 	 	SCN4B	1	
+Hematological Disease	lymphomyeloid failure	Lymphomyeloid failure	2.60E-03	 	 	 	 	Irgm1	1	
+Nervous System Development and Function, Organ Morphology, Organismal Development	morphology	Morphology of lamina III	2.60E-03	 	 	 	 	SDC3	1	
+Cardiovascular Disease, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	moyamoya disease type 2	Moyamoya disease type 2	2.60E-03	 	 	 	 	RNF213	1	
+Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of dUMP	2.60E-03	 	 	 	 	CMPK2	1	
+Drug Metabolism, Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of floxuridine	2.60E-03	 	 	 	 	CMPK2	1	
+Cancer, Organismal Injury and Abnormalities	head and neck squamous cell carcinoma	Poorly differentiated head and neck squamous cell carcinoma	2.60E-03	 	 	 	 	DDX58	1	
+Gastrointestinal Disease, Hepatic System Disease, Hereditary Disorder, Organismal Injury and Abnormalities	progressive familial intrahepatic cholestasis type 4	Progressive familial intrahepatic cholestasis type 4	2.60E-03	 	 	 	 	TJP2	1	
+Cellular Growth and Proliferation	proliferation	Proliferation of Leishmania amazonensis (WHOM/BR/75/Josefa)	2.60E-03	 	 	 	 	EIF2AK2	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Organismal Development, Tissue Development	proliferation	Proliferation of metanephric mesenchymal cells	2.60E-03	 	 	 	 	STAT1	1	
+Connective Tissue Disorders, Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	pseudo-TORCH syndrome type 2	Pseudo-TORCH syndrome type 2	2.60E-03	 	 	 	 	USP18	1	
+Tissue Morphology	quantity	Quantity of Francisella novicida U112	2.60E-03	 	 	 	 	STAT1	1	
+Drug Metabolism	removal	Removal of cisplatin	2.60E-03	 	 	 	 	EIF2AK2	1	
+Infectious Diseases	replication	Replication of Thogoto virus	2.60E-03	 	 	 	 	Mx1	1	
+Infectious Diseases	resistance to Encephalomyocarditis virus	Resistance to Encephalomyocarditis virus	2.60E-03	 	 	 	 	OAS2	1	
+Cell Cycle	S phase	S phase of satellite cells	2.60E-03	 	 	 	 	SDC3	1	
+Cell-To-Cell Signaling and Interaction	sensitization	Sensitization of myeloma cell lines	2.60E-03	 	 	 	 	PARP14	1	
+Cardiovascular Disease, Connective Tissue Disorders, Developmental Disorder, Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	Singleton-Merten syndrome type 2	Singleton-Merten syndrome type 2	2.60E-03	 	 	 	 	DDX58	1	
+Cancer, Cell Death and Survival, Organismal Injury and Abnormalities, Tumor Morphology	survival	Survival of myeloma cells	2.60E-03	 	 	 	 	PARP14	1	
+RNA Post-Transcriptional Modification	unwinding	Unwinding of siRNA	2.60E-03	 	 	 	 	DDX58	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of Th17 cells	2.92E-03	 	 	 	 	STAT1,DDX58,USP18	3	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	hematopoiesis	Hematopoiesis of mononuclear leukocytes	2.95E-03	 	1.857	bias	1.257	RSAD2,IRF7,STAT1,STAT2,DDX58,USP18,IFI16,JMJD6	8	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of helper T lymphocytes	2.99E-03	 	 	 	 	RSAD2,STAT1,DDX58,USP18	4	
+Connective Tissue Disorders, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Renal and Urological Disease, Skeletal and Muscular Disorders	systemic lupus erythematosus nephritis	Systemic lupus erythematosus nephritis	3.32E-03	 	 	 	 	PARP12,IRF7	2	
+Cell Death and Survival	apoptosis	Apoptosis of tumor cell lines	3.50E-03	 	1.230	 	1.482	EIF2AK2,Irgm1,XAF1,STAT1,STAT2,HPCA,DDX58,PARP14,LGALS3BP,USP18,IFI16	11	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	development	Development of Th17 cells	3.73E-03	 	 	 	 	STAT1,DDX58	2	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression	4.36E-03	 	 	 	 	EIF2AK2,IRF9,IRF7,STAT1,IFI16	5	
+Inflammatory Response	immune response	Immune response of brain	4.49E-03	 	-0.328	 	-0.495	IRF9,Irgm1,STAT1,STAT2,USP18	5	
+Cellular Function and Maintenance	function	Function of leukocytes	5.07E-03	 	 	 	 	IRF7,STAT1,NLRC5,STAT2,DDX58,Trim30a/Trim30d	6	
+Neurological Disease, Organismal Injury and Abnormalities	neurodegeneration	Neurodegeneration of brain	5.07E-03	 	 	 	 	IRF9,STAT1,HPCA	3	
+Hematological Disease, Immunological Disease, Infectious Diseases	infection	Infection of antigen presenting cells	5.09E-03	 	 	 	 	EIF2AK2,STAT1	2	
+Cell Death and Survival	excitotoxicity	Susceptibility to excitotoxicity of neurons	5.09E-03	 	 	 	 	STAT1,HPCA	2	
+Digestive System Development and Function, Hepatic System Development and Function, Organ Morphology, Organismal Development	abnormal size	Abnormal size of liver	5.20E-03	 	 	 	 	HELZ2	1	
+Antimicrobial Response, Cell-To-Cell Signaling and Interaction, Inflammatory Response	antiviral response	Antiviral response of myeloid dendritic cells	5.20E-03	 	 	 	 	DDX58	1	
+Cell Cycle, Reproductive System Development and Function	G0/G1 phase transition	Arrest in G0/G1 phase transition of gonadal cell lines	5.20E-03	 	 	 	 	EIF2AK2	1	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression of thyroid tumor cell lines	5.20E-03	 	 	 	 	IFI16	1	
+Cell Cycle, Gene Expression	binding	Binding of NF-GMa-binding site	5.20E-03	 	 	 	 	STAT1	1	
+Nucleic Acid Metabolism, Small Molecule Biochemistry	biosynthesis	Biosynthesis of dTDP	5.20E-03	 	 	 	 	CMPK2	1	
+Cell Cycle, Nervous System Development and Function	cell cycle progression	Cell cycle progression of satellite cells	5.20E-03	 	 	 	 	SDC3	1	
+Dermatological Diseases and Conditions, Infectious Diseases, Inflammatory Disease, Inflammatory Response, Ophthalmic Disease, Organismal Injury and Abnormalities	cellulitis	Cellulitis of eye	5.20E-03	 	 	 	 	STAT1	1	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of thyroid tumor cell lines	5.20E-03	 	 	 	 	IFI16	1	
+Cellular Growth and Proliferation, Connective Tissue Development and Function	cytostasis	Cytostasis of chondrocytes	5.20E-03	 	 	 	 	STAT1	1	
+Cellular Growth and Proliferation	cytostasis	Cytostasis of rhabdomyosarcoma cell lines	5.20E-03	 	 	 	 	STAT1	1	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	lymphomagenesis	Delay in initiation of lymphomagenesis of B-cell lymphoma	5.20E-03	 	 	 	 	PARP14	1	
+Cellular Development, Tissue Development	differentiation	Differentiation of thymic medullary epithelial cells	5.20E-03	 	 	 	 	IRF7	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	dystonia mysculorum deformans 2	Dystonia mysculorum deformans 2	5.20E-03	 	 	 	 	HPCA	1	
+Cell Death and Survival, DNA Replication, Recombination, and Repair	fragmentation	Fragmentation of chromosomal DNA	5.20E-03	 	 	 	 	EIF2AK2	1	
+Inflammatory Response	frequency	Frequency of conventional dendritic cells	5.20E-03	 	 	 	 	USP18	1	
+Hematological Disease, Immunological Disease, Infectious Diseases	infection	Infection of bone marrow-derived dendritic cells	5.20E-03	 	 	 	 	STAT1	1	
+Antimicrobial Response	inhibition	Inhibition of vesicular stomatitis virus	5.20E-03	 	 	 	 	EIF2AK2	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long-term potentiation	Long-term potentiation of prefrontal cortex	5.20E-03	 	 	 	 	Nrgn	1	
+Cell Death and Survival	mitochondrial cell death	Mitochondrial cell death of squamous cell carcinoma cell lines	5.20E-03	 	 	 	 	DDX58	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	mobilization	Mobilization of myeloid-derived suppressor cells	5.20E-03	 	 	 	 	STAT1	1	
+Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of UMP	5.20E-03	 	 	 	 	CMPK2	1	
+Drug Metabolism, Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of cytarabine	5.20E-03	 	 	 	 	CMPK2	1	
+Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of dCMP	5.20E-03	 	 	 	 	CMPK2	1	
+Cell Cycle	polyploidy	Polyploidy of bone marrow cell lines	5.20E-03	 	 	 	 	STAT1	1	
+Nervous System Development and Function, Tissue Morphology	quantity	Quantity of satellite cells	5.20E-03	 	 	 	 	SDC3	1	
+Lymphoid Tissue Structure and Development, Organ Morphology, Tissue Morphology	quantity	Quantity of thymic medullary epithelial cells	5.20E-03	 	 	 	 	STAT1	1	
+Cell Cycle	replication	Replication of Rickettsia conorii str. Malish 7	5.20E-03	 	 	 	 	STAT1	1	
+Infectious Diseases	replication	Replication of West Nile virus strain (3000.0259)	5.20E-03	 	 	 	 	RSAD2	1	
+Protein Synthesis	translation	Translation of green fluorescent protein	5.20E-03	 	 	 	 	EIF2AK2	1	
+Cancer, Organismal Injury and Abnormalities	tumorigenesis	Tumorigenesis of endometrial cancer cell lines	5.20E-03	 	 	 	 	STAT1	1	
+Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	psoriasis	Chronic psoriasis	5.29E-03	 	 	 	 	IRF7,STAT1,LGALS3BP	3	
+Cell Death and Survival	apoptosis	Apoptosis of lymphocytes	5.73E-03	 	-0.418	 	-0.222	EIF2AK2,DHX58,Irgm1,STAT1,PARP14	5	
+Cell Death and Survival	apoptosis	Apoptosis of pancreatic cancer cell lines	5.73E-03	 	 	 	 	STAT1,DDX58,USP18	3	
+Cell-To-Cell Signaling and Interaction	activation	Activation of cells	5.82E-03	 	1.023	bias	0.399	EIF2AK2,IRF7,STAT1,DDX58,ZBP1,LGALS3BP,USP18,IFI16,JMJD6	9	
+Cardiovascular System Development and Function, Organismal Development	sprouting angiogenesis	Sprouting angiogenesis	6.10E-03	 	 	 	 	RNF213,JMJD6	2	
+Cell Death and Survival	apoptosis	Apoptosis of melanoma cell lines	6.31E-03	 	 	 	 	Irgm1,XAF1,STAT2	3	
+Cell Death and Survival	cell death	Cell death of bone marrow-derived macrophages	6.37E-03	 	 	 	 	EIF2AK2,STAT1	2	
+Infectious Diseases	infection	Infection by Dengue virus 2	6.37E-03	 	 	 	 	RSAD2,STAT1	2	
+Hematological Disease, Immunological Disease, Infectious Diseases	infection	Infection of phagocytes	6.37E-03	 	 	 	 	EIF2AK2,STAT1	2	
+Cell-To-Cell Signaling and Interaction	sensitization	Sensitization of cells	6.37E-03	 	 	 	 	STAT1,PARP14	2	
+Cell-To-Cell Signaling and Interaction	signaling	Signaling of cells	6.68E-03	 	 	 	 	STAT1,NLRC5,DDX58	3	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Development	development	Development of erythroid precursor cells	6.92E-03	 	 	 	 	EIF2AK2,STAT1	2	
+Cell-To-Cell Signaling and Interaction	adhesion	Adhesion of endometrial cancer cell lines	7.79E-03	 	 	 	 	STAT1	1	
+Cell Cycle, Cellular Growth and Proliferation	antiproliferative response	Antiproliferative response of fibroblasts	7.79E-03	 	 	 	 	STAT1	1	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Organ Morphology, Organismal Development, Tissue Morphology	architecture	Architecture of thymus gland	7.79E-03	 	 	 	 	IRF7	1	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression of B lymphoblastoid cell lines	7.79E-03	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation	growth	Arrest in growth of fibrosarcoma cell lines	7.79E-03	 	 	 	 	STAT1	1	
+Cellular Compromise, Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	calcification	Calcification of osteoblasts	7.79E-03	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival, Nervous System Development and Function	cell survival	Cell survival of oligodendrocytes	7.79E-03	 	 	 	 	XAF1	1	
+Connective Tissue Disorders, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	chronic inflammation	Chronic inflammation of joint	7.79E-03	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Humoral Immune Response, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of peripheral B lymphocytes	7.79E-03	 	 	 	 	STAT1	1	
+Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	familial hypercholanemia	Familial hypercholanemia	7.79E-03	 	 	 	 	TJP2	1	
+Cell Cycle, Skeletal and Muscular System Development and Function	G1/S phase transition	G1/S phase transition of vascular smooth muscle cells	7.79E-03	 	 	 	 	EIF2AK2	1	
+Cellular Growth and Proliferation, Organismal Development	growth	Growth of Salmonella enterica	7.79E-03	 	 	 	 	USP18	1	
+Infectious Diseases	infection	Infection by Chlamydia trachomatis	7.79E-03	 	 	 	 	Irgm1	1	
+Infectious Diseases	infection	Infection by Newcastle disease virus	7.79E-03	 	 	 	 	STAT1	1	
+Infectious Diseases	infection	Infection by Sindbis virus	7.79E-03	 	 	 	 	STAT1	1	
+Hematological Disease, Immunological Disease, Infectious Diseases	infection	Infection of peritoneal macrophages	7.79E-03	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival, Organismal Injury and Abnormalities, Renal and Urological Disease	necroptosis	Necroptosis of kidney cell lines	7.79E-03	 	 	 	 	ZBP1	1	
+Cellular Assembly and Organization	polarization	Polarization of mitochondrial membrane	7.79E-03	 	 	 	 	Irgm1	1	
+Tissue Morphology	quantity	Quantity of Listeria monocytogenes strain EGD	7.79E-03	 	 	 	 	Irgm1	1	
+Infectious Diseases	replication	Replication of bovine rotavirus (UK strain)	7.79E-03	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival, Cellular Development, Cellular Function and Maintenance	self-renewal	Self-renewal of satellite cells	7.79E-03	 	 	 	 	SDC3	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	stabilization	Stabilization of tight junctions	7.79E-03	 	 	 	 	TJP2	1	
+Cell Cycle, Gene Expression	binding	Binding of DNA	7.88E-03	Increased	2.034	 	1.742	IRF9,IRF7,STAT1,DDX58,ZBP1,IFI16	6	
+Cell Death and Survival	cell death	Cell death of tumor cell lines	8.03E-03	 	1.416	 	1.683	EIF2AK2,IRF9,Irgm1,XAF1,STAT1,STAT2,HPCA,DDX58,PARP14,LGALS3BP,USP18,IFI16	12	
+Cell Death and Survival, Embryonic Development	cell death	Cell death of embryonic cell lines	8.24E-03	 	1.362	 	1.015	EIF2AK2,STAT1,TJP2,ZBP1,IFI16	5	
+Infectious Diseases	production	Production of HIV-1	9.00E-03	 	 	 	 	EIF2AK2,RSAD2	2	
+Cell Death and Survival	necrosis	Necrosis	9.28E-03	 	1.642	 	2.011	EIF2AK2,IRF9,DHX58,STAT2,TJP2,OAS2,DDX58,USP18,Irgm1,IRF7,XAF1,STAT1,HPCA,PARP14,ZBP1,LGALS3BP,IFI16	17	
+Infectious Diseases	infection	Infection by Flaviviridae	9.60E-03	 	 	 	 	RSAD2,STAT1,DDX58	3	
+Cell Cycle	interphase	Delay in initiation of interphase	9.64E-03	 	 	 	 	STAT1,IFI16	2	
+Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response, Tissue Development	accumulation	Accumulation of plasmacytoid dendritic cells	1.04E-02	 	 	 	 	STAT1	1	
+DNA Replication, Recombination, and Repair, RNA Post-Transcriptional Modification	annealing	Annealing of RNA	1.04E-02	 	 	 	 	EIF2AK2	1	
+Embryonic Development, Organismal Development	gastrulation	Arrest in gastrulation	1.04E-02	 	 	 	 	TJP2	1	
+Cell-To-Cell Signaling and Interaction	attachment	Attachment of prostate cancer cell lines	1.04E-02	 	 	 	 	SDC3	1	
+Cell Cycle, Gene Expression	binding	Binding of GATA-4 binding site	1.04E-02	 	 	 	 	IFI16	1	
+Cell Cycle, Gene Expression	binding	Binding of Nkx2.5 binding site	1.04E-02	 	 	 	 	IFI16	1	
+Connective Tissue Disorders, Immunological Disease, Inflammatory Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	experimental systemic lupus erythematosus	Experimental systemic lupus erythematosus	1.04E-02	 	 	 	 	ZBP1	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	formation	Formation of colony forming unit-megakaryocytes	1.04E-02	 	 	 	 	Ifi27l2a/Ifi27l2b	1	
+Cell Cycle	G0 phase	G0 phase of hematopoietic progenitor cells	1.04E-02	 	 	 	 	EIF2AK2	1	
+Infectious Diseases	infection	Infection by encephalomyocarditis virus	1.04E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	infection	Infection of macrophage cancer cell lines	1.04E-02	 	 	 	 	EIF2AK2	1	
+Cancer, Connective Tissue Disorders, Organismal Injury and Abnormalities, Reproductive System Disease, Skeletal and Muscular Disorders	metastasis to bone	Metastasis to bone of breast cancer cell lines	1.04E-02	 	 	 	 	IRF7	1	
+Inflammatory Disease	microabscess	Microabscess	1.04E-02	 	 	 	 	STAT1	1	
+Cellular Growth and Proliferation	proliferation	Proliferation of Salmonella enterica subsp. enterica serovar Typhimurium	1.04E-02	 	 	 	 	PARP14	1	
+Cell Cycle	replication	Replication of Chlamydophila pneumoniae CWL029	1.04E-02	 	 	 	 	IRF7	1	
+Infectious Diseases	replication	Replication of Influenza B virus	1.04E-02	 	 	 	 	EIF2AK2	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Inflammatory Response	sensitization	Sensitization of macrophages	1.04E-02	 	 	 	 	STAT1	1	
+Tissue Morphology	quantity	Quantity of bacteria	1.10E-02	 	 	 	 	Irgm1,STAT1	2	
+Cell-To-Cell Signaling and Interaction	communication	Communication of cells	1.24E-02	 	0.819	 	0.799	IRF9,ADGRG5,STAT1,NLRC5,DDX58,Nrgn,LGALS3BP,JMJD6,SDC3	9	
+Post-Translational Modification	autoubiquitination	Autoubiquitination of protein	1.28E-02	 	 	 	 	RNF213,Trim30a/Trim30d	2	
+Cellular Movement	migration	Migration of squamous cell carcinoma cell lines	1.28E-02	 	 	 	 	DDX58,IFIT2	2	
+Cell Death and Survival, Embryonic Development	apoptosis	Apoptosis of embryonic cell lines	1.29E-02	 	1.029	 	0.657	EIF2AK2,STAT1,TJP2,IFI16	4	
+Connective Tissue Disorders, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	rheumatoid arthritis	Chronic phase rheumatoid arthritis	1.29E-02	 	 	 	 	SDC3	1	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of melanoma cell lines	1.29E-02	 	 	 	 	STAT1	1	
+Cellular Development, Nervous System Development and Function, Tissue Development	differentiation	Differentiation of striatal neurons	1.29E-02	 	 	 	 	ARPP21	1	
+Infectious Diseases	entrance	Entrance of human herpesvirus 1	1.29E-02	 	 	 	 	EIF2AK2	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Hematological System Development and Function, Immune Cell Trafficking, Infectious Diseases, Inflammatory Response	fusion	Fusion of foreign body giant cell	1.29E-02	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	hematopoiesis	Hematopoiesis of myeloid progenitor cells	1.29E-02	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival	necroptosis	Necroptosis of cervical cancer cell lines	1.29E-02	 	 	 	 	STAT1	1	
+Cell Death and Survival, Organismal Injury and Abnormalities	necroptosis	Necroptosis of epithelial cell lines	1.29E-02	 	 	 	 	ZBP1	1	
+Humoral Immune Response, Protein Synthesis	production	Production of anti-DNA antibody	1.29E-02	 	 	 	 	IRF7	1	
+Infectious Diseases	release	Release of Influenza A virus	1.29E-02	 	 	 	 	RSAD2	1	
+Infectious Diseases	replication	Replication of virus chimera	1.29E-02	 	 	 	 	EIF2AK2	1	
+Cell Cycle	G0/G1 phase transition	Arrest in G0/G1 phase transition	1.31E-02	 	 	 	 	EIF2AK2,STAT1	2	
+Inflammatory Response, Ophthalmic Disease, Organismal Injury and Abnormalities	inflammation	Inflammation of eye	1.31E-02	 	 	 	 	IRF9,STAT1	2	
+Neurological Disease	dystonia	Dystonia	1.39E-02	 	 	 	 	HPCA,SCN4B	2	
+Cell-To-Cell Signaling and Interaction, Embryonic Development	response	Response of embryonic cell lines	1.39E-02	 	 	 	 	IRF7,DDX58	2	
+Cell Death and Survival	apoptosis	Apoptosis of lymphoma cell lines	1.53E-02	 	 	 	 	EIF2AK2,STAT1,STAT2	3	
+Carbohydrate Metabolism, Molecular Transport, Small Molecule Biochemistry	deposition	Deposition of hyaluronic acid	1.55E-02	 	 	 	 	STAT1	1	
+Small Molecule Biochemistry	formation	Formation of nitrite	1.55E-02	 	 	 	 	EIF2AK2	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	generation	Generation of CD4+ T-lymphocytes	1.55E-02	 	 	 	 	DDX58	1	
+Connective Tissue Development and Function, Embryonic Development, Organ Morphology, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	mass	Mass of tibia	1.55E-02	 	 	 	 	STAT1	1	
+Cell Morphology, Hematological System Development and Function, Inflammatory Response, Tissue Morphology	morphology	Morphology of bone marrow-derived macrophages	1.55E-02	 	 	 	 	Irgm1	1	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function	proliferation	Proliferation of satellite cells	1.55E-02	 	 	 	 	SDC3	1	
+Antigen Presentation, Protein Synthesis	quantity	Quantity of MHC Class I on cell surface	1.55E-02	 	 	 	 	STAT1	1	
+Developmental Disorder, Organismal Survival	sudden infant death syndrome	Sudden infant death syndrome	1.55E-02	 	 	 	 	SCN4B	1	
+Infectious Diseases	viremia	Viremia	1.55E-02	 	 	 	 	OASL	1	
+Cell Death and Survival	cell death	Cell death of fibroblast cell lines	1.55E-02	 	0.951	 	0.672	EIF2AK2,IRF7,STAT1,USP18,IFI16	5	
+Cellular Function and Maintenance, Hematological System Development and Function	function	Function of lymphocytes	1.57E-02	 	 	 	 	IRF7,STAT1,NLRC5,Trim30a/Trim30d	4	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	binding	Binding of macrophages	1.59E-02	 	 	 	 	Irgm1,JMJD6	2	
+Cell Death and Survival, Organismal Injury and Abnormalities	cell death	Cell death of epithelial cell lines	1.69E-02	 	1.067	 	0.765	EIF2AK2,OAS2,TJP2,ZBP1	4	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Morphology	quantity	Quantity of memory T lymphocytes	1.71E-02	 	 	 	 	STAT1,DDX58	2	
+Post-Translational Modification	polyubiquitination	Polyubiquitination	1.76E-02	 	 	 	 	HERC6,RNF213,IFI16	3	
+Cell Death and Survival, Endocrine System Disorders, Gastrointestinal Disease, Organismal Injury and Abnormalities	apoptosis	Apoptosis of beta islet cells	1.80E-02	 	 	 	 	STAT1,USP18	2	
+Cell-To-Cell Signaling and Interaction	activation	Activation of macrophage cancer cell lines	1.81E-02	 	 	 	 	ZBP1	1	
+Gene Expression, RNA Post-Transcriptional Modification	binding	Binding of dsRNA	1.81E-02	 	 	 	 	EIF2AK2	1	
+Post-Translational Modification, Protein Folding, Protein Trafficking	conjugation	Conjugation of protein	1.81E-02	 	 	 	 	USP18	1	
+Cellular Development	epithelial-mesenchymal transition	Epithelial-mesenchymal transition of squamous cell carcinoma cell lines	1.81E-02	 	 	 	 	IFIT2	1	
+Connective Tissue Development and Function, Embryonic Development, Organ Development, Organismal Development, Skeletal and Muscular System Development and Function, Tissue Development	osteoclastogenesis	Osteoclastogenesis of tibia	1.81E-02	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation	proliferation	Proliferation of B lymphoblastoid cell lines	1.81E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	replication	Replication of Dengue virus 2	1.81E-02	 	 	 	 	OASL	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function	activation	Activation of myeloid cells	1.84E-02	 	 	 	 	STAT1,LGALS3BP,USP18,JMJD6	4	
+Cell Death and Survival	cell death	Cell death of connective tissue cells	1.89E-02	 	1.328	 	1.243	EIF2AK2,IRF7,STAT1,DDX58,USP18,IFI16	6	
+Cell Death and Survival	cell death	Cell death of squamous cell carcinoma cell lines	1.93E-02	 	 	 	 	STAT1,DDX58	2	
+Cellular Development, Cellular Growth and Proliferation	proliferation	Proliferation of kidney cancer cell lines	1.93E-02	 	 	 	 	SLFN5,LGALS3BP	2	
+Cancer, Organismal Injury and Abnormalities	lymphoreticular neoplasm	Lymphoreticular neoplasm	1.98E-02	 	 	 	 	EIF2AK2,RSAD2,OASL,NLRC5,STAT2,RNF213,OAS2,TJP2,DDX58,IFIT2,IRF7,STAT1,ARPP21,IFI35,PARP14	15	
+Cell Death and Survival	apoptosis	Apoptosis	2.01E-02	 	1.053	 	1.505	EIF2AK2,DHX58,STAT2,TJP2,DDX58,IFIT2,USP18,Ifi27l2a/Ifi27l2b,Irgm1,IRF7,XAF1,STAT1,HPCA,PARP14,LGALS3BP,IFI16	16	
+Cell Death and Survival, Renal and Urological System Development and Function	cell viability	Cell viability of kidney cell lines	2.01E-02	 	 	 	 	IRF9,STAT2	2	
+Infectious Diseases	infection	Infection of tumor cell lines	2.05E-02	 	0.625	bias	 	EIF2AK2,STAT1,STAT2,IFI35,DDX58	5	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	abnormal morphology	Abnormal morphology of enlarged uterus	2.06E-02	 	 	 	 	DHX58	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	adhesion	Adhesion of bone marrow-derived macrophages	2.06E-02	 	 	 	 	Irgm1	1	
+Cell Death and Survival	apoptosis	Apoptosis of oligodendrocyte precursor cells	2.06E-02	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	development	Development of dendritic precursor cells	2.06E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	infection	Infection by Chlamydia pneumoniae	2.06E-02	 	 	 	 	STAT1	1	
+Cell Morphology	polarization	Polarization of macrophage cancer cell lines	2.06E-02	 	 	 	 	ZBP1	1	
+Infectious Diseases	replication	Replication of Murine cytomegalovirus	2.06E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	replication	Replication of Vesicular stomatitis Indiana virus	2.06E-02	 	 	 	 	DDX58	1	
+Connective Tissue Disorders, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	immune thrombocytopenia	Immune thrombocytopenia	2.11E-02	 	 	 	 	OAS2,JMJD6	2	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	nasal type extranodal NK-/T-cell lymphoma	Nasal type extranodal NK-/T-cell lymphoma	2.11E-02	 	 	 	 	STAT1,STAT2	2	
+Cancer, Hematological Disease, Organismal Injury and Abnormalities	mature lymphocytic neoplasm	Mature lymphocytic neoplasm	2.28E-02	 	 	 	 	RSAD2,IRF7,STAT1,ARPP21,OASL,STAT2,IFI35,OAS2,DDX58,IFIT2	10	
+Inflammatory Disease, Inflammatory Response, Neurological Disease, Organismal Injury and Abnormalities	encephalitis	Encephalitis	2.29E-02	 	0.084	 	-0.066	IRF9,Irgm1,STAT1,USP18	4	
+Organismal Development, Organismal Injury and Abnormalities	shape	Abnormal shape of head	2.32E-02	 	 	 	 	JMJD6	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of Th9 cells	2.32E-02	 	 	 	 	STAT1	1	
+Cellular Development, Connective Tissue Development and Function, Tissue Development	differentiation	Differentiation of fibrocytes	2.32E-02	 	 	 	 	LGALS3BP	1	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	generation	Generation of plasmacytoid dendritic cells	2.32E-02	 	 	 	 	STAT1	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	Huntington disease	Grade 3 Huntington disease	2.32E-02	 	 	 	 	SCN4B	1	
+Infectious Diseases, Inflammatory Disease, Inflammatory Response, Neurological Disease, Organismal Injury and Abnormalities	herpes simplex encephalitis	Herpes simplex encephalitis	2.32E-02	 	 	 	 	STAT1	1	
+Inflammatory Disease, Inflammatory Response, Ophthalmic Disease, Organismal Injury and Abnormalities	inflammation	Inflammation of iris	2.32E-02	 	 	 	 	STAT1	1	
+Inflammatory Response, Ophthalmic Disease, Organismal Injury and Abnormalities	inflammation	Inflammation of retina	2.32E-02	 	 	 	 	IRF9	1	
+Cellular Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development	maturation	Maturation of neutrophils	2.32E-02	 	 	 	 	STAT1	1	
+Cell Cycle, Hematological System Development and Function	mitogenesis	Mitogenesis of T lymphocytes	2.32E-02	 	 	 	 	STAT1	1	
+Nucleic Acid Metabolism, Small Molecule Biochemistry	phosphorylation	Phosphorylation of nucleoside diphosphates	2.32E-02	 	 	 	 	CMPK2	1	
+Protein Synthesis	quantity	Quantity of IFNB1 in blood	2.32E-02	 	 	 	 	DHX58	1	
+Cell Cycle	senescence	Senescence of prostate cancer cell lines	2.32E-02	 	 	 	 	IFI16	1	
+Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	volume	Volume of compact bone	2.32E-02	 	 	 	 	STAT1	1	
+Cell Death and Survival	apoptosis	Apoptosis of fibroblast cell lines	2.36E-02	 	0.617	 	0.325	EIF2AK2,STAT1,USP18,IFI16	4	
+Gene Expression	expression	Expression of RNA	2.38E-02	 	0.964	 	0.417	EIF2AK2,IRF9,DHX58,NLRC5,STAT2,DDX58,JMJD6,HELZ2,IRF7,Mx1,STAT1,PARP14,ZBP1,IFI16	14	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of Th2 cells	2.44E-02	 	 	 	 	RSAD2,STAT1	2	
+Hematological Disease, Infectious Diseases, Organismal Injury and Abnormalities	endotoxin shock response	Endotoxin shock response	2.44E-02	 	 	 	 	STAT1,Trim30a/Trim30d	2	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	differentiation	Differentiation of antigen presenting cells	2.46E-02	 	 	 	 	IRF7,STAT1,USP18	3	
+Inflammatory Disease, Neurological Disease, Skeletal and Muscular Disorders	relapsing-remitting multiple sclerosis	Relapsing-remitting multiple sclerosis	2.53E-02	 	 	 	 	RSAD2,IRF7	2	
+Cell Morphology, Hematological System Development and Function, Immunological Disease	abnormal morphology	Abnormal morphology of granulocytes	2.57E-02	 	 	 	 	DDX58	1	
+Cellular Assembly and Organization	binding	Binding of ribosome	2.57E-02	 	 	 	 	EIF2AK2	1	
+Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	chronic large plaque psoriasis	Chronic large plaque psoriasis	2.57E-02	 	 	 	 	STAT1	1	
+Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	chronic small plaque psoriasis	Chronic small plaque psoriasis	2.57E-02	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Development	development	Development of burst-forming erythroid cells	2.57E-02	 	 	 	 	STAT1	1	
+Cellular Development	differentiation	Differentiation of multinucleated cells	2.57E-02	 	 	 	 	USP18	1	
+Cellular Function and Maintenance, Hematological System Development and Function	elimination	Elimination of lymphocytes	2.57E-02	 	 	 	 	NLRC5	1	
+Cancer, Connective Tissue Disorders, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	femur osteosarcoma	Femur osteosarcoma	2.57E-02	 	 	 	 	PARP14	1	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	generation	Generation of bone marrow-derived dendritic cells	2.57E-02	 	 	 	 	USP18	1	
+Infectious Diseases	infection	Infection by Trypanosoma cruzi	2.57E-02	 	 	 	 	Irgm1	1	
+Infectious Diseases	infection	Infection by West Nile virus	2.57E-02	 	 	 	 	DDX58	1	
+Cellular Movement	migration	Migration of chronic lymphocytic leukemia cells	2.57E-02	 	 	 	 	STAT1	1	
+Cell-To-Cell Signaling and Interaction, Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	recruitment	Recruitment of CD8+ T lymphocyte	2.57E-02	 	 	 	 	DDX58	1	
+Infectious Diseases	replication	Replication of respiratory syncytial virus	2.57E-02	 	 	 	 	OASL	1	
+Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development, Tissue Morphology	thickness	Thickness of trabecula	2.57E-02	 	 	 	 	STAT1	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	activation	Activation of phagocytes	2.60E-02	 	 	 	 	STAT1,LGALS3BP,USP18,JMJD6	4	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Differentiation of CD4+ T-lymphocytes	2.63E-02	 	 	 	 	STAT1,DDX58	2	
+Cellular Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development	maturation	Maturation of leukocytes	2.68E-02	 	 	 	 	STAT1,DDX58,PARP14	3	
+Cancer, Endocrine System Disorders, Organismal Injury and Abnormalities, Reproductive System Disease	ovarian serous tumor	Ovarian serous tumor	2.72E-02	 	 	 	 	SLFN5,STAT1,STAT2,USP18,JMJD6,LIPM	6	
+Gene Expression	activation	Activation of DNA endogenous promoter	2.79E-02	 	1.368	 	0.941	IRF9,IRF7,STAT1,NLRC5,STAT2,DDX58,IFI16,JMJD6,HELZ2	9	
+Gene Expression	transcription	Transcription of RNA	2.83E-02	 	1.606	 	1.066	EIF2AK2,IRF9,IRF7,Mx1,STAT1,NLRC5,STAT2,DDX58,ZBP1,IFI16,JMJD6,HELZ2	12	
+Cell-To-Cell Signaling and Interaction	activation	Activation of lymphoma cell lines	2.83E-02	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival	cell death	Cell death of hair cells	2.83E-02	 	 	 	 	STAT1	1	
+Cell Cycle, Cell-To-Cell Signaling and Interaction, Cellular Growth and Proliferation	contact growth inhibition	Contact growth inhibition of carcinoma cell lines	2.83E-02	 	 	 	 	IFI16	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Hematological System Development and Function, Immune Cell Trafficking, Infectious Diseases, Inflammatory Response	fusion	Fusion of bone marrow-derived macrophages	2.83E-02	 	 	 	 	STAT1	1	
+Cell-To-Cell Signaling and Interaction, Inflammatory Response	immune response	Immune response of epithelial cells	2.83E-02	 	 	 	 	DDX58	1	
+Cell Signaling, Small Molecule Biochemistry	induction	Induction of nitric oxide	2.83E-02	 	 	 	 	STAT1	1	
+Cellular Movement	migration	Migration of endometrial cancer cell lines	2.83E-02	 	 	 	 	STAT1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Nervous System Development and Function	recruitment	Recruitment of microglia	2.83E-02	 	 	 	 	IRF7	1	
+Cancer, Dermatological Diseases and Conditions, Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	tuberous sclerosis complex	Tuberous sclerosis complex	2.83E-02	 	 	 	 	PARP14	1	
+Inflammatory Response, Organismal Injury and Abnormalities	inflammation	Inflammation of organ	2.87E-02	 	-0.799	 	-0.363	PARP12,EIF2AK2,IRF9,IRF7,Irgm1,Mx1,STAT1,DDX58,USP18	9	
+Connective Tissue Disorders, Hematological Disease, Organismal Injury and Abnormalities	thrombocytopenia	Thrombocytopenia	3.02E-02	 	 	 	 	IRF7,OAS2,JMJD6	3	
+Cell Death and Survival, Organismal Injury and Abnormalities	cell death	Cell death of epithelial cells	3.03E-02	 	1.387	 	1.307	EIF2AK2,STAT1,OAS2,TJP2,ZBP1	5	
+Cell-To-Cell Signaling and Interaction	activation	Activation of tumor cell lines	3.05E-02	 	 	 	 	EIF2AK2,ZBP1	2	
+Cell Death and Survival	apoptosis	Apoptosis of B lymphoblastoid cell lines	3.08E-02	 	 	 	 	STAT1	1	
+Cardiovascular Disease, Hereditary Disorder, Organismal Injury and Abnormalities	catecholaminergic polymorphic ventricular tachycardia type 1	Catecholaminergic polymorphic ventricular tachycardia type 1	3.08E-02	 	 	 	 	SCN4B	1	
+Infectious Diseases	infection	Infection by Salmonella enterica subsp. enterica serovar Typhimurium	3.08E-02	 	 	 	 	USP18	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	influx	Influx of macrophages	3.08E-02	 	 	 	 	IRF7	1	
+Cardiovascular System Development and Function, Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Organ Development, Tissue Development	proliferation	Proliferation of cardiac fibroblasts	3.08E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	replication	Replication of encephalomyocarditis virus	3.08E-02	 	 	 	 	DDX58	1	
+Cancer, Endocrine System Disorders, Organismal Injury and Abnormalities, Reproductive System Disease	serous adenocarcinoma	Serous adenocarcinoma in ovary	3.11E-02	 	 	 	 	SLFN5,STAT2,USP18,JMJD6,LIPM	5	
+Inflammatory Response	inflammation	Inflammation of absolute anatomical region	3.15E-02	 	-0.615	 	-0.197	PARP12,IRF9,IRF7,Irgm1,Mx1,STAT1,DDX58,USP18	8	
+Cell Cycle	cell cycle progression	Cell cycle progression	3.17E-02	 	1.757	 	1.379	EIF2AK2,IRF9,IRF7,Irgm1,STAT1,DDX58,IFI16,SDC3	8	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	activation	Activation of macrophages	3.20E-02	 	 	 	 	STAT1,USP18,JMJD6	3	
+Cell Death and Survival, Hair and Skin Development and Function	cell viability	Cell viability of epithelial cell lines	3.21E-02	 	 	 	 	IRF9,STAT2	2	
+Immunological Disease	immunodeficiency	Immunodeficiency	3.26E-02	 	 	 	 	IRF7,STAT1,STAT2	3	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of intestine	3.29E-02	 	 	 	 	STAT1,DDX58,JMJD6	3	
+Cellular Assembly and Organization, Cellular Function and Maintenance	fluidity	Fluidity of cellular membrane	3.33E-02	 	 	 	 	RSAD2	1	
+Nervous System Development and Function, Tissue Morphology	quantity	Quantity of GABAergic neurons	3.33E-02	 	 	 	 	SDC3	1	
+Gene Expression	replication	Replication of RNA	3.33E-02	 	 	 	 	USP18	1	
+Hematological System Development and Function, Tissue Morphology	morphology	Morphology of bone marrow	3.38E-02	 	 	 	 	Irgm1,STAT1	2	
+Cellular Function and Maintenance	function	Function of dendritic cells	3.43E-02	 	 	 	 	STAT2,DDX58	2	
+Gene Expression	transcription	Transcription	3.45E-02	 	1.333	 	0.725	EIF2AK2,IRF9,NLRC5,STAT2,DDX58,JMJD6,HELZ2,IRF7,Mx1,STAT1,PARP14,ZBP1,IFI16	13	
+Cell Death and Survival	apoptosis	Apoptosis of macrophages	3.49E-02	 	 	 	 	EIF2AK2,STAT1	2	
+Infectious Diseases	anthrax	Anthrax	3.58E-02	 	 	 	 	STAT1	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Skeletal and Muscular System Development and Function, Tissue Development	osteoclastogenesis	Osteoclastogenesis of bone-marrow-derived monocyte/macrophage precursor cells	3.58E-02	 	 	 	 	STAT1	1	
+Neurological Disease, Organismal Injury and Abnormalities	vertigo	Vertigo	3.58E-02	 	 	 	 	USP18	1	
+Cellular Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development	maturation	Maturation of dendritic cells	3.66E-02	 	 	 	 	STAT1,DDX58	2	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	monocytopoiesis	Monocytopoiesis	3.72E-02	 	 	 	 	IRF7,IFI16	2	
+Cellular Function and Maintenance	function	Function of antigen presenting cells	3.77E-02	 	 	 	 	STAT1,STAT2,DDX58	3	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Development	hematopoiesis	Hematopoiesis of erythroid precursor cells	3.84E-02	 	 	 	 	EIF2AK2	1	
+Infectious Diseases	infection	Infection by adenoviridae	3.84E-02	 	 	 	 	EIF2AK2	1	
+Cellular Development, Cellular Growth and Proliferation, Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	osteoclastogenesis	Osteoclastogenesis of osteoclast precursor cells	3.84E-02	 	 	 	 	STAT1	1	
+Infectious Diseases	replication	Replication of Sendai virus	3.84E-02	 	 	 	 	OASL	1	
+Cancer, Connective Tissue Disorders, Organismal Injury and Abnormalities	connective tissue cancer	Connective tissue cancer	3.94E-02	 	 	 	 	IRF7,PARP14,LGALS3BP	3	
+Cell Death and Survival	necroptosis	Necroptosis	3.95E-02	 	 	 	 	STAT1,ZBP1	2	
+Inflammatory Response	immune response	Immune response of cells	4.01E-02	Increased	2.177	bias	1.483	EIF2AK2,DHX58,IRF7,STAT1,DDX58	5	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance, Inflammatory Response	accumulation	Accumulation of autophagosomes	4.09E-02	 	 	 	 	EIF2AK2	1	
+Antimicrobial Response, Inflammatory Response	antiviral response	Antiviral response of fibroblast cell lines	4.09E-02	 	 	 	 	DDX58	1	
+Cellular Development, Cellular Growth and Proliferation	proliferation	Arrest in proliferation of lymphoma cell lines	4.09E-02	 	 	 	 	STAT1	1	
+Neurological Disease	myoclonic dystonia	Myoclonic dystonia	4.09E-02	 	 	 	 	SCN4B	1	
+Metabolic Disease, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	nonfamilial Alzheimer disease	Nonfamilial Alzheimer disease	4.09E-02	 	 	 	 	EIF2AK2	1	
+Infectious Diseases	quantity	Quantity of Influenza A virus	4.09E-02	 	 	 	 	Mx1	1	
+Cellular Assembly and Organization	rearrangement	Rearrangement of actin filaments	4.09E-02	 	 	 	 	IFI16	1	
+Cellular Development, Connective Tissue Development and Function, Skeletal and Muscular System Development and Function, Tissue Development	differentiation	Differentiation of osteoblasts	4.25E-02	 	 	 	 	EIF2AK2,STAT1,IFI16	3	
+Infectious Diseases	infection	Infection of cells	4.29E-02	 	-0.845	bias	 	EIF2AK2,RSAD2,STAT1,STAT2,IFI35,DDX58	6	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	activation	Activation of bone marrow-derived macrophages	4.34E-02	 	 	 	 	USP18	1	
+Cell-To-Cell Signaling and Interaction, Skeletal and Muscular System Development and Function	adhesion	Adhesion of smooth muscle cells	4.34E-02	 	 	 	 	STAT1	1	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression of lymphoma cell lines	4.34E-02	 	 	 	 	STAT1	1	
+Cardiovascular Disease, Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	familial atrial fibrillation	Familial atrial fibrillation	4.34E-02	 	 	 	 	SCN4B	1	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Morphology	quantity	Quantity of effector memory T lymphocytes	4.34E-02	 	 	 	 	STAT1	1	
+Cell Signaling, Molecular Transport, Small Molecule Biochemistry	secretion	Secretion of nitric oxide	4.34E-02	 	 	 	 	STAT1	1	
+Cell Death and Survival, Embryonic Development	cell viability	Cell viability of embryonic cell lines	4.37E-02	 	 	 	 	IRF9,STAT2	2	
+Infectious Diseases	replication	Replication of HIV-1	4.44E-02	 	 	 	 	EIF2AK2,IRF7	2	
+Cellular Development, Cellular Growth and Proliferation, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Tissue Development	differentiation	Differentiation of myeloid leukocytes	4.47E-02	 	 	 	 	IRF7,USP18,IFI16	3	
+Cellular Function and Maintenance, Hematological System Development and Function	function	Function of T lymphocytes	4.58E-02	 	 	 	 	IRF7,NLRC5,Trim30a/Trim30d	3	
+Antimicrobial Response, Cell-To-Cell Signaling and Interaction, Embryonic Development, Inflammatory Response	antiviral response	Antiviral response of embryonic cell lines	4.59E-02	 	 	 	 	DDX58	1	
+Cell Death and Survival	apoptosis	Apoptosis of lymphoblasts	4.59E-02	 	 	 	 	EIF2AK2	1	
+Cell Death and Survival	apoptosis	Apoptosis of microglia	4.59E-02	 	 	 	 	STAT1	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	damage	Damage of colon	4.59E-02	 	 	 	 	STAT1	1	
+Cell Death and Survival, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	focal necrosis	Focal necrosis of liver	4.59E-02	 	 	 	 	STAT1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Skeletal and Muscular System Development and Function	fusion	Fusion of myotube	4.59E-02	 	 	 	 	IFI16	1	
+Immunological Disease	delayed hypersensitive reaction	Delayed hypersensitive reaction	4.62E-02	 	 	 	 	EIF2AK2,LGALS3BP	2	
+Cell Death and Survival	apoptosis	Apoptosis of neuroblastoma cell lines	4.69E-02	 	 	 	 	EIF2AK2,HPCA	2	
+Cell Death and Survival	cell death	Cell death of neuroglia	4.75E-02	 	 	 	 	STAT1,SDC3	2	
+Hereditary Disorder, Immunological Disease, Organismal Injury and Abnormalities	autosomal recessive immunodeficiency	Autosomal recessive immunodeficiency	4.81E-02	 	 	 	 	IRF7,STAT2	2	
+Connective Tissue Development and Function, Tissue Development	accumulation	Accumulation of adipose tissue	4.83E-02	 	 	 	 	SDC3	1	
+Cell Death and Survival	apoptosis	Apoptosis of bone marrow-derived macrophages	4.83E-02	 	 	 	 	EIF2AK2	1	
+Cell Cycle	cell cycle progression	Arrest in cell cycle progression of carcinoma cell lines	4.83E-02	 	 	 	 	IFI16	1	
+Cellular Growth and Proliferation	colony formation	Colony formation of melanoma cell lines	4.83E-02	 	 	 	 	SLFN5	1	
+Cell Cycle	G1/S phase transition	Delay in initiation of G1/S phase transition	4.83E-02	 	 	 	 	IFI16	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	breast cancer	TNM stage II breast cancer	4.83E-02	 	 	 	 	CMPK2	1	
+Infectious Diseases	toxoplasmosis	Toxoplasmosis	4.83E-02	 	 	 	 	Irgm1	1	
+Developmental Disorder, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	vaginal atresia	Vaginal atresia	4.83E-02	 	 	 	 	DHX58	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long term synaptic depression	Long term synaptic depression	4.88E-02	 	 	 	 	SCN4B,Nrgn	2	
+Cellular Function and Maintenance	function	Function of phagocytes	4.99E-02	 	 	 	 	STAT1,STAT2,DDX58	3	
+
+Tox Functions for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Cardiac Arrythmia, Congenital Heart Anomaly	long-QT syndrome 10	Long-QT syndrome 10	2.60E-03	 	 	 	 	SCN4B	1	
+Liver Cholestasis	progressive familial intrahepatic cholestasis type 4	Progressive familial intrahepatic cholestasis type 4	2.60E-03	 	 	 	 	TJP2	1	
+Glomerular Injury, Renal Inflammation, Renal Nephritis	systemic lupus erythematosus nephritis	Systemic lupus erythematosus nephritis	3.32E-03	 	 	 	 	PARP12,IRF7	2	
+Renal Necrosis/Cell Death	necroptosis	Necroptosis of kidney cell lines	7.79E-03	 	 	 	 	ZBP1	1	
+Renal Necrosis/Cell Death	cell viability	Cell viability of kidney cell lines	2.01E-02	 	 	 	 	IRF9,STAT2	2	
+Cardiac Arrythmia, Tachycardia	catecholaminergic polymorphic ventricular tachycardia type 1	Catecholaminergic polymorphic ventricular tachycardia type 1	3.08E-02	 	 	 	 	SCN4B	1	
+Cardiac Proliferation	proliferation	Proliferation of cardiac fibroblasts	3.08E-02	 	 	 	 	STAT1	1	
+Cardiac Arrythmia	familial atrial fibrillation	Familial atrial fibrillation	4.34E-02	 	 	 	 	SCN4B	1	
+Liver Necrosis/Cell Death	focal necrosis	Focal necrosis of liver	4.59E-02	 	 	 	 	STAT1	1	
+Congenital Heart Anomaly	familial congenital heart disease	Familial congenital heart disease	6.08E-02	 	 	 	 	SCN4B,JMJD6	2	
+Renal Necrosis/Cell Death	cell death	Cell death of kidney cell lines	7.96E-02	 	 	 	 	EIF2AK2,TJP2,ZBP1	3	
+Degeneration of liver	degeneration	Degeneration of liver	8.49E-02	 	 	 	 	DDX58	1	
+Congenital Heart Anomaly	double outlet right ventricle	Double outlet right ventricle	1.25E-01	 	 	 	 	JMJD6	1	
+Liver Fibrosis	activation	Activation of hepatic stellate cells	1.27E-01	 	 	 	 	STAT1	1	
+Liver Fibrosis, Liver Proliferation	proliferation	Proliferation of hepatic stellate cells	1.31E-01	 	 	 	 	STAT1	1	
+Increased Levels of Alkaline Phosphatase	activation	Increased activation of alkaline phosphatase	1.65E-01	 	 	 	 	IFI16	1	
+Renal Necrosis/Cell Death	apoptosis	Apoptosis of kidney cell lines	1.74E-01	 	 	 	 	EIF2AK2,TJP2	2	
+Liver Enlargement	hepatomegaly	Hepatomegaly	2.22E-01	 	 	 	 	STAT1	1	
+Liver Inflammation/Hepatitis	infection	Infection by Hepatitis C virus	2.42E-01	 	 	 	 	DDX58	1	
+Cardiac Dilation, Cardiac Enlargement	primary dilated cardiomyopthy	Primary dilated cardiomyopthy	2.44E-01	 	 	 	 	SCN4B	1	
+Liver Inflammation/Hepatitis	inflammation	Inflammation of liver	2.73E-01	 	 	 	 	STAT1,DDX58	2	
+Liver Damage	hepatic injury	Hepatic injury	3.18E-01	 	 	 	 	STAT1	1	
+Liver Necrosis/Cell Death	apoptosis	Apoptosis of hepatocytes	3.41E-01	 	 	 	 	STAT1	1	
+Liver Fibrosis	fibrosis	Fibrosis of liver	3.42E-01	 	 	 	 	STAT1	1	
+Cardiac Necrosis/Cell Death	cell death	Cell death of cardiomyocytes	4.76E-01	 	 	 	 	STAT1	1	
+Liver Steatosis	hepatic steatosis	Hepatic steatosis	6.34E-01	 	 	 	 	HELZ2	1	
+Hepatocellular carcinoma, Liver Hyperplasia/Hyperproliferation	hepatocellular carcinoma	Hepatocellular carcinoma	1.00E00	 	 	 	 	EIF2AK2,RNF213	2	
+Liver Hyperplasia/Hyperproliferation	liver carcinoma	Liver carcinoma	1.00E00	 	 	 	 	EIF2AK2,STAT1,OASL,STAT2,RNF213,DDX58,PARP14,ZBP1,IFI16	9	
+Liver Hyperplasia/Hyperproliferation	liver tumor	Liver tumor	1.00E00	 	 	 	 	EIF2AK2,STAT1,OASL,STAT2,NLRC5,RNF213,DDX58,PARP14,ZBP1,IFI16	10	
+
+Regulator Effects for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Consistency Score	Node Total	Regulator Total	Regulators	Target Total	Target Molecules in Dataset	Disease & Function Total	Diseases & Functions	Known Regulator-Disease/Function Relationships
+136.273	65	39	ACKR2,CGAS,EIF2AK2,FADD,FZD9,Ifn,IFN alpha/beta,IFN Beta,IFN type 1,IFNA2,Ifnar,IFNAR1,IFNL3,IL10RA,IL1RN,IL21,Interferon alpha,IRF1,IRF3,IRF5,Irgm1,JAK,MAPK1,MAVS,NFATC2,NKX2-3,SAMSN1,SASH1,SOCS1,STAT4,TICAM1,TLR3,TLR4,TLR7,TMEM173,TNF,TNFSF10,TNK1,TREX1	19	DDX58,DHX58,IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,IRF9,Mx1,NLRC5,OAS2,OASL,Oasl2,PARP12,RSAD2,RTP4,STAT1,STAT2,ZBP1	7	Antiviral response,Binding of DNA,Cytostasis,Immune response of cells,Replication of Influenza A virus,Replication of vesicular stomatitis virus,Replication of viral replicon	37% (100/273)	
+82.360	62	35	ACKR2,DDX58,EIF2AK2,FADD,Ifn,IFN Beta,IFNA1/IFNA13,IFNA2,Ifnar,IFNAR1,IFNB1,IFNL3,IFNL4,IL10RA,IL21,Interferon alpha,IRF1,IRF3,IRF5,Irgm1,JAK,JAK1,MAPK1,MAVS,NKX2-3,PRL,SOCS1,STAT4,TICAM1,TLR4,TLR7,TLR9,TNF,TNFSF10,TNK1	19	DHX58,IFI16,Ifi27l2a/Ifi27l2b,IFIT1B,IFIT2,IRF7,IRF9,Mx1,NLRC5,OAS2,OASL,Oasl2,PARP12,RSAD2,RTP4,STAT1,STAT2,USP18,ZBP1	8	Antiviral response,Binding of DNA,Cytostasis,Immune response of cells,Infection of mammalia,Replication of Influenza A virus,Replication of vesicular stomatitis virus,Replication of viral replicon	46% (128/280)	
+-3.182	10	1	IFNL1	8	DDX58,EIF2AK2,IFIT2,IRF9,OASL,STAT1,STAT2,USP18	1	Infection of mammalia	0% (0/1)	
+-4.919	7	1	STAT3	5	EIF2AK2,IFI16,Mx1,OASL,RSAD2	1	Replication of viral replicon	0% (0/1)	
+-4.919	7	1	PNPT1	5	DDX58,EIF2AK2,IFI16,Irgm1,STAT1	1	Cytostasis	0% (0/1)	
+-4.919	7	1	IL4	5	IFI16,IRF7,IRF9,STAT1,ZBP1	1	Binding of DNA	100% (1/1)	
+-7.273	12	1	IFNG	10	DDX58,EIF2AK2,IFIT2,IRF7,IRF9,Irgm1,OASL,STAT1,STAT2,USP18	1	Infection of mammalia	100% (1/1)	
+-7.273	12	1	TRIM24	10	DDX58,DHX58,IFIT2,IRF7,IRF9,Irgm1,OASL,STAT1,STAT2,USP18	1	Infection of mammalia	0% (0/1)	
+-7.506	5	1	NRAS	3	IFI16,Irgm1,STAT1	1	Cytostasis	100% (1/1)	
+-7.506	5	1	ELAVL1	3	IFI16,Irgm1,STAT1	1	Cytostasis	0% (0/1)	
+-14.000	6	1	BTK	4	IFI35,IRF9,OAS2,STAT1	1	Viral Infection	0% (0/1)	
+Networks for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+ID	Analysis	Molecules in Network	Score	Focus Molecules	Top Diseases and Functions	
+1	R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	Akt,DDX58,DHX58,IFI35,IFIT1B,IFIT2,IFN Beta,IFN alpha/beta,IFN type 1,IRF,IRF7,IRF9,ISGF3,Ifi27l2a/Ifi27l2b,Ifn,Ifnar,Interferon-α Induced,Irgm1,Isg,Mx1,NLRC5,OAS2,OASL,Oasl2,PARP14,RSAD2,RTP4,STAT-1/2,STAT2,Sp100,Stat1-Stat2,TJP2,USP18,XAF1,ZBP1	60	23	Antimicrobial Response, Inflammatory Response, Immunological Disease	
+2	R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	ARPP21,CD3,CMPK2,CTXN1,EIF2AK2,HELZ2,HERC6,HPCA,Histone h4,IFI16,IL12 (complex),IL12 (family),Ifn gamma,Ige,Immunoglobulin,Interferon alpha,JAK,JAK1/2,JMJD6,LGALS3BP,MHC CLASS I (family),MHC Class II (complex),Mek,NFkB (complex),Nrgn,PARP12,RNF213,SDC3,SLFN5,STAT,STAT1,TCR,Trim30a/Trim30d,caspase,cytokine	40	17	Immunological Disease, Infectious Diseases, Connective Tissue Disorders	
+3	R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	26s Proteasome,ACKR1,ADGRG5,APOBEC3G,C2CD2L,CCL8,CFLAR,CMKLR1,DIO3,ERK,F2,GJD2,HTT,Histone h3,IRF7,Ifi47,Insulin,KL,LDL,MKK3/6,MKNK2,NUS1,P38 MAPK,PARP,PITX1,PTPN1,PTPN22,Pro-inflammatory Cytokine,RAS,RNA polymerase II,SAA,SARM1,SCN4B,SRC (family),TLR10	7	4	Cell Signaling, Molecular Transport, Vitamin and Mineral Metabolism	
+4	R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM	CNOT8,LIPM,MALAT1,lipase	2	1	Cancer, Cellular Development, Organismal Injury and Abnormalities	
+
+My Lists for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+My Lists	 -log(p-value)	Ratio	Molecules 
+
+Tox Lists for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+Ingenuity Toxicity Lists	 -log(p-value)	Ratio	Molecules 
+Renal Necrosis/Cell Death	1.91E00	9.29E-03	EIF2AK2,IRF9,STAT2,TJP2,ZBP1
+Increases Depolarization of Mitochondria and Mitochondrial Membrane	1.36E00	5.88E-02	EIF2AK2
+Increases Cardiac Proliferation	9.29E-01	2.08E-02	STAT1
+Increases Liver Hepatitis	7.45E-01	1.32E-02	DDX58
+Increases Liver Damage	6.87E-01	1.14E-02	STAT1
+TGF-β Signaling	6.54E-01	1.04E-02	IRF7
+Hepatic Cholestasis	4.38E-01	5.78E-03	TJP2
+NF-κB Signaling	4.25E-01	5.56E-03	EIF2AK2
+PPARα/RXRα Activation	4.25E-01	5.56E-03	HELZ2
+Liver Proliferation	3.25E-01	4.1E-03	STAT1
+Cardiac Necrosis/Cell Death	2.9E-01	3.65E-03	STAT1
+Liver Necrosis/Cell Death	2.55E-01	3.24E-03	STAT1
+
+My Pathways for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+My Pathways	 -log(p-value)	Ratio	Molecules 
+
+Analysis Ready Molecules for My Projects->hdMouse_Microarray_Final->R62_6wk_Cd11b_Multiprobe - 2019-10-21 09:57 AM
+ID	Symbol	Expr Log Ratio	Expr p-value
+1436230_at	ADGRG5	0.852203870057549	7.27527471812503E-4
+1451280_at	ARPP21	-1.79781784188123	0.00478723340794794
+1428095_a_at	C2CD2L	-0.583145007411506	0.0484014636684443
+1450484_a_at	CMPK2	1.27606922166556	0.0132901741291762
+1435083_at	CTXN1	-1.45714543029256	0.0187033203225233
+1456890_at	DDX58	0.601882946239266	7.29423021685707E-5
+1451426_at	DHX58	1.10521680451235	8.18467053576966E-4
+1440866_at	EIF2AK2	1.02121678911488	1.80282940499169E-4
+1435454_a_at	HELZ2	1.41266663305698	7.05364551549426E-4
+1438037_at	HERC6	0.604845036182029	0.0274812170279105
+1450930_at	HPCA	-1.56288685034589	0.0220579264329172
+1437636_at	IFI16	2.3634379844613	3.95707937336733E-5
+1426278_at	Ifi27l2a/Ifi27l2b	2.04318510675958	5.59546329962145E-8
+1445897_s_at	IFI35	0.372181116140549	0.0159558268930527
+1450783_at	IFIT1B	2.24102383007735	3.28517695036388E-8
+1418293_at	IFIT2	2.2661071042646	8.37330932948854E-11
+1417244_a_at	IRF7	1.81216365544493	1.7150618912839E-9
+1421322_a_at	IRF9	0.754091681474648	6.15873619181756E-6
+1418825_at	Irgm1	0.599797115826103	7.05364551549426E-4
+1454109_a_at	JMJD6	-0.592514692349079	0.0342307505579981
+1448380_at	LGALS3BP	0.980111204221195	0.00272116245983434
+1430551_s_at	LIPM	0.497580647010012	0.0170244328870329
+1451905_a_at	Mx1	1.62412735405158	4.72158454287407E-5
+1437176_at	NLRC5	1.4834290419976	7.05364551549426E-4
+1423231_at	Nrgn	-1.44387636113791	0.0357068849019746
+1425065_at	OAS2	1.82587551421319	8.55017098492253E-6
+1424339_at	OASL	1.22645944347553	0.0117213215437472
+1453196_a_at	Oasl2	2.420420823296	6.12763852614283E-8
+1426774_at	PARP12	0.480474319474594	8.8693910452084E-4
+1451564_at	PARP14	0.455366172837826	0.00444200783291191
+1455500_at	RNF213	0.554222252825328	8.97079086654722E-4
+1421009_at	RSAD2	1.78559486597195	4.40108543608865E-4
+1418580_at	RTP4	2.26615972309761	5.61369943752768E-12
+1434008_at	SCN4B	-1.43596085240628	0.0360728777208836
+1450027_at	SDC3	0.776035898417761	0.0481874616626986
+1456288_at	SLFN5	1.70095935823063	1.61240743355909E-5
+1451821_a_at	Sp100	0.884221627998555	0.00159333135987726
+1450034_at	STAT1	0.706264665587899	7.36816868493969E-5
+1421911_at	STAT2	0.576690298342253	0.00397114736442125
+1434600_at	TJP2	-0.830721456663086	0.0342307505579981
+1451860_a_at	Trim30a/Trim30d	0.468339072895544	0.0015261321548139
+1418191_at	USP18	2.2550172003106	5.61369943752768E-12
+1443698_at	XAF1	1.28350395545665	1.22393458011374E-7
+1429947_a_at	ZBP1	1.57510634879316	0.00177547371755921
+

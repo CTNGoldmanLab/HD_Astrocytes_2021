@@ -1,0 +1,2 @@
+Row.names	logFC	AveExpr	t	P.Value	adj.P.Val	B	X	ensembl_gene_id	external_gene_name	gene_biotype	description	percentage_gene_gc_content
+1418148_at	1.33425521467867	7.56296649301465	5.95445695050032	1.21470201742206e-06	0.0385728625632374	-2.09503198620731	2455	ENSMUSG00000006638	Abhd1	processed_transcript	abhydrolase domain containing 1 [Source:MGI Symbol;Acc:MGI:1931013]	49.56

@@ -1,0 +1,2413 @@
+---
+title: "Integrated analysis of Mouse/Human Microarray/RNA-Seq data from HD astrocytes and microglia"
+author: "John Mariani"
+date: "1/12/2020"
+output: 
+  github_document
+---
+
+<style>
+    body .main-container {
+        max-width: 1500px;
+    }
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import of Mouse Microarray Data
+
+Read in CEL files from folder mouseData
+```{r, echo = TRUE, message=FALSE, warning=FALSE}
+library(limma)
+library(ggfortify)
+library(pheatmap)
+library(oligo)
+library(Vennerable)
+library(devtools)
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+library(reshape2)
+library(EnhancedVolcano)
+library(data.table)
+library(tidyr)
+library(sva)
+library(cowplot)
+library(affy)
+library(reshape2)
+library(readr)
+library(tximport)
+library(Hmisc)
+library(plyr)
+library(patchwork)
+library(biomaRt)
+library(ggVennDiagram)
+
+
+
+### Run with raw CEL (raw) files in mouseData or load RMA normalized data (rds)
+dataFormat <- "rds"
+
+if(dataFormat == "raw"){
+  fns <- list.celfiles("mouseData")
+  Data <- ReadAffy(filenames=paste0("mouseData/",fns))
+  eset <- affy::rma(Data) #Normalize via RMA
+  edata <- data.frame(exprs(eset))
+  ##For GEO upload
+  write.table(edata, "Output/GEOupload.txt", sep = "\t", quote = F)
+  names(edata) <- gsub("mouseData/", "", eset@experimentData@preprocessing$filenames)
+  saveRDS(edata, "mouseData/edataMouse.rds")
+} else {
+  edata <- readRDS("mouseData/edataMouse.rds")
+}
+
+### Read in sample Info
+sampleTable <- read.csv("mouseData/sampleinfo.csv", stringsAsFactors = T)
+sampleTable <- sampleTable[match(names(edata),sampleTable$Filename),]
+names(edata) <- sampleTable$SampleID
+
+```
+
+## Read in gene information from biomaRt
+
+Grab Ensembl 92 gene information from biomaRt if you don't already have it in the mouseData folder
+
+
+```{r, echo=T}
+filename="mouseData/ensemblGeneListMaffy.csv"
+if(file.exists(filename)){
+  ensemblGeneListMaffy <- read.csv(filename)} else{
+    martm <- useMart(biomart = "ENSEMBL_MART_ENSEMBL", dataset = "mmusculus_gene_ensembl", host = 'http://apr2018.archive.ensembl.org/', ensemblRedirect = T)
+    ensemblGeneListMaffy <- getBM(attributes = c("affy_mouse430_2","ensembl_gene_id","external_gene_name", "gene_biotype", "description"), filters = "affy_mouse430_2",values = row.names(edata), mart = martm)
+    write.csv(ensemblGeneListMaffy, filename)
+  }
+
+```
+
+## Remove probes targeting multiple ensembl IDs
+```{r}
+`%not in%` <- function (x, table) is.na(match(x, table, nomatch=NA_integer_)) #Opposite of %in% function
+
+duplicatedList <- ensemblGeneListMaffy[duplicated(ensemblGeneListMaffy$affy_mouse430_2) == T,]
+edata <- edata[row.names(edata) %not in% duplicatedList$affy_mouse430_2,]
+edataLabeled <- merge(edata, ensemblGeneListMaffy, by.x=0, by.y="affy_mouse430_2")
+edata <- edata[row.names(edata) %in% edataLabeled$Row.names,]
+edatamouseData <- edataLabeled
+ensemblGeneListMaffyUnique <- ensemblGeneListMaffy[ensemblGeneListMaffy$affy_mouse430_2 %in% edatamouseData$Row.names,]
+```
+
+## Subset data for analyses
+```{r}
+#Subsets datasets
+makeGeneSet <- function(Sort, Types, Times){
+  tempGeneSet <- edata[,names(edata) %in% sampleTable[sampleTable$Sort == Sort,]$SampleID & names(edata) %in% sampleTable[sampleTable$Type %in% Types,]$SampleID & names(edata) %in% sampleTable[sampleTable$Age %in% Times,]$SampleID]
+  return(tempGeneSet)
+}
+
+#Creates design dataframes
+makeDesign <- function(GeneSet){
+  tempDesign <- sampleTable[sampleTable$SampleID %in% names(GeneSet),]
+  tempDesign <- tempDesign[match(names(GeneSet),tempDesign$SampleID),]
+  tempDesign$group <- paste0(tempDesign$Type,"_", tempDesign$Age)
+  tempDesign <- droplevels(tempDesign)
+  row.names(tempDesign) <- tempDesign$SampleID
+  return(tempDesign)
+}
+
+#R6/2 Astrocyte datasets
+glt1R62 <- makeGeneSet("Glt1", c("R62", "WT"), c("6wk", "12wk"))
+glt1R62Design <- makeDesign(glt1R62)
+
+autoplot(prcomp(t(glt1R62)), data = glt1R62Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Glt1 R62")
+
+#zQ175 Astrocyte datasets
+glt1Q175 <-makeGeneSet("Glt1", c("Q175", "WT"), c("6mo", "12mo"))
+glt1Q175Design <- makeDesign(glt1Q175)
+
+autoplot(prcomp(t(glt1Q175)), data = glt1Q175Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Glt1 Q175")
+
+#Combined R6/2 and zQ175 astrocytes
+glt1 <- cbind(glt1R62, glt1Q175) 
+glt1Design <- rbind(glt1R62Design, glt1Q175Design)
+glt1Design <- glt1Design[match(names(glt1),row.names(glt1Design)),]
+
+
+glt1PCA <- autoplot(prcomp(t(glt1)), data = glt1Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Glt1+/CD11b- Astrocytes")
+
+
+#R6/2 GL1-/CD11b- dataset
+negR62 <- makeGeneSet("Neg", c("R62", "WT"), c("6wk", "12wk"))
+negR62Design <- makeDesign(negR62)
+
+autoplot(prcomp(t(negR62)), data = negR62Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Negative R6/2")
+
+#Q175 GL1-/CD11b- dataset
+negQ175 <- makeGeneSet("Neg", c("Q175", "WT"), c("6mo", "12mo"))
+negQ175Design <- makeDesign(negQ175)
+
+autoplot(prcomp(t(negQ175)), data = negQ175Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Negative zQ175")
+
+#R6/2 CD11b+ dataset
+cd11bR62 <- makeGeneSet("CD11b", c("R62", "WT"), c("6wk", "12wk"))
+cd11bR62Design <- makeDesign(cd11bR62)
+
+autoplot(prcomp(t(cd11bR62)), data = cd11bR62Design, colour = 'group', size = 3) + theme_minimal() + ggtitle("Cd11b R6/2")
+
+#Q175 CD11b+ dataset
+cd11bQ175 <- makeGeneSet("CD11b", c("Q175", "WT"), c("6mo", "12mo"))
+cd11bQ175Design <- makeDesign(cd11bQ175)
+
+autoplot(prcomp(t(cd11bQ175)), data = cd11bQ175Design, colour = 'group', size = 3) + theme_minimal()  + ggtitle("Cd11b Q175")
+
+#Combined R6/2 and zQ175 expression for CD11b
+cd11b <- cbind(cd11bR62, cd11bQ175)
+cd11bDesign <- rbind(cd11bR62Design, cd11bQ175Design)
+cd11bPCA <- autoplot(prcomp(t(cd11b)), data = cd11bDesign, colour = 'group', size = 3) + theme_minimal()  + theme(legend.position = "bottom")
+
+```
+
+## Glt1+ Differential Expression
+Differential expression of all Glt1 data is carried out in limma.
+```{r, warning = FALSE}
+glt1Groups <- factor(paste(glt1Design$Type, glt1Design$Age, sep="_"))
+
+design <- model.matrix(~0+glt1Groups)
+colnames(design) <- levels(glt1Groups)
+
+fit <- lmFit(glt1, design)
+fit <- eBayes(fit)
+
+cont.matrix <- makeContrasts(Q175_6mo = Q175_6mo-WT_6mo,
+                             Q175_12mo = Q175_12mo-WT_12mo,
+                             R62_6wk = R62_6wk-WT_6wk,
+                             R62_12Wk = R62_12wk-WT_12wk,
+                             levels=design)
+
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+
+dir.create("Output")
+
+#Function to write out tab delimited DE lists for import into IPA
+write.ipa <- function(object, filename){
+  write.table(object, paste0("Output/", filename,".txt"), quote = F, row.names = F, sep = "\t")
+}
+
+Q175_6mo_Glt1_Multiprobe <- merge(topTable(fit2, coef=1, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2) #All significant probes
+write.ipa(Q175_6mo_Glt1_Multiprobe, "Q175_6mo_Glt1_Multiprobe")
+Q175_6mo_Glt1 <- Q175_6mo_Glt1_Multiprobe[order(Q175_6mo_Glt1_Multiprobe$AveExpr,decreasing = T),]
+Q175_6mo_Glt1 <- Q175_6mo_Glt1[!duplicated(Q175_6mo_Glt1$ensembl_gene_id),] #Highest intensity significant probe
+write.ipa(Q175_6mo_Glt1, "Q175_6mo_Glt1")
+
+
+Q175_12mo_Glt1_Multiprobe <- merge(topTable(fit2, coef=2, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(Q175_12mo_Glt1_Multiprobe, "Q175_12mo_Glt1_Multiprobe")
+
+Q175_12mo_Glt1 <- Q175_12mo_Glt1_Multiprobe[order(Q175_12mo_Glt1_Multiprobe$AveExpr,decreasing = T),]
+Q175_12mo_Glt1 <- Q175_12mo_Glt1[!duplicated(Q175_12mo_Glt1$ensembl_gene_id),]
+write.ipa(Q175_12mo_Glt1, "Q175_12mo_Glt1")
+
+
+R62_6wk_Glt1_Multiprobe <- merge(topTable(fit2, coef=3, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(R62_6wk_Glt1_Multiprobe, "R62_6wk_Glt1_Multiprobe")
+
+R62_6wk_Glt1 <- R62_6wk_Glt1_Multiprobe[order(R62_6wk_Glt1_Multiprobe$AveExpr,decreasing = T),]
+R62_6wk_Glt1 <- R62_6wk_Glt1[!duplicated(R62_6wk_Glt1$ensembl_gene_id),]
+write.ipa(R62_6wk_Glt1, "R62_6wk_Glt1")
+
+
+R62_12wk_Glt1_Multiprobe <- merge(topTable(fit2, coef=4, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+
+write.ipa(R62_12wk_Glt1_Multiprobe, "R62_12wk_Glt1_Multiprobe")
+R62_12wk_Glt1 <- R62_12wk_Glt1_Multiprobe[order(R62_12wk_Glt1_Multiprobe$AveExpr,decreasing = T),]
+R62_12wk_Glt1 <- R62_12wk_Glt1[!duplicated(R62_12wk_Glt1$ensembl_gene_id),]
+write.ipa(R62_12wk_Glt1, "R62_12wk_Glt1")
+
+
+VennGlt1 <- Venn(list("6 Month Q175" = Q175_6mo_Glt1$external_gene_name,"6 Week R62" = R62_6wk_Glt1$external_gene_name,"1 Year Q175" = Q175_12mo_Glt1$external_gene_name, "12 Week R62" = R62_12wk_Glt1$external_gene_name))
+plot(VennGlt1, doWeights = F, type = "ellipses", show = list(SetLabels = T,Faces = FALSE))
+
+
+### Directionally consistent between late timepoints
+R62_Q175_Late_Intersect <- merge(R62_12wk_Glt1_Multiprobe, Q175_12mo_Glt1_Multiprobe, by.x = 1, by.y = 1)
+prop.table(table(R62_Q175_Late_Intersect$logFC.x * R62_Q175_Late_Intersect$logFC.y > 0))
+
+
+```
+
+## Make Scatter Plots of median expression of each DE comparison
+```{R}
+### Create a DF of the highest expressed probes across samples except for when the highest expressed probe of a gene is not DE but a weaker expressed one is
+makeScatterPlot <- function(array, ensembl, deGeneLists, returnProbes = T){
+  scatterDF <- merge(droplevels(array), ensembl, by.x = 0, by.y = 2)
+  
+  #Keep highest expressed probe in DE genes
+  ogGenes <- rbindlist(deGeneLists)
+  ogGenes <- ogGenes[order(ogGenes$AveExpr,decreasing = T),]
+  ogGenes <- ogGenes[!duplicated(ogGenes$external_gene_name),]
+  ogGenes <- ogGenes[,c(1,10)]
+  ogGeneList <- c(ogGenes$Row.names)
+  names(ogGeneList) <- c(as.character(ogGenes$external_gene_name))
+  
+  ### DF of all genes that are not DE
+  scatterDF2 <- scatterDF[scatterDF$external_gene_name %not in% names(ogGeneList),]
+  
+  ### Probe averages across these
+  scatterMeans <- rowMeans(scatterDF2[,2:(1+ncol(array))])
+  scatterMeans <- scatterMeans[order(scatterMeans,decreasing = T)]
+  
+  scatterDF2 <- scatterDF2[match(names(scatterMeans),row.names(scatterDF2)),]
+  dup <- duplicated(scatterDF2$external_gene_name)
+  ### Keep only the highest expressed probes
+  scatterDF2 <- scatterDF2[!dup,]
+  
+  ### Probes should be true if we want the resultant DF to have probes as identifiers
+  returnProbes <- returnProbes
+  
+  if(returnProbes ==T){
+    scatterDF2 <- data.frame(row.names = scatterDF2$Row.names, scatterDF2[,2:(1+ncol(array))])
+  } else{
+    scatterDF2 <- data.frame(row.names = scatterDF2$external_gene_name, scatterDF2[,2:(1+ncol(array))])
+  }
+  
+  ### Combined DF of DE and non DE genes
+  scatterDF3 <- scatterDF[scatterDF$Row.names %in% ogGeneList,]
+  if(returnProbes ==T){
+    scatterDF3 <- data.frame(row.names = scatterDF3$Row.names, scatterDF3[,2:(1+ncol(array))])
+  } else{
+    scatterDF3 <- data.frame(row.names = scatterDF3$external_gene_name, scatterDF3[,2:(1+ncol(array))])
+  }
+  
+  scatterDF3 <- rbind(scatterDF2, scatterDF3)
+  return(scatterDF3)
+}
+
+graphCountsGlt1 <- makeScatterPlot(glt1, ensemblGeneListMaffy ,list(R62_6wk_Glt1,R62_12wk_Glt1, Q175_6mo_Glt1, Q175_12mo_Glt1))
+graphCountsCd11b <- makeScatterPlot(glt1, ensemblGeneListMaffy ,list(R62_6wk_Glt1,R62_12wk_Glt1, Q175_6mo_Glt1, Q175_12mo_Glt1))
+
+### Compute Medians of a group
+compMedian <- function(df,groupName, sampleTable){
+  return(rowMedians(df[,colnames(df) %in% sampleTable[sampleTable$group == groupName,]$SampleID]))
+}
+
+graphCountsMouse <- graphCountsGlt1 #For Use later
+graphCountsGlt1 <- as.matrix(graphCountsGlt1)
+
+#R62 Scatter Plot
+groupMediansGlt1 <- data.frame(row.names = row.names(graphCountsGlt1), R62_12WK = compMedian(graphCountsGlt1, "R62_12wk",glt1R62Design ),
+                           WT_12WK = compMedian(graphCountsGlt1, "WT_12wk", glt1R62Design),
+                           R62_6WK = compMedian(graphCountsGlt1, "R62_6wk", glt1R62Design),
+                           WT_6WK = compMedian(graphCountsGlt1, "WT_6wk", glt1R62Design))
+
+groupMediansGlt1 <- merge(groupMediansGlt1,ensemblGeneListMaffy, by.x= 0, by.y = 2)
+row.names(groupMediansGlt1) <- groupMediansGlt1$Row.names
+
+R62graph6 <- groupMediansGlt1[,colnames(groupMediansGlt1) %in% c("R62_6WK","WT_6WK", "external_gene_name")]
+R62graph12 <- groupMediansGlt1[,colnames(groupMediansGlt1) %in% c("R62_12WK","WT_12WK", "external_gene_name")]
+
+colnames(R62graph6) <- c("R62", "WT", "external")
+R62graph6$probe <- row.names(R62graph6)
+R62graph6$set <- "6WK"
+colnames(R62graph12) <- c("R62", "WT", "external")
+R62graph12$probe <- row.names(R62graph12)
+R62graph12$set <- "12WK"
+
+R62graph <- rbind(R62graph6, R62graph12)
+R62graph$external <- as.character(R62graph$external)
+
+### Randomize order for plotting
+R62graphRando <- R62graph %>%
+  arrange(sample(1:nrow(.)))
+
+
+ggplot(R62graphRando, aes(y=R62, x=WT, colour = set, label = external)) + geom_point(alpha = 1, size = 2) + geom_abline(intercept = 0, slope = 1) + theme_minimal() + scale_color_manual(values=c("red", "blue")) + xlim(c(1,14)) + ylim(c(1,14)) +
+  geom_text_repel(data = subset(R62graphRando, R62-WT > 2.5),
+                  nudge_y       = 1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external)) +
+  geom_text_repel(data = subset(R62graphRando, WT-R62 > 2.25),
+                  nudge_y       = -1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external))
+
+#####Q175 Scatterplot
+groupMediansQ175 <- data.frame(row.names = row.names(graphCountsGlt1), Q175_12mo = compMedian(graphCountsGlt1, "Q175_12mo",glt1Q175Design ),
+                         WT_12mo = compMedian(graphCountsGlt1, "WT_12mo", glt1Q175Design),
+                         Q175_6mo = compMedian(graphCountsGlt1, "Q175_6mo", glt1Q175Design),
+                         WT_6mo = compMedian(graphCountsGlt1, "WT_6mo", glt1Q175Design))
+
+groupMediansQ175 <- merge(groupMediansQ175,ensemblGeneListMaffy, by.x= 0, by.y = 2)
+row.names(groupMediansQ175) <- groupMediansQ175$Row.names
+
+
+Q175graph6 <- groupMediansQ175[,colnames(groupMediansQ175) %in% c("Q175_6mo","WT_6mo", "external_gene_name")]
+Q175graph12 <- groupMediansQ175[,colnames(groupMediansQ175) %in% c("Q175_12mo","WT_12mo", "external_gene_name")]
+
+colnames(Q175graph6) <- c("Q175", "WT", "external")
+Q175graph6$probe <- row.names(Q175graph6)
+Q175graph6$set <- "6mo"
+colnames(Q175graph12) <- c("Q175", "WT", "external")
+Q175graph12$probe <- row.names(Q175graph12)
+Q175graph12$set <- "12mo"
+
+Q175graph <- rbind(Q175graph6, Q175graph12)
+Q175graph$external <- as.character(Q175graph$external)
+
+Q175graphRando <- Q175graph %>%
+  arrange(sample(1:nrow(.)))
+
+
+ggplot(Q175graphRando, aes(y=Q175, x=WT, colour = set, label = external)) + geom_point(alpha = 1, size = 2) + geom_abline(intercept = 0, slope = 1) + theme_minimal() + scale_color_manual(values=c("red", "blue")) + xlim(c(1,14)) + ylim(c(1,14)) +
+  geom_text_repel(data = subset(Q175graphRando, Q175-WT > 2),
+                  nudge_y       = 1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external)) +
+  geom_text_repel(data = subset(Q175graphRando, WT-Q175 > 2),
+                  nudge_y       = -1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external))
+
+```
+
+### Make Scatter plots of log2FC differences between models
+```{r, fig.width=9}
+
+glt1PCA <- glt1PCA + theme(legend.position = "bottom") + ggtitle("")
+
+
+
+Q175_12mo_Glt1_Allprobes<- merge(topTable(fit2, coef=2, number = 100000, p.value = 1), ensemblGeneListMaffy, by.x = 0, by.y =2)
+
+
+R62_12wk_Glt1_Allprobes <- merge(topTable(fit2, coef=4, number = 100000, p.value = 1), ensemblGeneListMaffy, by.x = 0, by.y =2)
+
+scatterFCglt1 <- merge(Q175_12mo_Glt1_Allprobes, R62_12wk_Glt1_Allprobes, by.x = 1, by.y = 1)
+scatterFCglt1$de <- "Not DE in either"
+
+
+scatterFCglt1$de <- ifelse(((scatterFCglt1$Row.names %in% R62_12wk_Glt1_Multiprobe$Row.names) & (scatterFCglt1$Row.names %in% Q175_12mo_Glt1_Multiprobe$Row.names)), yes = "Both", no = scatterFCglt1$de)
+
+scatterFCglt1$de <- ifelse(scatterFCglt1$Row.names %in% scatterFCglt1[scatterFCglt1$Row.names %in% R62_12wk_Glt1_Multiprobe$Row.names & scatterFCglt1$Row.names %not in% Q175_12mo_Glt1_Multiprobe$Row.names,]$Row.names, yes = "R6/2 Only", no = scatterFCglt1$de)
+
+
+scatterFCglt1$de <- ifelse(scatterFCglt1$Row.names %in% scatterFCglt1[scatterFCglt1$Row.names %not in% R62_12wk_Glt1_Multiprobe$Row.names & scatterFCglt1$Row.names %in% Q175_12mo_Glt1_Multiprobe$Row.names,]$Row.names, yes = "zQ175 Only", no = scatterFCglt1$de)
+
+
+scatterFCglt1 <- scatterFCglt1 %>%
+  arrange(sample(1:nrow(.)))
+
+scatterFCglt1GG <- ggplot(scatterFCglt1, aes(y=logFC.x - logFC.y, x = AveExpr.x, label = external_gene_name.x, color = de)) + geom_point(size = 2, alpha = .5) + theme_minimal() + scale_color_manual(values=c("red", "blue", "green", "black")) + xlab("Average probe expression") + ylab("12 wk R6/2 log2FC - \n 12 mo zQ175 log2FC") + theme(legend.position = "bottom")
+  
+
+glt1PCA  | scatterFCglt1GG
+```
+
+
+## Generate Network Nodes and Edges for Gephi/Cytoscape
+```{R, warning = F}
+columnNames <- c("Pathway", "Q175_12mo", "Q175_6mo", "R62_12wk", "R62_6wk")
+
+files <- paste0("mouseData/",c("R62_12_Glt1_IPA.txt", "R62_6_Glt1_IPA.txt", "Q175_6_Glt1_IPA.txt", "Q175_12_Glt1_IPA.txt"))
+compNames <- c("R62_12wk", "R62_6wk", "Q175_6mo", "Q175_12mo")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = "Canonical Pathways for My Projects",drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = "Upstream Regulators for My Projects", drop = c(1:2,4:6,8:10,13:14))
+  upstreamIPA <- upstreamIPA[,c(1,3,2,4)]
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = "Diseases and Bio Functions for My Projects", drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+rm(canonicalIPA)
+rm(upstreamIPA)
+rm(functionalIPA)
+rm(tempIPA)
+
+ogIPA <- IPA
+IPA <- IPA[IPA$pVal > -log10(0.001),]
+IPA[is.na(IPA$zScore)]$zScore <- 0
+
+#Filter out uninteresting terms
+filterTerms <- c("cancer","glioma", "abdominal", "carcinoma", "endometrium", "eye", "nose", "epidermis", "head", "lymphocyte", "renal", "snout", "tooth", 
+                 "connective", "tumor", "fibroblast", "rickets", "mouth", "maxilla", "cartilage", "neoplasm", "oma", "lymph", "liver", "psoriasis", "cardio",
+                 "cardiac", "tongue", "disc", "tinea", "herpes", "Picornaviridae", "virus", "killer T", "muscle", "myopathy", "pancreatic", "Onychomycosis",
+                 "leukocyte", "oral cavity","osteoclast", "Merkel", "macrophage", "Hydrometrocolpos", "Hand", "Gastric", "Thymocytes", "diabetes",
+                 "Dupuytren", "myoblast", "ear$", "implantation", "bone", "limb", "cleft lip", "Calcinosis", "lung", "Benign lesion", 
+                 "body axis", "sensory organ", "diabetic", "neutrophil", "infection of mammalia", "leukopoiesis", "neoplasia", "Sensory system development",
+                 "T cell")
+filteredIPA <- IPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+
+
+####Edge between Go term and Comparison
+edgesIPA <- filteredIPA[,c(1,6)]
+
+edges <- filteredIPA %>% 
+  mutate(genes = strsplit(as.character(Genes), ",")) %>% 
+  unnest(genes) %>% .[,-4]
+
+
+### Edge between gene and GO term
+edges <- edges[,c(1,6)]
+
+names(edges) <- c("Pathway", "comparison")
+
+edgesIPA$type <- "GO"
+edges$type <- "Gene"
+
+nodesIPA <- c(edgesIPA$Pathway, edges$comparison, compNames)
+names(nodesIPA) <- c(edgesIPA$type, edges$type, rep("Comparison",4))
+
+
+nodes <- data.frame(name = nodesIPA, type = names(nodesIPA))
+nodes$name <- gsub(",","-",nodes$name)
+
+
+finalEdges <- rbind(edgesIPA, edges)
+
+#Remove ambiguous gene attibutions.
+filterGenes <- c("includes")
+nodes <- nodes[!grepl(paste(filterGenes, collapse = "|"), ignore.case = T, nodes$name),]
+finalEdges <- finalEdges[!grepl(paste(filterGenes, collapse = "|"), ignore.case = T, finalEdges$comparison),]
+finalEdges$Pathway <- gsub(",","-",finalEdges$Pathway)
+
+#Write out tables for import into network software
+#write.table(finalEdges, "EdgesWithGenes.csv", quote = F, row.names = F, sep = ",")
+#write.table(nodes, "nodes.csv", quote = F, row.names = F, sep = ",")
+
+```
+
+## Glt1+ HM
+```{r, fig.height = 7}
+## Figure 2 HM with select genes
+glt1HMgenes <- unlist(strsplit(gsub(" ", "","S100b,Vegfa,Pcdh15,Homer1,Atp8a2,Uchl1,Ncam2,Dio2,Icam1,Il17b,Stat1,Bmp4,Hmgcs1,Aqp4,Id2,Id4,Bcan,Slc1a2,Abca1,Srebf2,Idi1,Id3,Cyp51,Abca5,Abca2,Hmgcr,Id1,Vegfb,Pcdh7,Ascl1,Smarca1,Bdnf"),","))
+
+temp <- ensemblGeneListMaffyUnique[ensemblGeneListMaffyUnique$affy_mouse430_2 %in% row.names(graphCountsMouse) & ensemblGeneListMaffyUnique$external_gene_name %in% glt1HMgenes,]$affy_mouse430_2
+
+glt1Labeled <- merge(glt1, ensemblGeneListMaffy, by.x = 0, by.y = 2)
+glt1HMgenes <- glt1Labeled[glt1Labeled$Row.names %in% ensemblGeneListMaffyUnique[ensemblGeneListMaffyUnique$affy_mouse430_2 %in% row.names(graphCountsMouse) & ensemblGeneListMaffyUnique$external_gene_name %in% glt1HMgenes,]$affy_mouse430_2,]
+
+row.names(glt1HMgenes) <- glt1HMgenes$external_gene_name
+glt1HMgenes <- glt1HMgenes[,2:(1+ncol(glt1))]
+
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=299)
+
+glt1Design$Type <- relevel(glt1Design$Type, 2)
+glt1Design <- glt1Design[order(glt1Design$Days, glt1Design$Type, decreasing = F),]
+glt1HMgenes <- glt1HMgenes[,match(row.names(glt1Design), colnames(glt1HMgenes))]
+
+annotationFig2 <- data.frame(row.names = row.names(glt1HMgenes))
+annotationFig2$Q175_1Yr <- factor(ifelse(row.names(annotationFig2) %in% Q175_12mo_Glt1_Multiprobe$external_gene_name,"Q175_1Yr","White"))
+annotationFig2$Q175_6mo <- factor(ifelse(row.names(annotationFig2) %in% Q175_6mo_Glt1_Multiprobe$external_gene_name,"Q175_6mo","White"))
+annotationFig2$R62_12Wk <- factor(ifelse(row.names(annotationFig2) %in% R62_12wk_Glt1_Multiprobe$external_gene_name,"R62_12Wk","White"))
+annotationFig2$R62_6Wk <- factor(ifelse(row.names(annotationFig2) %in% R62_6wk_Glt1_Multiprobe$external_gene_name,"R62_6Wk","White"))
+
+annotation_palette_Fig2 <-  list(R62_6Wk= c(White = "white", R62_6Wk = "Orange"), R62_12Wk = c(White = "white", R62_12Wk = "Red"), Q175_6mo = c(Q175_6mo = "Blue", White = "white"), Q175_1Yr = c(Q175_1Yr = "Purple", White = "white"))
+
+# Add node modules obtained from Gephi
+nodeModules <- read.delim("mouseData/nodeModules.txt")
+nodeModules$Node <- tools::toTitleCase(tolower(as.character(nodeModules$Node)))
+
+
+glt1HMgenes <- merge(glt1HMgenes, nodeModules, by.x = 0, by.y = 1, all.x = T)
+
+#Reorder arbitrary module numbers to order in paper
+
+Module0 <- glt1HMgenes[glt1HMgenes$Module == 0,]
+Module1 <- glt1HMgenes[glt1HMgenes$Module == 1,]
+Module2 <- glt1HMgenes[glt1HMgenes$Module == 2,]
+Module3 <- glt1HMgenes[glt1HMgenes$Module == 3,]
+
+moduleList <- list(Module2, Module1, Module3, Module0) 
+
+nodeModules$Module <- as.factor(nodeModules$Module)
+nodeModules$Module <- revalue(nodeModules$Module, c("0" = "4", "1" = "2", "2" = "1"))
+
+#write.table(nodeModules, "Output/nodeModulesRearranged.txt", sep = "\t", quote = F, row.names = F)
+
+# Hierarchical cluster within module and piece back together
+scale_rows = function(x){
+  m = apply(x, 1, mean, na.rm = T)
+  s = apply(x, 1, sd, na.rm = T)
+  return((x - m) / s)
+}
+
+moduleCluster <- function(genes){
+  temp <- scale_rows(genes)
+  rowclust = hclust(dist(temp))
+  temp = temp[rowclust$order,]
+  return(as.data.frame(temp))
+}
+
+moduleHM <- do.call("rbind",lapply(moduleList, function(x) moduleCluster(data.frame(row.names = x[,1], x[,c(2:(1+ncol(glt1)))]))))
+
+for(i in 1:length(moduleList)){
+  temp <- nrow(moduleList[[i]])
+  if(i == 1){
+    rowGaps <- c(temp)
+  } else {
+    rowGaps <- c(rowGaps, sum(rowGaps[i-1], temp))
+  }
+}
+
+pheatmap(moduleHM, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "none", color = my_palette, gaps_col = c(5,10,15,21,25,29,33), gaps_row = rowGaps, annotation_row = annotationFig2, annotation_colors = annotation_palette_Fig2, cellheight = 10)
+
+```
+
+## Figure 2 GO graph
+```{R}
+ipaData <- read.delim("mouseData/fig2GoGraphCats.txt")
+ipaData <- merge(ipaData, IPA, by.x = 1, by.y = 1, all.x = T)
+
+comparisonVector <- unique(ipaData$comparison)
+
+ipaGraph <-ipaData[,c(1,4,8,3)]
+
+for(i in unique(ipaGraph$Pathway)){
+  tempDF <- data.frame(Pathway = rep(i,4-nrow(ipaData[ipaData$Pathway == i,])), pVal = 0, comparison = c(comparisonVector[comparisonVector %not in% ipaData[ipaData$Pathway == i,]$comparison], "Q175_6mo"), newModule = unique(ipaGraph[ipaGraph$Pathway == i,]$newModule))
+  ipaGraph <- rbind(tempDF, ipaGraph)
+}
+
+ipaGraph$maxP <- 0
+for(i in 1:nrow(ipaGraph)){
+  ipaGraph[i,5] <- as.numeric(max(ipaGraph[ipaGraph$Pathway %in% ipaGraph[i,]$Pathway,]$pVal))
+}
+
+ipaGraph <- ipaGraph[order(ipaGraph$maxP, decreasing = T),]
+ipaGraph <- ipaGraph[order(ipaGraph$newModule),]
+
+ipaGraph$Pathway <- factor(ipaGraph$Pathway, levels = rev(unique(ipaGraph$Pathway)))
+ipaGraph$comparison <- factor(ipaGraph$comparison, levels = rev(c("R62_6wk", "R62_12wk", "Q175_6mo", "Q175_12mo")))
+
+library(ggplot2)
+ggplot(ipaGraph, aes(fill=comparison, y=pVal, x=Pathway)) + 
+  geom_bar(position="dodge2", stat="identity", colour = "black") + coord_flip() +
+  ylab("-log10(P-value)") + theme_minimal() + scale_y_continuous(expand = c(0, 0))
+```
+
+## Cd11b+ Differential Expression
+```{R}
+cd11bGroups <- factor(paste(cd11bDesign$Type, cd11bDesign$Age, sep="_"))
+design <- model.matrix(~0+cd11bGroups)
+colnames(design) <- levels(cd11bGroups)
+
+fit <- lmFit(cd11b, design)
+fit <- eBayes(fit)
+
+cont.matrix <- makeContrasts(Q175_6mo = Q175_6mo-WT_6mo,
+                             Q175_12mo = Q175_12mo-WT_12mo,
+                             R62_6wk = R62_6wk-WT_6wk,
+                             R62_12Wk = R62_12wk-WT_12wk,
+                             levels=design)
+
+fit2 <- contrasts.fit(fit, cont.matrix)
+fit2 <- eBayes(fit2)
+
+Q175_6mo_Cd11b_Multiprobe <- merge(topTable(fit2, coef=1, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(Q175_6mo_Cd11b_Multiprobe, "Q175_6mo_Cd11b_Multiprobe")
+
+Q175_6mo_Cd11b <- Q175_6mo_Cd11b_Multiprobe[order(Q175_6mo_Cd11b_Multiprobe$AveExpr,decreasing = T),]
+Q175_6mo_Cd11b <- Q175_6mo_Cd11b[!duplicated(Q175_6mo_Cd11b$ensembl_gene_id),]
+write.ipa(Q175_6mo_Cd11b, "Q175_6mo_Cd11b")
+
+
+Q175_12mo_Cd11b_Multiprobe <- merge(topTable(fit2, coef=2, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(Q175_12mo_Cd11b_Multiprobe, "Q175_12mo_Cd11b_Multiprobe")
+
+Q175_12mo_Cd11b <- Q175_12mo_Cd11b_Multiprobe[order(Q175_12mo_Cd11b_Multiprobe$AveExpr,decreasing = T),]
+Q175_12mo_Cd11b <- Q175_12mo_Cd11b[!duplicated(Q175_12mo_Cd11b$ensembl_gene_id),]
+write.ipa(Q175_12mo_Cd11b, "Q175_12mo_Cd11b")
+
+R62_6wk_Cd11b_Multiprobe <- merge(topTable(fit2, coef=3, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(R62_6wk_Cd11b_Multiprobe, "R62_6wk_Cd11b_Multiprobe")
+
+R62_6wk_Cd11b <- R62_6wk_Cd11b_Multiprobe[order(R62_6wk_Cd11b_Multiprobe$AveExpr,decreasing = T),]
+R62_6wk_Cd11b <- R62_6wk_Cd11b[!duplicated(R62_6wk_Cd11b$ensembl_gene_id),]
+write.ipa(R62_6wk_Cd11b, "R62_6wk_Cd11b")
+
+
+R62_12wk_Cd11b_Multiprobe <- merge(topTable(fit2, coef=4, number = 100000, p.value = 0.05), ensemblGeneListMaffy, by.x = 0, by.y =2)
+write.ipa(R62_12wk_Cd11b_Multiprobe, "R62_12wk_Cd11b_Multiprobe")
+
+R62_12wk_Cd11b <- R62_12wk_Cd11b_Multiprobe[order(R62_12wk_Cd11b_Multiprobe$AveExpr,decreasing = T),]
+R62_12wk_Cd11b <- R62_12wk_Cd11b[!duplicated(R62_12wk_Cd11b$ensembl_gene_id),]
+write.ipa(R62_12wk_Cd11b, "R62_12wk_Cd11b")
+
+
+VennCd11b <- Venn(list("zQ175 12 Mo" = Q175_12mo_Cd11b$external_gene_name,"R6/2 6 Wk" = R62_6wk_Cd11b$external_gene_name,  "zQ175 6 Mo" = Q175_6mo_Cd11b$external_gene_name, "R6/2 12 Wk" = R62_12wk_Cd11b$external_gene_name))
+
+plot(VennCd11b, doWeights = F, type = "ellipses", show = list(SetLabels = T,Faces = FALSE))
+
+###Directionality of DE genes
+table(R62_6wk_Cd11b$logFC > 0)
+table(R62_12wk_Cd11b$logFC > 0)
+table(Q175_6mo_Cd11b$logFC > 0)
+table(Q175_12mo_Cd11b$logFC > 0)
+
+
+
+```
+
+## CD11b+ Heatmap
+```{R, warning = FALSE}
+### Supplemental Figure HM
+Cd11bMiddleGenes <- unique(c(as.character(R62_12wk_Cd11b_Multiprobe[R62_12wk_Cd11b_Multiprobe$external_gene_name %in% Q175_12mo_Cd11b_Multiprobe$external_gene_name,]$Row.names), 
+                             as.character(R62_6wk_Cd11b_Multiprobe[R62_6wk_Cd11b_Multiprobe$external_gene_name %in% Q175_12mo_Cd11b_Multiprobe$external_gene_name,]$Row.names),
+                             as.character(Q175_6mo_Cd11b_Multiprobe[Q175_6mo_Cd11b_Multiprobe$external_gene_name %in% R62_12wk_Cd11b_Multiprobe$external_gene_name,]$Row.names),
+                             as.character(R62_12wk_Cd11b_Multiprobe[R62_12wk_Cd11b_Multiprobe$external_gene_name %in% R62_6wk_Cd11b_Multiprobe$external_gene_name,]$Row.names)))
+
+Cd11bMiddle <- data.frame(row.names = Cd11bMiddleGenes, 
+                          R62_6wk = rep(NA, length(Cd11bMiddleGenes)), 
+                          R62_12wk = rep(NA, length(Cd11bMiddleGenes)), 
+                          Q175_6mo = rep(NA, length(Cd11bMiddleGenes)), 
+                          Q175_12mo = rep(NA, length(Cd11bMiddleGenes)))
+
+Cd11bMiddle$R62_6wk <- merge(Cd11bMiddle, R62_6wk_Cd11b_Multiprobe, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+Cd11bMiddle$R62_12wk <- merge(Cd11bMiddle, R62_12wk_Cd11b_Multiprobe, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+Cd11bMiddle$Q175_6mo <- merge(Cd11bMiddle, Q175_6mo_Cd11b_Multiprobe, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+Cd11bMiddle$Q175_12mo <- merge(Cd11bMiddle, Q175_12mo_Cd11b_Multiprobe, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+Cd11bMiddle$gene <- merge(Cd11bMiddle, ensemblGeneListMaffy, by.x = 0, by.y = 2, all.x = T)$external_gene_name
+Cd11bMiddle$sameDirection <- NA
+Cd11bMiddle$sets <- NA
+
+
+for(i in 1:nrow(Cd11bMiddle)){
+  temp <- c()
+  for(j in 1:4){
+    if(is.na(Cd11bMiddle[i,j]) == FALSE){
+      temp <- c(temp,Cd11bMiddle[i,j]>0)
+    }
+  }
+  Cd11bMiddle[i,6] <- var(temp) == 0
+  Cd11bMiddle[i,7] <- length(temp)
+}
+
+Cd11bMiddle$probe <- row.names(Cd11bMiddle)
+Cd11bMiddle <- Cd11bMiddle[order(Cd11bMiddle$sets, decreasing = T),]
+
+Cd11bIntersect <- R62_12wk_Cd11b_Multiprobe[R62_12wk_Cd11b_Multiprobe$external_gene_name %in% Q175_12mo_Cd11b_Multiprobe$external_gene_name,]
+
+Cd11bHMgenes <- unlist(strsplit(gsub(" ", "","Srebf2,Hmgcr, Cyp51, Hmgcs1, Bdnf, Il17b, Icam1, Homer1, Pcdh7, Stat1, Idi1, Id1, Id2, Id3, Id4, Vegfb, Ascl1, Abca1,Abca2,Abca5, Smarca1, Dio2, Atp8a2, Uchl1, Bcan, Slc1a2, Aqp4"),","))
+Cd11bHMgenes <- c(Cd11bHMgenes, unlist(strsplit(gsub(" ", "","Stat3, Irf7, Stat2, Ccl2, Cxcl10, Irf9, Ifit2,Cd72,Csf1,Socs2,Cxcl14,Igf1,Alcam,Usp18, Rtp4, Ifit1,Ifi27l2a,Ifi209,Ifi204"),",")))
+
+Cd11bMiddle$sets <- rowSums(Cd11bMiddle[,1:4], na.rm = T)
+
+datExpr <- droplevels(cd11b)
+datExpr <- merge(datExpr, ensemblGeneListMaffy, by.x = 0, by.y = 2)
+
+
+ogGenes <- rbind(R62_6wk_Cd11b_Multiprobe,R62_12wk_Cd11b_Multiprobe, Q175_6mo_Cd11b_Multiprobe, Q175_12mo_Cd11b_Multiprobe)
+ogGenes <- ogGenes[!duplicated(ogGenes$Row.names),]
+ogGenes <- merge(ogGenes, Cd11bMiddle, by.x = 1, by.y = 0, all.x = T)
+ogGenes <- ogGenes[order(ogGenes$sets, ogGenes$AveExpr,decreasing = T),]
+ogGenes <- ogGenes[!duplicated(ogGenes$external_gene_name),]
+
+hmGenes <- ogGenes[ogGenes$external_gene_name %in% Cd11bHMgenes,]
+Cd11bLabeled <- merge(cd11b, ensemblGeneListMaffy, by.x = 0, by.y = 2)
+hmGenes <- Cd11bLabeled[Cd11bLabeled$Row.names %in% hmGenes$Row.names,]
+row.names(hmGenes) <- paste0(hmGenes$external_gene_name)
+hmGenes <- hmGenes[,2:38]
+
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=299)
+
+cd11bDesign$Type <- relevel(cd11bDesign$Type, 2)
+cd11bDesign <- cd11bDesign[order(cd11bDesign$Days, cd11bDesign$Type, decreasing = F),]
+hmGenes <- hmGenes[,match(row.names(cd11bDesign), colnames(hmGenes))]
+cd11bDesign <- cd11bDesign[order(cd11bDesign$Days, cd11bDesign$Condition),]
+hmGenes <- hmGenes[,match(names(hmGenes), cd11bDesign$SampleID)]
+
+annotationsSup1 <- data.frame(row.names = row.names(hmGenes))
+annotationsSup1$Q175_1Yr <- ifelse(row.names(annotationsSup1) %in% Q175_12mo_Cd11b_Multiprobe$external_gene_name,"Q175_1Yr","White")
+annotationsSup1$Q175_6mo <- ifelse(row.names(annotationsSup1) %in% Q175_6mo_Cd11b_Multiprobe$external_gene_name,"Q175_6mo","White")
+annotationsSup1$R62_12Wk <- ifelse(row.names(annotationsSup1) %in% R62_12wk_Cd11b_Multiprobe$external_gene_name,"R62_12Wk","White")
+annotationsSup1$R62_6Wk <- ifelse(row.names(annotationsSup1) %in% R62_6wk_Cd11b_Multiprobe$external_gene_name,"R62_6Wk","White")
+
+annotationsSup1$R62_6Wk <- factor(annotationsSup1$R62_6Wk)
+annotationsSup1$R62_12Wk <- factor(annotationsSup1$R62_12Wk)
+annotationsSup1$Q175_1Yr <- factor(annotationsSup1$Q175_1Yr)
+annotationsSup1$Q175_6mo <- factor(annotationsSup1$Q175_6mo)
+
+annotation_palette <-  list(R62_6Wk= c(White = "white", R62_6Wk = "Orange"), R62_12Wk = c(White = "white", R62_12Wk = "Red"), Q175_6mo = c(Q175_6mo = "Blue", White = "white"), Q175_1Yr = c(Q175_1Yr = "Purple", White = "white"))
+
+
+pheatmap(hmGenes, border_color = "Black", cluster_row = T, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(5,11,16,21,25,29,33), annotation_row = annotationsSup1, annotation_colors = annotation_palette)
+
+```
+
+## Cd11b+ GO Graph
+```{R, warning = FALSE}
+files <- paste0("mouseData/",c("R62_12_Cd11b_IPA.txt", "R62_6_Cd11b_IPA.txt", "Q175_12_Cd11b_IPA.txt"))
+compNames <- c("R62_12wk", "R62_6wk", "Q175_12")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = 25,drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = 25+nrow(canonicalIPA), drop = c(1:2,4:6,8:10,13:14))
+  upstreamIPA <- upstreamIPA[,c(1,3,2,4)]
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = 29 + nrow(canonicalIPA) + nrow(upstreamIPA), drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+rm(canonicalIPA)
+rm(upstreamIPA)
+rm(functionalIPA)
+rm(tempIPA)
+
+ogIPA <- IPA
+IPA <- IPA[IPA$pVal > -log10(0.001),]
+IPA[is.na(IPA$zScore)]$zScore <- 0
+
+
+filterTerms <- c("cancer")
+filteredIPA <- IPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+
+cd11bGO <- c("IRF7 Signaling", "Superpathway of Cholesterol Biosynthesis", "SREBF2 Signaling", "SREBF1 Signaling", "Metabolism of Cholesterol", "Metabolism of membrane lipid derivative", "Synthesis of Lipid", "TCF7L2 Signaling", "Synthesis of Cholesterol", "NUPR1 Signaling", "SIRT2 Signaling", "Proliferation of microglia", "Cell-cell contact", "Interferon alpha Signaling", "STAT1 Signaling", "STAT3 Signaling", "Inflammation of central nervous system")
+
+goGraphCd11b <- filteredIPA[filteredIPA$Pathway %in% cd11bGO,]
+
+
+goGraphCd11b <- goGraphCd11b[,c(1,2,6)]
+
+
+
+comparisonVector <- c("R62_12wk", "R62_6wk", "Q175_12")
+for(i in cd11bGO){
+  tempDF <- data.frame(Pathway = rep(i,3-nrow(goGraphCd11b[goGraphCd11b$Pathway == i,])), pVal = 0, comparison = comparisonVector[comparisonVector %not in% goGraphCd11b[goGraphCd11b$Pathway == i,]$comparison])
+  goGraphCd11b <- rbind(tempDF, goGraphCd11b)
+}
+
+goGraphCd11b$maxP <- 0
+i <- 1
+for(i in 1:nrow(goGraphCd11b)){
+  goGraphCd11b[i,4] <- as.numeric(max(goGraphCd11b[goGraphCd11b$Pathway %in% goGraphCd11b[i,1]$Pathway,]$pVal))
+}
+
+goGraphCd11b <- goGraphCd11b[order(goGraphCd11b$maxP, decreasing = T),]
+goGraphCd11b$Pathway <- factor(goGraphCd11b$Pathway, levels = rev(unique(goGraphCd11b$Pathway)))
+goGraphCd11b$comparison <- factor(goGraphCd11b$comparison, levels = c("Q175_12", "R62_12wk", "R62_6wk"))
+ggplot(goGraphCd11b, aes(fill=comparison, y=pVal, x=Pathway)) + 
+  geom_bar(position="dodge2", stat="identity", colour = "black") + coord_flip() +
+  ylab("-log10(P-value)") + theme_minimal() + scale_y_continuous(expand = c(0, 0))
+
+write.table(filteredIPA, "Output/CD11b_GO.txt", sep = "\t", quote = F, row.names = F)
+
+```
+
+### Compare CD11b to Astrocytes within models
+```{r}
+
+#### Venns
+Venn6wk <- list("Astrocyte" = R62_6wk_Glt1$external_gene_name,"Microglia" = R62_6wk_Cd11b$external_gene_name)
+Venn6wk <- ggVennDiagram(Venn6wk, label = "count") + theme(legend.position = "none") + ggtitle("R62 6 Week")
+Venn6wk
+
+Venn12wk <- list("Astrocyte" = R62_12wk_Glt1$external_gene_name,"Microglia" = R62_12wk_Cd11b$external_gene_name)
+Venn12wk <- ggVennDiagram(Venn12wk, label = "count") + theme(legend.position = "none") + ggtitle("R62 12 Week")
+Venn12wk
+
+Venn6mo <- list("Astrocyte" = Q175_6mo_Glt1$external_gene_name,"Microglia" = Q175_6mo_Cd11b$external_gene_name)
+Venn6mo <- ggVennDiagram(Venn6mo, label = "count") + theme(legend.position = "none") + ggtitle("zQ175 6 Month")
+Venn6mo
+
+Venn12mo <- list("Astrocyte" = Q175_12mo_Glt1$external_gene_name,"Microglia" = Q175_12mo_Cd11b$external_gene_name)
+Venn12mo <- ggVennDiagram(Venn12mo, label = "count") + theme(legend.position = "none") + ggtitle("zQ175 12 Month")
+Venn12mo
+
+
+
+
+
+
+scatter6wk<- merge(R62_6wk_Cd11b_Multiprobe, R62_6wk_Glt1_Multiprobe, by.x = "Row.names", by.y = "Row.names")
+scatter12wk <- merge(R62_12wk_Cd11b_Multiprobe, R62_12wk_Glt1_Multiprobe, by.x = "Row.names", by.y = "Row.names")
+scatter6mo <- merge(Q175_6mo_Cd11b_Multiprobe, Q175_6mo_Glt1_Multiprobe, by.x = "Row.names", by.y = "Row.names")
+scatter12mo <- merge(Q175_12mo_Cd11b_Multiprobe, Q175_12mo_Glt1_Multiprobe, by.x = "Row.names", by.y = "Row.names")
+
+
+
+
+scatterList <- list(scatter6wk, scatter12wk, scatter6mo, scatter12mo)
+
+scatter6wk$comparison <- "R6/2 6wk"
+scatter12wk$comparison <- "R6/2 12wk"
+scatter6mo$comparison <- "zQ175 6mo"
+scatter12mo$comparison <- "zQ175 12mo"
+scatterListComparison <- rbind(scatter6wk, scatter12wk, scatter6mo, scatter12mo)
+scatterListComparison <- scatterListComparison[,c(1,2,6,9,10,14,18,26)]
+names(scatterListComparison) <- c("ProbeID", "CD11b Log2FC", "CD11b adjPval", "Ensembl ID", "Gene Name", "GLT1 Log2FC", "GLT1 adjPval", "Comparison")
+write.table(scatterListComparison, "Output/astrocyteMicrogliaComparison.txt", sep = "\t", quote = F, row.names = F)
+
+
+
+scatterList <- lapply(scatterList, function(x) {x <- x[order(x$AveExpr.x + x$AveExpr.y, decreasing = T),]; 
+                                                x <- x[!duplicated(x$external_gene_name.x),];
+                                                return(x)})
+
+vennAstroMicro6wk <- merge(R62_6wk_Cd11b, R62_6wk_Glt1, by.x = "external_gene_name", by.y = "external_gene_name")
+vennAstroMicro12wk <- merge(R62_12wk_Cd11b, R62_12wk_Glt1, by.x = "external_gene_name", by.y = "external_gene_name")
+vennAstroMicro6mo <- merge(Q175_6mo_Cd11b, Q175_6mo_Glt1, by.x = "external_gene_name", by.y = "external_gene_name")
+vennAstroMicro12mo <- merge(Q175_12mo_Cd11b, Q175_12mo_Glt1, by.x = "external_gene_name", by.y = "external_gene_name")
+
+
+
+
+VennIntersect <- list("6 Week" = vennAstroMicro6wk$external_gene_name,"12 Week" = vennAstroMicro12wk$external_gene_name, "6 Month" = vennAstroMicro6mo$external_gene_name, "12 Month" = vennAstroMicro12mo$external_gene_name)
+VennIntersect <- ggVennDiagram(VennIntersect, label = "count") + theme(legend.position = "none") + ggtitle("Shared genes across models/timepoints")
+VennIntersect
+
+tempBind <- rbindlist(scatterList)
+
+
+xLims<- c(min(tempBind$logFC.y), max(tempBind$logFC.y))
+yLims<- c(min(tempBind$logFC.x), max(tempBind$logFC.x))
+
+scatter12moSame <- scatter12mo[scatter12mo$logFC.x * scatter12mo$logFC.y > 0,]
+
+superConserved <- scatter12wk[scatter12wk$Row.names %in% scatter12mo$Row.names,]
+
+microglia.astrocyte.genes <- c("Il1rap", "Fgf1", "Csf1", "Anxa5", "Nceh1", "Usp18", "Irf9", "Stat1", "Ifit1", "Il1rap", "Igf1", "Fgf1", "Foxo1", "Bmp4", "Uchl1")
+
+
+
+scatterList <- lapply(scatterList, function(x) {x$label <-  ifelse(x$external_gene_name.x %in% microglia.astrocyte.genes, as.character(x$external_gene_name.x), ""); return(x)})
+scatterList <- lapply(scatterList, function(x) {x$border <-  ifelse(x$logFC.x > 0, "HD", "Ctrl"); return(x)})
+scatterList <- lapply(scatterList, function(x) {x$fill <-  ifelse(x$logFC.y > 0, "HD", "Ctrl"); return(x)})
+
+
+
+scatter6wkPlot <- ggplot(scatterList[[1]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape = 21, alpha = 1, size = 2, stroke = 2, aes(color = border, fill = fill)) + geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("6 Week R6/2 Astrocyte Log2FC") + ylab("6 Week R6/2 Microglia Log2FC")+ xlim(xLims) + ylim(yLims) + geom_label_repel() + scale_fill_manual(values = c("Ctrl" = "blue", "HD" = "red")) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red"))
+
+scatter6wkPlot
+
+scatter12wkPlot <- ggplot(scatterList[[2]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape = 21, alpha = 1, size = 2, stroke = 2, aes(color = border, fill = fill)) + geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("12 Week R6/2 Astrocyte Log2FC") + ylab("12 Week R6/2 Microglia Log2FC")+ xlim(xLims) + ylim(yLims) + geom_label_repel(min.segment.length = 0, force = 2) + scale_fill_manual(values = c("Ctrl" = "blue", "HD" = "red")) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red"))
+
+scatter12wkPlot
+ 
+scatter6moPlot <- ggplot(scatterList[[3]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape = 21, alpha = 1, size = 2, stroke = 2, aes(color = border, fill = fill)) + geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("6 Month zQ175 Astrocyte Log2FC") + ylab("6 Month zQ175 Microglia Log2FC") + xlim(xLims) + ylim(yLims) + geom_label_repel() + scale_fill_manual(values = c("Ctrl" = "blue", "HD" = "red")) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red"))
+
+scatter6moPlot
+
+scatter12moPlot <- ggplot(scatterList[[2]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape = 21, alpha = 1, size = 2, stroke = 1.5, aes(color = border, fill = fill)) + geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("12 Month zQ175 Astrocyte Log2FC") + ylab("12 Month zQ175 Microglia Log2FC") + xlim(xLims) + ylim(yLims) + geom_label_repel() + scale_fill_manual(values = c("Ctrl" = "blue", "HD" = "red")) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red"))
+
+scatter12moPlot
+
+scatter12moPlot <- ggplot(scatterList[[2]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape="\u25D6", aes(colour=border), size=3) +
+  geom_point(shape="\u25D7", aes(colour=fill), size=3) +geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("12 Month zQ175 Astrocyte Log2FC") + ylab("12 Month zQ175 Microglia Log2FC") + xlim(xLims) + ylim(yLims) + geom_label_repel() + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red"))
+  
+
+scatter12moPlot <- ggplot(scatterList[[4]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape="\u25D6", aes(colour=border), size=4.5) +
+  geom_point(shape="\u25D7", aes(colour=fill), size=4.5) +geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("12 Month zQ175 Astrocyte Log2FC") + ylab("12 Month zQ175 Microglia Log2FC") + xlim(xLims) + ylim(yLims) + geom_label_repel(min.segment.length = 0, force = 2) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red")) +
+  theme(text=element_text(family="Arial Unicode MS"), legend.position = "none")
+
+scatter12moPlot
+
+scatter12wkPlot <- ggplot(scatterList[[2]], aes(y=logFC.x, x=logFC.y, label = label)) + geom_point(shape="\u25D6", aes(colour=border), size=4.5) +
+  geom_point(shape="\u25D7", aes(colour=fill), size=4.5) +geom_vline(xintercept = 0) + geom_abline(intercept = 0, slope = 0) + theme_classic() + 
+  xlab("12 Week R6/2 Astrocyte Log2FC") + ylab("12 Week R6/2 Microglia Log2FC") + xlim(xLims) + ylim(yLims) + geom_label_repel(min.segment.length = 0, force = 2) + scale_color_manual(values = c("Ctrl" = "blue", "HD" = "red")) +
+  theme(text=element_text(family="Arial Unicode MS"), legend.position = "none") 
+
+scatter12wkPlot
+
+bottomPart <- ((Venn6wk / Venn12wk / Venn6mo / Venn12mo) | scatter12wkPlot | scatter12moPlot | VennIntersect) + plot_layout(widths =  c(1.25,1,1,1))
+bottomPart
+
+
+#cairo_pdf("my_plot.pdf", family="Arial Unicode MS", 16,4)
+#bottomPart
+#dev.off()
+
+
+
+```
+
+### Make Scatter plots of log2FC differences between models
+```{r}
+
+
+Q175_12mo_Cd11b_Allprobes<- merge(topTable(fit2, coef=2, number = 100000, p.value = 1), ensemblGeneListMaffy, by.x = 0, by.y =2)
+
+
+R62_12wk_Cd11b_Allprobes <- merge(topTable(fit2, coef=4, number = 100000, p.value = 1), ensemblGeneListMaffy, by.x = 0, by.y =2)
+
+scatterFCcd11b <- merge(Q175_12mo_Cd11b_Allprobes, R62_12wk_Cd11b_Allprobes, by.x = 1, by.y = 1)
+
+scatterFCcd11b$de <- "Not DE in either"
+
+
+scatterFCcd11b$de <- ifelse(((scatterFCcd11b$Row.names %in% R62_12wk_Cd11b_Multiprobe$Row.names) & (scatterFCcd11b$Row.names %in% Q175_12mo_Cd11b_Multiprobe$Row.names)), yes = "Both", no = scatterFCcd11b$de)
+
+scatterFCcd11b$de <- ifelse(scatterFCcd11b$Row.names %in% scatterFCcd11b[scatterFCcd11b$Row.names %in% R62_12wk_Cd11b_Multiprobe$Row.names & scatterFCcd11b$Row.names %not in% Q175_12mo_Cd11b_Multiprobe$Row.names,]$Row.names, yes = "R6/2 Only", no = scatterFCcd11b$de)
+
+
+scatterFCcd11b$de <- ifelse(scatterFCcd11b$Row.names %in% scatterFCcd11b[scatterFCcd11b$Row.names %not in% R62_12wk_Cd11b_Multiprobe$Row.names & scatterFCcd11b$Row.names %in% Q175_12mo_Cd11b_Multiprobe$Row.names,]$Row.names, yes = "zQ175 Only", no = scatterFCcd11b$de)
+
+table(scatterFCcd11b$de)
+
+scatterFCcd11b <- scatterFCcd11b %>%
+  arrange(sample(1:nrow(.)))
+
+scatterFCcd11bGG <- ggplot(scatterFCcd11b, aes(y=logFC.x - logFC.y, x = AveExpr.x, label = external_gene_name.x, color = de)) + geom_point(size = 2, alpha = .5) + theme_minimal() + scale_color_manual(values=c("red", "blue", "green", "black")) + xlab("Average probe expression") + ylab("12 wk R6/2 log2FC - \n 12 mo zQ175 log2FC") + theme(legend.position = "bottom")
+  
+
+cd11bPCA  | scatterFCcd11bGG
+
+
+
+```
+
+## Marker HM in Figure 1
+```{R}
+
+graphCountsMarkers <- makeScatterPlot(edata, ensemblGeneListMaffy, list(R62_6wk_Glt1,R62_12wk_Glt1, Q175_6mo_Glt1, Q175_12mo_Glt1, R62_12wk_Cd11b, R62_6wk_Cd11b, Q175_6mo_Cd11b, Q175_12mo_Cd11b))
+graphCountsMarkers <- as.matrix(graphCountsMarkers)
+graphCountsMarkers <- merge(graphCountsMarkers, ensemblGeneListMaffy, by.x = 0, by.y = "affy_mouse430_2")
+
+CNSgenes <- data.frame(Gene = unlist(strsplit("Aqp4,Gfap,Slc1a2,Tnc,Tek,Vwf,Cd68,Aif1,Ccl2,Slc2a5,Ascl1,Dcx,Nes,Snap25,Tubb3,Gpr17,Cspg4,Pdgfra", ",")), Lineage = unlist(strsplit("Astrocyte,Astrocyte,Astrocyte,Astrocyte,Endothelial,Endothelial,Microglia,Microglia,Microglia,Microglia,Neural Progenitor,Neural Progenitor,Neural Stem Cell,Neuron,Neuron,OPC,OPC,OPC", ",")))
+
+CNSgeneslog <- merge(CNSgenes,graphCountsMarkers, by.x=1,by.y="external_gene_name")
+CNSgeneslog <- CNSgeneslog[match(CNSgenes$Gene, CNSgeneslog$Gene),]
+CNSgeneslog <- data.frame(row.names = paste0(CNSgeneslog$Gene," (",CNSgeneslog$Lineage,")"), CNSgeneslog[,4:114])
+
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=299)
+
+annotationMarkers <- data.frame(row.names = sampleTable$SampleID, Sort = sampleTable$Sort, Age = sampleTable$Age, Strain = sampleTable$Type)
+
+annotationMarkers$Age <- factor(annotationMarkers$Age, levels = c("6wk", "12wk", "6mo", "12mo"))
+annotationMarkers$Sort <- factor(annotationMarkers$Sort, levels = c("Glt1", "CD11b", "Neg"))
+annotationMarkers <- annotationMarkers[order(annotationMarkers$Sort, annotationMarkers$Age, annotationMarkers$Strain),]
+
+CNSgeneslog <- CNSgeneslog[, match(row.names(annotationMarkers), colnames(CNSgeneslog))]
+
+pheatmap(CNSgeneslog, border_color = NA, cluster_row = FALSE, cluster_cols = F, color = my_palette, scale = "none", annotation_col = annotationMarkers, show_colnames = F)
+```
+
+## TLDA Validation
+```{R}
+raw <- read.csv("humanData/tldaCTs.csv", stringsAsFactors = F)
+
+raw <- raw[!is.na(raw$deltaCT),]
+
+raw$group <- substr(raw$Sample.Name,1,2)
+raw$groupGene <- paste0(substr(raw$Sample.Name,1,2), "_",raw$Target.Name)
+
+raw$WTmean <- NA
+for(i in 1:nrow(raw)){
+  raw[i,]$WTmean <- mean(as.numeric(raw[raw$Target.Name == raw[i,]$Target.Name & raw$group == "WT",]$deltaCT))
+}
+
+raw$ddCT <- as.numeric(raw$deltaCT) - raw$WTmean
+
+tDF <- data.frame(Target.Name = unique(raw$Target.Name), stringsAsFactors = F)
+
+tDF$pval <- NA
+for(i in 1:nrow(tDF)){
+  gene <- tDF[i,1]
+  tDF[i,]$pval <- t.test(raw[raw$Target.Name == gene & raw$group == "WT",]$ddCT, raw[raw$Target.Name == gene & raw$group == "R6",]$ddCT)[3]
+}
+
+tDF$logFC <- NA
+for(i in 1:nrow(tDF)){
+  gene <- tDF[i,1]
+  tDF[i,]$logFC <- -mean(raw[raw$Target.Name == gene & raw$group == "R6",]$ddCT)
+}
+
+tDF$gene <- unique(raw$Gene)
+
+
+datExpr <- droplevels(glt1)
+datExpr <- merge(datExpr, ensemblGeneListMaffy, by.x = 0, by.y = 2)
+
+
+ogGenes <- rbind(R62_6wk_Glt1,R62_12wk_Glt1, Q175_6mo_Glt1, Q175_12mo_Glt1)
+ogGenes <- ogGenes[order(ogGenes$AveExpr,decreasing = T),]
+ogGenes <- ogGenes[!duplicated(ogGenes$external_gene_name),]
+ogGenes <- ogGenes[,c(1,10)]
+ogGeneList <- c(ogGenes$Row.names)
+names(ogGeneList) <- c(as.character(ogGenes$external_gene_name))
+ogGeneList[1]
+
+datExpr2 <- datExpr[datExpr$external_gene_name %not in% names(ogGeneList),]
+datExpr3 <- datExpr2
+#rm(datExpr2)
+datMeans <- rowMeans(datExpr3[,2:38])
+datMeans <- datMeans[order(datMeans,decreasing = T)]
+head(datMeans)
+
+datExpr3 <- datExpr3[match(names(datMeans),row.names(datExpr3)),]
+dup <- duplicated(datExpr3$external_gene_name)
+datExpr3 <- datExpr3[!dup,]
+
+nrow(ogGenes[ogGenes$external_gene_name %not in% datExpr3$external_gene_name,])
+
+datExpr3 <- data.frame(row.names = datExpr3$external_gene_name, datExpr3[,2:38])
+#For probes
+#datExpr3 <- data.frame(row.names = datExpr3$Row.names, datExpr3[,2:38])
+
+
+datExpr4 <- datExpr[datExpr$Row.names %in% ogGeneList,]
+datExpr4 <- data.frame(row.names = datExpr4$external_gene_name, datExpr4[,2:38])
+#For probes
+#datExpr4 <- data.frame(row.names = datExpr4$Row.names, datExpr4[,2:38])
+
+datExpr3 <- rbind(datExpr3, datExpr4)
+
+graphCountsTlda <- graphCountsMouse[,names(graphCountsMouse) %in% sampleTable[sampleTable$Type %in% c("R62","WT") & sampleTable$Age == "12wk",]$SampleID]
+
+graphCountsTlda <- merge(graphCountsTlda, ensemblGeneListMaffy, by.x = 0, by.y = "affy_mouse430_2")
+
+#row.names(graphCountsTlda) <- graphCountsTlda$Row.names
+
+tDFfiltered <- merge(tDF, graphCountsTlda, by.x= 4, by.y = "external_gene_name")
+
+tDFfiltered$R62 <- rowMeans(tDFfiltered[,c(6,8,10,12,14)])
+tDFfiltered$WT <- rowMeans(tDFfiltered[,c(7,9,11,13,15)])
+tDFfiltered$logFCRNA <- tDFfiltered$R62 - tDFfiltered$WT
+
+cor.test(tDFfiltered$logFC, tDFfiltered$logFCRNA)
+labelsTLDA <- tDFfiltered[tDFfiltered$gene %in% R62_12wk_Glt1_Multiprobe$external_gene_name,]$gene
+
+ 
+ggplot(tDFfiltered, aes(y=logFC, x=logFCRNA)) + geom_point(colour = "blue") + geom_smooth(method = "lm", color = "black", se = F) + theme_minimal() +
+  geom_text_repel(data = tDFfiltered[tDFfiltered$gene %in% labelsTLDA,],
+                  aes(label = labelsTLDA)) + xlab("Log2 FC RNA-Seq")+ylab("Log2 FC TLDA")
+```
+
+## TLDA delta delta CT Bar graph
+
+```{r, warning=F, fig.height=9}
+library(Rmisc)
+
+
+rawR62 <- raw[raw$group == "R6", ]
+attach(rawR62)
+rawR62$Gene <- factor(rawR62$Gene)
+
+testKeepSummary <- summarySE(rawR62, measurevar = "ddCT", groupvars = c("Gene"))
+testKeepSummary <- merge(testKeepSummary, tDF, by.x = "Gene", by.y = "gene")
+testKeepSummary$Gene <- factor(testKeepSummary$Gene, levels = rev(testKeepSummary$Gene))
+
+testKeepSummary$asterisk <- ""
+testKeepSummary$asterisk <- ifelse(testKeepSummary$pval < .1, "*", testKeepSummary$asterisk)
+testKeepSummary$asterisk <- ifelse(testKeepSummary$pval < .01, "**", testKeepSummary$asterisk)
+testKeepSummary$asterisk <- ifelse(testKeepSummary$pval < .001, "***", testKeepSummary$asterisk)
+
+limits <- aes(
+  ymax = testKeepSummary$ddCT + (testKeepSummary$ddCT > 0)*testKeepSummary$se,  
+  ymin = testKeepSummary$ddCT - (testKeepSummary$ddCT < 0)*testKeepSummary$se)
+
+# limits <- aes(
+#   ymax = afBar$log2FoldChange + (afBar$log2FoldChange> 0)*afBar$lfcSE,  
+#   ymin =  afBar$log2FoldChange - (afBar$log2FoldChange< 0)*afBar$lfcSE)
+
+
+
+ggplot(testKeepSummary, aes(x=Gene, y=ddCT, fill = "blue")) + 
+  geom_errorbar(limits, width=1, position=position_dodge(.9)) + 
+  geom_bar(stat="identity", width = .9) + coord_flip() + theme_minimal() + 
+  geom_text(aes(label=testKeepSummary$asterisk), hjust = ifelse(testKeepSummary$ddCT >= 0, 1.1, -.1), vjust = .75)  + theme(legend.position = "none") 
+
+
+```
+
+## Short Fragment Overexpression in Human Fetal Astrocytes
+```{R}
+### Q73 DE
+#Read in sample Sheet
+sampleTableQ73 <- read.csv("humanData/sampleSheetQ73.csv", stringsAsFactors = T) 
+
+### Run with raw CEL files in humanData or load RMA normalized data as below
+
+dataFormat <- "rds"
+
+if(dataFormat == "raw"){
+  fns <- list.celfiles("humanData")
+  names(fns) <- paste0(lapply(fns, function(x) strsplit(x, "_")[[1]][3]))
+  Data <- read.celfiles(filenames=paste0("humanData/",fns))
+  eset <- rma(Data)
+  edata <- data.frame(exprs(eset))
+  names(edata) <- names(fns)
+  sampleTableQ73 <- sampleTableQ73[match(names(edata), sampleTableQ73$ID),]
+  names(edata) <- sampleTableQ73$SampleID
+  saveRDS(edata, "humanData/edataHuman.rds")
+} else {
+  edata <- readRDS("humanData/edataHuman.rds")
+}
+
+
+filename="humanData/ensemblGeneListHaffy.csv"
+if(file.exists(filename)){
+  ensemblGeneListHaffy <- read.csv(filename)} else{
+    marth <- useMart(biomart = "ENSEMBL_MART_ENSEMBL", dataset = "hsapiens_gene_ensembl", host = 'http://apr2018.archive.ensembl.org/', ensemblRedirect = T)
+    ensemblGeneListHaffy <- getBM(attributes = c("affy_hugene_2_0_st_v1","ensembl_gene_id","external_gene_name"), filters = "affy_hugene_2_0_st_v1",values = row.names(edata), mart = marth)
+    write.csv(ensemblGeneListHaffy, filename)
+}
+
+#Remove probes targeting multipl ensembl IDs
+duplicatedList <- ensemblGeneListHaffy[duplicated(ensemblGeneListHaffy$affy_hugene_2_0_st_v1) == T,]
+edata <- edata[row.names(edata) %not in% duplicatedList$affy_hugene_2_0_st_v1,]
+edataLabeled <- merge(edata, ensemblGeneListHaffy, by.x=0, by.y="affy_hugene_2_0_st_v1")
+edata <- edata[row.names(edata) %in% edataLabeled$Row.names,]
+ensemblGeneListHaffyUnique <- ensemblGeneListHaffy[ensemblGeneListHaffy$affy_hugene_2_0_st_v1 %in% row.names(edata),]
+edata <- as.matrix(edata)
+
+#Plot data with batch effect corrected
+edataSampleCorrected <- limma::removeBatchEffect(edata, sampleTableQ73$TissueSample)
+autoplot(prcomp(t(edataSampleCorrected)), data = sampleTableQ73, colour = 'group') + theme_minimal()
+
+
+sampleTableQ73$TissueSample <- factor(sampleTableQ73$TissueSample)
+sampleTableQ73$group <- factor(sampleTableQ73$group)
+
+
+
+#Surrogate variable analysis with SVA
+mod = model.matrix(~0+group+TissueSample, sampleTableQ73)
+mod0 = model.matrix(~0+TissueSample, sampleTableQ73)
+svobj <- sva(edata, mod, mod0)
+
+modSv = cbind(mod,svobj$sv)
+colnames(modSv)[9:12] <- paste0("SV", 1:4)
+
+#DE wit limma
+fitV = lmFit(edata,modSv)
+
+fitV <- eBayes(fitV)
+
+
+cont.matrix <- makeContrasts(Q73_Vs_Q23_Glia = groupQ73_Gpos_Pneg - groupQ23_Gpos_Pneg,
+                             Q73_Vs_pTANK_Glia = groupQ73_Gpos_Pneg - grouppTANK_Gpos_Pneg,
+                             Q23_Vs_pTANK_Glia = groupQ23_Gpos_Pneg - grouppTANK_Gpos_Pneg,
+                             levels=modSv)
+
+fitV2 <- contrasts.fit(fitV, cont.matrix)
+fitV2 <- eBayes(fitV2)
+
+Q73_Vs_Q23_Glia <- merge(topTable(fitV2, coef=1, number = 100000, p.value = 0.1), ensemblGeneListHaffy, by.x = 0, by.y =2)
+Q73_Vs_pTANK_Glia <- merge(topTable(fitV2, coef=2, number = 100000, p.value = 0.1), ensemblGeneListHaffy, by.x = 0, by.y =2)
+Q23_Vs_pTANK_Glia <- merge(topTable(fitV2, coef=3, number = 100000, p.value = 0.1), ensemblGeneListHaffy, by.x = 0, by.y =2)
+
+
+VennQ73Glia <- Venn(list("Q73 vs pTANK Glia" = Q73_Vs_pTANK_Glia$external_gene_name,"Q73 vs Q23 Glia" = Q73_Vs_Q23_Glia$external_gene_name, "Q23 vs pTANK Glia" = Q23_Vs_pTANK_Glia$external_gene_name))
+plot(VennQ73Glia, doWeights = F, type = "circles", show = list(SetLabels = T,Faces = FALSE))
+
+
+#write.ipa(Q73_Vs_pTANK_Glia, "Q73_Vs_pTANK_Glia")
+#write.ipa(Q73_Vs_Q23_Glia, "Q73_Vs_Q23_Glia")
+#write.ipa(Q23_Vs_pTANK_Glia, "Q23_Vs_pTANK_Glia")
+
+
+```
+
+## Scatter Plot of Q73
+
+```{R}
+#### Intersect with genea from genialis
+geneLists <- read.csv("humanData/hdPaperGeneLists.csv", stringsAsFactors = F)
+genea <- geneLists$HD_vs_CTR
+geneaFiltered <- genea[genea %in% edataLabeled$external_gene_name]
+
+
+#### Scatter Graph
+graphCountsQ73 <- makeScatterPlot(as.data.frame(edata), ensemblGeneListHaffy ,list(Q73_Vs_pTANK_Glia,Q73_Vs_Q23_Glia, Q23_Vs_pTANK_Glia))
+
+graphCountsHuman <- graphCountsQ73 #For Use later
+graphCountsQ73 <- as.matrix(graphCountsQ73)
+
+groupMediansQ73 <- data.frame(row.names = row.names(graphCountsQ73), Q73_Gpos_Pneg = compMedian(graphCountsQ73, "Q73_Gpos_Pneg",sampleTableQ73),
+                              Q23_Gpos_Pneg = compMedian(graphCountsQ73, "Q23_Gpos_Pneg", sampleTableQ73),
+                              pTANK_Gpos_Pneg = compMedian(graphCountsQ73, "pTANK_Gpos_Pneg", sampleTableQ73))
+
+groupMediansQ73 <- merge(groupMediansQ73,ensemblGeneListHaffy, by.x= 0, by.y = 2)
+row.names(groupMediansQ73) <- groupMediansQ73$external_gene_name
+
+####
+Q73_vs_pTANKgraph <- groupMediansQ73[,colnames(groupMediansQ73) %in% c("Q73_Gpos_Pneg","pTANK_Gpos_Pneg", "external_gene_name")]
+Q23_vs_pTANKgraph <- groupMediansQ73[,colnames(groupMediansQ73) %in% c("Q23_Gpos_Pneg","pTANK_Gpos_Pneg", "external_gene_name")]
+
+colnames(Q73_vs_pTANKgraph) <- c("Q", "pTANK", "external")
+Q73_vs_pTANKgraph$gene <- row.names(Q73_vs_pTANKgraph)
+Q73_vs_pTANKgraph$set <- "Q73"
+
+colnames(Q23_vs_pTANKgraph) <- c("Q", "pTANK", "external")
+Q23_vs_pTANKgraph$gene <- row.names(Q23_vs_pTANKgraph)
+Q23_vs_pTANKgraph$set <- "Q23"
+
+Q73graph <- rbind(Q73_vs_pTANKgraph, Q23_vs_pTANKgraph)
+Q73graph$external <- as.character(Q73graph$external)
+
+Q73graphRando <- Q73graph %>%
+  arrange(sample(1:nrow(.)))
+
+library(ggrepel)
+ggplot(Q73graphRando, aes(y=Q, x=pTANK, colour = set, label = gene)) + geom_point(alpha = 1, size = 2) + geom_abline(intercept = 0, slope = 1) + theme_minimal() + scale_color_manual(values=c("red", "blue")) + xlim(c(0,12.5)) + ylim(c(0,12.5)) +
+  geom_text_repel(data = subset(Q73graphRando, Q-pTANK > 2.4),
+                  nudge_y       = 1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external)) +
+  geom_text_repel(data = subset(Q73graphRando, pTANK - Q > 2.4),
+                  nudge_y       = -1,
+                  segment.size  = 0.2,
+                  segment.color = "grey50",
+                  aes(label = external))
+```
+
+## Read in Genea RNA-Seq RSEM output
+```{R}
+# If not working with Raw RSEM genes.results, load RDS of tximport object
+
+dataFormat <- "rds"
+
+if(dataFormat == "raw"){
+  temp = list.files(path = "humanData", pattern="genes.results")
+  names(temp) <- substr(temp,1,nchar(temp)-19)
+  txi.rsem <- tximport(paste0("humanData/",temp), type = "rsem")
+  colnames(txi.rsem$abundance) <- names(temp)
+  colnames(txi.rsem$counts) <- names(temp)
+  colnames(txi.rsem$length) <- names(temp)
+  saveRDS(txi.rsem, "humanData/txi.rsem.rds")
+} else {
+  txi.rsem <- readRDS("humanData/txi.rsem.rds")
+}
+
+
+TPM <- as.data.frame(txi.rsem$abundance)
+TPMlabeled <- merge(TPM, ensemblGeneListHaffy, by.x = 0, by.y = "ensembl_gene_id")
+
+
+
+
+```
+
+
+## Figure 4 Network, modules, HM, and GO Graph
+### Go through this more
+```{R, warning = F}
+# Grouped
+files <- paste0("humanData/",c("Q73_Vs_Q23_Glia_IPA.txt", "Q73_Vs_pTANK_Glia_IPA.txt", "Q23_Vs_pTANK_Glia_IPA.txt"))
+compNames <- c("Q73_Vs_Q23_Glia", "Q73_Vs_pTANK_Glia", "Q23_Vs_pTANK_Glia")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = "Canonical",drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = "Upstream Regulators", drop = c(1:2,4:6,8:10,13:14))
+  upstreamIPA <- upstreamIPA[,c(1,3,2,4)]
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = "Diseases and Bio", drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+####For the other dumb file
+canonicalIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Canonical",drop = c(4,6))
+names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+canonicalIPA$type <- "Canonical"
+upstreamIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Upstream Regulators", select = c(3, 10, 6, 11))
+names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+upstreamIPA$type <- "Upstream"
+functionalIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Diseases and Bio", drop = c(1,2,5,7,8,10,11))
+names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+functionalIPA$pVal <- -log10(functionalIPA$pVal)
+functionalIPA$type <- "Functional"
+
+tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+tempIPA$comparison <- "HD_Vs_Ctr_Genea_CD44"
+
+
+
+IPA <- rbind(IPA, tempIPA)
+
+rm(canonicalIPA)
+rm(upstreamIPA)
+rm(functionalIPA)
+rm(tempIPA)
+
+IPA[is.na(IPA$zScore)]$zScore <- 0
+ogIPA <- IPA
+IPA <- IPA[IPA$pVal > -log10(0.001),]
+
+
+filterTerms <- c("cancer","glioma", "abdominal", "carcinoma", "endometrium", "eye", "nose", "epidermis", "head", "lymphocyte", "renal", "snout", "tooth", 
+                 "connective", "tumor", "fibroblast", "rickets", "mouth", "maxilla", "cartilage", "neoplasm", "oma", "lymph", "liver", "psoriasis", "cardio",
+                 "cardiac", "tongue", "disc", "tinea", "herpes", "Picornaviridae", "virus", "killer T", "muscle", "myopathy", "pancreatic", "Onychomycosis",
+                 "leukocyte", "oral cavity","osteoclast", "Merkel", "macrophage", "Hydrometrocolpos", "Hand", "Gastric", "Thymocytes", "diabetes",
+                 "Dupuytren", "myoblast", "ear$", "implantation", "bone", "limb", "cleft lip", "Calcinosis", "lung", "Benign lesion", 
+                 "body axis", "sensory organ", "diabetic", "neutrophil", "infection of mammalia", "leukopoiesis", "neoplasia", "Sensory system development",
+                 "T cell", "myeloid", "aorta", "body cavity", "esophagus", "incisor", "kidney", "oesophageal", "respiratory", "skin", "cavity", "urinary",
+                 "foot", "digit", "heart", "acute biphenotypic leukemia", "Ankylosis", "Articular rigidity", "Atherosclero", "Blister", "Branching morphogenesis of epithelial tubule",
+                 "Cervical spondylotic myelopathy", "epithelial", "exocrine", "gastrointestinal", "Ejection of first polar body", "Familial arrhythmia", "Familial nonsyndromic hearing impairment", 
+                 "fibrosis", "mammary", "Hearing", "Morphogenesis of metanephric bud", "cochlea", "nail", "Plasma cell dyscrasia", "Secondary Leukemia", "granulocyte",
+                 "Tinnitus", "metastasis", "trunk", "sperm motility", "skull", "dendritic cells", "dehydration", "digestive", "microphthalmia", "myelodysplastic",
+                 "semicircular canal", " skeleton", "osteopenia", "osteoarthritis", "Refractory anemia with excess blasts", "rectum", "submandibular", "antiviral", "HIV-1",
+                 "antigen present", "gonad", "keratinocyte", "phagocyte", "coronary", "intestinal", "viral replicon", "monocyte", "viral life", "wound", "leukemia")
+filteredIPA <- IPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+deletedIPA <- IPA[grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+
+write.table(filteredIPA, "Output/HumanNetwork.txt", sep = "\t", row.names = F, quote = F)
+
+#write.table(IPA, "OnlyFunctionalEdgesQ73.txt", quote = F, row.names = F, sep = "\t")
+
+# Pathways connected to a comparison
+edgesIPA <- filteredIPA[,c(1,6)]
+
+edges <- filteredIPA %>% 
+  mutate(genes = strsplit(as.character(Genes), ",")) %>% 
+  unnest(genes) %>% .[,-4]
+
+#Edges connecting genes to a comparison
+otherEdges <- edges[,c(5,6)]
+
+#Edges connecting genes to a term
+edges <- edges[,c(1,6)]
+
+names(edges) <- c("Source", "Target")
+names(otherEdges) <- c("Source", "Target")
+names(edgesIPA) <- c("Source", "Target")
+
+edgesIPA$type <- "GO"
+edges$type <- "Gene"
+
+#Ignore genes connected to comparisons for this network
+#finalEdges <- rbind(edgesIPA, edges, otherEdges)
+finalEdges <- rbind(edgesIPA, edges)
+
+
+#Remove ambiguous gene attibutions.  
+filterGenes <- c("includes")
+finalEdges <- finalEdges[!grepl(paste(filterGenes, collapse = "|"), ignore.case = T, finalEdges$Target),]
+
+filteredIPA$Genes <- gsub(",* \\(includes others\\)","", filteredIPA$Genes)
+filteredIPA$temp <- toupper(filteredIPA$Pathway)
+
+finalEdges <- finalEdges[!duplicated(finalEdges),]
+
+finalEdgesGephi <- finalEdges
+
+#write.table(finalEdgesGephi, "humanData/edgesGephiQ73.csv", quote = F, row.names = F, sep = "\t")
+
+
+
+#write.table(modulesQ73, "humanData/modulesQ73.txt", sep = "\t", quote = F, row.names = F)
+
+
+#### Testing in Gephi
+modulesQ73 <- read.delim("humanData/nodesWithModulesQ73.txt", stringsAsFactors = F)
+modulesQ73[modulesQ73$module == "1",]$module <- 4
+modulesQ73[modulesQ73$module == "3",]$module <- 1
+modulesQ73[modulesQ73$module == "2",]$module <- 3
+modulesQ73[modulesQ73$module == "0",]$module <- 2
+
+#write.table(modulesQ73, "Output/nodesWithModulesQ73Rearranged.txt", sep = "\t", quote = F, row.names = F)
+
+
+
+#### Make GO graph
+
+IPAmodules <- merge(IPA, modulesQ73, by.x = "Pathway", by.y = "name")
+IPAmodules$module <- paste0("Module",IPAmodules$module)
+
+
+graphQ73Cats <- c("Superpathway of Cholesterol Biosynthesis", "TGFB1 Signaling", "Endoplasmic reticulum stress response",
+                  "SREBF1 Signaling", "SREBF2 Signaling", "Synthesis of cholesterol", "Metabolism of cholesterol", "Unfolded protein response", "NUPR1 Signaling", "SNCA Signaling", "Organismal death", "STAT3 Signaling", "ATF4 Signaling", 
+                  "Progressive neurological disorder", "BDNF Signaling", "Migration of cells", "IFNG Signaling", "SETDB1 Signaling", "Neurotransmission",
+                  "TNF Signaling", "Organization of extracellular matrix", "CTNNB1 Signaling")
+
+length(graphQ73Cats)
+
+goGraphFig4<- IPAmodules[IPAmodules$Pathway %in% graphQ73Cats,]
+
+
+goGraphFig4 <- goGraphFig4[,c(1,2,6,7)]
+xmax <- 35
+
+makeGOgraph <- function(goGraph, comparisons, xmax = NA){
+  if(is.null(goGraph$module)){
+    for(i in unique(goGraph$Pathway)){
+      if(length(comparisons) -nrow(goGraph[goGraph$Pathway == i,]) != 0){
+        tempDF <- data.frame(Pathway = rep(i,(length(comparisons)-nrow(goGraph[goGraph$Pathway == i,]))), pVal = 0, comparison = comparisons[comparisons %not in% goGraph[goGraph$Pathway == i,]$comparison], stringsAsFactors = F)
+        goGraph <- rbind(tempDF, goGraph)
+      }
+    }
+  } else {
+    for(i in unique(goGraph$Pathway)){
+      if(length(comparisons) -nrow(goGraph[goGraph$Pathway == i,]) != 0){
+        tempDF <- data.frame(Pathway = rep(i,(length(comparisons)-nrow(goGraph[goGraph$Pathway == i,]))), pVal = 0, comparison = comparisons[comparisons %not in% goGraph[goGraph$Pathway == i,]$comparison],
+                             module = unique(goGraph[goGraph$Pathway == i,]$module), stringsAsFactors = F)
+        goGraph <- rbind(tempDF, goGraph)
+      }
+    }
+  }
+  goGraph$maxP <- 0
+  for(i in 1:nrow(goGraph)){
+    goGraph$maxP[i] <- as.numeric(max(goGraph[goGraph$Pathway %in% goGraph[i,1]$Pathway,]$pVal))
+  }
+  if(is.null(goGraph$module)){
+    goGraph <- goGraph[order(goGraph$maxP, decreasing = T),]
+  } else {
+    goGraph <- goGraph[order(as.character(goGraph$module), as.numeric(goGraph$maxP)*-1, decreasing = F),]
+  }
+  goGraph$Pathway <- factor(goGraph$Pathway, levels = rev(unique(goGraph$Pathway)))
+  goGraph$comparison <- factor(goGraph$comparison, levels = rev(comparisons))
+  vLines <- seq(1.5,((length(unique(goGraph$Pathway))-1)+.5), by = 1)
+  ggplot(goGraph, aes(fill=comparison, y=pVal, x=Pathway)) + 
+    geom_bar(position="dodge2", stat="identity", colour = "black") + coord_flip() +
+    ylab("-log10(P-value)") + theme_minimal() + scale_y_continuous(expand = c(0, 0), limits = c(0,xmax)) + geom_vline(xintercept=vLines,color="lightgrey")+ theme(panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank(), panel.border = element_rect(fill  = NA))
+  
+}
+
+
+comparisonVector <- c("Q73_Vs_pTANK_Glia", "Q73_Vs_Q23_Glia", "Q23_Vs_pTANK_Glia", "HD_Vs_Ctr_Genea_CD44")
+makeGOgraph(goGraphFig4, comparisonVector, 35)
+
+
+```
+
+
+## Make Heatmaps of human astrocyte models
+```{r, fig.height=9}
+
+Q73HMgenes <- c(modulesQ73[modulesQ73$Show == "Show",]$name, "NNAT", "ARC")
+
+Q73HMgenes[Q73HMgenes %not in% row.names(hmGenes)]
+
+
+q73MiddleGenes <- unique(c(as.character(Q73_Vs_pTANK_Glia[Q73_Vs_pTANK_Glia$external_gene_name %in% Q73_Vs_Q23_Glia$external_gene_name,]$Row.names), 
+                           as.character(Q73_Vs_pTANK_Glia[Q73_Vs_pTANK_Glia$external_gene_name %in% Q23_Vs_pTANK_Glia$external_gene_name,]$Row.names),
+                           as.character(Q73_Vs_Q23_Glia[Q73_Vs_Q23_Glia$external_gene_name %in% Q23_Vs_pTANK_Glia$external_gene_name,]$Row.names)))
+
+
+geneaIntersect <- geneaFiltered[geneaFiltered %in% rbind(Q73_Vs_pTANK_Glia, Q73_Vs_Q23_Glia, Q23_Vs_pTANK_Glia)$external_gene_name]
+
+q73MiddleGenes <- unique(c(q73MiddleGenes, geneaIntersect))
+
+q73Middle <- data.frame(row.names = q73MiddleGenes, 
+                        Q73_Vs_pTANK_Glia = rep(NA, length(q73MiddleGenes)), 
+                        Q73_Vs_Q23_Glia = rep(NA, length(q73MiddleGenes)), 
+                        Q23_Vs_pTANK_Glia = rep(NA, length(q73MiddleGenes)), 
+                        HD_Vs_Ctr_Genea_CD44 = rep(NA, length(q73MiddleGenes)))
+
+head(merge(q73Middle, Q73_Vs_pTANK_Glia, by.x = 0, by.y = "Row.names", all.x = T)[,c(1,6)])
+
+q73Middle$Q73_Vs_pTANK_Glia <- merge(q73Middle, Q73_Vs_pTANK_Glia, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+q73Middle$Q73_Vs_Q23_Glia <- merge(q73Middle, Q73_Vs_Q23_Glia, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+q73Middle$Q23_Vs_pTANK_Glia <- merge(q73Middle, Q23_Vs_pTANK_Glia, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+#q73Middle$HD_Vs_Ctr_Genea_CD44 <- merge(q73Middle, HD_Vs_Ctr_Genea_CD44, by.x = 0, by.y = "Row.names", all.x = T)$logFC
+q73Middle$gene <- merge(q73Middle, ensemblGeneListHaffy, by.x = 0, by.y = 2, all.x = T)$external_gene_name
+q73Middle$sets <- NA
+
+i <- 1
+j <- 1
+for(i in 1:nrow(q73Middle)){
+  temp <- c()
+  for(j in 1:3){
+    if(is.na(q73Middle[i,j]) == FALSE){
+      temp <- c(temp,q73Middle[i,j]>0)
+    }
+  }
+  q73Middle[i,6] <- length(temp)
+}
+
+
+
+q73Middle$probe <- row.names(q73Middle)
+q73Middle <- q73Middle[order(q73Middle$sets, decreasing = T),]
+
+
+q73Middle$sets <- rowSums(q73Middle[,1:3], na.rm = T)
+
+
+
+datExpr <- merge(edata, ensemblGeneListHaffy, by.x = 0, by.y = 2)
+
+ogGenes <- rbind(Q73_Vs_pTANK_Glia,Q73_Vs_Q23_Glia, Q23_Vs_pTANK_Glia)
+ogGenes <- ogGenes[!duplicated(ogGenes$Row.names),]
+ogGenesNames <- unique(c(ogGenes$external_gene_name, geneaIntersect))
+ogGenes <- merge(ogGenes, q73Middle, by.x = 1, by.y = 0, all.x = T)
+ogGenes <- ogGenes[order(ogGenes$sets, ogGenes$AveExpr,decreasing = T),]
+ogGenes <- ogGenes[!duplicated(ogGenes$external_gene_name),]
+
+var(hmGenes %in% ogGenes$external_gene_name) == 0
+
+hmGenes <- ogGenes[ogGenes$external_gene_name %in% Q73HMgenes,]
+hmGenes <- edataLabeled[edataLabeled$Row.names %in% hmGenes$Row.names,]
+row.names(hmGenes) <- paste0(hmGenes$external_gene_name)
+hmGenes <- hmGenes[,c(2,4,6,8,10,12,14,16,18)]
+
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=299)
+
+hmGenes <- hmGenes[c(1,4,7,2,5,8,3,6,9)]
+
+#pheatmap(hmGenes, border_color = "Black", cluster_row = T, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(3,6))
+
+
+TPMlabeled <- merge(TPM, ensemblGeneListHaffy, by.x = 0, by.y = "ensembl_gene_id")
+geneaHM <- TPMlabeled[TPMlabeled$external_gene_name %in% row.names(hmGenes),]
+geneaHM <- geneaHM[!duplicated(geneaHM$Row.names),]
+
+row.names(geneaHM) <- geneaHM$external_gene_name
+
+geneaHM <- geneaHM[,c(2:21)]
+
+
+
+
+
+#pheatmap(geneaHM, border_color = "Black", cluster_row = T, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(3,6))
+
+
+annotationsFig1 <- data.frame(row.names = row.names(hmGenes))
+annotationsFig1$HD_Vs_Ctr_Genea_CD44 <- ifelse(row.names(annotationsFig1) %in% geneaFiltered,"HD_Vs_Ctr_Genea_CD44","White")
+annotationsFig1$Q23_Vs_pTANK_Glia <- ifelse(row.names(annotationsFig1) %in% Q23_Vs_pTANK_Glia$external_gene_name,"Q23_Vs_pTANK_Glia","White")
+annotationsFig1$Q73_Vs_Q23_Glia <- ifelse(row.names(annotationsFig1) %in% Q73_Vs_Q23_Glia$external_gene_name,"Q73_Vs_Q23_Glia","White")
+annotationsFig1$Q73_Vs_pTANK_Glia <- ifelse(row.names(annotationsFig1) %in% Q73_Vs_pTANK_Glia$external_gene_name,"Q73_Vs_pTANK_Glia","White")
+
+annotationsFig1$Q73_Vs_pTANK_Glia <- factor(annotationsFig1$Q73_Vs_pTANK_Glia)
+annotationsFig1$Q73_Vs_Q23_Glia <- factor(annotationsFig1$Q73_Vs_Q23_Glia)
+annotationsFig1$Q23_Vs_pTANK_Glia <- factor(annotationsFig1$Q23_Vs_pTANK_Glia)
+annotationsFig1$HD_Vs_Ctr_Genea_CD44 <- factor(annotationsFig1$HD_Vs_Ctr_Genea_CD44)
+
+annotation_palette <-  list(Q73_Vs_pTANK_Glia= c(White = "white", Q73_Vs_pTANK_Glia = "Orange"), Q73_Vs_Q23_Glia = c(White = "white", Q73_Vs_Q23_Glia = "Red"), Q23_Vs_pTANK_Glia = c(Q23_Vs_pTANK_Glia = "Blue", White = "white"), HD_Vs_Ctr_Genea_CD44 = c(HD_Vs_Ctr_Genea_CD44 = "Purple", White = "white"))
+
+
+
+#pheatmap(hmGenes, border_color = "Black", cluster_row = T, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(3,6), annotation_row = annotationsFig1, annotation_colors = annotation_palette)
+
+
+#nodeModules$Node <- gsub("Cyp51a1","Cyp51", nodeModules$Node)
+hmGenes <- merge(hmGenes, modulesQ73, by.x = 0, by.y = 1, all.x = T)
+
+Module1 <- hmGenes[hmGenes$module == 1,]
+Module2 <- hmGenes[hmGenes$module == 2,]
+Module3 <- hmGenes[hmGenes$module == 3,]
+Module4 <- hmGenes[hmGenes$module == 4,]
+
+moduleList <- list(Module1, Module2, Module3, Module4)
+
+# example matrix from pheatmap documentation
+
+scale_rows = function(x){
+  m = apply(x, 1, mean, na.rm = T)
+  s = apply(x, 1, sd, na.rm = T)
+  return((x - m) / s)
+}
+
+
+moduleCluster <- function(genes){
+  temp <- scale_rows(genes)
+  rowclust = hclust(dist(temp))
+  temp = temp[rowclust$order,]
+  return(as.data.frame(temp))
+}
+
+
+moduleHM <- do.call("rbind",lapply(moduleList, function(x) moduleCluster(data.frame(row.names = x[,1], x[,c(2:10)]))))
+
+for(i in 1:length(moduleList)){
+  temp <- nrow(moduleList[[i]])
+  if(i == 1){
+    rowGaps <- c(temp)
+  } else {
+    rowGaps <- c(rowGaps, sum(rowGaps[i-1], temp))
+  }
+}
+
+
+breaks = seq(-2,2, by = 4/199)
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=199)
+
+
+pheatmap(moduleHM, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "none", color = my_palette, gaps_col = c(3,6), gaps_row = rowGaps, annotation_row = annotationsFig1, annotation_colors = annotation_palette, breaks = breaks, cellwidth = 10, cellheight = 8)
+
+max(moduleHM)
+min(moduleHM)
+
+row.names(moduleHM)
+geneaHM <- geneaHM[match(row.names(moduleHM), row.names(geneaHM)),]
+geneaHM <- geneaHM[,c(1:4,13:16,5:12,17:20)]
+
+
+geneaHMavg <- data.frame(G002 = rowMeans(geneaHM[,1:4]), G19 = rowMeans(geneaHM[,5:8]), G17 = rowMeans(geneaHM[,9:13]), G18 = rowMeans(geneaHM[,14:16]), G20 = rowMeans(geneaHM[,17:20]))
+
+
+
+
+pheatmap(log2(geneaHM+.5), border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(4,8,13,16), gaps_row = rowGaps, breaks = breaks, cellwidth = 10, cellheight = 8)
+
+#pheatmap(log2(geneaHM+1), border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(4,8,13,16), gaps_row = rowGaps, annotation_row = annotationsFig1, annotation_colors = annotation_palette, breaks = breaks)
+#pheatmap(log2(geneaHMavg+1), border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(2), gaps_row = rowGaps, annotation_row = annotationsFig1, annotation_colors = annotation_palette, breaks = breaks)
+
+
+
+#pheatmap(geneaHM, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(4,8,12,16), breaks = breaks)
+
+```
+
+## Figure 5 Orthologs
+
+```{R}
+##### Figure 5 Orthologues
+library(biomaRt)
+
+#### Get all orthologes in RNA-Seq
+filename="humanData/ensemblGeneListHaffyOrtho.csv"
+if(file.exists(filename)){
+  ensemblGeneListHaffyOrtho <- read.csv(filename)} else{
+    ensemblGeneListHaffyOrtho <- getBM(attributes = c("ensembl_gene_id","external_gene_name","mmusculus_homolog_orthology_type", "mmusculus_homolog_ensembl_gene"), filters = "ensembl_gene_id",values = row.names(TPM), mart = marth)
+    write.csv(ensemblGeneListHaffyOrtho, filename)
+}
+
+
+### Reduce to one2one orthologs
+ensemblGeneListHaffyOrtho <- ensemblGeneListHaffyOrtho[ensemblGeneListHaffyOrtho$mmusculus_homolog_orthology_type == "ortholog_one2one",]
+### Reduce to presence in both microarray datasets
+ensemblGeneListMaster <- ensemblGeneListHaffyOrtho[ensemblGeneListHaffyOrtho$ensembl_gene_id %in% edataLabeled$ensembl_gene_id & ensemblGeneListHaffyOrtho$mmusculus_homolog_ensembl_gene %in% ensemblGeneListMaffyUnique$ensembl_gene_id,]
+
+### Reduce Glt list
+Q73_Vs_pTANK_Glia$ensembl_gene_id <- as.character(Q73_Vs_pTANK_Glia$ensembl_gene_id)
+Q73_Vs_pTANK_Glia_Final <- Q73_Vs_pTANK_Glia[Q73_Vs_pTANK_Glia$ensembl_gene_id %in% ensemblGeneListMaster$ensembl_gene_id,]
+
+R62_Final <- rbind(R62_12wk_Glt1_Multiprobe, R62_6wk_Glt1_Multiprobe)
+R62_Final <- merge(R62_Final, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+R62_Final$ensembl_gene_id.y <- as.character(R62_Final$ensembl_gene_id.y)
+R62_Final <- R62_Final[!duplicated(R62_Final$Row.names),]
+
+Q175_Final <- rbind(Q175_6mo_Glt1_Multiprobe, Q175_12mo_Glt1_Multiprobe)
+Q175_Final <- merge(Q175_Final, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+Q175_Final$ensembl_gene_id.y <- as.character(Q175_Final$ensembl_gene_id.y)
+Q175_Final <- Q175_Final[!duplicated(Q175_Final$Row.names),]
+
+TPMlabeled <- merge(TPM, ensemblGeneListMaster, by.x = 0, by.y = "ensembl_gene_id")
+Genea_Final <-TPMlabeled[TPMlabeled$external_gene_name %in% genea,]
+Genea_Final$ensembl_gene_id <- as.character(Genea_Final$Row.names)
+
+
+VennGlt1 <- Venn(list("R62" = R62_Final$ensembl_gene_id.y,"Q175" = Q175_Final$ensembl_gene_id.y,"Q73_vs_pTank" = Q73_Vs_pTANK_Glia_Final$ensembl_gene_id, "Genea" = Genea_Final$Row.names))
+plot(VennGlt1, doWeights = F, type = "ellipses", show = list(SetLabels = T,Faces = FALSE))
+
+
+#Overlap of R62 and Q73 Only
+shortFragment <- R62_Final[R62_Final$ensembl_gene_id.y %in% Q73_Vs_pTANK_Glia_Final$ensembl_gene_id & R62_Final$ensembl_gene_id.y %not in% Genea_Final$Row.names & R62_Final$ensembl_gene_id.y %not in% Q175_Final$ensembl_gene_id.y,]
+length(unique(shortFragment$ensembl_gene_id))
+
+longFragment <- Q175_Final[Q175_Final$ensembl_gene_id.y %in% Genea_Final$Row.names & Q175_Final$ensembl_gene_id.y %not in% Q73_Vs_pTANK_Glia_Final$ensembl_gene_id & Q175_Final$ensembl_gene_id.y %not in% R62_Final$ensembl_gene_id.y,]
+length(unique(longFragment$ensembl_gene_id))
+
+
+#Overlap of Either R62 and Q73 with either Q175 or Genea
+shortGenes <- unique(c(as.character(Q73_Vs_pTANK_Glia_Final$ensembl_gene_id), as.character(R62_Final$ensembl_gene_id.y)))
+length(shortGenes)
+longGenes <- unique(c(Genea_Final$Row.names, Q175_Final$ensembl_gene_id.y))
+length(longGenes)
+
+intersectShortLongGenes <- shortGenes[shortGenes %in% longGenes]
+length(unique(intersectShortLongGenes))
+
+write.ipa(longFragment, "longFragment")
+write.ipa(shortFragment, "shortFragment")
+write.ipa(intersectShortLongGenes, "intersectShortLong")
+```
+
+## Ortholog GO graphs
+
+``` {R, warning=FALSE}
+files <- c("humanData/short_IPA.txt", "humanData/long_IPA.txt", "humanData/intersect_IPA.txt")
+compNames <- c("Short_Fragment_Only", "Long_Fragment_Only", "Intersect")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = "Canonical",drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = "Upstream Regulators", select = c(3, 10, 6, 11))
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = "Diseases and Bio", drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+rm(canonicalIPA)
+rm(upstreamIPA)
+rm(functionalIPA)
+rm(tempIPA)
+
+ogIPA <- IPA
+IPA[is.na(IPA$zScore)]$zScore <- 0
+
+
+filterTerms <- c("cancer","glioma", "abdominal", "carcinoma", "endometrium", "eye", "nose", "epidermis", "head", "lymphocyte", "renal", "snout", "tooth", 
+                 "connective", "tumor", "fibroblast", "rickets", "mouth", "maxilla", "cartilage", "neoplasm", "oma", "lymph", "liver", "psoriasis", "cardio",
+                 "cardiac", "tongue", "disc", "tinea", "herpes", "Picornaviridae", "virus", "killer T", "muscle", "myopathy", "pancreatic", "Onychomycosis",
+                 "leukocyte", "oral cavity","osteoclast", "Merkel", "macrophage", "Hydrometrocolpos", "Hand", "Gastric", "Thymocytes", "diabetes",
+                 "Dupuytren", "myoblast", "ear$", "implantation", "bone", "limb", "cleft lip", "Calcinosis", "lung", "Benign lesion", 
+                 "body axis", "sensory organ", "diabetic", "neutrophil", "infection of mammalia", "leukopoiesis", "neoplasia", "Sensory system development",
+                 "T cell", "myeloid", "aorta", "body cavity", "esophagus", "incisor", "kidney", "oesophageal", "respiratory", "skin", "cavity", "urinary",
+                 "foot", "digit", "heart", "acute biphenotypic leukemia", "Ankylosis", "Articular rigidity", "Atherosclero", "Blister", "Branching morphogenesis of epithelial tubule",
+                 "Cervical spondylotic myelopathy", "epithelial", "exocrine", "gastrointestinal", "Ejection of first polar body", "Familial arrhythmia", "Familial nonsyndromic hearing impairment", 
+                 "fibrosis", "mammary", "Hearing", "Morphogenesis of metanephric bud", "cochlea", "nail", "Plasma cell dyscrasia", "Secondary Leukemia", "granulocyte",
+                 "Tinnitus", "metastasis", "trunk", "sperm motility", "skull", "dendritic cells", "dehydration", "digestive", "microphthalmia", "myelodysplastic",
+                 "semicircular canal", " skeleton", "osteopenia", "osteoarthritis", "Refractory anemia with excess blasts")
+filteredIPA <- IPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+filteredIPA <- filteredIPA[filteredIPA$pVal > -log10(0.05),]
+
+deletedIPA <- IPA[grepl(paste(filterTerms, collapse = "|"), ignore.case = T, IPA$Pathway),]
+
+longGO <- c("Abnormal morphology of neurons", "MITF Signaling", "RUNX1 Signaling", "Spatial learning", "Stratification of cerebral cortex", "Neuregulin Signaling", "PAX6 Signaling")
+shortGO <- c("Superpathway of Cholesterol Biosynthesis", "SREBF2 Signaling", "SIRT2 Signaling", "SREBF1 Signaling", "Organismal death", "PPARA Signaling", "Apoptosis", "Abnormal morphology of nervous system", "Accumulation of lipid", "Degenerative dementia", "Metabolism of cholesterol", "HDL-cholesterol Signaling", "CYP51A1 Signaling", "POR Signaling", "INSIG1 Signaling", "Mevalonate Pathway I", "SCAP Signaling")
+intersectGO <- c("Branching of cells", "Differentiation of neuroglia", "Morphology of neuroglia", "Development of vasculature", "ATF4 Signaling", "Neurotransmission", "TCF7L2 Signaling", "Motor dysfunction or movement disorder", "BMP4 Signaling", "Formation of cellular protrusions", "Morphology of neuroglia", "Differentiation of neuroglia", "Branching of cells", "Morphology of nervous system", "Abnormal morphology of nervous system", "Formation of cellular protrusions", "Organization of cytoplasm", "Reorganization of cytoskeleton", "Organization of actin cytoskeleton", "Organization of cytoskeleton", "Microtubule dynamics")
+
+goGraphShort <- filteredIPA[filteredIPA$Pathway %in% shortGO,]
+goGraphLong <- filteredIPA[filteredIPA$Pathway %in% longGO,]
+goGraphIntersect <- filteredIPA[filteredIPA$Pathway %in% intersectGO,]
+
+
+
+goGraphShort <- goGraphShort[,c(1,2,6)]
+goGraphLong <- goGraphLong[,c(1,2,6)]
+goGraphIntersect <- goGraphIntersect[,c(1,2,6)]
+
+
+comparisonVector <- c("Short_Fragment_Only","Intersect", "Long_Fragment_Only")
+makeGOgraph(goGraphShort, comparisonVector)
+makeGOgraph(goGraphIntersect, comparisonVector)
+makeGOgraph(goGraphLong, comparisonVector)
+
+## Make supplemental table of genesets
+
+na.pad <- function(x,len){
+    x[1:len]
+}
+
+
+
+makePaddedDataFrame <- function(l,...){
+    maxlen <- max(sapply(l,length))
+    data.frame(lapply(l,na.pad,len=maxlen),...)
+}
+
+
+suppTableOrthologs <- makePaddedDataFrame(list(longFragment$external_gene_name.y, shortFragment$external_gene_name.y, mapvalues(intersectShortLongGenes, ensemblGeneListHaffyOrtho$ensembl_gene_id, as.character(ensemblGeneListHaffyOrtho$external_gene_name))))
+
+
+
+names(suppTableOrthologs) <- c("Full Length HTT Only", "Truncated HTT Only", "Shared in both")
+write.table(suppTableOrthologs, "output/suppTableOrthologs.txt", sep = "\t", quote = F, row.names = F, na = "")
+
+
+
+#write.table(filteredIPA, "Output/Figure5_GO.txt", sep = "\t", quote = F, row.names = F)
+```
+
+## Figure 5 HMs
+
+
+## Final Supplemental Cholesterol Figure
+```{r, warning = F}
+
+files <- paste0("humanData/",c("Q73_Vs_Q23_Glia_IPA.txt", "Q73_Vs_pTANK_Glia_IPA.txt", "Q23_Vs_pTANK_Glia_IPA.txt"))
+compNames <- c("Q73_Vs_Q23_Glia", "Q73_Vs_pTANK_Glia", "Q23_Vs_pTANK_Glia")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = "Canonical",drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = "Upstream Regulators", drop = c(1:2,4:6,8:10,13:14))
+  upstreamIPA <- upstreamIPA[,c(1,3,2,4)]
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = "Diseases and Bio", drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+####For the other dumb file
+canonicalIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Canonical",drop = c(4,6))
+names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+canonicalIPA$type <- "Canonical"
+upstreamIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Upstream Regulators", select = c(3, 10, 6, 11))
+names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+upstreamIPA$type <- "Upstream"
+functionalIPA <- fread("humanData/geneaFilteredMicroarray_IPA.txt", skip = "Diseases and Bio", drop = c(1,2,5,7,8,10,11))
+names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+functionalIPA$pVal <- -log10(functionalIPA$pVal)
+functionalIPA$type <- "Functional"
+
+tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+tempIPA$comparison <- "HD_Vs_Ctr_Genea_CD44"
+
+
+
+humanIPA <- rbind(IPA, tempIPA)
+
+### Mouse IPAs
+columnNames <- c("Pathway", "Q175_12mo", "Q175_6mo", "R62_12wk", "R62_6wk")
+
+files <- paste0("mouseData/",c("R62_12_Glt1_IPA.txt", "R62_6_Glt1_IPA.txt", "Q175_6_Glt1_IPA.txt", "Q175_12_Glt1_IPA.txt"))
+compNames <- c("R62_12wk", "R62_6wk", "Q175_6mo", "Q175_12mo")
+
+for(i in 1:length(files)){
+  canonicalIPA <- fread(files[i], skip = "Canonical Pathways for My Projects",drop = c(4,6))
+  names(canonicalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  canonicalIPA$type <- "Canonical"
+  upstreamIPA <- fread(files[i], skip = "Upstream Regulators for My Projects", drop = c(1:2,4:6,8:10,13:14))
+  upstreamIPA <- upstreamIPA[,c(1,3,2,4)]
+  names(upstreamIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  upstreamIPA$Pathway <- paste0(upstreamIPA$Pathway, " Signaling")
+  upstreamIPA$pVal <- -log10(upstreamIPA$pVal)
+  upstreamIPA$type <- "Upstream"
+  functionalIPA <- fread(files[i], skip = "Diseases and Bio Functions for My Projects", drop = c(1,2,5,7,8,10,11))
+  names(functionalIPA) <- c("Pathway", "pVal", "zScore", "Genes")
+  functionalIPA$pVal <- -log10(functionalIPA$pVal)
+  functionalIPA$type <- "Functional"
+  if(i == 1){
+    IPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    IPA$comparison <- compNames[i]
+  } else {
+    tempIPA <- rbind(canonicalIPA, upstreamIPA, functionalIPA)
+    tempIPA$comparison <- compNames[i]
+    IPA <- rbind(IPA, tempIPA)
+  }
+}
+
+rm(canonicalIPA)
+rm(upstreamIPA)
+rm(functionalIPA)
+rm(tempIPA)
+
+ogIPA <- IPA
+IPA <- IPA[IPA$pVal > -log10(0.05),]
+IPA[is.na(IPA$zScore)]$zScore <- 0
+
+mouseIPA <- IPA
+
+humanIPA <- humanIPA[humanIPA$pVal > -log10(0.05),]
+humanIPA[is.na(humanIPA$zScore)]$zScore <- 0
+
+bothIPA <- rbind(humanIPA, mouseIPA)
+
+filterTerms <- c("cancer","glioma", "abdominal", "carcinoma", "endometrium", "eye", "nose", "epidermis", "head", "lymphocyte", "renal", "snout", "tooth", 
+                 "connective", "tumor", "fibroblast", "rickets", "mouth", "maxilla", "cartilage", "neoplasm", "oma", "lymph", "liver", "psoriasis", "cardio",
+                 "cardiac", "tongue", "disc", "tinea", "herpes", "Picornaviridae", "virus", "killer T", "muscle", "myopathy", "pancreatic", "Onychomycosis",
+                 "leukocyte", "oral cavity","osteoclast", "Merkel", "macrophage", "Hydrometrocolpos", "Hand", "Gastric", "Thymocytes", "diabetes",
+                 "Dupuytren", "myoblast", "ear$", "implantation", "bone", "limb", "cleft lip", "Calcinosis", "lung", "Benign lesion", 
+                 "body axis", "sensory organ", "diabetic", "neutrophil", "infection of mammalia", "leukopoiesis", "neoplasia", "Sensory system development",
+                 "T cell", "myeloid", "aorta", "body cavity", "esophagus", "incisor", "kidney", "oesophageal", "respiratory", "skin", "cavity", "urinary",
+                 "foot", "digit", "heart", "acute biphenotypic leukemia", "Ankylosis", "Articular rigidity", "Atherosclero", "Blister", "Branching morphogenesis of epithelial tubule",
+                 "Cervical spondylotic myelopathy", "epithelial", "exocrine", "gastrointestinal", "Ejection of first polar body", "Familial arrhythmia", "Familial nonsyndromic hearing impairment", 
+                 "fibrosis", "mammary", "Hearing", "Morphogenesis of metanephric bud", "cochlea", "nail", "Plasma cell dyscrasia", "Secondary Leukemia", "granulocyte",
+                 "Tinnitus", "metastasis", "trunk", "sperm motility", "skull", "dendritic cells", "dehydration", "digestive", "microphthalmia", "myelodysplastic",
+                 "semicircular canal", " skeleton", "osteopenia", "osteoarthritis", "Refractory anemia with excess blasts")
+
+
+bothIPA <- bothIPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, bothIPA$Pathway),]
+
+filterTerms <- c("cancer","glioma", "abdominal", "carcinoma", "endometrium", "eye", "nose", "epidermis", "head", "lymphocyte", "renal", "snout", "tooth", 
+                 "connective", "tumor", "fibroblast", "rickets", "mouth", "maxilla", "cartilage", "neoplasm", "oma", "lymph", "liver", "psoriasis", "cardio",
+                 "cardiac", "tongue", "disc", "tinea", "herpes", "Picornaviridae", "virus", "killer T", "muscle", "myopathy", "pancreatic", "Onychomycosis",
+                 "leukocyte", "oral cavity","osteoclast", "Merkel", "macrophage", "Hydrometrocolpos", "Hand", "Gastric", "Thymocytes", "diabetes",
+                 "Dupuytren", "myoblast", "ear$", "implantation", "bone", "limb", "cleft lip", "Calcinosis", "lung", "Benign lesion", 
+                 "body axis", "sensory organ", "diabetic", "neutrophil", "infection of mammalia", "leukopoiesis", "neoplasia", "Sensory system development",
+                 "T cell", "myeloid", "aorta", "body cavity", "esophagus", "incisor", "kidney", "oesophageal", "respiratory", "skin", "cavity", "urinary",
+                 "foot", "digit", "heart", "acute biphenotypic leukemia", "Ankylosis", "Articular rigidity", "Atherosclero", "Blister", "Branching morphogenesis of epithelial tubule",
+                 "Cervical spondylotic myelopathy", "epithelial", "exocrine", "gastrointestinal", "Ejection of first polar body", "Familial arrhythmia", "Familial nonsyndromic hearing impairment", 
+                 "fibrosis", "mammary", "Hearing", "Morphogenesis of metanephric bud", "cochlea", "nail", "Plasma cell dyscrasia", "Secondary Leukemia", "granulocyte",
+                 "Tinnitus", "metastasis", "trunk", "sperm motility", "skull", "dendritic cells", "dehydration", "digestive", "microphthalmia", "myelodysplastic",
+                 "semicircular canal", " skeleton", "osteopenia", "osteoarthritis", "Refractory anemia with excess blasts", "rectum", "submandibular", "antiviral", "HIV-1",
+                 "antigen present", "gonad", "keratinocyte", "phagocyte", "coronary", "intestinal", "viral replicon", "monocyte", "viral life", "wound", "leukemia")
+bothIPA <- bothIPA[!grepl(paste(filterTerms, collapse = "|"), ignore.case = T, bothIPA$Pathway),]
+
+cholesterolGroups <- c("HDL-cholesterol Signaling", "SCAP Signaling", "Superpathway of Cholesterol Biosynthesis", "SREBF1 Signaling", "SREBF2 Signaling", "cholesterol Signaling", "POR Signaling", "Synthesis of sterol", "Synthesis of cholesterol", "Cholesterol Biosynthesis I", "Cholesterol Biosynthesis II (via 24,25-dihydrolanosterol)", "Cholesterol Biosynthesis III (via Desmosterol)", "LDLR Signaling", "CYP51A1 Signaling", "Metabolism of cholesterol", "25-hydroxycholesterol Signaling", "Mevalonate Pathway I", "INSIG2 Signaling", "INSIG1 Signaling", "Superpathway of Geranylgeranyldiphosphate Biosynthesis I (via Mevalonate)")
+
+cholesterolIPA <- bothIPA[bothIPA$Pathway %in% cholesterolGroups,]
+unique(cholesterolIPA$comparison)
+
+comparisonVector <- c("R62_6wk","R62_12wk", "Q73_Vs_pTANK_Glia", "Q73_Vs_Q23_Glia", "Q175_12mo", "Q23_Vs_pTANK_Glia", "HD_Vs_Ctr_Genea_CD44")
+comparisonVector <- c("R62_6wk","R62_12wk", "Q73_Vs_pTANK_Glia", "Q73_Vs_Q23_Glia", "Q23_Vs_pTANK_Glia", "HD_Vs_Ctr_Genea_CD44")
+
+cholesterolGraph <- cholesterolIPA[,c(1,2,6)]
+makeGOgraph(cholesterolGraph, comparisonVector)
+
+```
+
+## Last supplemental Heatmap
+```{r}
+library(UpSetR)
+
+#Datasets for upset plot
+R62_Final_12 <- merge(R62_12wk_Glt1_Multiprobe, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+R62_Final_12$ensembl_gene_id.y <- as.character(R62_Final_12$ensembl_gene_id.y)
+
+
+R62_Final_6 <- merge(R62_6wk_Glt1_Multiprobe, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+R62_Final_6$ensembl_gene_id.y <- as.character(R62_Final_6$ensembl_gene_id.y)
+
+Q175_Final_12 <- merge(Q175_12mo_Glt1_Multiprobe, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+Q175_Final_12$ensembl_gene_id.y <- as.character(Q175_Final_12$ensembl_gene_id.y)
+
+Q73_Vs_pTANK_Glia$ensembl_gene_id <- as.character(Q73_Vs_pTANK_Glia$ensembl_gene_id)
+Q73_Vs_pTANK_Glia_Final <- Q73_Vs_pTANK_Glia[Q73_Vs_pTANK_Glia$ensembl_gene_id %in% ensemblGeneListMaster$ensembl_gene_id,]
+
+Q73_Vs_Q23_Glia$ensembl_gene_id <- as.character(Q73_Vs_Q23_Glia$ensembl_gene_id)
+Q73_Vs_Q23_Glia_Final <- Q73_Vs_Q23_Glia[Q73_Vs_Q23_Glia$ensembl_gene_id %in% ensemblGeneListMaster$ensembl_gene_id,]
+
+Q23_Vs_pTANK_Glia$ensembl_gene_id <- as.character(Q23_Vs_pTANK_Glia$ensembl_gene_id)
+Q23_Vs_pTANK_Glia_Final <- Q23_Vs_pTANK_Glia[Q23_Vs_pTANK_Glia$ensembl_gene_id %in% ensemblGeneListMaster$ensembl_gene_id,]
+
+upset(fromList(list("R62_12" = R62_Final_12$ensembl_gene_id.y, "R62_6"= R62_Final_6$ensembl_gene_id.y, "Q175 12" = Q175_Final_12$ensembl_gene_id.y, "Q73 vs Q23" = Q73_Vs_Q23_Glia_Final$ensembl_gene_id, "Q73 vs pTANK" = Q73_Vs_pTANK_Glia_Final$ensembl_gene_id, "Q23 vs pTANK" = Q23_Vs_pTANK_Glia_Final$ensembl_gene_id, "hESC-derived HD vs Ctrl" = Genea_Final$Row.names)), order.by = "freq", nsets = 7)
+
+
+
+####
+Q73_Vs_pTANK_Glia$ensembl_gene_id <- as.character(Q73_Vs_pTANK_Glia$ensembl_gene_id)
+Q73_Vs_pTANK_Glia_Final <- Q73_Vs_pTANK_Glia[Q73_Vs_pTANK_Glia$ensembl_gene_id %in% ensemblGeneListMaster$ensembl_gene_id,]
+
+R62_Final <- rbind(R62_12wk_Glt1_Multiprobe, R62_6wk_Glt1_Multiprobe)
+R62_Final <- merge(R62_Final, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+R62_Final$ensembl_gene_id.y <- as.character(R62_Final$ensembl_gene_id.y)
+R62_Final <- R62_Final[!duplicated(R62_Final$Row.names),]
+
+Q175_Final <- rbind(Q175_6mo_Glt1_Multiprobe, Q175_12mo_Glt1_Multiprobe)
+Q175_Final <- merge(Q175_Final, ensemblGeneListMaster, by.x = "ensembl_gene_id", by.y = "mmusculus_homolog_ensembl_gene")
+Q175_Final$ensembl_gene_id.y <- as.character(Q175_Final$ensembl_gene_id.y)
+Q175_Final <- Q175_Final[!duplicated(Q175_Final$Row.names),]
+
+TPMlabeled <- merge(TPM, ensemblGeneListMaster, by.x = 0, by.y = "ensembl_gene_id")
+Genea_Final <-TPMlabeled[TPMlabeled$external_gene_name %in% genea,]
+Genea_Final$ensembl_gene_id <- as.character(Genea_Final$Row.names)
+
+
+
+```
+
+## Supplemental Cholesterol HM
+```{r}
+
+
+cholesterolGenes <- cholesterolIPA %>% 
+  mutate(genes = strsplit(as.character(Genes), ",")) %>% 
+  unnest(genes) %>% .[,-4]
+
+cholesterolGenes <- unique(cholesterolGenes$genes)
+
+
+cholesterolGenesHM <- c("LCAT", "HDC", "LPCAT3", "LIPG", "FABP7", "MDK", "ACSL5", "HMGCS2", "ABCA1", "ACSL4", "DHCR24", "SQLE", "DHCR7", "SREBF2", "LDLR", "INSIG1", "HMGCR", "HMGCS1", "IDI1", "MVK", "MVD")
+
+
+
+#### HM for mouse
+graphCountsMouseLabeled <- merge(graphCountsMouse, ensemblGeneListMaffyUnique, by.x = 0, by.y = 2)
+hmGenesMouse <- graphCountsMouseLabeled[graphCountsMouseLabeled$external_gene_name %in% capitalize(tolower(cholesterolGenesHM)),]
+
+row.names(hmGenesMouse) <- hmGenesMouse$external_gene_name
+row.names(hmGenesMouse) <- toupper(row.names(hmGenesMouse))
+hmGenesMouse <- hmGenesMouse[,2:(1+ncol(glt1)),]
+
+glt1Design$Type <- relevel(glt1Design$Type, "WT")
+glt1Design <- glt1Design[order(glt1Design$Days, glt1Design$Type, decreasing = F),]
+hmGenesMouse <- hmGenesMouse[,match(row.names(glt1Design), colnames(hmGenesMouse))]
+
+#HM for Q73
+graphCountsHumanLabeled <- merge(graphCountsHuman, ensemblGeneListHaffyUnique, by.x = 0, by.y = 2)
+hmGenesQ73 <- graphCountsHumanLabeled[graphCountsHumanLabeled$external_gene_name %in% cholesterolGenesHM,]
+row.names(hmGenesQ73) <- hmGenesQ73$external_gene_name
+hmGenesQ73 <- hmGenesQ73[,colnames(hmGenesQ73) %in% sampleTableQ73[sampleTableQ73$Sort == "Gpos_Pneg",]$SampleID]
+hmGenesQ73 <- hmGenesQ73[,order(colnames(hmGenesQ73))]
+
+
+#HM for Geneas
+hmGenesGenea <- TPMlabeled[TPMlabeled$external_gene_name %in% cholesterolGenesHM,]
+hmGenesGenea <- hmGenesGenea[!duplicated(hmGenesGenea$external_gene_name),]
+row.names(hmGenesGenea) <- hmGenesGenea$external_gene_name
+hmGenesGenea <- hmGenesGenea[,2:(1+ncol(TPM))]
+
+hmGenesGenea$
+
+hmgenes
+hmGenesMouse <- hmGenesMouse[row.names(hmGenesMouse) %in% row.names(hmGenesGenea),]
+hmGenesMouse <- hmGenesMouse[,c(6:10, 1:5, 17:21, 11:16, 22:37)]
+
+hmGenesGenea <- hmGenesGenea[,c(1:4,13:16, 5:12, 17:20)]
+
+
+cholesterolHM <- data.frame(row.names = row.names(hmGenesMouse))
+for(i in cholesterolGroups){
+  cholesterolHM[,i] <- ifelse(row.names(hmGenesMouse)%in% unique(unlist(strsplit(paste((cholesterolIPA[cholesterolIPA$Pathway %in% i,]$Genes), collapse = ","), ","))), 1,0)
+}
+
+# morphologyCluster <- function(morphology){
+#   rowclust = hclust(dist(morphology))
+#   morphology = morphology[rowclust$order,]
+#   return(as.data.frame(morphology))
+# }
+
+#cholesterolHMorder <- row.names(morphologyCluster(cholesterolHM))
+cholesterolHM <- cholesterolHM[match(cholesterolGenesHM, row.names(cholesterolHM)),]
+
+breaks = seq(-2,2, by = 4/199)
+my_palette <- colorRampPalette(c("#009900","#fffcbd","#ff2020"))(n=199)
+
+hmGenesGenea <- hmGenesGenea[match(cholesterolGenesHM,row.names(hmGenesGenea)),]
+hmGenesMouse <- hmGenesMouse[match(cholesterolGenesHM,row.names(hmGenesMouse)),]
+hmGenesQ73 <- hmGenesQ73[match(cholesterolGenesHM,row.names(hmGenesQ73)),]
+
+annotationsFinalHM <- data.frame(row.names = row.names(hmGenesGenea))
+
+annotationsFinalHM$Genea <- ifelse(row.names(annotationsFinalHM) %in% Genea_Final$external_gene_name,"Genea","White")
+
+annotationsFinalHM$Q23_vs_pTANK <- ifelse(row.names(annotationsFinalHM) %in% Q23_Vs_pTANK_Glia_Final$external_gene_name,"Q23_vs_pTANK","White")
+
+annotationsFinalHM$Q73_vs_Q23 <- ifelse(row.names(annotationsFinalHM) %in% Q73_Vs_Q23_Glia_Final$external_gene_name,"Q73_vs_Q23","White")
+
+annotationsFinalHM$Q73_vs_pTANK <- ifelse(row.names(annotationsFinalHM) %in% Q73_Vs_pTANK_Glia_Final$external_gene_name,"Q73_vs_pTANK","White")
+
+annotationsFinalHM$Q175_12 <- ifelse(row.names(annotationsFinalHM) %in% Q175_Final_12$external_gene_name.y,"Q175_12","White")
+
+annotationsFinalHM$R62_12 <- ifelse(row.names(annotationsFinalHM) %in% R62_Final_12$external_gene_name.y,"R62_12","White")
+
+annotationsFinalHM$R62_6 <- ifelse(row.names(annotationsFinalHM) %in% R62_Final_6$external_gene_name.y,"R62_6","White")
+
+
+annotationsFinalHM[sapply(annotationsFinalHM, is.character)] <- lapply(annotationsFinalHM[sapply(annotationsFinalHM, is.character)], 
+                                       as.factor)
+
+annotation_palette <-  list(R62_6= c(White = "white", R62_6 = "Orange"), R62_12= c(White = "white", R62_12 = "darkorange2"), Q175_12 = c(White = "white", Q175_12 = "Red"), Q73_vs_pTANK = c(Q73_vs_pTANK = "Blue", White = "white"), Q73_vs_Q23 = c(Q73_vs_Q23 = "deepskyblue4", White = "white"), Q23_vs_pTANK = c(Q23_vs_pTANK = "deepskyblue", White = "white"), Genea = c(Genea = "Purple", White = "white"))
+
+
+annotation_palette_cholesterol <- rep(list(list("0"="white", "1" = "forestgreen")), length(cholesterolGroups))
+names(annotation_palette_cholesterol) <- cholesterolGroups
+
+pheatmap(hmGenesGenea, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(4,8,12,16), breaks = breaks, cellwidth = 10, cellheight = 10)
+
+pheatmap(hmGenesMouse, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(5,10,15,21,25,29,33), annotation_row = annotationsFinalHM, annotation_colors = annotation_palette, breaks = breaks, cellwidth = 10, cellheight = 10, annotation_legend = F)
+
+
+pheatmap(hmGenesQ73, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "row", color = my_palette, gaps_col = c(3,6), breaks = breaks, cellwidth = 10, cellheight = 10, annotation_legend = F)
+
+
+
+
+```
+
+
+
+
+### HM for Figure 6
+```{r}
+
+## Alternative using the graphCounts
+mouseIDcomparisons <- ensemblGeneListHaffyOrtho
+mouseIDcomparisons <- merge(mouseIDcomparisons, ensemblGeneListMaffyUnique, by.x = 5, by.y = "ensembl_gene_id")
+
+mouseIDcomparisons <- mouseIDcomparisons[match(intersectShortLongGenes, mouseIDcomparisons$ensembl_gene_id),]
+
+graphCountsGlt1_Late <- makeScatterPlot(glt1, ensemblGeneListMaffy ,list(R62_12wk_Glt1, Q175_12mo_Glt1))
+
+mouseFCs <- data.frame(row.names = intersectShortLongGenes)
+Q175_12mo_Glt1_All <- Q175_12mo_Glt1_Allprobes
+
+Q175_12mo_Glt1_All <- Q175_12mo_Glt1_All[Q175_12mo_Glt1_All$Row.names %in% row.names(graphCountsGlt1_Late),]
+
+R62_12wk_Glt1_All <- R62_12wk_Glt1_Allprobes
+
+R62_12wk_Glt1_All <- R62_12wk_Glt1_All[R62_12wk_Glt1_All$Row.names %in% row.names(graphCountsGlt1_Late),]
+
+
+
+mouseFCs$Q175_12mo <- Q175_12mo_Glt1_All[match(mouseIDcomparisons$mmusculus_homolog_ensembl_gene,Q175_12mo_Glt1_All$ensembl_gene_id),]$logFC
+
+mouseFCs$R62_12wk <- R62_12wk_Glt1_All[match(mouseIDcomparisons$mmusculus_homolog_ensembl_gene,R62_12wk_Glt1_All$ensembl_gene_id),]$logFC
+
+### Come back and have this run earlier so fitV2 isn't confusing
+
+Q73_Vs_pTANK_Glia_All <- merge(topTable(fitV2, coef=2, number = 100000, p.value = 1), ensemblGeneListHaffy, by.x = 0, by.y =2)
+
+Q73_Vs_pTANK_Glia_All <- Q73_Vs_pTANK_Glia_All[Q73_Vs_pTANK_Glia_All$Row.names %in% row.names(graphCountsQ73),]
+
+
+mouseFCs$Q73 <- Q73_Vs_pTANK_Glia_All[match(mouseIDcomparisons$ensembl_gene_id, Q73_Vs_pTANK_Glia_All$ensembl_gene_id),]$logFC
+
+
+
+### Genea
+geneaHM <- merge(TPM, ensemblGeneListHaffy, by.x = 0, by.y = "ensembl_gene_id")
+hmGenesGenea <- geneaHM[geneaHM$external_gene_name %in% mouseIDcomparisons$external_gene_name.x,]
+hmGenesGenea <- hmGenesGenea[!duplicated(hmGenesGenea$external_gene_name),]
+row.names(hmGenesGenea) <- hmGenesGenea$Row.names
+hmGenesGenea <- hmGenesGenea[,2:(1+ncol(TPM))]
+hmGenesGenea <- log2(hmGenesGenea+.1)
+#All genea 
+hmGenesGenea <- hmGenesGenea[,c(1:4,13:16, 5:12, 17:20)]
+tempGenea <- data.frame(row.names = row.names(hmGenesGenea))
+tempGenea$g002 <- rowMeans(hmGenesGenea[,1:4])
+tempGenea$g19 <- rowMeans(hmGenesGenea[,5:8])
+tempGenea$g17 <- rowMeans(hmGenesGenea[,9:13])
+tempGenea$g18 <- rowMeans(hmGenesGenea[,14:16])
+tempGenea$g20 <- rowMeans(hmGenesGenea[,17:20])
+tempGenea$gCtrl <- rowMeans(tempGenea[,1:2])
+tempGenea$gHD <- rowMeans(tempGenea[,3:5])
+
+hmGenesGenea <-tempGenea
+
+
+GeneaLogFC <- data.frame(row.names = row.names(hmGenesGenea), FC = (hmGenesGenea$gH - hmGenesGenea$gCtrl))
+
+mouseFCs$Genea <- GeneaLogFC[match(mouseIDcomparisons$ensembl_gene_id, row.names(GeneaLogFC)),]
+mouseFCs$consistent <- NA
+for(i in 1:nrow(mouseFCs)){
+  mouseFCs$consistent[i] <- (mouseFCs$R62_12wk[i] > 0) + (mouseFCs$Q175_12mo[i] > 0) + (mouseFCs$Q73[i] > 0) + (mouseFCs$Genea[i] > 0)
+}
+
+mouseFCs <- merge(mouseFCs, ensemblGeneListHaffyOrtho, by.x = 0, by.y = "ensembl_gene_id")
+mouseFCs <- mouseFCs[mouseFCs$consistent %in% c(0,4),]
+
+genesFinalHM <- mouseFCs
+
+#HM for Geneas
+geneaHM <- merge(TPM, ensemblGeneListHaffy, by.x = 0, by.y = "ensembl_gene_id")
+hmGenesGenea <- geneaHM[geneaHM$external_gene_name %in% genesFinalHM$external_gene_name,]
+hmGenesGenea <- hmGenesGenea[!duplicated(hmGenesGenea$external_gene_name),]
+row.names(hmGenesGenea) <- hmGenesGenea$external_gene_name
+hmGenesGenea <- hmGenesGenea[,2:(1+ncol(TPM))]
+#All genea 
+hmGenesGenea <- hmGenesGenea[,c(1:4,13:16, 5:12, 17:20)]
+tempGenea <- data.frame(row.names = row.names(hmGenesGenea))
+hmGenesGenea <- log2(hmGenesGenea+.1)
+#tempGenea$g002 <- rowMeans(hmGenesGenea[,1:4])
+#tempGenea$g19 <- rowMeans(hmGenesGenea[,5:8])
+tempGenea$ctrl <- rowMeans(hmGenesGenea[,1:8])
+tempGenea$g17 <- rowMeans(hmGenesGenea[,9:13])
+tempGenea$g18 <- rowMeans(hmGenesGenea[,14:16])
+tempGenea$g20 <- rowMeans(hmGenesGenea[,17:20])
+tempGenea$mean <- rowMeans(hmGenesGenea)
+tempGenea$sd <- rowSds(hmGenesGenea)
+
+for( i in 1:4){
+  tempGenea[,i] <- (tempGenea[,i] - tempGenea$mean)/tempGenea$sd
+}
+
+geneaScaled <- tempGenea[,1:4]
+
+#HM for mouse... Do something better for smallMouseRef
+smallMouseRef <- merge(genesFinalHM, mouseIDcomparisons, by.x = "Row.names", by.y = "ensembl_gene_id")
+#graphCountsMouse <- merge(graphCountsMouse, ensemblGeneListMaffyUnique, by.x = 0, by.y = 2)
+hmGenesMouse <- graphCountsMouseLabeled[match(genesFinalHM$mmusculus_homolog_ensembl_gene, graphCountsMouseLabeled$ensembl_gene_id),]
+row.names(hmGenesMouse) <- smallMouseRef$external_gene_name
+hmGenesMouse <- hmGenesMouse[,2:(1+ncol(glt1)),]
+
+glt1Design$Type <- relevel(glt1Design$Type, "WT")
+glt1Design <- glt1Design[order(glt1Design$Days, glt1Design$Type, decreasing = F),]
+hmGenesMouse <- hmGenesMouse[,match(row.names(glt1Design), colnames(hmGenesMouse))]
+
+#subet
+#hmGenesMouse <- hmGenesMouse[,c(11:21,30:37)]
+
+tempMouse <-  data.frame(row.names = row.names(hmGenesMouse))
+tempMouse$wt6wk <- rowMeans(hmGenesMouse[,1:5])
+tempMouse$hd6wk <- rowMeans(hmGenesMouse[,6:10])
+tempMouse$wt12wk <- rowMeans(hmGenesMouse[,11:15])
+tempMouse$hd12wk <- rowMeans(hmGenesMouse[,16:21])
+
+tempMouse$wt6mo <- rowMeans(hmGenesMouse[,22:25])
+tempMouse$hd6mo <- rowMeans(hmGenesMouse[,26:29])
+
+tempMouse$wt12mo <- rowMeans(hmGenesMouse[,30:33])
+tempMouse$hd12mo <- rowMeans(hmGenesMouse[,34:37])
+tempMouse$mean <- rowMeans(hmGenesMouse)
+tempMouse$sd <- rowSds(hmGenesMouse)
+
+for( i in 1:8){
+  tempMouse[,i] <- (tempMouse[,i] - tempMouse$mean)/tempMouse$sd
+}
+
+mouseScaled <- tempMouse[,c(3,7,4,8)]
+
+#HM for Q73
+#graphCountsHuman <- merge(graphCountsHuman, ensemblGeneListHaffyUnique, by.x = 0, by.y = 2)
+hmGenesQ73 <- graphCountsHumanLabeled[graphCountsHumanLabeled$external_gene_name %in% genesFinalHM$external_gene_name,]
+row.names(hmGenesQ73) <- hmGenesQ73$external_gene_name
+hmGenesQ73 <- hmGenesQ73[,colnames(hmGenesQ73) %in% sampleTableQ73[sampleTableQ73$Sort == "Gpos_Pneg",]$SampleID]
+hmGenesQ73 <- hmGenesQ73[,order(colnames(hmGenesQ73))]
+
+#subset
+#hmGenesQ73 <- hmGenesQ73[,c(1:3,7:9)]
+tempQ73 <-  data.frame(row.names = row.names(hmGenesQ73))
+tempQ73$pTANK <- rowMeans(hmGenesQ73[,1:3])
+tempQ73$Q23 <- rowMeans(hmGenesQ73[,4:6])
+tempQ73$Q73 <- rowMeans(hmGenesQ73[,7:9])
+tempQ73$mean <- rowMeans(hmGenesQ73)
+tempQ73$sd <- rowSds(hmGenesQ73)
+
+for( i in 1:3){
+  tempQ73[,i] <- (tempQ73[,i] - tempQ73$mean)/tempQ73$sd
+}
+
+humanScaled <- tempQ73[,c(1,3)]
+
+
+
+geneaScaled <- geneaScaled[row.names(geneaScaled) %in% row.names(mouseScaled),]
+humanScaled <- humanScaled[row.names(humanScaled) %in% row.names(mouseScaled),]
+geneaScaled <- geneaScaled[match(row.names(mouseScaled), row.names(geneaScaled)),]
+humanScaled <- humanScaled[match(row.names(mouseScaled), row.names(humanScaled)),]
+
+totalScaled <- cbind(humanScaled, geneaScaled, mouseScaled)
+
+testCluster  <- function(genes){
+  temp <- genes
+  rowclust = hclust(dist(temp))
+  temp = temp[rowclust$order,]
+  return(as.data.frame(temp))
+}
+
+
+annotationsFinalHM <- data.frame(row.names = row.names(totalScaled))
+annotationsFinalHM$Genea <- ifelse(row.names(annotationsFinalHM) %in% Genea_Final$external_gene_name,"Genea","White")
+annotationsFinalHM$Q73 <- ifelse(row.names(annotationsFinalHM) %in% Q73_Vs_pTANK_Glia_Final$external_gene_name,"Q73","White")
+annotationsFinalHM$Q175 <- ifelse(row.names(annotationsFinalHM) %in% Q175_Final$external_gene_name.y,"Q175","White")
+annotationsFinalHM$R62 <- ifelse(row.names(annotationsFinalHM) %in% R62_Final$external_gene_name.y,"R62","White")
+
+annotationsFinalHM$R62 <- factor(annotationsFinalHM$R62)
+annotationsFinalHM$Q175 <- factor(annotationsFinalHM$Q175)
+annotationsFinalHM$Q73  <- factor(annotationsFinalHM$Q73 )
+annotationsFinalHM$Genea <- factor(annotationsFinalHM$Genea)
+
+annotation_palette <-  list(R62= c(White = "white", R62 = "Orange"), Q175 = c(White = "white", Q175 = "Red"), Q73 = c(Q73 = "Blue", White = "white"), Genea = c(Genea = "Purple", White = "white"))
+
+
+
+
+keepFinal <- data.frame(row.names = row.names(annotationsFinalHM))
+keepFinal$keep <- ifelse((annotationsFinalHM$Genea != "White" | annotationsFinalHM$Q73 != "White") & (annotationsFinalHM$Q175 != "White" | annotationsFinalHM$R62 != "White"),yes = "Yes", no = "No")
+keepFinal <- keepFinal[keepFinal$keep == "Yes",, drop = F]
+totalScaledKeep <- totalScaled[row.names(totalScaled) %in% row.names(keepFinal),]
+
+totalScaledKeep <- testCluster(totalScaledKeep)
+totalScaledKeep <- totalScaledKeep[,c(3:6,1:2,7:10)]
+
+
+#### For annotations
+
+#pheatmap(totalScaledKeep, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "none", color = my_palette, gaps_col = c(1,4,5,6,8), breaks = breaks, cellwidth = 10, cellheight = 10)
+
+
+```
+### Add morphology annotation
+
+```{r, fig.height=11}
+
+morphologyTerms <- c("Morphology of neuroglia", "Differentiation of neuroglia", "Branching of cells", "Morphology of nervous system", "Abnormal morphology of nervous system", "Formation of cellular protrusions", "Organization of cytoplasm", "Reorganization of cytoskeleton", "Organization of actin cytoskeleton", "Organization of cytoskeleton", "Microtubule dynamics", "Motor dysfunction or movement disorder", "Development of vasculature", "TCF7L2 Signaling", "Differentiation of neuroglia")
+morphologyGenes <- unique(unlist(strsplit(paste((filteredIPA[filteredIPA$Pathway %in% morphologyTerms,]$Genes), collapse = ","), split = ",")))
+
+morphologyHM <- data.frame(row.names = row.names(totalScaledKeep))
+for(i in morphologyTerms){
+  morphologyHM[,i] <- ifelse(row.names(totalScaledKeep) %in% unique(unlist(strsplit(paste((filteredIPA[filteredIPA$Pathway %in% i,]$Genes), collapse = ","), ","))), 1,0)
+}
+
+
+# morphologyCluster <- function(morphology){
+#   rowclust = hclust(dist(morphology))
+#   morphology = morphology[rowclust$order,]
+#   return(as.data.frame(morphology))
+# }
+# 
+# morphologyHMorder <- row.names(morphologyCluster(morphologyHM))
+# morphologyHM <- morphologyHM[match(morphologyHMorder, row.names(morphologyHM)),]
+
+morphologyHM <- morphologyHM[match(row.names(totalScaledKeep), row.names(morphologyHM)),]
+
+annotation_palette_morphology <- rep(list(list("0"="white", "1" = "forestgreen")), length(morphologyTerms))
+names(annotation_palette_morphology) <- morphologyTerms
+
+
+
+
+pheatmap(totalScaledKeep, border_color = "Black", cluster_row = F, cluster_cols = F,scale = "none", color = my_palette, gaps_col = c(1,2,3,6,8),, breaks = breaks, cellwidth = 10, cellheight = 10,annotation_row = morphologyHM, annotation_colors = annotation_palette_morphology, annotation_legend = F)
+
+
+```
+
+## Session Info
+```{r}
+session_info()
+```
+

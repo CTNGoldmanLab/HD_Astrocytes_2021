@@ -1,0 +1,1325 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Analysis Details for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Workspace	My Projects
+Project	hd_microarray
+Analysis	longFragmentHuman - 2020-01-20 08:06 PM
+Date	Mon Jan 20 17:06:30 PST 2020
+Analysis ID	18745804
+
+Analysis Settings
+Cutoff before duplicate resolution	true
+Reference set	Ingenuity Knowledge Base (Genes Only)
+Relationship to include	Direct and Indirect
+Includes Endogenous Chemicals	Yes
+Optional Analyses	My Pathways My List
+Filter Summary	
+Consider only molecules and/or relationships where
+(confidence = Experimentally Observed) AND
+(mol. types = biologic drug OR canonical pathway OR chemical - endogenous mammalian OR chemical - endogenous non-mammalian OR chemical - kinase inhibitor OR chemical - other OR chemical - protease inhibitor OR chemical drug OR chemical reagent OR chemical toxicant OR complex OR cytokine OR disease OR enzyme OR function OR G-protein coupled receptor OR group OR growth factor OR ion channel OR kinase OR ligand-dependent nuclear receptor OR mature microRNA OR microRNA OR other OR peptidase OR phosphatase OR transcription regulator OR translation regulator OR transmembrane receptor OR transporter)
+
+Canonical Pathways for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Ingenuity Canonical Pathways	 -log(p-value)	zScore	Ratio	Molecules
+Glucocorticoid Receptor Signaling	3.25E-01		2.98E-03	PIK3R5	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	3.28E-01		3.00E-03	PIK3R5	
+Neuroinflammation Signaling Pathway	3.61E-01		3.33E-03	PIK3R5	
+Senescence Pathway	3.9E-01		3.64E-03	PIK3R5	
+G-Protein Coupled Receptor Signaling	3.93E-01		3.68E-03	PIK3R5	
+Colorectal Cancer Metastasis Signaling	4.18E-01		3.95E-03	PIK3R5	
+Cardiac Hypertrophy Signaling	4.36E-01		4.17E-03	PIK3R5	
+Systemic Lupus Erythematosus Signaling	4.52E-01		4.37E-03	PIK3R5	
+EIF2 Signaling	4.6E-01		4.46E-03	PIK3R5	
+Sperm Motility	4.61E-01		4.48E-03	PRKCQ	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	4.66E-01		4.55E-03	PIK3R5	
+AMPK Signaling	4.79E-01		4.72E-03	PIK3R5	
+Osteoarthritis Pathway	4.81E-01		4.74E-03	ITGA4	
+Calcium Signaling	4.89E-01		4.85E-03	GRIA4	
+Adrenomedullin signaling pathway	5.05E-01		5.08E-03	PIK3R5	
+Superpathway of Inositol Phosphate Compounds	5.05E-01		5.08E-03	PIK3R5	
+Clathrin-mediated Endocytosis Signaling	5.13E-01		5.18E-03	PIK3R5	
+RAR Activation	5.13E-01		5.18E-03	PRKCQ	
+Agranulocyte Adhesion and Diapedesis	5.15E-01		5.21E-03	ITGA4	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	5.15E-01		5.21E-03	PIK3R5	
+ILK Signaling	5.18E-01		5.26E-03	PIK3R5	
+Sertoli Cell-Sertoli Cell Junction Signaling	5.28E-01		5.41E-03	ITGA4	
+Hepatic Cholestasis	5.3E-01		5.43E-03	PRKCQ	
+Dendritic Cell Maturation	5.32E-01		5.46E-03	PIK3R5	
+Ephrin Receptor Signaling	5.38E-01		5.56E-03	ITGA4	
+RhoGDI Signaling	5.38E-01		5.56E-03	ITGA4	
+Granulocyte Adhesion and Diapedesis	5.4E-01		5.59E-03	ITGA4	
+GNRH Signaling	5.53E-01		5.78E-03	PRKCQ	
+Germ Cell-Sertoli Cell Junction Signaling	5.57E-01		5.85E-03	PIK3R5	
+Cdc42 Signaling	5.66E-01		5.99E-03	ITGA4	
+Glioblastoma Multiforme Signaling	5.7E-01		6.06E-03	PIK3R5	
+HMGB1 Signaling	5.7E-01		6.06E-03	PIK3R5	
+3-phosphoinositide Biosynthesis	5.72E-01		6.10E-03	PIK3R5	
+Dopamine-DARPP32 Feedback in cAMP Signaling	5.75E-01		6.13E-03	PRKCQ	
+HOTAIR Regulatory Pathway	5.84E-01		6.29E-03	PIK3R5	
+Relaxin Signaling	6.06E-01		6.67E-03	PIK3R5	
+Corticotropin Releasing Hormone Signaling	6.19E-01		6.90E-03	PRKCQ	
+Endocannabinoid Cancer Inhibition Pathway	6.24E-01		6.99E-03	PIK3R5	
+Hereditary Breast Cancer Signaling	6.32E-01		7.14E-03	PIK3R5	
+Insulin Receptor Signaling	6.35E-01		7.19E-03	PIK3R5	
+Ovarian Cancer Signaling	6.35E-01		7.19E-03	PIK3R5	
+Androgen Signaling	6.43E-01		7.35E-03	PRKCQ	
+STAT3 Pathway	6.46E-01		7.41E-03	IL17RB	
+Gα12/13 Signaling	6.6E-01		7.69E-03	PIK3R5	
+Endocannabinoid Neuronal Synapse Pathway	6.66E-01		7.81E-03	GRIA4	
+Atherosclerosis Signaling	6.72E-01		7.94E-03	ITGA4	
+IL-6 Signaling	6.75E-01		8.00E-03	PIK3R5	
+G Beta Gamma Signaling	6.85E-01		8.20E-03	PRKCQ	
+Cholecystokinin/Gastrin-mediated Signaling	6.94E-01		8.40E-03	PRKCQ	
+Role of Tissue Factor in Cancer	7.01E-01		8.55E-03	PIK3R5	
+Sphingosine-1-phosphate Signaling	7.01E-01		8.55E-03	PIK3R5	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	7.04E-01		8.62E-03	TMPRSS2	
+Endocannabinoid Developing Neuron Pathway	7.08E-01		8.70E-03	PIK3R5	
+NGF Signaling	7.11E-01		8.77E-03	PIK3R5	
+HIF1α Signaling	7.14E-01		8.85E-03	PIK3R5	
+GPCR-Mediated Nutrient Sensing in Enteroendocrine Cells	7.18E-01		8.93E-03	PRKCQ	
+Pancreatic Adenocarcinoma Signaling	7.29E-01		9.17E-03	PIK3R5	
+CDK5 Signaling	7.32E-01		9.26E-03	CDK5R1	
+Telomerase Signaling	7.36E-01		9.35E-03	PIK3R5	
+IGF-1 Signaling	7.47E-01		9.62E-03	PIK3R5	
+Chronic Myeloid Leukemia Signaling	7.51E-01		9.71E-03	PIK3R5	
+Mouse Embryonic Stem Cell Pluripotency	7.51E-01		9.71E-03	PIK3R5	
+SAPK/JNK Signaling	7.55E-01		9.80E-03	PIK3R5	
+Protein Kinase A Signaling	7.61E-01		5.03E-03	PRKCQ,UBASH3B	
+Apoptosis Signaling	7.66E-01		1.01E-02	PRKCQ	
+VEGF Signaling	7.66E-01		1.01E-02	PIK3R5	
+UVA-Induced MAPK Signaling	7.7E-01		1.02E-02	PIK3R5	
+p53 Signaling	7.7E-01		1.02E-02	PIK3R5	
+Salvage Pathways of Pyrimidine Ribonucleotides	7.75E-01		1.03E-02	PRKCQ	
+α-Adrenergic Signaling	7.83E-01		1.05E-02	PRKCQ	
+CCR5 Signaling in Macrophages	7.87E-01		1.06E-02	PRKCQ	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	7.87E-01		1.06E-02	PRKCQ	
+Melanocyte Development and Pigmentation Signaling	7.87E-01		1.06E-02	PIK3R5	
+Regulation of Actin-based Motility by Rho	7.87E-01		1.06E-02	ITGA4	
+Factors Promoting Cardiogenesis in Vertebrates	7.91E-01		1.08E-02	PRKCQ	
+Prostate Cancer Signaling	8E-01		1.10E-02	PIK3R5	
+Acute Myeloid Leukemia Signaling	8.09E-01		1.12E-02	PIK3R5	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	8.09E-01		1.12E-02	PIK3R5	
+Ceramide Signaling	8.13E-01		1.14E-02	PIK3R5	
+RANK Signaling in Osteoclasts	8.13E-01		1.14E-02	PIK3R5	
+PDGF Signaling	8.22E-01		1.16E-02	PIK3R5	
+IL-4 Signaling	8.27E-01		1.18E-02	PIK3R5	
+FGF Signaling	8.32E-01		1.19E-02	PIK3R5	
+PEDF Signaling	8.42E-01		1.22E-02	PIK3R5	
+FLT3 Signaling in Hematopoietic Progenitor Cells	8.52E-01		1.25E-02	PIK3R5	
+IL-17 Signaling	8.52E-01		1.25E-02	PIK3R5	
+JAK/Stat Signaling	8.52E-01		1.25E-02	PIK3R5	
+Renal Cell Carcinoma Signaling	8.52E-01		1.25E-02	PIK3R5	
+Agrin Interactions at Neuromuscular Junction	8.57E-01		1.27E-02	ITGA4	
+Heparan Sulfate Biosynthesis	8.62E-01		1.28E-02	B3GAT1	
+IL-7 Signaling Pathway	8.62E-01		1.28E-02	PIK3R5	
+VDR/RXR Activation	8.62E-01		1.28E-02	PRKCQ	
+Antiproliferative Role of Somatostatin Receptor 2	8.67E-01		1.30E-02	PIK3R5	
+GDNF Family Ligand-Receptor Interactions	8.72E-01		1.32E-02	PIK3R5	
+Neurotrophin/TRK Signaling	8.72E-01		1.32E-02	PIK3R5	
+Angiopoietin Signaling	8.78E-01		1.33E-02	PIK3R5	
+FcγRIIB Signaling in B Lymphocytes	8.78E-01		1.33E-02	PIK3R5	
+Estrogen-Dependent Breast Cancer Signaling	8.83E-01		1.35E-02	PIK3R5	
+Glioma Invasiveness Signaling	8.83E-01		1.35E-02	PIK3R5	
+Leptin Signaling in Obesity	8.83E-01		1.35E-02	PIK3R5	
+Caveolar-mediated Endocytosis Signaling	8.89E-01		1.37E-02	ITGA4	
+Non-Small Cell Lung Cancer Signaling	8.89E-01		1.37E-02	PIK3R5	
+Actin Nucleation by ARP-WASP Complex	8.94E-01		1.39E-02	ITGA4	
+Melatonin Signaling	8.94E-01		1.39E-02	PRKCQ	
+IL-15 Signaling	9E-01		1.41E-02	PIK3R5	
+Small Cell Lung Cancer Signaling	9E-01		1.41E-02	PIK3R5	
+GM-CSF Signaling	9.06E-01		1.43E-02	PIK3R5	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	9.11E-01		1.45E-02	PIK3R5	
+SPINK1 General Cancer Pathway	9.11E-01		1.45E-02	PIK3R5	
+Calcium-induced T Lymphocyte Apoptosis	9.3E-01		1.52E-02	PRKCQ	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	9.3E-01		6.41E-03	PIK3R5,PRKCQ	
+CD40 Signaling	9.36E-01		1.54E-02	PIK3R5	
+ErbB2-ErbB3 Signaling	9.36E-01		1.54E-02	PIK3R5	
+Myc Mediated Apoptosis Signaling	9.36E-01		1.54E-02	PIK3R5	
+Pyridoxal 5'-phosphate Salvage Pathway	9.36E-01		1.54E-02	PRKCQ	
+Regulation of Cellular Mechanics by Calpain Protease	9.36E-01		1.54E-02	ITGA4	
+IL-17A Signaling in Airway Cells	9.42E-01		1.56E-02	PIK3R5	
+Role of PI3K/AKT Signaling in the Pathogenesis of Influenza	9.42E-01		1.56E-02	PIK3R5	
+IL-2 Signaling	9.62E-01		1.64E-02	PIK3R5	
+Endometrial Cancer Signaling	9.69E-01		1.67E-02	PIK3R5	
+Semaphorin Signaling in Neurons	9.69E-01		1.67E-02	DPYSL5	
+Dermatan Sulfate Biosynthesis	9.76E-01		1.69E-02	B3GAT1	
+MSP-RON Signaling Pathway	9.83E-01		1.72E-02	PIK3R5	
+CNTF Signaling	9.9E-01		1.75E-02	PIK3R5	
+Glutamate Receptor Signaling	9.9E-01		1.75E-02	GRIA4	
+Xenobiotic Metabolism Signaling	9.9E-01		6.97E-03	PIK3R5,PRKCQ	
+Chondroitin Sulfate Biosynthesis	9.97E-01		1.79E-02	B3GAT1	
+EGF Signaling	1E00		1.82E-02	PIK3R5	
+Role of IL-17A in Arthritis	1.01E00		1.85E-02	PIK3R5	
+Lymphotoxin β Receptor Signaling	1.02E00		1.89E-02	PIK3R5	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	1.02E00		7.27E-03	PIK3R5,PRKCQ	
+UVC-Induced MAPK Signaling	1.04E00		1.96E-02	PRKCQ	
+Amyloid Processing	1.04E00		2.00E-02	CDK5R1	
+Melanoma Signaling	1.04E00		2.00E-02	PIK3R5	
+Ephrin A Signaling	1.07E00		2.13E-02	PIK3R5	
+nNOS Signaling in Neurons	1.07E00		2.13E-02	PRKCQ	
+Phospholipase C Signaling	1.07E00		7.78E-03	ITGA4,PRKCQ	
+Role of Oct4 in Mammalian Embryonic Stem Cell Pluripotency	1.08E00		2.17E-02	SALL4	
+Apelin Pancreas Signaling Pathway	1.1E00		2.27E-02	PIK3R5	
+IL-23 Signaling Pathway	1.1E00		2.27E-02	PIK3R5	
+Opioid Signaling Pathway	1.1E00		8.10E-03	PRKCQ,RGS17	
+Pyrimidine Ribonucleotides De Novo Biosynthesis	1.11E00		2.33E-02	NUDT18	
+Signaling by Rho Family GTPases	1.11E00		8.20E-03	ITGA4,PIK3R5	
+Mechanisms of Viral Exit from Host Cells	1.13E00		2.44E-02	PRKCQ	
+Pyrimidine Ribonucleotides Interconversion	1.13E00		2.44E-02	NUDT18	
+Inhibition of Matrix Metalloproteases	1.15E00		2.56E-02	TFPI2	
+Docosahexaenoic Acid (DHA) Signaling	1.16E00		2.63E-02	PIK3R5	
+Actin Cytoskeleton Signaling	1.19E00		9.17E-03	ITGA4,PIK3R5	
+Role of NFAT in Cardiac Hypertrophy	1.21E00		9.35E-03	PIK3R5,PRKCQ	
+Integrin Signaling	1.21E00		9.39E-03	ITGA4,PIK3R5	
+IL-9 Signaling	1.22E00		3.03E-02	PIK3R5	
+mTOR Signaling	1.22E00		9.52E-03	PIK3R5,PRKCQ	
+Thrombin Signaling	1.23E00		9.62E-03	PIK3R5,PRKCQ	
+Breast Cancer Regulation by Stathmin1	1.26E00		1.00E-02	PIK3R5,PRKCQ	
+IL-8 Signaling	1.26E00		1.00E-02	PIK3R5,PRKCQ	
+Role of p14/p19ARF in Tumor Suppression	1.27E00		3.45E-02	PIK3R5	
+ERK/MAPK Signaling	1.29E00		1.04E-02	ITGA4,PIK3R5	
+NRF2-mediated Oxidative Stress Response	1.3E00		1.06E-02	PIK3R5,PRKCQ	
+Synaptic Long Term Depression	1.3E00		1.06E-02	GRIA4,PRKCQ	
+Endothelin-1 Signaling	1.31E00		1.06E-02	PIK3R5,PRKCQ	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	1.31E00		1.06E-02	PIK3R5,PRKCQ	
+B Cell Receptor Signaling	1.32E00		1.08E-02	PIK3R5,PRKCQ	
+Role of NFAT in Regulation of the Immune Response	1.34E00		1.10E-02	PIK3R5,PRKCQ	
+NF-κB Signaling	1.35E00		1.12E-02	PIK3R5,PRKCQ	
+T Cell Exhaustion Signaling Pathway	1.36E00		1.14E-02	PIK3R5,PRKCQ	
+PI3K/AKT Signaling	1.37E00		1.15E-02	IL17RB,ITGA4	
+CXCR4 Signaling	1.4E00		1.20E-02	PIK3R5,PRKCQ	
+Molecular Mechanisms of Cancer	1.43E00		7.67E-03	ITGA4,PIK3R5,PRKCQ	
+eNOS Signaling	1.44E00		1.26E-02	PIK3R5,PRKCQ	
+Aldosterone Signaling in Epithelial Cells	1.44E00		1.27E-02	PIK3R5,PRKCQ	
+Gαq Signaling	1.45E00		1.27E-02	PIK3R5,PRKCQ	
+Regulation of eIF4 and p70S6K Signaling	1.45E00		1.27E-02	ITGA4,PIK3R5	
+PKCθ Signaling in T Lymphocytes	1.46E00		1.29E-02	PIK3R5,PRKCQ	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	1.46E00		1.30E-02	PIK3R5,PRKCQ	
+Hepatic Fibrosis Signaling Pathway	1.49E00		8.15E-03	ITGA4,PIK3R5,PRKCQ	
+Type II Diabetes Mellitus Signaling	1.53E00		1.41E-02	PIK3R5,PRKCQ	
+Human Embryonic Stem Cell Pluripotency	1.57E00		1.48E-02	PIK3R5,SALL4	
+IL-12 Signaling and Production in Macrophages	1.59E00		1.52E-02	PIK3R5,PRKCQ	
+Synaptic Long Term Potentiation	1.61E00		1.55E-02	GRIA4,PRKCQ	
+p70S6K Signaling	1.61E00		1.55E-02	PIK3R5,PRKCQ	
+14-3-3-mediated Signaling	1.62E00		1.57E-02	PIK3R5,PRKCQ	
+P2Y Purigenic Receptor Signaling Pathway	1.62E00		1.57E-02	PIK3R5,PRKCQ	
+PTEN Signaling	1.62E00		1.59E-02	ITGA4,PIK3R5	
+CCR3 Signaling in Eosinophils	1.64E00		1.61E-02	PIK3R5,PRKCQ	
+Th1 Pathway	1.66E00		1.65E-02	PIK3R5,PRKCQ	
+CD28 Signaling in T Helper Cells	1.66E00		1.67E-02	PIK3R5,PRKCQ	
+GP6 Signaling Pathway	1.67E00		1.68E-02	PIK3R5,PRKCQ	
+Natural Killer Cell Signaling	1.67E00		1.68E-02	PIK3R5,PRKCQ	
+Role of NANOG in Mammalian Embryonic Stem Cell Pluripotency	1.67E00		1.68E-02	PIK3R5,SALL4	
+Synaptogenesis Signaling Pathway	1.68E00		9.62E-03	GRIA4,MAP1B,PIK3R5	
+Renin-Angiotensin Signaling	1.68E00		1.69E-02	PIK3R5,PRKCQ	
+Fc Epsilon RI Signaling	1.68E00		1.71E-02	PIK3R5,PRKCQ	
+fMLP Signaling in Neutrophils	1.69E00		1.72E-02	PIK3R5,PRKCQ	
+Apelin Endothelial Signaling Pathway	1.7E00		1.74E-02	PIK3R5,PRKCQ	
+iCOS-iCOSL Signaling in T Helper Cells	1.73E00		1.80E-02	PIK3R5,PRKCQ	
+Glioma Signaling	1.74E00		1.82E-02	PIK3R5,PRKCQ	
+Paxillin Signaling	1.75E00		1.85E-02	ITGA4,PIK3R5	
+PD-1, PD-L1 cancer immunotherapy pathway	1.77E00		1.89E-02	PIK3R5,PRKCQ	
+Phosphatidylethanolamine Biosynthesis II	1.77E00		1.11E-01	CHKA	
+T Cell Receptor Signaling	1.77E00		1.90E-02	PIK3R5,PRKCQ	
+Apelin Cardiomyocyte Signaling Pathway	1.82E00		2.02E-02	PIK3R5,PRKCQ	
+Nitric Oxide Signaling in the Cardiovascular System	1.82E00		2.02E-02	PIK3R5,PRKCQ	
+Amyotrophic Lateral Sclerosis Signaling	1.84E00		2.06E-02	GRIA4,PIK3R5	
+PAK Signaling	1.84E00		2.06E-02	ITGA4,PIK3R5	
+FAK Signaling	1.86E00		2.11E-02	ITGA4,PIK3R5	
+ErbB Signaling	1.86E00		2.13E-02	PIK3R5,PRKCQ	
+Cardiac Hypertrophy Signaling (Enhanced)	1.88E00		8.21E-03	IL17RB,ITGA4,PIK3R5,PRKCQ	
+Glycoaminoglycan-protein Linkage Region Biosynthesis	1.88E00		1.43E-01	B3GAT1	
+Phosphatidylcholine Biosynthesis I	1.88E00		1.43E-01	CHKA	
+Axonal Guidance Signaling	1.88E00		8.25E-03	DPYSL5,ITGA4,PIK3R5,PRKCQ	
+HER-2 Signaling in Breast Cancer	1.96E00		2.38E-02	PIK3R5,PRKCQ	
+TR/RXR Activation	1.96E00		2.38E-02	PIK3R5,SLC16A3	
+VEGF Family Ligand-Receptor Interactions	1.96E00		2.38E-02	PIK3R5,PRKCQ	
+LPS-stimulated MAPK Signaling	1.98E00		2.44E-02	PIK3R5,PRKCQ	
+Prolactin Signaling	1.99E00		2.47E-02	PIK3R5,PRKCQ	
+Huntington's Disease Signaling	1.99E00		1.27E-02	CDK5R1,PIK3R5,PRKCQ	
+IL-3 Signaling	2.01E00		2.53E-02	PIK3R5,PRKCQ	
+Erythropoietin Signaling	2.04E00		2.63E-02	PIK3R5,PRKCQ	
+Macropinocytosis Signaling	2.04E00		2.63E-02	PIK3R5,PRKCQ	
+Growth Hormone Signaling	2.1E00		2.82E-02	PIK3R5,PRKCQ	
+ErbB4 Signaling	2.15E00		2.99E-02	PIK3R5,PRKCQ	
+CREB Signaling in Neurons	2.15E00		1.45E-02	GRIA4,PIK3R5,PRKCQ	
+Thrombopoietin Signaling	2.2E00		3.17E-02	PIK3R5,PRKCQ	
+Gap Junction Signaling	2.21E00		1.52E-02	GRIA4,PIK3R5,PRKCQ	
+Leukocyte Extravasation Signaling	2.21E00		1.52E-02	ITGA4,PIK3R5,PRKCQ	
+UVB-Induced MAPK Signaling	2.36E00		3.85E-02	PIK3R5,PRKCQ	
+Th1 and Th2 Activation Pathway	2.38E00		1.75E-02	IL17RB,PIK3R5,PRKCQ	
+Tec Kinase Signaling	2.43E00		1.83E-02	ITGA4,PIK3R5,PRKCQ	
+Th2 Pathway	2.66E00		2.21E-02	IL17RB,PIK3R5,PRKCQ	
+Phagosome Formation	2.77E00		2.40E-02	ITGA4,PIK3R5,PRKCQ	
+Rac Signaling	2.91E00		2.68E-02	CDK5R1,ITGA4,PIK3R5	
+HGF Signaling	2.92E00		2.70E-02	ITGA4,PIK3R5,PRKCQ	
+Virus Entry via Endocytic Pathways	2.96E00		2.80E-02	ITGA4,PIK3R5,PRKCQ	
+Neuropathic Pain Signaling In Dorsal Horn Neurons	3.03E00		2.97E-02	GRIA4,PIK3R5,PRKCQ	
+Neuregulin Signaling	3.1E00		3.12E-02	CDK5R1,ITGA4,PRKCQ	
+NF-κB Activation by Viruses	3.3E00		3.66E-02	ITGA4,PIK3R5,PRKCQ	
+Reelin Signaling in Neurons	3.99E00		3.10E-02	CDK5R1,ITGA4,MAP1B,PIK3R5	
+
+Upstream Regulators for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Analysis	ID	Upstream Regulator	Molecule Type	Predicted Activation State	Activation z-score	Notes	Bias Term	Bias-corrected z-score	p-value of overlap	Target molecules in dataset	Mechanistic Network	
+longFragmentHuman - 2020-01-20 08:06 PM	 	RUNX1	transcription regulator	 	 	 	 	 	3.02E-05	CST7,DEPTOR,ITGA4,PRKCQ,SPATA6	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MITF	transcription regulator	 	 	 	 	 	9.78E-05	CDK5R1,CHKA,ESRP1,FRMD4B,ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	azathioprine	chemical drug	 	 	 	 	 	2.05E-04	ATP9A,ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NEUROG2	transcription regulator	 	 	 	 	 	3.37E-04	CDK5R1,NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PAX6	transcription regulator	 	 	 	 	 	7.69E-04	CHKA,KIF1B,NKX2-2,SPAG1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	EP300	transcription regulator	 	 	 	 	 	1.62E-03	CHKA,CST7,FRMD4B,KIF1B,TMPRSS2	CREBBP,EP300	
+longFragmentHuman - 2020-01-20 08:06 PM	 	B3GAT2	enzyme	 	 	 	 	 	1.96E-03	B3GAT1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CHMP4C	other	 	 	 	 	 	1.96E-03	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	EVL	other	 	 	 	 	 	1.96E-03	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	KIF21A	other	 	 	 	 	 	1.96E-03	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	UBAP1	other	 	 	 	 	 	1.96E-03	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	dihydroxyphenylethylene glycol	chemical - endogenous mammalian	 	 	 	 	 	1.96E-03	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	miR-616-3p (miRNAs w/seed GUCAUUG)	mature microrna	 	 	 	 	 	1.96E-03	TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PD 0325901	chemical drug	 	 	 	 	 	2.03E-03	CHKA,DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NANOG	transcription regulator	 	 	 	 	 	2.07E-03	MAP1B,NKX2-2,SALL4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	TGFB1	growth factor	 	 	 	 	 	2.39E-03	ADGRG2,CDK5R1,DEPTOR,DMTN,ESRP1,GSE1,IL17RB,ITGA4,KLF15,SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	QKI	other	 	 	 	 	 	2.53E-03	DACT1,MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NEUROD1	transcription regulator	 	 	 	 	 	2.66E-03	CDK5R1,NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	FMR1	translation regulator	 	 	 	 	 	3.00E-03	MAP1B,NKX2-2,QPCT	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HNRNPA2B1	other	 	 	 	 	 	3.00E-03	ADGRG2,TFPI2,UBASH3B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	tretinoin	chemical - endogenous mammalian	 	 	 	 	 	3.56E-03	CDK5R1,CHKA,DPYSL5,ITGA4,KIF1B,KLF15,MAP1B,NKX2-2,SALL4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	FUZ	other	 	 	 	 	 	3.92E-03	NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	INK4	group	 	 	 	 	 	3.92E-03	TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	STAM	other	 	 	 	 	 	3.92E-03	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	abiraterone	chemical drug	 	 	 	 	 	3.92E-03	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HOXA3	transcription regulator	 	 	 	 	 	4.17E-03	ITGA4,SPATA6	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	RARA	ligand-dependent nuclear receptor	 	 	 	 	 	5.29E-03	ITGA4,MAP1B,SALL4,TTC9	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	DHPS	enzyme	 	 	 	 	 	5.88E-03	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	EEF1D	translation regulator	 	 	 	 	 	5.88E-03	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HOXB2	transcription regulator	 	 	 	 	 	5.88E-03	NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	Mn2+	chemical - endogenous mammalian	 	 	 	 	 	5.88E-03	ATP13A2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SOCS2-AS1	other	 	 	 	 	 	5.88E-03	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	necrostatin-1s	chemical reagent	 	 	 	 	 	5.88E-03	CST7	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CREBBP	transcription regulator	 	 	 	 	 	7.32E-03	CST7,FRMD4B,KIF1B,TMPRSS2	CREBBP,EP300	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PKD1	ion channel	 	 	 	 	 	7.37E-03	IL17RB,QPCT,SPATA6	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	AKR1C3	enzyme	 	 	 	 	 	7.83E-03	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CHMP2B	other	 	 	 	 	 	7.83E-03	GRIA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	EEF2K	kinase	 	 	 	 	 	7.83E-03	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SIX4	transcription regulator	 	 	 	 	 	7.83E-03	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	TDP2	transcription regulator	 	 	 	 	 	9.78E-03	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NGF	growth factor	 	 	 	 	 	1.01E-02	CDK5R1,DPYSL5,GRIA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	budesonide	chemical drug	 	 	 	 	 	1.05E-02	CDK5R1,PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CHD8	enzyme	 	 	 	 	 	1.17E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	EIF5A	translation regulator	 	 	 	 	 	1.17E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	FES	kinase	 	 	 	 	 	1.17E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SMARCD1	transcription regulator	 	 	 	 	 	1.17E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	prednisolone	chemical drug	 	 	 	 	 	1.21E-02	CDK5R1,ITGA4,NUDT18	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	L-triiodothyronine	chemical - endogenous mammalian	 	 	 	 	 	1.22E-02	KIF1B,NUDT18,PRKCQ,TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SB203580	chemical - kinase inhibitor	 	 	 	 	 	1.27E-02	CDK5R1,CST7,ITGA4,TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MYOC	other	 	 	 	 	 	1.29E-02	ESRP1,RGS17	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	methylselenic acid	chemical reagent	 	 	 	 	 	1.32E-02	MAP1B,SH3BP5,TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	RASSF1	other	 	 	 	 	 	1.35E-02	FRMD4B,MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	DAB1	other	 	 	 	 	 	1.37E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MFAP2	other	 	 	 	 	 	1.37E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	recombinant human endostatin	chemical drug	 	 	 	 	 	1.37E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	TCF	group	 	 	 	 	 	1.38E-02	ADGRG2,QPCT	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SOX2	transcription regulator	 	 	 	 	 	1.38E-02	NKX2-2,PRKCQ,SALL4,TMEM163	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ASCL1	transcription regulator	 	 	 	 	 	1.41E-02	CDK5R1,PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	6-amino-4-(4-phenoxyphenylethylamino)quinazoline	chemical reagent	 	 	 	 	 	1.56E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	Calcineurin B	group	 	 	 	 	 	1.56E-02	B3GAT1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HEYL	transcription regulator	 	 	 	 	 	1.56E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	LASP1	transporter	 	 	 	 	 	1.56E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MM-401	chemical reagent	 	 	 	 	 	1.56E-02	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	POU3F3	transcription regulator	 	 	 	 	 	1.56E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	UGT2B15	enzyme	 	 	 	 	 	1.56E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	UGT2B17	enzyme	 	 	 	 	 	1.56E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MYD88	other	 	 	 	 	 	1.57E-02	ITGA4,SH3BP5,SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MKNK1	kinase	 	 	 	 	 	1.68E-02	KIF1B,MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	AGRN	other	 	 	 	 	 	1.75E-02	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HCAR1	g-protein coupled receptor	 	 	 	 	 	1.75E-02	SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	INPP4B	phosphatase	 	 	 	 	 	1.75E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MNX1	transcription regulator	 	 	 	 	 	1.75E-02	NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SEMA3A	other	 	 	 	 	 	1.75E-02	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	propylthiouracil	chemical drug	 	 	 	 	 	1.91E-02	CHKA,QPCT	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	LCOR	transcription regulator	 	 	 	 	 	1.95E-02	TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	LINC01139	other	 	 	 	 	 	1.95E-02	SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PA2G4	transcription regulator	 	 	 	 	 	1.95E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	RYBP	transcription regulator	 	 	 	 	 	1.95E-02	NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SYK	kinase	 	 	 	 	 	2.01E-02	PRKCQ,TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	IFNG	cytokine	 	 	 	 	 	2.08E-02	ADGRG2,CDK5R1,IL17RB,ITGA4,NKX2-2,PRKCQ,SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	H3C14	other	 	 	 	 	 	2.14E-02	PIK3R5	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NCKAP1L	other	 	 	 	 	 	2.14E-02	DMTN	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	VASP	other	 	 	 	 	 	2.14E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	VEGFC	growth factor	 	 	 	 	 	2.14E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	mGluR	group	 	 	 	 	 	2.14E-02	MAP1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	androstenediol	chemical - endogenous mammalian	 	 	 	 	 	2.33E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	miR-148a-3p (and other miRNAs w/seed CAGUGCA)	mature microrna	 	 	 	 	 	2.33E-02	UBASH3B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	putrescine	chemical - endogenous mammalian	 	 	 	 	 	2.33E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PELP1	other	 	 	 	 	 	2.47E-02	MAP1B,PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PPP3CB	phosphatase	 	 	 	 	 	2.52E-02	B3GAT1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	RV 538	chemical reagent	 	 	 	 	 	2.52E-02	ATP13A2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	XRCC5	enzyme	 	 	 	 	 	2.52E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	BET	group	 	 	 	 	 	2.71E-02	DMTN	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	D-tubocurarine	chemical drug	 	 	 	 	 	2.71E-02	TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	POU3F2	transcription regulator	 	 	 	 	 	2.71E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	diacylglycerol	chemical - endogenous mammalian	 	 	 	 	 	2.71E-02	PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	mir-290	microrna	 	 	 	 	 	2.91E-02	SALL4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CREB3	transcription regulator	 	 	 	 	 	3.10E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	DIRAS3	enzyme	 	 	 	 	 	3.10E-02	TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	hydrogen sulfide	chemical - endogenous mammalian	 	 	 	 	 	3.10E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MTOR	kinase	 	 	 	 	 	3.14E-02	CHKA,SLC16A3,TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MAPK1	kinase	 	 	 	 	 	3.23E-02	CDK5R1,DEPTOR,NKX2-2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	CD28	transmembrane receptor	 	 	 	 	 	3.25E-02	ITGA4,SLC16A3,TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ARG1	enzyme	 	 	 	 	 	3.29E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	IL1RAP	transmembrane receptor	 	 	 	 	 	3.29E-02	IL17RB	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PDGFRA	kinase	 	 	 	 	 	3.29E-02	PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	bombesin	chemical - endogenous mammalian	 	 	 	 	 	3.29E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	selumetinib	chemical drug	 	 	 	 	 	3.29E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ITGAL	transmembrane receptor	 	 	 	 	 	3.48E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	NFASC	other	 	 	 	 	 	3.48E-02	KIF1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SLC6A3	transporter	 	 	 	 	 	3.48E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	c-Src	group	 	 	 	 	 	3.48E-02	CHKA	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	TLX3	transcription regulator	 	 	 	 	 	3.67E-02	GRIA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	miR-486-5p (and other miRNAs w/seed CCUGUAC)	mature microrna	 	 	 	 	 	3.67E-02	UBASH3B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	Pam3-Cys-Ser-Lys4	chemical reagent	 	 	 	 	 	3.72E-02	ITGA4,SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SMARCD3	transcription regulator	 	 	 	 	 	3.86E-02	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	mir-486	microrna	 	 	 	 	 	3.86E-02	UBASH3B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	salvin	chemical toxicant	 	 	 	 	 	3.86E-02	CDK5R1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	MAPT	other	 	 	 	 	 	3.89E-02	CDK5R1,MAP1B,SLC16A3	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ethanol	chemical - endogenous mammalian	 	 	 	 	 	4.01E-02	ANKS1B,MAP1B,TFPI2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	HMGA2	enzyme	 	 	 	 	 	4.04E-02	KLF15	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	SRA1	transcription regulator	 	 	 	 	 	4.04E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	TRIM21	enzyme	 	 	 	 	 	4.04E-02	SALL4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	XRCC6	enzyme	 	 	 	 	 	4.04E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	miR-293-5p (and other miRNAs w/seed CUCAAAC)	mature microrna	 	 	 	 	 	4.04E-02	KLF15	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	IgG1	complex	 	 	 	 	 	4.23E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	LILRB1	transmembrane receptor	 	 	 	 	 	4.23E-02	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	PBX3	transcription regulator	 	 	 	 	 	4.23E-02	CHD9	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	WDR5	transcription regulator	 	 	 	 	 	4.23E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	BTRC	enzyme	 	 	 	 	 	4.42E-02	DEPTOR	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ibrutinib	chemical drug	 	 	 	 	 	4.42E-02	ITGA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	miR-30a-3p (and other miRNAs w/seed UUUCAGU)	mature microrna	 	 	 	 	 	4.42E-02	KIF1B	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	ETV1	transcription regulator	 	 	 	 	 	4.61E-02	TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	WDR77	transcription regulator	 	 	 	 	 	4.61E-02	SPAG1	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	UCN-01	chemical drug	 	 	 	 	 	4.80E-02	PRKCQ	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	calpain	complex	 	 	 	 	 	4.80E-02	GRIA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	lead	chemical toxicant	 	 	 	 	 	4.80E-02	GRIA4	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	metribolone	chemical reagent	 	 	 	 	 	4.94E-02	CDK5R1,SLC16A3,TMPRSS2	 	
+longFragmentHuman - 2020-01-20 08:06 PM	 	KLF2	transcription regulator	 	 	 	 	 	4.96E-02	ITGA4,TFPI2	 	
+
+Causal Networks for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Master Regulator	Molecule Type	Depth	Predicted Activation State	Notes	Activation z-score	p-value of overlap	Network bias-corrected p-value	Participating regulators	Target molecules in dataset	Causal network	Target-connected regulators	Relationships Between Master Regulators(Increases/Downstream)	Relationships Between Master Regulators(Decreases/Downstream)	Relationships Between Master Regulators(Affects/Downstream)	Relationships Between Master Regulators(Increases/Upstream)	Relationships Between Master Regulators(Decreases/Upstream)	Relationships Between Master Regulators(Affects/Upstream)	Relationships Between Master Regulators(Increases/Both)	Relationships Between Master Regulators(Decreases/Both)	Relationships Between Master Regulators(Affects/Both)	
+TRERF1	transcription regulator	3	 	 	0.000	7.13E-07	1.60E-03	AKT1,CCND1,CDK2,CDK6,CDKN1B,Cyclin A,estrogen receptor,FOXO1,ISL1,MAPT,MYC,NCOA1,NFATC3,NR4A1,P38 MAPK,PTEN,RB1,RBL2,SOX2,STAT3,TRERF1,ZEB1	 	21 (22)	18	 	NUPR1	 	 	CDK2	 	 	 	 	
+PPAR ligand-PPAR-Retinoic acid-RXRα	complex	3	 	 	0.000	1.10E-06	2.60E-03	ERBB2,F3,Focal adhesion kinase,HNF4A,IGFBP2,MAPK1,MYC,NR3C1,NR4A1,PPAR ligand-PPAR-Retinoic acid-RXRα,PPARA,PPARD,PTEN,RAF1,SRC (family),STAT1,STAT5B,TGFB1,TP53,tretinoin	 	25 (20)	19	 	 	 	 	 	 	 	 	 	
+infliximab	biologic drug	3	 	 	0.000	2.17E-06	3.90E-03	AKT1,Calcineurin A,CD38,EGFR,EP300,ERBB2,F3,FOXP3,Hdac,HIF1A,IKBKE,IL15,infliximab,MAPK1,MTOR,NCOA3,NFkB (complex),Nr1h,P38 MAPK,PPARD,PRKCD,PTEN,REL,RUNX1,STAT3,SYK,TBK1,TGFB1,TNF,TP53,ZAP70	 	26 (31)	29	 	 	 	 	BATF,TNF	 	 	 	 	
+TCL1A	transcription regulator	3	 	 	0.000	4.22E-06	1.20E-03	AKT1,AR,CLOCK,DNMT3A,ERBB2,ESR1,FOXO1,GATA1,GSK3A,JUN,MET,MITF,MYC,NFATC1,NFATC2,NR4A1,PTEN,SOX2,TCL1A,TGFB1	 	21 (20)	18	SB203580,SOX2-OCT4-NANOG	RARA,tretinoin	 	 	 	 	 	 	 	
+naftopidil	chemical drug	3	 	 	0.000	6.29E-06	3.10E-03	AR,calpain,CASP3,DICER1,MTOR,naftopidil,PRKCD,PTEN,SMAD2,SP1,STAT3,TGFB1	 	16 (12)	9	 	 	 	 	SMAD2	 	 	 	 	
+Cyclin D	group	3	 	 	0.000	6.57E-06	3.70E-03	AKT1,CCND1,CCND3,Cdk,CDK2,CDK4,CDK4/6,CDK6,CDKN1B,Cyclin A,Cyclin D,Cyclin E,E2f,estrogen receptor,FOXO1,ISL1,MAPK1,MAPT,MTOR,MYC,NCOA1,NFATC3,NR4A1,P38 MAPK,PTEN,RB1,RUNX1,SOX2,STAT3,ZEB1	 	20 (30)	20	EGF,INK4,TNF	CAK,CDKN2C,Ro31-8220,tretinoin,U0126	 	CDK2	 	 	 	 	 	
+BOP1	other	3	 	 	0.000	7.38E-06	3.40E-03	AKT1,AR,BOP1,calpain,CCND1,CDK2,CDKN1B,estrogen receptor,FOXO1,Jnk,MAPK1,MAPT,MYC,NCOA1,NFATC1,NFkB (complex),NR4A1,P38 MAPK,PTEN,RB1,RBL2,RHOA,SOX2,VASP	 	18 (24)	21	 	 	 	CDK2	 	 	 	 	 	
+TNF	cytokine	2	 	 	0.000	7.92E-06	9.50E-03	AKT1,Calcineurin A,CD38,EGFR,EP300,ERBB2,F3,Hdac,HIF1A,IKBKE,IL15,MAPK1,MTOR,NCOA3,NFkB (complex),Nr1h,P38 MAPK,PPARD,PRKCD,PTEN,REL,STAT3,SYK,TBK1,TGFB1,TNF,TP53,ZAP70	 	25 (28)	28	budesonide,calcimycin,CAPN1,CLEC7A,curdlan,FCGR3A/FCGR3B,Ifn gamma,IL1RAP,L-triiodothyronine,MAC,mevastatin,MKNK1,NCR2,NFATC4,palmitoyl-Cys((RS)-2,3-di(palmitoyloxy)-propyl)-Ala-Gly-OH,Pam3-Cys-Ser-Lys4,SYK/ZAP,tetradecanoylphorbol acetate,zearalenone	CBL,cyclomaltodextrin,eptifibatide,HCAR1,ibrutinib,infliximab,LILRB1,LY6E,miR-148a-3p (and other miRNAs w/seed CAGUGCA),N-chlorotaurine,prednisolone,resveratrol,RV 538,S1PR1,SB203580,tretinoin,TRIM21,tylophorine,tyrphostin AG 127,U0126,VLDLR,VTN,ZFA-fmk,zinc sulfate	 	15(S)-HETE,BTRC,Calcineurin A,calpain,CCNE1,CD59,CDK2,Collagen(s),CREB3,Cyclin D,DDX5,EFHD2,Focal adhesion kinase,ganglioside GM2,HBEGF,HPSE,ITGA2,ITGB6,MET,POU2F1,POU3F2,Sfk,SMAD2,SRA1,VEGFC	CDKN2C,heparan sulfate,mir-290,MITF,NEUROD1,PAX6,QKI,TPO	 	 	 	 	
+CCNE1	transcription regulator	3	 	 	0.000	8.17E-06	2.70E-03	AR,CCNE1,CDK2,CDK6,CDKN1B,ERBB2,FOXM1,ID2,ISL1,MET,MYC,NANOG,NCOA1,NFATC3,NR4A1,POU5F1,RB1,RBL2,SOX2,ZEB1	 	20 (20)	16	E2F2,EGF,ITGA2,L-triiodothyronine,salvin,tetradecanoylphorbol acetate,TNF,UCN-01	bosutinib,Interferon alpha,PCGF2,Ro 25-6760,tretinoin,U0126	 	 	 	 	 	 	 	
+RAR ligand-RARα-Retinoic acid-RXRα	complex	3	 	 	0.000	1.08E-05	1.48E-02	ERBB2,F3,Focal adhesion kinase,IGFBP2,MAPK1,MTOR,MYC,NFkB (complex),NR4A1,PPARA,PPARD,PTEN,RAF1,RAR ligand-RARα-Retinoic acid-RXRα,RARA,RXRA,SRC (family),STAT1,TGFB1,TP53,tretinoin	 	23 (21)	19	 	 	 	 	 	 	 	 	 	
+EGFR ligand	group	3	 	 	0.000	1.35E-05	6.80E-03	AKT1,AR,AREG,BTC,calpain,DIO2,EGF,EGFR,EGFR ligand,ERBB2,ERBB3,ERBB4,EREG,ESR1,ETV1,Focal adhesion kinase,FOXO1,HBEGF,ISL1,Jnk,Mapk,MET,MYC,P38 MAPK,RUNX1,SPRY2,SRC (family),STAT1,STAT3,STAT5B,STAT6,SYK,TGFA,ZEB1	 	22 (34)	27	 	 	 	 	 	 	 	 	 	
+CDK2	kinase	3	 	 	0.000	1.71E-05	1.00E-02	Akt,CDK2,CDKN1B,CHEK1,ERBB2,estrogen receptor,FOXO1,FOXP3,MAPT,MDM2,MYC,NCOA1,NFAT5,NFATC1,NR4A1,PGR,PPARA,PPARD,RASSF1,RB1,RBL2,RIPK1,RUNX1,SNAI1,SOX2,SP1,SPHK1,STAT3,STAT5B,TP53,VIM	 	23 (31)	23	BAX,BOP1,CAK,calpain,CD79A,Cyclin D,EGF,ITGA2,L-triiodothyronine,MAC,MITF,putrescine,SAICAR,SYK,TNF,zearalenone	alitretinoin,CDKN2C,Interferon alpha,mevastatin,mir-290,NGF,NUPR1,O6-benzylguanine,PAX6,PCGF2,resveratrol,Ro 25-6760,tetradecanoylphorbol acetate,TRERF1,tretinoin,U0126,UCN-01	 	 	 	 	 	 	 	
+Plexin B	group	3	 	 	0.000	1.88E-05	8.50E-03	AR,ERBB2,ERK,Jnk,Mapk,MAPK1,MYC,NFATC1,NFkB (complex),P38 MAPK,Plexin B,PLXNB1,PLXNB2,Rac,RAF1,RRAS,STAT1,STAT3,ZAP70	 	15 (19)	14	 	 	 	 	 	 	 	 	 	
+TPO	enzyme	3	 	 	0.000	2.10E-05	4.00E-04	calpain,CTTN,EGFR,Focal adhesion kinase,MAP3K8,MYD88,P38 MAPK,SYK,SYK/ZAP,TPO,ZAP70	 	11 (11)	8	 	calcimycin,prednisolone,propylthiouracil,tetradecanoylphorbol acetate,TNF	 	SYK/ZAP	 	 	 	 	 	
+tylophorine	chemical drug	3	 	 	0.000	2.19E-05	6.30E-03	AKT1,Ap1,AR,CCND1,CDKN1B,CLOCK,ERBB2,ESR1,FOXO1,GATA1,HNF4A,IRF4,JUN,MET,NFATC1,NFATC2,NFkB (complex),NR3C1,NR4A1,PRKCD,PTEN,RARG,SOX2,TGFB1,tylophorine	 	21 (25)	23	 	 	 	 	TNF	 	 	 	 	
+PP2/AG1879 tyrosine kinase inhibitor	chemical - kinase inhibitor	2	 	 	0.000	2.20E-05	1.37E-02	AKT1,c-Src,EGFR,ERBB2,ERK,Focal adhesion kinase,IRF4,Jnk,Mapk,MAPK1,MAPT,MET,NFkB (complex),P38 MAPK,PP2/AG1879 tyrosine kinase inhibitor,PRKCD,RAF1,SRC,SRC (family),STAT1,STAT3,STAT5B,STAT6,ZAP70	 	17 (24)	23	 	 	 	 	c-Src,CBL,Collagen(s),Focal adhesion kinase,ICAM1,ITGB4,LYN,MET,RHOG,Sfk,SYK/ZAP	 	 	 	 	
+R-348	chemical drug	3	 	 	0.000	2.26E-05	8.60E-03	AKT1,CD247,EP300,ERK,FOXO1,JAK3,Jnk,Mapk,MAPK1,MYD88,NFATC1,NFkB (complex),P38 MAPK,PRKCD,R-348,REL,STAT1,STAT3,STAT5B,STAT6,SYK	 	16 (21)	19	 	 	 	 	SYK	 	 	 	 	
+ELOB	transcription regulator	3	 	 	0.000	2.55E-05	1.89E-02	AKT1,AR,AURKA,calpain,CCND1,CXCR4,ELOB,EP300,ERBB2,HIF1A,MET,MYC,NR2E1,PPARA,PRKCD,PRKCI,PTEN,RASSF1,RNA polymerase II,SMARCD3,SOX2,SPRY2,STAT3,TP53,Ubiquitin,VEGFA,VHL	 	19 (27)	21	 	 	 	 	 	 	 	 	 	
+LXR ligand-LXR-Retinoic acid-RXRα	complex	3	 	 	0.000	2.60E-05	2.16E-02	ERBB2,F3,Focal adhesion kinase,IGFBP2,LXR ligand-LXR-Retinoic acid-RXRα,MAPK1,MYC,Nr1h,NR4A1,PPARD,PTEN,RAF1,SRC (family),STAT1,TGFB1,TP53,tretinoin	 	22 (17)	16	 	 	 	 	 	 	 	 	 	
+IL-1R/TLR	group	3	 	 	0.000	2.91E-05	1.16E-02	AR,calpain,IL-1R/TLR,IL10RA,IL1R1,MAPK1,MAPT,MYC,MYD88,OSM,PKD1,PRKCD,PTEN,REL,STAT3,SYK,TLR2,TLR3,TLR4,TLR6,TLR7,TLR9	 	18 (22)	14	 	 	 	MYD88	 	 	 	 	 	
+HSP90AA1	enzyme	3	 	 	0.000	2.96E-05	1.44E-02	c-Src,CCND1,EGFR,ERBB2,ERK,ESR1,ESR2,Focal adhesion kinase,FOXO1,GATA1,HNF4A,HSP90AA1,MAPK1,MET,MYC,NFATC1,NFATC4,RAF1,SPRY2,SRC (family),STAT1,STAT3,STAT5B,TP53	 	22 (24)	23	 	prednisolone	 	c-Src	 	 	 	 	 	
+TLR2/3/4/9	group	3	 	 	0.000	2.98E-05	1.75E-02	AKT1,AR,calpain,IL10RA,IL1B,MAPK1,MAPT,MYC,MYD88,OSM,P38 MAPK,PKD1,PRKCD,PTEN,REL,SRC (family),STAT1,STAT3,SYK,TLR2,TLR2/3/4/9,TLR3,TLR4,TLR9	 	20 (24)	20	 	 	 	ICAM1,MYD88	 	 	 	 	 	
+PXR ligand-PXR-Retinoic acid-RXRα	complex	3	 	 	0.000	3.29E-05	2.32E-02	alitretinoin,ERBB2,Focal adhesion kinase,FOXO1,HNF4A,IGFBP2,MYC,Nr1h,NR1I2,PPARA,PPARD,PTEN,PXR ligand-PXR-Retinoic acid-RXRα,RAF1,RXRA,SRC (family),STAT1,TGFB1,TP53,tretinoin	 	22 (20)	16	 	 	 	 	 	 	 	 	 	
+CCNE1	transcription regulator	2	 	 	0.000	3.39E-05	4.00E-03	AR,CCNE1,CDKN1B,ID2,MYC,NANOG,POU5F1,RB1,RBL2,SOX2	 	13 (10)	9	E2F2,EGF,ITGA2,L-triiodothyronine,salvin,tetradecanoylphorbol acetate,TNF,UCN-01	bosutinib,Interferon alpha,PCGF2,Ro 25-6760,tretinoin,U0126	 	 	 	 	 	 	 	
+CLEC1B	transmembrane receptor	3	 	 	0.000	3.41E-05	1.15E-02	AKT1,calpain,CD247,CLEC1B,EP300,Focal adhesion kinase,FOXO1,GPIIB-IIIA,Jnk,Mapk,MAPK1,MYD88,NFATC3,NFkB (complex),P38 MAPK,PLCG2,PRKCD,REL,STAT3,SYK,SYK/ZAP,ZAP70	 	15 (22)	18	 	 	 	SYK,SYK/ZAP	 	 	 	 	 	
+FXR ligand-FXR-Retinoic acid-RXRα	complex	3	 	 	0.000	3.52E-05	2.70E-02	ERBB2,F3,FXR ligand-FXR-Retinoic acid-RXRα,HNF4A,IGFBP2,MAPK1,MYC,NR1H4,NR4A1,PPARA,PPARD,PTEN,RAF1,RXRA,TGFB1,TP53,tretinoin	 	22 (17)	14	 	 	 	VLDLR	 	 	 	 	 	
+torin1	chemical reagent	3	 	 	0.000	3.57E-05	1.80E-03	Akt,AKT1,AKT2,CLOCK,ERBB2,ERK1/2,FOXO1,JUN,MAPK1,MET,MITF,MTOR,MYC,NFAT5,NFATC1,NFATC2,NFATC4,NR4A1,PPARA,SOX2,TGFB1,TNF,torin1	 	18 (23)	19	 	 	 	 	 	 	 	 	 	
+RARA	ligand-dependent nuclear receptor	3	 	 	0.000	3.59E-05	1.68E-02	BTRC,CTNNB1,ERBB2,ESR1,estrogen receptor,F3,FOS,GATA1,IGFBP2,JUN,KMT2A,MAPK1,NFATC1,NR4A1,PPARA,PPARD,PTEN,RARA,RXRA,STAT1,TCF4,TCF7L2,TGFB1,tretinoin	 	22 (24)	19	alitretinoin,CSF3,L-triiodothyronine	CAK,tetradecanoylphorbol acetate	 	HOXA3	TCL1A	 	 	 	 	
+CDK2-Cyclin D1	complex	3	 	 	0.000	4.29E-05	1.59E-02	AKT1,AR,CCND1,CDK2,CDK2-Cyclin D1,CDKN1B,estrogen receptor,FOXO1,MAPT,MYC,NCOA1,NR4A1,P38 MAPK,PTEN,RB1,RBL2,SOX2,STAT3	 	18 (18)	16	 	 	 	 	 	 	 	 	 	
+DDX5	enzyme	3	 	 	0.000	4.33E-05	1.92E-02	AKT1,AR,DDX5,EGFR,ERBB2,ESR1,GATA1,HNF4A,let-7,NCOA1,Nr1h,NR4A1,P38 MAPK,PPARA,PPARD,PRDM1,STAT5B	 	19 (17)	16	EGF,SRA1,TNF	 	 	BAX	 	 	 	 	 	
+Fcr	other	3	 	 	0.000	4.42E-05	1.74E-02	AKT1,CD247,EGFR,EP300,ERBB2,ERK,estrogen receptor,Fcr,FOXO1,Jnk,Mapk,MAPK1,MYD88,NADPH oxidase,NFkB (complex),P38 MAPK,PRKCD,REL,STAT3,SYK,tyrosine kinase	 	16 (21)	18	 	 	 	SYK	 	 	 	 	 	
+resveratrol	chemical drug	2	 	 	0.000	4.45E-05	2.39E-02	c-Src,CDKN1B,cisplatin,ESR1,FOXO1,IL10,Jnk,JUN,Mapk,Mek,MTOR,MYC,NFkB (complex),Nr1h,POU5F1,PRKCD,resveratrol,STAT3,TBK1,TGFB1,TNF,TP53,VEGFA,ZEB1	 	21 (24)	23	 	 	 	BAX,GDF15,ITGAL	c-Src,CDK2,Collagen(s),ICAM1,MITF,SMAD2,TNF	 	 	 	 	
+tretinoin	chemical - endogenous mammalian	2	 	 	0.000	4.63E-05	3.77E-02	ERBB2,F3,Focal adhesion kinase,IGFBP2,MAPK1,MTOR,MYC,NFkB (complex),NR4A1,PPARD,PTEN,RAF1,SRC (family),STAT1,TGFB1,TP53,tretinoin	 	22 (17)	17	 	 	 	alitretinoin,ARG1,BAX,CD47,CDKN2C,CEACAM1,Collagen(s),CSF3,ETV1,FCAR,Focal adhesion kinase,GDF15,HBEGF,HOXA3,HOXB2,ICAM1,Interferon alpha,ITGAL,ITGB2,LY6E,LYN,NEUROD1,NLRC4,PAX6,POU2F1,SYN1,TSC22D3,VEGFC,VWF	ASCL1,CCNE1,CDK2,Cyclin D,ELOC,SMAD2,TCL1A,TNF	 	 	 	 	
+CAPN1	peptidase	3	 	 	0.000	4.76E-05	7.30E-03	26s Proteasome,AKT1,AR,beta-estradiol,CAPN1,CCND1,CDKN1B,CLOCK,ERBB2,ERK,ETV1,FOXO1,HNF4A,ITGB3,MET,MYC,NCOA1,NFATC1,NFATC2,NFkB (complex),NFKBIA,NR3C1,PTEN,REL,SOX2,TRPC5	 	20 (26)	21	Mn2+	 	 	TNF	 	 	 	 	 	
+CD59	other	3	 	 	0.000	4.82E-05	2.74E-02	calpain,CASP3,CD59,Complement,DICER1,EGFR,ERBB2,FAS,FOXO1,IFNG,Jnk,MAC,Mapk,MAPK1,MET,NFkB (complex),P38 MAPK,PRKCD,PTEN,SRC (family),TP53,ZAP70	 	18 (22)	18	TNF	 	 	 	 	 	 	 	 	
+lacidipine	chemical drug	3	 	 	0.000	5.04E-05	2.49E-02	APP,calpain,CASP3,CXCL12,DICER1,lacidipine,Mapk,MMP9,MTOR,NFkB (complex),P38 MAPK,PRKCD,PTEN,TGFB1,TNF,VEGFA	 	17 (16)	13	 	 	 	 	 	 	 	 	 	
+ofloxacin	chemical drug	3	 	 	0.000	5.27E-05	3.09E-02	AKT1,AR,benzo(a)pyrene,calpain,CASP3,CYP1A2,DICER1,EGFR,ERBB2,Focal adhesion kinase,FOXO1,HBEGF,HIF1A,Jnk,Mapk,MAPK1,MET,NFkB (complex),ofloxacin,P38 MAPK,PRKCD,PTEN,SPRY2,SRC (family),STAT1,STAT3,STAT5B,STAT6,VAV2	 	19 (29)	25	 	 	 	 	 	 	 	 	 	
+entospletinib	chemical drug	3	 	 	0.000	5.43E-05	1.69E-02	AKT1,CD247,CTTN,EGFR,entospletinib,EP300,ERK,Focal adhesion kinase,FOXO1,Jnk,Mapk,MAPK1,MYD88,NFkB (complex),P38 MAPK,PRKCD,REL,STAT3,SYK	 	15 (19)	17	 	 	 	 	SYK	 	 	 	 	
+lanraplenib	chemical drug	3	 	 	0.000	5.43E-05	1.69E-02	AKT1,CD247,CTTN,EGFR,EP300,ERK,Focal adhesion kinase,FOXO1,Jnk,lanraplenib,Mapk,MAPK1,MYD88,NFkB (complex),P38 MAPK,PRKCD,REL,STAT3,SYK	 	15 (19)	17	 	 	 	 	SYK	 	 	 	 	
+MITF	transcription regulator	1	 	 	0.000	6.18E-05	9.00E-04	MITF	 	5 (1)	1	cyclomaltodextrin,ETV1,PAX6,SH3BP2,tetradecanoylphorbol acetate	LYN,resveratrol,SB203580,TNF	 	CD151,CDK2,INPP4B,MET	 	 	 	 	 	
+VPS26A	transporter	3	 	 	0.000	6.31E-05	3.40E-02	AKT1,AR,CD247,CD3,EGFR,ERBB2,ESR1,IGF2R,Jnk,Mapk,MAPK1,NFkB (complex),Nr1h,NR3C1,NR4A1,SRC,SRC (family),TGFB1,VPS26A,ZAP70	 	18 (20)	18	 	 	 	 	 	 	 	 	 	
+vitamin K1	chemical - endogenous mammalian	3	 	 	0.000	6.37E-05	7.70E-03	EGFR,ESR1,Focal adhesion kinase,FOXO1,GATA1,HNF4A,Jnk,JUN,MAPK1,MET,MTOR,MYC,NFATC1,NFATC3,NFATC4,NGF,Nr1h,Pka,PPARA,PPARD,RARA,SRC (family),STAT1,STAT3,TGFB1,TNF,vitamin K1	 	20 (27)	25	 	 	 	MET	 	 	 	 	 	
+dipyrone	chemical drug	3	 	 	0.000	6.69E-05	1.71E-02	aspirin,calpain,CASP3,DICER1,dipyrone,ERBB2,ERK,F3,JUN,MAPK1,MTOR,P38 MAPK,PPARA,PPARD,PRKCD,PTGS1,PTGS2,STAT3,STAT6,TP53	 	16 (20)	15	 	 	 	 	 	 	 	 	 	
+estrone	chemical - endogenous mammalian	3	 	 	0.000	7.03E-05	2.09E-02	AKT1,calpain,CASP3,CDKN1B,CLOCK,ERBB2,ERK,ESR1,ESR2,estrone,FOXO1,GATA1,MET,MYC,NFATC1,NFATC2,NR1I3,NR3C1,NR4A1,SOX2,STAT5B,STAT6,TP53	 	21 (23)	21	androstenediol	 	 	 	 	 	 	 	 	
+palmitoyl-Cys((RS)-2,3-di(palmitoyloxy)-propyl)-Ala-Gly-OH	chemical reagent	3	 	 	0.000	7.06E-05	1.73E-02	AKT1,c-Src,calpain,CCND1,estrogen receptor,HNF4A,IL10RA,IL1B,IRF4,MAP3K8,MAPK1,MTOR,MYD88,NFATC2,NFkB (complex),P38 MAPK,palmitoyl-Cys((RS)-2,3-di(palmitoyloxy)-propyl)-Ala-Gly-OH,PRKCD,REL,STAT1,STAT3,TLR2	 	17 (22)	21	 	 	 	ICAM1,TNF	 	 	 	 	 	
+ZFA-fmk	chemical reagent	3	 	 	0.000	7.12E-05	1.83E-02	calpain,CASP3,CASP7,CCND1,CSF2,DICER1,EGFR,estrogen receptor,F3,Focal adhesion kinase,HNF4A,ICAM1,IL1B,IRF4,Mapk,MET,NFkB (complex),P38 MAPK,PLAU,PRKCD,PTEN,STAT1,STAT3,TGFB1,VTN,ZFA-fmk	 	17 (26)	22	 	 	 	 	TNF	 	 	 	 	
+CBL	transcription regulator	2	 	 	0.000	7.20E-05	1.91E-02	AKT1,AR,CBL,CD247,ERBB2,Mapk,MET,MTOR,RIPK1,SPRY2,SRC,STAT3,SYK,TGFB1,ZAP70	 	15 (15)	14	c-Src,CD79A,EGF,Fc receptor,Interferon alpha,Sfk,VTN	PP2/AG1879 tyrosine kinase inhibitor,tetradecanoylphorbol acetate	 	 	RIPK1,TNF	 	 	 	 	
+PRI-724	chemical drug	3	 	 	0.000	7.31E-05	3.25E-02	BTRC,CREBBP,CTNNB1,ESR1,ESRRA,estrogen receptor,FOXO1,GATA1,HNF4A,KLF1,MYC,NANOG,NCOA1,NR3C1,P38 MAPK,PPARA,PRI-724,RAF1,RBL2,SP1,STAT3,TCF4,TCF7L2,TP53	 	20 (24)	21	 	 	 	 	 	 	 	 	 	
+MAC	complex	2	 	 	0.000	7.62E-05	7.60E-03	EGFR,ERBB2,FOXO1,Jnk,MAC,MAPK1,MET,NFkB (complex),P38 MAPK,SRC (family),SYK,ZAP70	 	13 (12)	11	 	VTN	 	AKR1C3,CDK2,MET,SYK,TNF	 	 	 	 	 	
+flufenamic acid	chemical drug	3	 	 	0.000	7.63E-05	1.89E-02	AR,aspirin,EGFR,ERBB2,ESR1,F3,flufenamic acid,HNF4A,IL2,Jnk,KCNN4,Mapk,NFATC1,Nr1h,NR4A1,P38 MAPK,PPARA,PPARD,PPARG,SRC,SRC (family),STAT1,STAT3,STAT5B,STAT6,TP53,TRPV1	 	19 (27)	22	 	 	 	 	 	 	 	 	 	
+LY6E	other	3	 	 	0.000	7.92E-05	1.87E-02	AR,calpain,CD247,ERBB2,ESR1,Fc gamma receptor,FCGR2B,FOXO1,HNF4A,LY6E,MAPK1,MYD88,NFAT5,PTPN6,SMAD3,SRC (family),STAT1,STAT6,SYK,SYK/ZAP,TGFB1,VDR,ZAP70	 	17 (23)	17	tretinoin	 	 	 	Interferon alpha,SYK/ZAP,TNF	 	 	 	 	
+E2F2	transcription regulator	3	 	 	0.000	8.19E-05	2.74E-02	AKT1,AR,CCND1,CDK2,CDKN1B,E2F2,estrogen receptor,FOXO1,MAPT,MYC,NCOA1,NR4A1,P38 MAPK,PTEN,RB1,RBL2,SOX2,STAT3	 	18 (18)	16	CIP2A,NGF	 	 	CCNE1,CDKN2C	 	 	 	 	 	
+Ro 25-6760	chemical toxicant	3	 	 	0.000	8.62E-05	3.58E-02	AR,CDK2,CDK6,CDKN1B,estrogen receptor,FOXO1,ISL1,MAPT,MYC,NCOA1,NFATC3,RB1,RBL2,Ro 25-6760,SOX2,SP1,STAT3,TP53,ZEB1	 	18 (19)	16	 	 	 	 	CCNE1,CDK2	 	 	 	 	
+EFHD2	other	3	 	 	0.000	8.76E-05	1.97E-02	AKT1,BLNK,CD247,EFHD2,EP300,ERK,FOXO1,Jnk,Mapk,MAPK1,MYD88,NFATC3,NFkB (complex),P38 MAPK,PLCG2,PRKCD,REL,STAT3,SYK	 	14 (19)	16	TNF	 	 	SYK	 	 	 	 	 	
+MPIG6B	other	3	 	 	0.000	9.25E-05	1.32E-02	calpain,EGFR,Focal adhesion kinase,FOXO1,MPIG6B,MYD88,NFkB (complex),P38 MAPK,RUNX1,Sfk,SRC,STAT3,SYK,SYK/ZAP,ZAP70	 	13 (15)	12	 	 	 	 	Sfk,SYK/ZAP	 	 	 	 	
+CDK2-CyclinE	complex	3	 	 	0.000	9.43E-05	1.57E-02	AKT1,AR,CCND1,CDC25A,CDK2,CDK2-CyclinE,CDKN1B,Cyclin E,estrogen receptor,FOXO1,MAPT,MYC,NCOA1,NFkB (complex),NPM1,NR4A1,P38 MAPK,PTEN,Rb,RB1,SOX2	 	16 (21)	15	 	 	 	 	 	 	 	 	 	
+G2535	chemical reagent	3	 	 	0.000	9.54E-05	4.12E-02	AKT1,BTRC,calpain,CCND1,CSF2,EGFR,ERBB2,estrogen receptor,Focal adhesion kinase,FOXO1,G2535,HNF4A,ICAM1,IL1B,IRF4,Jnk,Mapk,MAPK1,MET,NFkB (complex),NFKBIA,P38 MAPK,PRKCD,REL,SPRY2,SRC (family),STAT1,STAT3,STAT5B,STAT6,TP53	 	21 (31)	29	 	 	 	 	 	 	 	 	 	
+TH17 Cytokine	group	3	 	 	0.000	9.74E-05	1.69E-02	AKT1,EP300,ERK,IL17A,IL21,IL22,IL23A,Jnk,Mapk,MAPK1,MTOR,NFATC1,NFkB (complex),P38 MAPK,PRKCD,STAT1,STAT3,STAT5B,SYK,TBK1,TH17 Cytokine	 	15 (21)	16	SELPLG	 	 	 	 	 	 	 	 	
+PANX1	transporter	3	 	 	0.000	1.01E-04	3.12E-02	calpain,CASP1,EGFR,FOXO1,Hif1,HIF1A,IL1B,IL33,Jnk,Mapk,NFATC3,NFkB (complex),P38 MAPK,PANX1,PRKCD,PTEN,reactive oxygen species,SRC (family),STAT1,STAT3,SYK,TBK1,TGFB1,TLR2,TNF	 	17 (25)	22	 	 	 	 	 	 	 	 	 	
+SYK/ZAP	group	2	 	 	0.000	1.11E-04	1.80E-03	calpain,MAP3K8,MYD88,P38 MAPK,SYK,SYK/ZAP,ZAP70	 	9 (7)	6	CLEC1B,Collagen(s),FCGR3A/FCGR3B,TPO	curdlan,LY6E,MPIG6B,PP2/AG1879 tyrosine kinase inhibitor,PRDM1	 	MYD88,SYK,TNF,VEGFC	calpain	 	 	 	 	
+tyrphostin AG 127	chemical - kinase inhibitor	3	 	 	0.000	1.11E-04	3.34E-02	calpain,CASP1,CASP3,CYP2E1,DICER1,ERK,ethanol,FOXO1,IKBKE,IL33,IRAK1,Jnk,Mapk,MAPK1,NFkB (complex),P38 MAPK,PRKCD,PTEN,STAT3,TBK1,TP53,tyrphostin AG 127	 	16 (22)	17	 	 	 	 	BAX,TNF	 	 	 	 	
+Alborhagin	chemical toxicant	3	 	 	0.000	1.11E-04	2.35E-02	AKT1,Alborhagin,CD247,EP300,ERK,FOXO1,Jnk,Mapk,MAPK1,MYD88,NFATC3,NFkB (complex),P38 MAPK,PLCG2,PRKCD,REL,STAT3,SYK	 	14 (18)	16	 	 	 	SYK	 	 	 	 	 	
+ibrutinib	chemical drug	3	 	 	0.000	1.13E-04	3.22E-02	AKT1,BTK,BTRC,CD247,EP300,FOXO1,GATA3,ibrutinib,MAPK1,MTOR,MYD88,NFkB (complex),NFKB1,NR3C1,P38 MAPK,PRKCD,REL,RELA,STAT3,STAT5B,SYK,TP53	 	17 (22)	19	 	 	 	 	SYK,TNF	 	 	 	 	
+zearalenone	chemical toxicant	3	 	 	0.000	1.14E-04	3.22E-02	AR,calpain,CASP3,CASP9,CCND1,CDK2,CDKN1B,DICER1,estrogen receptor,FOXO1,Histone h3,KMT2A,MAPT,MYC,NCOA1,NFkB (complex),NR4A1,P38 MAPK,PRKCD,PTEN,RB1,RBL2,SOX2,STAT3,zearalenone	 	18 (25)	20	 	 	 	CDK2,TNF	 	 	 	 	 	
+Tween 20	chemical toxicant	3	 	 	0.000	1.21E-04	3.98E-02	AKT1,calpain,EGFR,EGR1,ERBB2,ERK,FAS,Focal adhesion kinase,FOXO1,Jnk,JUN,Mapk,MAPK1,Mek,MET,P38 MAPK,PPARA,PRKCD,PTEN,PTGS2,SPRY2,SRC (family),STAT1,STAT3,STAT5B,STAT6,TP53,Tween 20	 	19 (28)	26	 	 	 	 	 	 	 	 	 	
+CDKN2C	transcription regulator	3	 	 	0.000	1.22E-04	2.52E-02	AKT1,CCND1,CDK2,CDK4,CDK6,CDKN1B,CDKN2C,CSF2,estrogen receptor,FOXO1,HNF4A,ICAM1,ISL1,MAPT,MYC,NCOA1,NFATC3,NFkB (complex),NR4A1,P38 MAPK,PRKCD,PTEN,RB1,SOX2,STAT3,ZEB1	 	20 (26)	22	E2F2,tretinoin	TNF	 	 	CDK2,Cyclin D	 	 	 	 	
+tetradecanoylphorbol acetate	chemical drug	2	 	 	0.000	1.26E-04	4.28E-02	calpain,CD44,CSF1,DIO2,EGFR,ERBB2,ESR1,F3,Focal adhesion kinase,GATA3,HES1,IL2,ITGAL,ITGB2,Jnk,Mapk,MAPK1,MTOR,MYC,NFATC1,NFATC2,NR4A1,OSM,P38 MAPK,REL,RUNX1,STAT1,tetradecanoylphorbol acetate,TP53,VASP	 	22 (30)	30	 	 	 	ARG1,BAX,calpain,CCNE1,CEACAM1,CSF3,EGF,EIF5A,Focal adhesion kinase,GDF15,GNAI2,HBEGF,HPSE,ICAM1,Ifn gamma,IL23A,Interferon alpha,ITGA2,ITGAL,ITGB2,LYN,MITF,NAB2,putrescine,Retnla,S1PR1,SYK,TNF,TSG101,VASP,VEGFC,VLDLR	ASCL1,CBL,CDK2,DSG3,HMGA2,MKNK1,RARA,SELPLG,SLC6A3,TPO,TSC22D3	 	 	 	 	
+NUPR1	transcription regulator	3	 	 	0.000	1.27E-04	1.71E-02	AKT1,ATF4,CDK2,CDK4,CDKN1B,EP300,EPO,ESR1,FOXO1,FOXO3,HNF4A,KLF1,MTOR,MYC,NCOA1,NUPR1,RBL2,SOX2,STAT3	 	19 (19)	15	 	 	 	GDF15,HBEGF	AGRN,CDK2,ETV1,LRP8,MYD88,SIX4,TRERF1	 	 	 	 	
+TSG101	transcription regulator	3	 	 	0.000	1.27E-04	1.68E-02	AKT1,AR,ASCL1,CXCR4,EGFR,ERBB2,ERK,FOXO1,GATA1,HNF4A,IRF4,MAPK1,Mek,MET,MYC,NFATC1,NFkB (complex),Nr1h,NR3C1,P38 MAPK,SPRY2,STAT3,STAT5B,TCF7L2,TSG101	 	19 (25)	24	tetradecanoylphorbol acetate	 	 	 	 	 	 	 	 	
+zinc sulfate	chemical drug	3	 	 	0.000	1.34E-04	2.07E-02	AKT1,AR,CCND1,CDKN1B,CLOCK,ERBB2,ESR1,FMR1,FOXO1,GATA3,IL10,MAPK1,MAPT,MET,MYC,NFATC1,NFATC2,NR3C1,NR4A1,PI3K (complex),PTEN,RARG,REL,RPS6KB1,SOX2,STAT3,zinc sulfate	 	19 (27)	24	 	 	 	Collagen(s)	TNF	 	 	 	 	
+C1GALT1	enzyme	3	 	 	0.000	1.46E-04	2.15E-02	AKT1,C1GALT1,EGFR,ERK,FOXO1,ITGB2,MAPK1,MET,NGF,P38 MAPK,RUNX1,Sfk,SRC,STAT6,SYK	 	13 (15)	13	 	 	 	ITGB2,MET,Sfk	 	 	 	 	 	
+ELOC	transcription regulator	3	 	 	0.000	1.55E-04	4.52E-02	AKT1,AR,AURKA,CCND1,CXCR4,ELOC,EP300,ERBB2,HIF1A,MET,MYC,NR2E1,PPARA,PRKCD,PRKCI,PTEN,RASSF1,RNA polymerase II,SMARCD3,SOX2,SPRY2,STAT3,TP53,Ubiquitin,VEGFA,VHL	 	18 (26)	20	 	tretinoin	 	 	 	 	 	 	 	
+CST5	other	3	 	 	0.000	1.56E-04	3.93E-02	AR,calpain,CASP3,CASP8,CST5,DICER1,EGFR,FOXO1,HNF4A,IL1B,MTOR,PRKCD,PTEN,Smad,SMAD2,SMAD3,SMAD7,SRC (family),STAT1,STAT3,TBK1,TGFB1,VDR	 	17 (23)	18	 	 	 	 	SMAD2,VASP	 	 	 	 	
+FRS3	other	3	 	 	0.000	1.63E-04	1.72E-02	AKT1,ASCL1,CCND1,CXCR4,EGFR,ERBB2,ERK,Focal adhesion kinase,FOXO1,FRS3,Jnk,Mapk,Mek,MET,MYC,NFATC1,P38 MAPK,SPRY2,SRC (family),STAT1,STAT5B,STAT6,TCF7L2,TP53	 	17 (24)	21	 	 	 	 	 	 	 	 	 	
+EGF	growth factor	2	 	 	0.000	1.64E-04	4.97E-02	AKT1,AR,c-Src,calpain,DIO2,EGF,EGFR,ERBB2,ESR1,ESRRA,estrogen receptor,Focal adhesion kinase,FOXO1,ISL1,Jnk,Mapk,MET,MTOR,MYC,P38 MAPK,RUNX1,SPRY2,SRC (family),STAT1,STAT3,STAT5B,SYK,TP53,ZEB1	 	21 (29)	29	L-triiodothyronine,tetradecanoylphorbol acetate	SB203580,U0126	 	c-Src,calpain,CBL,CCNE1,CDK2,CEACAM1,Cyclin D,DDX5,FLNA,Focal adhesion kinase,HBEGF,ITGA2,ITGB4,MET,NGF,RHOG,SMAD2,SORBS3,STAM,SYK,VEGFC	ICAM1	 	 	 	 	
+propylthiouracil	chemical drug	3	 	 	0.000	1.67E-04	4.00E-02	APP,CaMKII,DIO2,DIO3,EGFR,ERBB2,ERK,IFNG,JUN,L-triiodothyronine,Mapk,MAPK1,P38 MAPK,propylthiouracil,RARA,STAT1,tyrosine kinase,VASP	 	15 (18)	14	 	 	 	 	L-triiodothyronine,TPO	 	 	 	 	
+cerdulatinib	chemical drug	3	 	 	0.000	1.74E-04	3.35E-02	AKT1,CD247,cerdulatinib,EP300,FOXO1,JAK,Jnk,Mapk,MAPK1,MYD88,NFkB (complex),P38 MAPK,PRKCD,REL,STAT1,STAT3,STAT5B,STAT6,SYK	 	15 (19)	17	 	 	 	 	SYK	 	 	 	 	
+AMFR	transmembrane receptor	3	 	 	0.000	1.79E-04	2.66E-02	AMFR,CD247,CD3D,CD82,CYP2E1,EGFR,ERK,ethanol,Focal adhesion kinase,FOXO1,HMGCR,MAPK1,MET,MYC,NFkB (complex),VCP	 	13 (16)	10	 	 	 	 	 	 	 	 	 	
+APBB3	other	3	 	 	0.000	1.85E-04	4.49E-02	APBB3,CD247,CD28,CDKN1B,EGFR,EP300,Focal adhesion kinase,FOXO1,FYN,LYN,MAPK1,MAPT,MYD88,NFATC1,NFkB (complex),PDCD1,PRKCD,REL,STAT1,STAT3,SYK,VAV1,ZAP70	 	16 (23)	19	 	 	 	LYN,SYK	 	 	 	 	 	
+pubchem compound 57554513	chemical reagent	3	 	 	0.000	1.96E-04	3.59E-02	CD247,EP300,ERBB2,ERK,Focal adhesion kinase,FOXO1,MAPK1,MYD88,NFkB (complex),PRKCD,PTPRO,pubchem compound 57554513,PXN,REL,STAT3,SYK	 	14 (16)	13	 	 	 	SYK	 	 	 	 	 	
+NEUROG2	transcription regulator	1	 	 	0.000	2.05E-04	8.00E-04	NEUROG2	 	2 (1)	1	HEYL	 	 	NEUROD1,PAX6	 	 	 	 	 	
+azathioprine	chemical drug	1	 	 	0.000	2.05E-04	4.00E-04	azathioprine	 	2 (1)	1	 	 	 	 	 	 	 	 	 	
+CAK	complex	3	 	 	0.000	2.09E-04	3.02E-02	CAK,CCNH,Cdk,CDK2,CDK4,CDK6,CDK7,CDKN1B,ESR1,FOXO1,ISL1,MNAT1,MYC,NCOA1,NFATC3,NR4A1,PPARA,PTEN,RARA,RB1,RBL2,RXRA,SOX2,tretinoin,ZEB1	 	19 (25)	16	 	alitretinoin	 	CDK2	Cyclin D,RARA	 	 	 	 	
+N-chlorotaurine	chemical - kinase inhibitor	3	 	 	0.000	2.22E-04	2.16E-02	ESR1,FOXO1,GNRH1,HNF4A,IL1B,IRF4,MAPK1,MET,MYC,N-chlorotaurine,NCOA1,NEUROD1,NFATC4,NFkB (complex),NFKBIA,nitric oxide,NOS2,NR4A1,P38 MAPK,PRKCD,RARA,REL,RUNX1,SNAI1,SRC (family),STAT1,SYK,TNF	 	18 (28)	24	 	 	 	BAX	TNF	 	 	 	 	
+CIP2A	other	3	 	 	0.000	2.64E-04	3.96E-02	AURKA,CDKN1B,CIP2A,ERK,ESR1,FOXO1,JUN,Mapk,MAPK1,MAPT,MET,MTORC1,MYC,NCOA1,PAX6,PP2A,RASSF1,SLC6A3,STAT3	 	15 (19)	16	 	 	 	E2F2,LASP1	 	 	 	 	 	
+NCoR/SMRT corepressor	complex	3	 	 	0.000	2.80E-04	4.81E-02	AR,ESR2,F3,FOXO1,GPS2,HDAC3,HNF4A,MTOR,NCOA1,NCoR/SMRT corepressor,NCOR1,NCOR2,P38 MAPK,POU2F1,PPARA,PPARD,TGFB1,VDR	 	14 (18)	13	 	 	 	 	 	 	 	 	 	
+IL7R MET	complex	3	 	 	0.000	3.00E-04	3.12E-02	AKT1,ERK,Focal adhesion kinase,IL2RG,IL7R MET,Jnk,Mapk,MAPK1,MET,NFkB (complex),NGF,SRC,SRC (family),STAT1,STAT3,STAT6	 	12 (16)	14	 	 	 	 	 	 	 	 	 	
+alitretinoin	chemical drug	2	 	 	0.000	3.03E-04	2.26E-02	alitretinoin,CCND1,CDKN1B,estrogen receptor,MAPK1,Nr1h,NR4A1,P38 MAPK,PPARA,RARA,RARB,RARG,RB1,STAT1,VDR	 	13 (15)	14	tretinoin	 	 	BAX,RARA	CAK,CDK2	 	 	 	 	
+4-((4-(3,4-dichlorophenyl)-1,2,5-thiadiazol-3-yl)oxy)butan-1-ol	chemical reagent	3	 	 	0.000	3.05E-04	1.51E-02	4-((4-(3,4-dichlorophenyl)-1,2,5-thiadiazol-3-yl)oxy)butan-1-ol,CLOCK,ERK,GRIN2B,LAT,Mapk,MAPK1,NFATC3,NFATC4,NFkB (complex),P38 MAPK,PRKCG,RARA,RTN4,STAT1	 	12 (15)	11	 	 	 	 	 	 	 	 	 	
+S1PR1	G-protein coupled receptor	2	 	 	0.000	3.07E-04	1.77E-02	Mapk,MTOR,S1PR1,SRC,STAT3,TGFB1	 	11 (6)	5	SMAD2,tetradecanoylphorbol acetate	 	 	ICAM1	Interferon alpha,TNF	 	 	 	 	
+CD47	transmembrane receptor	3	 	 	0.000	3.17E-04	3.47E-02	CD247,CD47,CDC42,CDH5,CDKN1B,EGFR,EP300,estrogen receptor,FOXO1,FYN,LYN,MAPT,MYC,NFATC1,PDCD1,PRKCD,Rac,REL,SIRPA,STAT5B,SYK,TP53,VAV1,ZAP70	 	16 (24)	16	tretinoin	SB203580	 	LYN,SYK	 	 	 	 	 	
+Lefty	group	3	 	 	0.000	3.18E-04	1.88E-02	AR,Lefty,LEFTY2,Mapk,MTOR,SMAD2,SP1,STAT3,TGFB1	 	12 (9)	6	 	 	 	 	SMAD2	 	 	 	 	
+hydrogen sulfide	chemical - endogenous mammalian	3	 	 	0.000	3.23E-04	1.25E-02	Akt,AKT1,CD247,CLOCK,ERBB2,FOXO1,GATA3,HNF4A,hydrogen sulfide,IL10,IRS1,MAPK1,MAPK14,MYC,NCOA1,NOS3,PI3K (complex),Pkg,PPARA,PTEN,REL,RUNX1,SOX2,STAT3,TGFB1,VASP,ZAP70	 	18 (27)	21	 	 	 	VASP	lead	 	 	 	 	
+mevastatin	chemical drug	3	 	 	0.000	3.59E-04	2.20E-02	AR,CCND1,CDK2,CDK5,CLOCK,ERBB2,HNF4A,MAPK1,mevastatin,MTOR,MYC,NCOA1,NFAT5,NFATC1,Nr1h,NR1I2,NR4A1,PTEN,Rac,Ras homolog,RB1,RBL2,RHOA,SOX2,ZAP70	 	16 (25)	18	 	 	 	TNF	CDK2	 	 	 	 	
+LYN	kinase	2	 	 	0.000	3.80E-04	2.28E-02	AKT1,CDKN1B,ERK,LYN,MAPK1,NFkB (complex),PDCD1,PRKCD,STAT1,STAT3,SYK	 	11 (11)	10	APBB3,calcimycin,CD47,CSF3,SH3BP2,tetradecanoylphorbol acetate,tretinoin	bosutinib,dasatinib,PP2/AG1879 tyrosine kinase inhibitor	 	 	MITF	 	 	 	 	
+PCGF2	transcription regulator	3	 	 	0.000	3.90E-04	4.83E-02	AKT1,AR,CDK2,CDKN1B,CLOCK,ERBB2,ERK,ESR1,FOXO1,Jnk,MAP3K8,MET,MYC,NCOA1,NFATC1,NFATC2,NR3C1,NR4A1,P38 MAPK,PCGF2,PTEN,RB1,SOX2	 	18 (23)	21	 	 	 	 	CCNE1,CDK2	 	 	 	 	
+GH1	growth factor	2	 	 	0.000	3.92E-04	4.90E-02	AKT1,AR,CBX5,ERBB2,ERK,GH1,Jnk,Mapk,MAPK1,Mek,NR3C1,SRC,STAT1,STAT3,STAT5B	 	13 (15)	14	L-triiodothyronine,T3-TR-RXR	 	 	 	 	 	 	 	 	
+MET	kinase	2	 	 	0.000	3.96E-04	2.67E-02	AKT1,ERK,Focal adhesion kinase,Jnk,Mapk,MAPK1,MET,NFkB (complex),NGF,SRC,SRC (family),STAT3	 	11 (12)	12	c-Src,C1GALT1,EGF,heparan sulfate,ITGB4,MAC,MITF,MNX1,MYD88,PAX6,SAICAR,TNF,vitamin K1	dasatinib,ganglioside GM2,PP2/AG1879 tyrosine kinase inhibitor,SU6657,TPX-0022,U0126	 	Focal adhesion kinase,HBEGF,NGF,TRIM21	 	 	 	 	 	
+PIM/FLT3 kinase inhibitor SEL24	chemical drug	3	 	 	0.000	4.04E-04	4.48E-02	AKT1,AR,CDKN1B,FLT3,MAP3K8,Mapk,MAPT,MYC,NFATC1,NFATC2,NFkB (complex),PIM/FLT3 kinase inhibitor SEL24,PIM1,PIM2,PIM3,RUNX1,STAT6	 	13 (17)	12	 	 	 	 	 	 	 	 	 	
+SORBS3	other	3	 	 	0.000	4.80E-04	3.70E-02	AR,EGFR,ERBB2,ESR2,FOXO1,GATA1,Jnk,MAPK1,MET,MTOR,MYC,NCOA1,NFATC1,NFATC3,NFATC4,Nr1h,NR3C1,RUNX1,SNAI1,SORBS3,SYK	 	17 (21)	20	EGF	 	 	 	 	 	 	 	 	
+calcimycin	chemical reagent	2	 	 	0.000	5.03E-04	3.25E-02	calcimycin,calpain,ERK,F3,Jnk,Mapk,MAPK1,MTOR,NFATC1,NFATC2,P38 MAPK,REL,SRC,STAT6	 	12 (14)	13	 	 	 	calpain,ICAM1,Ifn gamma,LYN,Sfk,TNF	NGF,SYN1,TPO	 	 	 	 	
+CLEC7A	transmembrane receptor	2	 	 	0.000	5.40E-04	8.70E-03	CLEC7A,ERK,Jnk,NFATC2,NFATC3,NFkB (complex),P38 MAPK,REL,SYK	 	9 (9)	8	curdlan	 	 	Cr3,CSF3,IL23A,SYK,TNF	 	 	 	 	 	
+Interferon alpha	group	2	 	 	0.000	5.41E-04	4.73E-02	CCND1,CD247,Interferon alpha,MAPK1,MKNK1,MTOR,NFkB (complex),NR3C1,P38 MAPK,STAT1,STAT3,STAT5B,STAT6,ZAP70	 	14 (14)	14	androstenediol,FCGR3A/FCGR3B,tetradecanoylphorbol acetate,tretinoin	LY6E,S1PR1,SB203580	 	BAX,CBL,ICAM1,Ifn gamma,MKNK1,NCR2,TRIM21	CCNE1,CDK2	 	 	 	 	
+Irs3	other	3	 	 	0.000	5.68E-04	4.65E-02	AKT1,AR,CCND1,CD247,CDKN1B,CLOCK,ERBB2,ESR1,GATA3,IL10,Irs3,MAPK1,MET,MYC,NFATC1,NFATC2,NR3C1,NR4A1,PI3K (complex),PTEN,PTPN11,REL,SOX2,SPRY2,STAT5B,TBK1,TP53,ZAP70	 	18 (28)	25	 	 	 	 	 	 	 	 	 	
+NLRC4	other	3	 	 	0.000	5.80E-04	4.72E-02	BAX,calpain,CASP1,CASP7,CCND1,CSF2,estrogen receptor,HNF4A,ICAM1,IL1B,IL33,IRF4,Jnk,Mapk,NFkB (complex),NLRC4,P38 MAPK,PRKCD,STAT1,STAT3,TBK1,TRAF2	 	14 (22)	18	tretinoin	 	 	BAX	 	 	 	 	 	
+buparlisib	chemical drug	3	 	 	0.000	5.85E-04	3.22E-02	ADRB,Akt,AKT1,AR,buparlisib,CCND1,CDKN1B,CLOCK,EP300,ERBB2,FOXO1,MET,MTOR,MYC,NFAT5,NFATC1,NFATC2,NR3C1,NR4A1,PI3K (family),PIK3CA,PIK3CG,SOX2,SYK,TP53	 	17 (25)	20	 	 	 	 	 	 	 	 	 	
+glabridin	chemical - endogenous non-mammalian	3	 	 	0.000	5.95E-04	4.14E-02	AMPK,CDKN1B,CXCR4,ERBB2,Focal adhesion kinase,FOXO1,glabridin,IL1B,IL2,IRF4,MAPK1,MET,MKNK1,MTOR,MYC,NFkB (complex),Nr1h,NR4A1,Pkc(s),PPARA,PRKCD,REL,SATB1,Sod,SRC (family),STAT1,STAT3	 	18 (27)	23	 	 	 	 	 	 	 	 	 	
+Ifn gamma	complex	2	 	 	0.000	5.98E-04	3.22E-02	EGFR,HOXA10,Ifn gamma,IFNG,Jnk,MAPK1,NFkB (complex),P38 MAPK,STAT1,STAT3	 	12 (10)	9	calcimycin,FCGR3A/FCGR3B,Interferon alpha,tetradecanoylphorbol acetate	SB203580	 	ICAM1,MYD88,TNF	 	 	 	 	 	
+dasatinib	chemical drug	2	 	 	0.000	6.31E-04	1.76E-02	dasatinib,EGFR,ERK,JUN,MET,P38 MAPK,PRKCD,SRC,SRC (family),STAT3,SYK	 	10 (11)	10	 	 	 	 	Collagen(s),LYN,MET,Sfk,SYK	 	 	 	 	
+Sfk	group	2	 	 	0.000	6.61E-04	3.89E-02	EGFR,ERK,Focal adhesion kinase,FOXO1,NFkB (complex),P38 MAPK,RUNX1,Sfk,SRC,STAT3,SYK	 	11 (11)	10	C1GALT1,calcimycin,DAB1,ITGB2,LRP8,SELPLG,TNF,VLDLR	bosutinib,dasatinib,MPIG6B,PP2/AG1879 tyrosine kinase inhibitor,saracatinib	 	CBL,Focal adhesion kinase,ICAM1,SYK	 	 	 	 	 	
+(Z)-5-(4-trifluoromethylbenzylidene)thiazolidine-2,4-dione	chemical reagent	3	 	 	0.000	6.81E-04	4.77E-02	(Z)-5-(4-trifluoromethylbenzylidene)thiazolidine-2,4-dione,AKT1,AR,CDKN1B,MAP3K8,MYC,NFATC1,NFATC2,PIM1,PIM2,RUNX1,STAT6	 	12 (12)	9	 	 	 	 	 	 	 	 	 	
+TRAF2/3/5	group	3	 	 	0.000	6.86E-04	4.59E-02	HNF4A,IKBKE,Jnk,MAPK1,NFkB (complex),NIK,P38 MAPK,REL,RIPK1,STAT3,TBK1,TRAF2,TRAF2/3/5,TRAF3,TRAF5,ZAP70	 	11 (16)	13	 	 	 	 	 	 	 	 	 	
+miconazole	chemical drug	3	 	 	0.000	6.88E-04	4.75E-02	benzo(a)pyrene,clopidogrel,CYP,CYP19A1,CYP1A2,CYP2B6,CYP2C19,CYP2C9,CYP2E1,CYP3A4,ethanol,FOXO1,GATA1,GATA3,Jnk,MAPK1,miconazole,Nr1h,NR3C1,P38 MAPK,STAT1,STAT3,STAT5B,STAT6	 	13 (24)	15	 	 	 	 	 	 	 	 	 	
+MIP1	group	3	 	 	0.000	7.05E-04	2.86E-02	CCL15,CCL3,CCL4,ERK,F3,GNAI2,ICAM1,Jnk,Mapk,MAPK1,MIP1,P38 MAPK,PRKCD,STAT1,STAT3,SYK	 	10 (16)	12	 	 	 	 	 	 	 	 	 	
+PAX6	transcription regulator	1	 	 	0.000	7.83E-04	3.10E-03	PAX6	 	3 (1)	1	NEUROD1,NEUROG2,tretinoin	SOX2-OCT4-NANOG,TNF,U0126	 	MET,MITF	ASCL1,CDK2,SMAD2	 	 	 	 	
+O6-benzylguanine	chemical drug	3	 	 	0.000	9.14E-04	4.53E-02	AKT1,AMPK,CDK2,CLOCK,ERBB2,ESR1,FOXO1,HNF4A,Jnk,MAPK1,MET,MKNK1,MYC,NCOA1,NFATC1,NFATC2,NR4A1,O6-benzylguanine,P38 MAPK,PTEN,SOX2,VASP	 	17 (22)	19	 	 	 	 	CDK2	 	 	 	 	
+ITGB2	transmembrane receptor	2	 	 	0.000	9.41E-04	3.87E-02	AKT1,ERK,ITGB2,MAPK1,NFkB (complex),P38 MAPK,STAT1,STAT3,STAT6,SYK	 	10 (10)	10	C1GALT1,Focal adhesion kinase,ICAM1,SELPLG,tetradecanoylphorbol acetate,tretinoin	GDF15,VASP	 	BAX,Sfk,SYK	 	 	 	 	 	
+deguelin	chemical drug	3	 	 	0.000	9.55E-04	4.18E-02	Akt,AKT1,AR,CCND1,CLOCK,deguelin,EP300,ERBB2,ESR1,HNF4A,MAPK1,MET,NFAT5,NFATC1,NFATC2,NR4A1,POU5F1,PRKAA,RARG,SH2B2,SMAD3,SOX2,STAT3,STAT5B,TGFB1,TP53,VDR	 	18 (27)	22	 	 	 	BAX	 	 	 	 	 	
+CSF3	cytokine	2	 	 	0.000	1.02E-03	4.29E-02	CDKN1B,CSF3,ERK,Jnk,JUN,MAPK1,NFkB (complex),P38 MAPK,RARA,STAT1,SYK	 	11 (11)	10	budesonide,CLEC7A,MYD88,Pam3-Cys-Ser-Lys4,tetradecanoylphorbol acetate,tretinoin	CEACAM1,cyclomaltodextrin,PRDM1,U0126	 	ARG1,BATF,LYN,RARA,SYK	BAX,ICAM1	 	 	 	 	
+leuprolide	biologic drug	3	 	 	0.000	1.04E-03	3.02E-02	AKT1,CLOCK,CYP19A1,ERBB2,FOXO1,GATA3,IL10,leuprolide,MAPK1,MAPK3,MET,MYC,NCOA1,NFATC1,NFATC2,NFATC4,PI3K (complex),REL,RUNX1,SNAI1,SOX2,STAT5B,TP53	 	16 (23)	19	 	 	 	BAX	 	 	 	 	 	
+SMAD2	transcription regulator	2	 	 	0.000	1.05E-03	4.10E-02	AR,MTOR,SMAD2,SP1,STAT3,TGFB1	 	11 (6)	5	EGF,GNAI2,ITGB6,LASP1,MKNK1,POU2F1,TNF	CST5,Lefty,naftopidil,PAX6,resveratrol,SB203580,tretinoin,U0126	 	S1PR1,VEGFC	 	 	 	 	 	
+FMR1	translation regulator	1	 	 	0.000	1.12E-03	4.50E-03	FMR1	 	3 (1)	1	mGluR,Muscarinic cholinergic receptor	U0126	 	 	SYN1	 	 	 	 	
+ethylene glycol tetraacetic acid	chemical reagent	2	 	 	0.000	1.25E-03	4.23E-02	calpain,ethylene glycol tetraacetic acid,Mapk,MAPK1,NFATC2,NFkB (complex),P38 MAPK,REL,SYK	 	10 (9)	8	 	 	 	 	calpain,SYK	 	 	 	 	
+DUB	group	3	 	 	0.000	1.26E-03	4.51E-02	CASP1,CDKN1B,DIO2,DUB,EGFR,NFATC1,NFATC2,P38 MAPK,PTEN,RARA,REL,RIPK1,STAT5B,TBK1,Usp17le (includes others),USP18,USP2,USP20,USP21,USP33,USP37,USP7,USP8,USP9X,ZAP70	 	12 (25)	13	 	 	 	 	 	 	 	 	 	
+acid phosphatase	group	3	 	 	0.000	1.29E-03	1.99E-02	acid phosphatase,ACP1,ACPP,ERBB2,Focal adhesion kinase,Mapk,MAPK1,SRC,SYK,ZAP70	 	9 (10)	7	 	 	 	 	 	 	 	 	 	
+BAX	transporter	3	 	 	0.000	1.61E-03	3.98E-02	BAX,calpain,CASP3,CASP8,CDK2,CHEK1,GATA1,HNF4A,ITPR1,Jnk,JUN,MYC,NCOA1,NFATC1,NFATC2,NFATC3,NFATC4,PRKCD,PTEN,RASSF1,SOX2,TBK1,TGFB1,TRAF2	 	16 (24)	18	alitretinoin,androstenediol,DDX5,deguelin,EIF5A,IgG1,Interferon alpha,ITGB2,ITGB4,leuprolide,N-chlorotaurine,NLRC4,resveratrol,SMARCD1,tetradecanoylphorbol acetate,tretinoin,UCN-01	CSF3,Focal adhesion kinase,L-triiodothyronine,NGF,prednisolone,SB203580,tyrphostin AG 127,U0126	 	CDK2,ETV1	 	 	 	 	 	
+1,2-dioctanoyl-sn-glycerol	chemical reagent	3	 	 	0.000	1.66E-03	3.44E-02	1,2-dioctanoyl-sn-glycerol,AKT1,ALOX5,CDKN1B,CLOCK,CXCR4,ESR1,FOXO1,NCOA1,NFATC1,Nr1h,NR3C1,Pkc(s),PP2A,PPARA,PRKCD,PTEN,RARG,SOX2,STAT3,TGFB1	 	15 (21)	17	 	 	 	 	 	 	 	 	 	
+NEUROD1	transcription regulator	1	 	 	0.000	1.69E-03	3.30E-03	NEUROD1	 	2 (1)	1	ASCL1,NEUROG2,POU3F2,tretinoin	Focal adhesion kinase,TNF	 	PAX6	 	 	 	 	 	
+prednisolone	chemical drug	2	 	 	0.000	1.72E-03	3.72E-02	IL1B,MAPT,NFkB (complex),NR3C1,P38 MAPK,prednisolone	 	9 (6)	6	 	 	 	TSC22D3	BAX,HSP90AA1,TNF,TPO	 	 	 	 	
+HPSE	enzyme	2	 	 	0.000	1.78E-03	3.04E-02	EGFR,ERK,F3,HPSE,P38 MAPK,SRC,SRC (family),STAT3,STAT5B	 	9 (9)	8	ETV1,tetradecanoylphorbol acetate,TNF	 	 	 	 	 	 	 	 	
+ATP7A	transporter	3	 	 	0.000	1.87E-03	4.77E-02	ATP7A,EGFR,ERK,LOX,MAPK1,NFkB (complex),P38 MAPK,PLA2G4A,SRC (family),SYK	 	9 (10)	7	 	 	 	 	 	 	 	 	 	
+PD 0325901	chemical drug	1	 	 	0.000	1.91E-03	2.20E-03	PD 0325901	 	2 (1)	1	 	 	 	Retnla	ETV1	 	 	 	 	
+B3GAT2	enzyme	1	 	 	0.000	1.96E-03	3.80E-03	B3GAT2	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+CHMP4C	other	1	 	 	0.000	1.96E-03	3.60E-03	CHMP4C	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+EVL	other	1	 	 	0.000	1.96E-03	2.00E-03	EVL	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+UBAP1	other	1	 	 	0.000	1.96E-03	3.60E-03	UBAP1	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+dihydroxyphenylethylene glycol	chemical - endogenous mammalian	1	 	 	0.000	1.96E-03	6.70E-03	dihydroxyphenylethylene glycol	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+miR-616-3p (miRNAs w/seed GUCAUUG)	mature microRNA	1	 	 	0.000	1.96E-03	6.50E-03	miR-616-3p (miRNAs w/seed GUCAUUG)	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+FCAR	transmembrane receptor	2	 	 	0.000	2.02E-03	9.60E-03	AKT1,ERK,FCAR,Mapk,MAPK1,SYK	 	6 (6)	5	tretinoin	 	 	SYK	 	 	 	 	 	
+GLG1	other	3	 	 	0.000	2.12E-03	4.44E-02	AKT1,calpain,Cr3,Focal adhesion kinase,GLG1,ITGA5,ITGB2,MTOR,P38 MAPK,PRKCD,SYK	 	8 (11)	8	 	 	 	Cr3	 	 	 	 	 	
+ITGB6	other	2	 	 	0.000	2.15E-03	4.92E-02	AR,Focal adhesion kinase,ITGB6,Mapk,RAF1,TGFB1	 	10 (6)	5	TNF	 	 	Collagen(s),Focal adhesion kinase,SMAD2	 	 	 	 	 	
+CD79A	transmembrane receptor	2	 	 	0.000	2.19E-03	1.65E-02	CD79A,MAPK1,PRKCD,PRMT1,SYK,VASP	 	7 (6)	5	 	CD72,PRDM1	 	CBL,CDK2,SYK,VASP	 	 	 	 	 	
+T3-TR-RXR	complex	2	 	 	0.000	2.23E-03	1.19E-02	L-triiodothyronine,T3-TR-RXR	 	5 (2)	2	 	 	 	AKR1C3,GH1	 	 	 	 	 	
+15(S)-HETE	chemical - endogenous mammalian	2	 	 	0.000	2.28E-03	4.59E-02	15(S)-HETE,AKT1,EGFR,EP300,F3,MAPK1,P38 MAPK,PPARD,STAT3	 	9 (9)	8	TNF	 	 	 	 	 	 	 	 	
+QKI	other	1	 	 	0.000	2.40E-03	5.60E-03	QKI	 	2 (1)	1	 	TNF	 	 	 	 	 	 	 	
+GDF15	growth factor	2	 	 	0.000	2.76E-03	2.36E-02	EGFR,ERBB2,GDF15,Hif1,ITGB2,MAPK1	 	7 (6)	5	(-)-epicatechin gallate,MYD88,NUPR1,RASSF1,resveratrol,tetradecanoylphorbol acetate,tretinoin	L-triiodothyronine,PA2G4	 	 	Focal adhesion kinase,ITGB2	 	 	 	 	
+SOX2-OCT4-NANOG	complex	2	 	 	0.000	2.81E-03	1.11E-02	NANOG,POU5F1,SOX2,SOX2-OCT4-NANOG	 	5 (4)	3	 	 	 	TCL1A	PAX6	 	 	 	 	
+ITGB4	transmembrane receptor	2	 	 	0.000	2.83E-03	3.01E-02	AKT1,EGFR,ITGB4,Mapk,MET,MTOR,NFAT5,SRC,STAT3	 	8 (9)	8	EGF	PP2/AG1879 tyrosine kinase inhibitor,PPP3CA,SYK	 	BAX,MET	 	 	 	 	 	
+Collagen(s)	complex	2	 	 	0.000	2.86E-03	4.23E-02	AKT1,Collagen(s),Focal adhesion kinase,MAPK1,P38 MAPK,STAT3,SYK	 	8 (7)	6	ITGA2,ITGB6,L-triiodothyronine,TNF,tretinoin,zinc sulfate	dasatinib,PP2/AG1879 tyrosine kinase inhibitor,resveratrol,SB203580	 	Focal adhesion kinase,SYK,SYK/ZAP	 	 	 	 	 	
+VWF	other	2	 	 	0.000	2.92E-03	4.75E-02	EGR1,MAPK1,MYC,P38 MAPK,SYK,VWF	 	9 (6)	5	tretinoin	PKD1	 	SYK	 	 	 	 	 	
+SH3BP2	other	2	 	 	0.000	3.02E-03	1.74E-02	AKT1,ERK,Jnk,NFATC2,SH3BP2,SRC (family),STAT1,SYK	 	7 (8)	7	 	 	 	IgG1,LYN,MITF,SYK	 	 	 	 	 	
+FLNA	other	2	 	 	0.000	3.07E-03	3.88E-02	AR,calpain,FLNA,Jnk,MAPK1,NFkB (complex),SYK	 	8 (7)	6	EGF,MKNK1	U0126	 	RHOG,SYK	calpain	 	 	 	 	
+ITGA2	transmembrane receptor	2	 	 	0.000	3.22E-03	1.10E-02	ERK,Focal adhesion kinase,ITGA2,P38 MAPK,SRC,SYK	 	6 (6)	5	EGF,tetradecanoylphorbol acetate,TNF	NGF	 	CCNE1,CDK2,Collagen(s),Focal adhesion kinase,SYK	 	 	 	 	 	
+heparan sulfate	chemical - endogenous mammalian	2	 	 	0.000	3.38E-03	3.12E-02	heparan sulfate,MAPK1,MAPT,MET,NFkB (complex),P38 MAPK,SRC	 	8 (7)	6	 	TNF	 	MET	 	 	 	 	 	
+Calcineurin A-Calcineurin B-Runx1	complex	2	 	 	0.000	3.42E-03	8.10E-03	Calcineurin A,Calcineurin A-Calcineurin B-Runx1,Calcineurin B,RUNX1	 	3 (4)	3	 	 	 	 	 	 	 	 	 	
+LRP8	transmembrane receptor	2	 	 	0.000	3.56E-03	3.90E-03	AKT1,DAB1,LRP8,MAPT,SRC (family)	 	4 (5)	4	 	NUPR1	 	Sfk	DAB1	 	 	 	 	
+ACP1	phosphatase	2	 	 	0.000	3.90E-03	3.08E-02	ACP1,Focal adhesion kinase,Mapk,MAPK1,SRC,SYK,ZAP70	 	7 (7)	6	 	 	 	 	Focal adhesion kinase,SYK	 	 	 	 	
+CHD8	enzyme	1	 	 	0.000	3.92E-03	7.70E-03	CHD8	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+FES	kinase	1	 	 	0.000	3.92E-03	2.00E-03	FES	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+FUZ	other	1	 	 	0.000	3.92E-03	9.20E-03	FUZ	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+INK4	group	1	 	 	0.000	3.92E-03	6.50E-03	INK4	 	1 (1)	1	 	 	 	Cyclin D	 	 	 	 	 	
+STAM	other	1	 	 	0.000	3.92E-03	3.60E-03	STAM	 	1 (1)	1	EGF	 	 	 	 	 	 	 	 	
+abiraterone	chemical drug	1	 	 	0.000	3.92E-03	5.90E-03	abiraterone	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+IL23A	cytokine	2	 	 	0.000	3.98E-03	4.07E-02	IL23A,NFATC1,P38 MAPK,PRKCD,STAT1,STAT3,SYK	 	8 (7)	6	CLEC7A,MYD88,Retnla,tetradecanoylphorbol acetate	SB203580,U0126	 	 	 	 	 	 	 	
+VLDLR	transporter	2	 	 	0.000	4.14E-03	6.20E-03	AKT1,DAB1,MAPT,SRC (family),VLDLR	 	4 (5)	4	FXR ligand-FXR-Retinoic acid-RXRα,tetradecanoylphorbol acetate	EGLN	 	Sfk	DAB1,TNF	 	 	 	 	
+HOXA3	transcription regulator	1	 	 	0.000	4.17E-03	1.31E-02	HOXA3	 	2 (1)	1	RARA,tretinoin	 	 	 	 	 	 	 	 	
+calmidazolium	chemical drug	2	 	 	0.000	4.46E-03	1.29E-02	calmidazolium,F3,Mapk,MAPK1,SRC	 	5 (5)	4	 	 	 	 	 	 	 	 	 	
+Muscarinic cholinergic receptor	group	2	 	 	0.000	4.56E-03	8.20E-03	Focal adhesion kinase,Mapk,Muscarinic cholinergic receptor,SYK,ZAP70	 	5 (5)	4	 	 	 	FMR1,Focal adhesion kinase,SYK	 	 	 	 	 	
+SAICAR	chemical - endogenous mammalian	2	 	 	0.000	4.57E-03	4.80E-02	EGFR,ERBB2,MAPK1,MET,SAICAR,SYK	 	8 (6)	5	 	 	 	CDK2,MET,SYK	 	 	 	 	 	
+dephostatin	chemical reagent	2	 	 	0.000	4.87E-03	2.79E-02	dephostatin,MAPK1,NFASC,P38 MAPK,PRKCD	 	6 (5)	4	 	 	 	 	 	 	 	 	 	
+cyclomaltodextrin	chemical drug	2	 	 	0.000	4.95E-03	1.23E-02	cyclomaltodextrin,MTOR,P38 MAPK,PRKCD	 	5 (4)	3	 	 	 	MITF	CSF3,TNF	 	 	 	 	
+ganglioside GM2	chemical - endogenous mammalian	2	 	 	0.000	5.32E-03	2.52E-02	c-Src,FGF2,ganglioside GM2,MAPK1,MET,SRC	 	6 (6)	5	TNF	 	 	 	c-Src,MET	 	 	 	 	
+NGF	growth factor	1	 	 	0.000	5.54E-03	1.14E-02	NGF	 	3 (1)	1	EGF,MET	calcimycin	 	AGRN,E2F2,SYN1	ASCL1,BAX,CDK2,ITGA2	 	 	 	 	
+PKD1	ion channel	1	 	 	0.000	5.62E-03	1.69E-02	PKD1	 	3 (1)	1	MYD88	 	 	 	HBEGF,VWF	 	 	 	 	
+indinavir	chemical drug	2	 	 	0.000	5.83E-03	2.49E-02	indinavir,MKNK1,MTOR,P38 MAPK	 	6 (4)	3	 	 	 	 	MKNK1	 	 	 	 	
+DHPS	enzyme	1	 	 	0.000	5.88E-03	7.10E-03	DHPS	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+HOXB2	transcription regulator	1	 	 	0.000	5.88E-03	1.70E-02	HOXB2	 	1 (1)	1	tretinoin	 	 	 	 	 	 	 	 	
+Mn2+	chemical - endogenous mammalian	1	 	 	0.000	5.88E-03	5.50E-03	Mn2+	 	1 (1)	1	 	 	 	CAPN1	ICAM1	 	 	 	 	
+SIX4	transcription regulator	1	 	 	0.000	5.88E-03	9.80E-03	SIX4	 	1 (1)	1	 	NUPR1	 	 	 	 	 	 	 	
+SOCS2-AS1	other	1	 	 	0.000	5.88E-03	1.00E-02	SOCS2-AS1	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+necrostatin-1s	chemical reagent	1	 	 	0.000	5.88E-03	1.03E-02	necrostatin-1s	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+barium	chemical reagent	2	 	 	0.000	5.88E-03	1.01E-02	barium,ERK,Focal adhesion kinase,Jnk,SRC	 	4 (5)	4	 	 	 	Focal adhesion kinase	 	 	 	 	 	
+FTO	enzyme	2	 	 	0.000	6.04E-03	3.29E-02	FTO,MTOR,NFATC3,NFATC4,P38 MAPK,PRKCD	 	6 (6)	5	 	 	 	NFATC4	 	 	 	 	 	
+CD151	other	2	 	 	0.000	6.26E-03	4.51E-02	CD151,ERBB2,JUN,P38 MAPK,SRC,STAT3	 	7 (6)	5	MITF	 	 	 	 	 	 	 	 	
+pexmetinib	chemical drug	2	 	 	0.000	6.89E-03	1.86E-02	MAPK1,P38 MAPK,pexmetinib,SRC	 	5 (4)	3	 	 	 	 	 	 	 	 	 	
+Cr3	complex	2	 	 	0.000	7.13E-03	1.40E-02	Cr3,ERK,ITGB2,PRKCD,SYK	 	5 (5)	4	CLEC7A,GLG1,SB203580	 	 	SYK	 	 	 	 	 	
+CEACAM1	transporter	2	 	 	0.000	7.63E-03	4.40E-02	c-Src,CEACAM1,Mapk,SRC (family),STAT3,SYK	 	6 (6)	5	EGF,tetradecanoylphorbol acetate,tretinoin	SB203580	 	c-Src,ICAM1	CSF3,SYK,VEGFC	 	 	 	 	
+AKR1C3	enzyme	1	 	 	0.000	7.83E-03	2.28E-02	AKR1C3	 	1 (1)	1	L-triiodothyronine,MAC,T3-TR-RXR	 	 	 	 	 	 	 	 	
+EEF2K	kinase	1	 	 	0.000	7.83E-03	1.37E-02	EEF2K	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+Fc receptor	group	2	 	 	0.000	7.87E-03	3.92E-02	ERK,Fc receptor,Focal adhesion kinase,Jnk,NFATC2,SYK	 	6 (6)	5	 	 	 	CBL,Focal adhesion kinase,SYK	 	 	 	 	 	
+FCGR2C	transmembrane receptor	2	 	 	0.000	8.19E-03	1.21E-02	FCGR2C,SYK,ZAP70	 	3 (3)	2	 	 	 	SYK	 	 	 	 	 	
+curdlan	chemical - endogenous non-mammalian	2	 	 	0.000	8.21E-03	3.77E-02	curdlan,ERK,Jnk,NFkB (complex),P38 MAPK,SYK	 	6 (6)	5	 	 	 	CLEC7A,IgG1,SYK,TNF	SYK/ZAP	 	 	 	 	
+budesonide	chemical drug	1	 	 	0.000	9.06E-03	1.71E-02	budesonide	 	2 (1)	1	 	 	 	Calcineurin A,CSF3,TNF,TSC22D3	GNAI2	 	 	 	 	
+EIF5A	translation regulator	1	 	 	0.000	9.78E-03	8.30E-03	EIF5A	 	1 (1)	1	tetradecanoylphorbol acetate	 	 	BAX	 	 	 	 	 	
+SMARCD1	transcription regulator	1	 	 	0.000	9.78E-03	1.26E-02	SMARCD1	 	1 (1)	1	 	 	 	BAX	 	 	 	 	 	
+TDP2	transcription regulator	1	 	 	0.000	9.78E-03	1.99E-02	TDP2	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+ASCL1	transcription regulator	1	 	 	0.000	9.78E-03	2.87E-02	ASCL1	 	2 (1)	1	 	EGLN,NGF,PAX6,tetradecanoylphorbol acetate,tretinoin	 	NEUROD1	 	 	 	 	 	
+L-triiodothyronine	chemical - endogenous mammalian	1	 	 	0.000	9.96E-03	4.10E-02	L-triiodothyronine	 	4 (1)	1	 	propylthiouracil	 	AKR1C3,CCNE1,CDK2,Collagen(s),EGF,GH1,RARA,TNF	BAX,GDF15,GNAI2	 	 	 	 	
+SOX2-OCT4	complex	2	 	 	0.000	1.03E-02	3.50E-02	POU5F1,SOX2,SOX2-OCT4	 	4 (3)	2	 	 	 	 	 	 	 	 	 	
+FCGR3A/FCGR3B	transmembrane receptor	2	 	 	0.000	1.04E-02	2.49E-02	FCGR3A/FCGR3B,P38 MAPK,SYK,ZAP70	 	5 (4)	3	 	 	 	Ifn gamma,Interferon alpha,SYK/ZAP,TNF	SYK	 	 	 	 	
+RHOG	enzyme	2	 	 	0.000	1.05E-02	2.31E-02	AKT1,ERK,Jnk,RHOG,SYK	 	5 (5)	4	EGF,FLNA,ICAM1	PP2/AG1879 tyrosine kinase inhibitor	 	SYK	 	 	 	 	 	
+alpha2-adrenergic receptor	group	2	 	 	0.000	1.05E-02	6.40E-03	alpha2-adrenergic receptor,Focal adhesion kinase,GNAI2	 	2 (3)	2	 	 	 	Focal adhesion kinase,GNAI2	 	 	 	 	 	
+SH2D2A	other	2	 	 	0.000	1.12E-02	1.11E-02	c-Src,SH2D2A,SRC,ZAP70	 	3 (4)	3	 	 	 	c-Src	IgG1	 	 	 	 	
+SELPLG	other	2	 	 	0.000	1.13E-02	2.98E-02	ITGB2,MAPK1,SELPLG,SYK	 	5 (4)	3	 	tetradecanoylphorbol acetate	 	ITGB2,Sfk,SYK,TH17 Cytokine	 	 	 	 	 	
+prednisolone	chemical drug	1	 	 	0.000	1.17E-02	2.71E-02	prednisolone	 	3 (1)	1	 	 	 	TSC22D3	BAX,HSP90AA1,TNF,TPO	 	 	 	 	
+SB203580	chemical - kinase inhibitor	1	 	 	0.000	1.19E-02	1.88E-02	SB203580	 	4 (1)	1	 	 	 	Cr3,TCL1A	ARG1,BAX,CD47,CEACAM1,chondroitin sulfate,Collagen(s),EGF,ICAM1,Ifn gamma,IL23A,Interferon alpha,MITF,MKNK1,SMAD2,TNF,VEGFC	 	 	 	 	
+NCR2	transmembrane receptor	2	 	 	0.000	1.23E-02	1.92E-02	NCR2,SYK,ZAP70	 	3 (3)	2	Interferon alpha	 	 	SYK,TNF	 	 	 	 	 	
+MAP kinase inhibitor	chemical drug	2	 	 	0.000	1.29E-02	1.13E-02	MAP kinase inhibitor,Mapk,SLC6A3	 	2 (3)	2	 	 	 	SLC6A3	 	 	 	 	 	
+(-)-epicatechin gallate	chemical - endogenous non-mammalian	2	 	 	0.000	1.30E-02	2.23E-02	(-)-epicatechin gallate,ERK,Hif1,P38 MAPK	 	4 (4)	3	 	 	 	GDF15	 	 	 	 	 	
+RASSF1	other	1	 	 	0.000	1.35E-02	2.52E-02	RASSF1	 	2 (1)	1	 	UCN-01	 	COL4A2,GDF15,HBEGF	 	 	 	 	 	
+MYD88	other	1	 	 	0.000	1.37E-02	2.06E-02	MYD88	 	3 (1)	1	Ifn gamma,IL-1R/TLR,SYK,SYK/ZAP,TLR2/3/4/9	NUPR1	 	BATF,CSF3,GDF15,ICAM1,IL23A,MET,PKD1	ARG1,IgG1	 	 	 	 	
+DAB1	other	1	 	 	0.000	1.37E-02	2.58E-02	DAB1	 	1 (1)	1	 	LRP8,VLDLR	 	Sfk	 	 	 	 	 	
+MFAP2	other	1	 	 	0.000	1.37E-02	1.12E-02	MFAP2	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+POU3F3	transcription regulator	1	 	 	0.000	1.37E-02	3.15E-02	POU3F3	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+recombinant human endostatin	chemical drug	1	 	 	0.000	1.37E-02	8.70E-03	recombinant human endostatin	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+carbonyl cyanide p-(trifluoromethoxy)phenylhydrazone	chemical reagent	2	 	 	0.000	1.37E-02	4.89E-02	carbonyl cyanide p-(trifluoromethoxy)phenylhydrazone,MAPK1,MTOR,PRKCD	 	5 (4)	3	 	 	 	 	 	 	 	 	 	
+6-amino-4-(4-phenoxyphenylethylamino)quinazoline	chemical reagent	1	 	 	0.000	1.56E-02	1.07E-02	6-amino-4-(4-phenoxyphenylethylamino)quinazoline	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+AGRN	other	1	 	 	0.000	1.56E-02	2.61E-02	AGRN	 	1 (1)	1	MKNK1,NGF	NUPR1	 	 	 	 	 	 	 	
+Calcineurin B	group	1	 	 	0.000	1.56E-02	1.93E-02	Calcineurin B	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+HEYL	transcription regulator	1	 	 	0.000	1.56E-02	1.27E-02	HEYL	 	1 (1)	1	 	 	 	NEUROG2	 	 	 	 	 	
+LASP1	transporter	1	 	 	0.000	1.56E-02	1.81E-02	LASP1	 	1 (1)	1	CIP2A	 	 	SMAD2	PPP3CA	 	 	 	 	
+MM-401	chemical reagent	1	 	 	0.000	1.56E-02	1.78E-02	MM-401	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+EGLN	group	2	 	 	0.000	1.59E-02	4.43E-02	EGLN,EGLN1,GATA3,KLF2	 	4 (4)	4	 	 	 	 	ASCL1,VLDLR	 	 	 	 	
+GTPL714	chemical reagent	2	 	 	0.000	1.62E-02	2.86E-02	Calcineurin A,ERK,GTPL714,Jnk,P38 MAPK	 	4 (5)	4	 	 	 	 	Calcineurin A	 	 	 	 	
+MKNK1	kinase	1	 	 	0.000	1.68E-02	4.55E-02	MKNK1	 	2 (1)	1	Interferon alpha	indinavir,SB203580,tetradecanoylphorbol acetate,U0126	 	AGRN,FLNA,KLC1,SMAD2,TNF	 	 	 	 	 	
+eptifibatide	biologic drug	2	 	 	0.000	1.71E-02	4.05E-02	eptifibatide,MAPK1,SYK	 	4 (3)	2	 	 	 	SYK	TNF	 	 	 	 	
+RARA	ligand-dependent nuclear receptor	1	 	 	0.000	1.72E-02	4.79E-02	RARA	 	3 (1)	1	alitretinoin,CSF3,L-triiodothyronine	CAK,tetradecanoylphorbol acetate	 	HOXA3	TCL1A	 	 	 	 	
+HCAR1	G-protein coupled receptor	1	 	 	0.000	1.75E-02	2.00E-02	HCAR1	 	1 (1)	1	 	 	 	 	TNF	 	 	 	 	
+INPP4B	phosphatase	1	 	 	0.000	1.75E-02	3.09E-02	INPP4B	 	1 (1)	1	MITF	 	 	 	 	 	 	 	 	
+MNX1	transcription regulator	1	 	 	0.000	1.75E-02	2.84E-02	MNX1	 	1 (1)	1	 	 	 	MET	 	 	 	 	 	
+CDCP1	other	2	 	 	0.000	1.76E-02	2.93E-02	CDCP1,Focal adhesion kinase,P38 MAPK,SRC	 	4 (4)	3	 	 	 	 	Focal adhesion kinase	 	 	 	 	
+MAGT1	enzyme	2	 	 	0.000	1.82E-02	2.36E-02	MAGT1,PRKCD,SYK	 	3 (3)	2	 	 	 	 	SYK	 	 	 	 	
+SU6657	chemical - kinase inhibitor	2	 	 	0.000	1.88E-02	4.65E-02	MAPK1,MET,SRC,SU6657	 	4 (4)	3	 	 	 	 	MET	 	 	 	 	
+CD72	transmembrane receptor	2	 	 	0.000	1.89E-02	3.76E-02	CD72,ERK,Jnk,SYK	 	4 (4)	3	 	 	 	 	CD79A,SYK	 	 	 	 	
+SYK	kinase	1	 	 	0.000	1.91E-02	2.25E-02	SYK	 	2 (1)	1	Alborhagin,APBB3,CD47,CD79A,CLEC1B,CLEC7A,Collagen(s),Cr3,CSF3,curdlan,EFHD2,EGF,eptifibatide,Fc receptor,FCAR,FCGR2C,Fcr,FLNA,ITGA2,ITGB2,MAC,Muscarinic cholinergic receptor,NCR2,pubchem compound 57554513,RHOG,SAICAR,SELPLG,Sfk,SH3BP2,SYK/ZAP,tetradecanoylphorbol acetate,VWF	ACP1,CD72,CEACAM1,cerdulatinib,dasatinib,entospletinib,ethylene glycol tetraacetic acid,FCGR3A/FCGR3B,ibrutinib,lanraplenib,MAGT1,R-348,U0126	 	CDK2,ICAM1,MYD88	ITGB4,TSC22D3	 	 	 	 	
+LCOR	transcription regulator	1	 	 	0.000	1.95E-02	1.92E-02	LCOR	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+LINC01139	other	1	 	 	0.000	1.95E-02	1.94E-02	LINC01139	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+PA2G4	transcription regulator	1	 	 	0.000	1.95E-02	2.59E-02	PA2G4	 	1 (1)	1	 	 	 	 	GDF15	 	 	 	 	
+POU3F2	transcription regulator	1	 	 	0.000	1.95E-02	3.66E-02	POU3F2	 	1 (1)	1	TNF	 	 	NEUROD1	 	 	 	 	 	
+VEGFC	growth factor	1	 	 	0.000	1.95E-02	2.42E-02	VEGFC	 	1 (1)	1	EGF,SMAD2,SYK/ZAP,tetradecanoylphorbol acetate,TNF,tretinoin	CEACAM1,SB203580	 	 	 	 	 	 	 	
+androstenediol	chemical - endogenous mammalian	1	 	 	0.000	1.95E-02	8.40E-03	androstenediol	 	1 (1)	1	 	 	 	BAX,estrone,Interferon alpha	 	 	 	 	 	
+mGluR	group	1	 	 	0.000	1.95E-02	2.84E-02	mGluR	 	1 (1)	1	 	 	 	FMR1	 	 	 	 	 	
+PRDM1	transcription regulator	2	 	 	0.000	1.99E-02	3.77E-02	PDCD1,PRDM1	 	3 (2)	2	 	LILRB1	 	 	CD79A,CSF3,IgG1,SYK/ZAP	 	 	 	 	
+opioid	chemical drug	2	 	 	0.000	2.11E-02	2.23E-02	Mapk,MAPT,opioid	 	2 (3)	2	 	 	 	 	 	 	 	 	 	
+COL4A2	other	2	 	 	0.000	2.13E-02	3.29E-02	COL4A2,Focal adhesion kinase,MTOR	 	3 (3)	2	RASSF1	 	 	 	Focal adhesion kinase	 	 	 	 	
+NCKAP1L	other	1	 	 	0.000	2.14E-02	2.83E-02	NCKAP1L	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+NR2E1	ligand-dependent nuclear receptor	1	 	 	0.000	2.14E-02	2.59E-02	NR2E1	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+VASP	other	1	 	 	0.000	2.14E-02	7.70E-03	VASP	 	1 (1)	1	CD79A,hydrogen sulfide,tetradecanoylphorbol acetate	CST5,Ro31-8220	 	 	ARG1,ITGB2,Retnla	 	 	 	 	
+putrescine	chemical - endogenous mammalian	1	 	 	0.000	2.14E-02	1.79E-02	putrescine	 	1 (1)	1	ARG1,tetradecanoylphorbol acetate	 	 	CDK2	 	 	 	 	 	
+CDON	other	2	 	 	0.000	2.16E-02	4.02E-02	CDON,NEUROG1,NFATC3,P38 MAPK	 	4 (4)	3	 	 	 	 	 	 	 	 	 	
+Pam3-Cys-Ser-Lys4	chemical reagent	1	 	 	0.000	2.18E-02	1.83E-02	Pam3-Cys-Ser-Lys4	 	2 (1)	1	 	 	 	BATF,calpain,CSF3,ICAM1,TNF	 	 	 	 	 	
+Retnla	other	2	 	 	0.000	2.19E-02	3.85E-02	Calcineurin A,ERK,Jnk,P38 MAPK,Retnla	 	4 (5)	4	PD 0325901,tetradecanoylphorbol acetate,U0126	VASP	 	Calcineurin A,IL23A	IgG1	 	 	 	 	
+CA3	enzyme	2	 	 	0.000	2.29E-02	1.11E-02	CA3,Focal adhesion kinase,SRC	 	2 (3)	2	 	 	 	Focal adhesion kinase	 	 	 	 	 	
+HMGA2	enzyme	1	 	 	0.000	2.33E-02	1.17E-02	HMGA2	 	1 (1)	1	 	tetradecanoylphorbol acetate	 	 	 	 	 	 	 	
+ITGAL	transmembrane receptor	1	 	 	0.000	2.33E-02	1.42E-02	ITGAL	 	1 (1)	1	GNAI2,ICAM1,resveratrol,tetradecanoylphorbol acetate,tretinoin	 	 	 	 	 	 	 	 	
+PPP3CB	phosphatase	1	 	 	0.000	2.33E-02	2.52E-02	PPP3CB	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+miR-148a-3p (and other miRNAs w/seed CAGUGCA)	mature microRNA	1	 	 	0.000	2.33E-02	2.98E-02	miR-148a-3p (and other miRNAs w/seed CAGUGCA)	 	1 (1)	1	 	 	 	 	TNF	 	 	 	 	
+RV 538	chemical reagent	1	 	 	0.000	2.52E-02	1.41E-02	RV 538	 	1 (1)	1	 	 	 	 	ICAM1,TNF	 	 	 	 	
+SLC6A3	transporter	1	 	 	0.000	2.52E-02	4.23E-02	SLC6A3	 	1 (1)	1	MAP kinase inhibitor	tetradecanoylphorbol acetate	 	 	 	 	 	 	 	
+DSG3	other	2	 	 	0.000	2.54E-02	2.81E-02	DSG3,P38 MAPK,SRC (family)	 	3 (3)	2	 	tetradecanoylphorbol acetate	 	 	 	 	 	 	 	
+NAB2	transcription regulator	2	 	 	0.000	2.54E-02	3.64E-02	EGR1,EGR2,F3,NAB2	 	3 (4)	3	tetradecanoylphorbol acetate	 	 	 	 	 	 	 	 	
+bosutinib	chemical drug	2	 	 	0.000	2.54E-02	2.02E-02	bosutinib,c-Src,SRC,SRC (family)	 	3 (4)	3	 	 	 	 	c-Src,CCNE1,LYN,Sfk	 	 	 	 	
+BET	group	1	 	 	0.000	2.71E-02	4.75E-02	BET	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+chondroitin sulfate	chemical - endogenous mammalian	2	 	 	0.000	2.83E-02	3.87E-02	chondroitin sulfate,MAPT,P38 MAPK	 	3 (3)	2	 	SB203580	 	 	 	 	 	 	 	
+hydrogen sulfide	chemical - endogenous mammalian	1	 	 	0.000	2.91E-02	1.06E-02	hydrogen sulfide	 	1 (1)	1	 	 	 	VASP	lead	 	 	 	 	
+mir-290	microRNA	1	 	 	0.000	2.91E-02	2.80E-02	mir-290	 	1 (1)	1	 	TNF	 	 	CDK2	 	 	 	 	
+ARG1	enzyme	1	 	 	0.000	3.10E-02	2.42E-02	ARG1	 	1 (1)	1	CSF3,tetradecanoylphorbol acetate,tretinoin	MYD88,SB203580,VASP	 	putrescine	 	 	 	 	 	
+CREB3	transcription regulator	1	 	 	0.000	3.10E-02	3.16E-02	CREB3	 	1 (1)	1	TNF	 	 	 	 	 	 	 	 	
+NFATC4	transcription regulator	1	 	 	0.000	3.10E-02	2.25E-02	NFATC4	 	1 (1)	1	FTO	 	 	TNF	 	 	 	 	 	
+SYN1	transporter	2	 	 	0.000	3.25E-02	1.89E-02	SRC,SRC (family),SYN1	 	2 (3)	2	NGF,tretinoin	calcimycin,FMR1	 	 	 	 	 	 	 	
+IL1RAP	transmembrane receptor	1	 	 	0.000	3.29E-02	1.11E-02	IL1RAP	 	1 (1)	1	 	 	 	TNF	 	 	 	 	 	
+c-Src	group	1	 	 	0.000	3.29E-02	3.71E-02	c-Src	 	1 (1)	1	CEACAM1,EGF,HSP90AA1,SH2D2A	bosutinib,ganglioside GM2,PP2/AG1879 tyrosine kinase inhibitor,resveratrol,saracatinib	 	CBL,MET	 	 	 	 	 	
+selumetinib	chemical drug	1	 	 	0.000	3.29E-02	1.57E-02	selumetinib	 	1 (1)	1	 	 	 	 	 	 	 	 	 	
+C1GALT1	enzyme	2	 	 	0.000	3.29E-02	2.29E-02	C1GALT1,ITGB2,MET	 	2 (3)	2	 	 	 	ITGB2,MET,Sfk	 	 	 	 	 	
+complement receptor	complex	2	 	 	0.000	3.46E-02	2.34E-02	complement receptor,Focal adhesion kinase,ITGB2	 	2 (3)	2	 	 	 	Focal adhesion kinase	 	 	 	 	 	
+POU2F1	transcription regulator	1	 	 	0.000	3.48E-02	3.31E-02	POU2F1	 	1 (1)	1	TNF,tretinoin	 	 	SMAD2	 	 	 	 	 	
+IgG1	complex	1	 	 	0.000	3.67E-02	2.41E-02	IgG1	 	1 (1)	1	BATF,curdlan,SH3BP2	MYD88,PRDM1,Retnla,SH2D2A	 	BAX	 	 	 	 	 	
+SRA1	transcription regulator	1	 	 	0.000	3.86E-02	2.91E-02	SRA1	 	1 (1)	1	TNF	 	 	DDX5	 	 	 	 	 	
+TRIM21	enzyme	1	 	 	0.000	3.86E-02	2.28E-02	TRIM21	 	1 (1)	1	Interferon alpha,MET	 	 	 	TNF	 	 	 	 	
+salvin	chemical toxicant	1	 	 	0.000	3.86E-02	2.22E-02	salvin	 	1 (1)	1	 	 	 	CCNE1	 	 	 	 	 	
+BTRC	enzyme	1	 	 	0.000	4.04E-02	4.78E-02	BTRC	 	1 (1)	1	TNF	 	 	 	 	 	 	 	 	
+PPP3CA	phosphatase	1	 	 	0.000	4.04E-02	3.34E-02	PPP3CA	 	1 (1)	1	 	LASP1	 	 	ITGB4	 	 	 	 	
+calpain	complex	1	 	 	0.000	4.04E-02	2.43E-02	calpain	 	1 (1)	1	calcimycin,EGF,Pam3-Cys-Ser-Lys4,tetradecanoylphorbol acetate,TNF	ethylene glycol tetraacetic acid,FLNA,SYK/ZAP,U0126	 	CDK2	 	 	 	 	 	
+ibrutinib	chemical drug	1	 	 	0.000	4.04E-02	2.25E-02	ibrutinib	 	1 (1)	1	 	 	 	 	SYK,TNF	 	 	 	 	
+U0126	chemical - kinase inhibitor	1	 	 	0.000	4.07E-02	4.39E-02	U0126	 	3 (1)	1	 	 	 	Focal adhesion kinase,Retnla,TSC22D3	BAX,calpain,CCNE1,CDK2,CSF3,Cyclin D,EGF,FLNA,FMR1,HBEGF,ICAM1,IL23A,MET,MKNK1,PAX6,SMAD2,SYK,TNF	 	 	 	 	
+saracatinib	chemical drug	2	 	 	0.000	4.12E-02	2.43E-02	saracatinib,SRC,SRC (family)	 	2 (3)	2	 	 	 	 	c-Src,Sfk	 	 	 	 	
+TPX-0022	chemical drug	2	 	 	0.000	4.16E-02	3.67E-02	MET,SRC (family),TPX-0022	 	2 (3)	2	 	 	 	 	MET	 	 	 	 	
+BATF	transcription regulator	1	 	 	0.000	4.23E-02	3.49E-02	BATF	 	1 (1)	1	CSF3,MYD88,Pam3-Cys-Ser-Lys4	infliximab	 	IgG1	 	 	 	 	 	
+ETV1	transcription regulator	1	 	 	0.000	4.23E-02	3.08E-02	ETV1	 	1 (1)	1	BAX,tretinoin	NUPR1,PD 0325901	 	HPSE,MITF	 	 	 	 	 	
+LILRB1	transmembrane receptor	1	 	 	0.000	4.23E-02	3.80E-02	LILRB1	 	1 (1)	1	 	 	 	 	Focal adhesion kinase,PRDM1,TNF	 	 	 	 	
+UCN-01	chemical drug	1	 	 	0.000	4.61E-02	2.92E-02	UCN-01	 	1 (1)	1	 	 	 	BAX,CCNE1	CDK2,RASSF1	 	 	 	 	
+Calcineurin A	group	1	 	 	0.000	4.80E-02	4.18E-02	Calcineurin A	 	1 (1)	1	budesonide,Retnla,TNF	GTPL714	 	 	 	 	 	 	 	
+lead	chemical toxicant	1	 	 	0.000	4.80E-02	4.99E-02	lead	 	1 (1)	1	 	hydrogen sulfide	 	 	 	 	 	 	 	
+Focal adhesion kinase	group	1	 	 	0.000	5.17E-02	4.50E-02	Focal adhesion kinase	 	1 (1)	1	alpha2-adrenergic receptor,barium,CA3,Collagen(s),complement receptor,EGF,Fc receptor,ITGA2,ITGB6,MET,Muscarinic cholinergic receptor,Sfk,tetradecanoylphorbol acetate,TNF,tretinoin,U0126,VTN	ACP1,CDCP1,COL4A2,GDF15,LILRB1,PP2/AG1879 tyrosine kinase inhibitor	 	ICAM1,ITGB2	BAX,NEUROD1	 	 	 	 	
+GNAI2	enzyme	1	 	 	0.000	5.17E-02	3.13E-02	GNAI2	 	1 (1)	1	alpha2-adrenergic receptor,tetradecanoylphorbol acetate	budesonide,L-triiodothyronine	 	ITGAL,SMAD2	 	 	 	 	 	
+VTN	other	1	 	 	0.000	5.17E-02	2.45E-02	VTN	 	1 (1)	1	 	 	 	CBL,Focal adhesion kinase	MAC,TNF	 	 	 	 	
+RIPK1	kinase	1	 	 	0.000	6.28E-02	3.05E-02	RIPK1	 	1 (1)	1	 	CBL	 	 	 	 	 	 	 	
+KLC1	other	2	 	 	0.000	6.34E-02	4.84E-02	Jnk,KLC1,MAPT	 	2 (3)	2	MKNK1	 	 	 	 	 	 	 	 	
+ICAM1	transmembrane receptor	1	 	 	0.000	7.20E-02	3.55E-02	ICAM1	 	1 (1)	1	calcimycin,CEACAM1,Focal adhesion kinase,Ifn gamma,Interferon alpha,MYD88,palmitoyl-Cys((RS)-2,3-di(palmitoyloxy)-propyl)-Ala-Gly-OH,Pam3-Cys-Ser-Lys4,S1PR1,Sfk,SYK,tetradecanoylphorbol acetate,TLR2/3/4/9,tretinoin	CSF3,EGF,Mn2+,PP2/AG1879 tyrosine kinase inhibitor,resveratrol,Ro31-8220,RV 538,SB203580,TSC22D3,U0126	 	ITGAL,ITGB2,RHOG	 	 	 	 	 	
+HBEGF	growth factor	1	 	 	0.000	7.75E-02	4.75E-02	HBEGF	 	1 (1)	1	EGF,MET,NUPR1,RASSF1,tetradecanoylphorbol acetate,TNF,tretinoin	PKD1,U0126	 	 	 	 	 	 	 	
+ITGB2	transmembrane receptor	1	 	 	0.000	8.29E-02	3.02E-02	ITGB2	 	1 (1)	1	C1GALT1,Focal adhesion kinase,ICAM1,SELPLG,tetradecanoylphorbol acetate,tretinoin	GDF15,VASP	 	BAX,Sfk,SYK	 	 	 	 	 	
+Ro31-8220	chemical - kinase inhibitor	1	 	 	0.000	8.47E-02	3.90E-02	Ro31-8220	 	1 (1)	1	 	 	 	 	Cyclin D,ICAM1,VASP	 	 	 	 	
+TSC22D3	transcription regulator	1	 	 	0.000	8.83E-02	3.04E-02	TSC22D3	 	1 (1)	1	budesonide,prednisolone,tretinoin,U0126	SYK,tetradecanoylphorbol acetate	 	 	ICAM1	 	 	 	 	
+
+Diseases and Bio Functions for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	development	Development of pons	7.29E-05	 	 	 	 	CDK5R1,MAP1B	2	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of anus	9.71E-05	 	 	 	 	DACT1,SALL4	2	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	gastrointestinal adenocarcinoma	Gastrointestinal adenocarcinoma	1.60E-04	 	 	 	 	SALL4,PRKCQ,RGS17,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ACTR3B,UBASH3B,GSE1,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	36	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	development	Development of digestive organ tumor	2.18E-04	 	 	 	 	SALL4,RGS17,PIK3R5,TFPI2,TMEM163,B3GAT1,DEPTOR,CHKA,LINGO2,DIP2A,ATP9A,QPCT,CHD9,TMPRSS2,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ESRP1	26	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	morphology	Morphology of neurons	2.74E-04	 	 	 	 	ATP13A2,CDK5R1,DACT1,PRKCQ,SALL4,MAP1B,DPYSL5,NKX2-2	8	
+Organismal Injury and Abnormalities	fistula	Fistula	3.13E-04	 	 	 	 	SALL4,ITGA4	2	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long term synaptic depression	Long term synaptic depression of synapse	3.43E-04	 	 	 	 	CDK5R1,MAP1B,DPYSL5	3	
+Cell Morphology, Nervous System Development and Function, Neurological Disease, Tissue Morphology	abnormal morphology	Abnormal morphology of neurons	3.92E-04	 	 	 	 	ATP13A2,CDK5R1,DACT1,PRKCQ,SALL4,MAP1B,NKX2-2	7	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	adhesion	Adhesion of PBMCs	4.12E-04	 	 	 	 	ITGA4,DEPTOR	2	
+Cancer, Organismal Injury and Abnormalities	development	Development of carcinoma	4.71E-04	 	 	 	 	SALL4,PRKCQ,RGS17,PIK3R5,TFPI2,TMEM163,B3GAT1,DEPTOR,CHKA,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	32	
+Cancer, Organismal Injury and Abnormalities	abdominal adenocarcinoma	Abdominal adenocarcinoma	4.97E-04	 	 	 	 	SALL4,PRKCQ,RGS17,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ACTR3B,UBASH3B,GSE1,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	38	
+Cancer, Organismal Injury and Abnormalities	incidence	Incidence of tumor	6.01E-04	 	 	 	 	SALL4,PRKCQ,RGS17,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	33	
+Nervous System Development and Function, Organ Morphology, Organismal Development	size	Size of corpus callosum	7.17E-04	 	 	 	 	CDK5R1,MAP1B	2	
+Behavior	spatial learning	Spatial learning	8.24E-04	 	 	 	 	ATP13A2,CDK5R1,QPCT,B3GAT1	4	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of hippocampus layer	8.62E-04	 	 	 	 	CDK5R1,MAP1B	2	
+Cellular Movement	migration	Migration of cells	8.74E-04	 	 	 	 	PRKCQ,PIK3R5,B3GAT1,TFPI2,DEPTOR,SLC16A3,DIP2A,GSE1,DMTN,QPCT,CDK5R1,MAP1B,ITGA4,IL17RB,ESRP1	15	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Hypersensitivity Response, Immune Cell Trafficking, Inflammatory Response	adhesion	Adhesion of mast cells	9.39E-04	 	 	 	 	PRKCQ,ITGA4	2	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	large intestine adenocarcinoma	Large intestine adenocarcinoma	9.91E-04	 	 	 	 	SALL4,PRKCQ,PIK3R5,TMEM163,B3GAT1,TFPI2,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ACTR3B,UBASH3B,GSE1,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	34	
+Embryonic Development, Nervous System Development and Function, Organ Development	stratification	Stratification of cerebral cortex	1.02E-03	 	 	 	 	CDK5R1,MAP1B	2	
+Cancer, Organismal Injury and Abnormalities	advanced malignant tumor	Advanced malignant tumor	1.06E-03	 	 	 	 	GSE1,KIF1B,QPCT,CST7,TMPRSS2,PIK3R5,TFPI2,ITGA4,ESRP1,SLC16A3	10	
+Developmental Disorder	ectopia	Ectopia	1.19E-03	 	 	 	 	CDK5R1,MAP1B	2	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	colorectal adenocarcinoma	Colorectal adenocarcinoma	1.25E-03	 	 	 	 	SALL4,ACTR3B,PIK3R5,TMEM163,B3GAT1,LINGO2,UBASH3B,DIP2A,GSE1,ATP9A,KIF1B,QPCT,ATP10B,CHD9,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,IL17RB,ESRP1,NKX2-2	22	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	endometrioid endometrial adenocarcinoma	Endometrioid endometrial adenocarcinoma	1.30E-03	 	 	 	 	SALL4,PRKCQ,LINGO2,ATP9A,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	15	
+Cancer, Organismal Injury and Abnormalities	head and neck neoplasia	Head and neck tumor	1.32E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,TTC9,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	36	
+Cancer, Organismal Injury and Abnormalities	carcinoma	Carcinoma	1.38E-03	 	 	 	 	KLF15,SALL4,PRKCQ,RGS17,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,TTC9,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	41	
+Cancer, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	hepatobiliary system cancer	Hepatobiliary system cancer	1.57E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,TFPI2,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	23	
+Cell-To-Cell Signaling and Interaction, Connective Tissue Development and Function	binding	Binding of fibroblast cell lines	1.63E-03	 	 	 	 	DMTN,CDK5R1,ITGA4	3	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	colorectal disorder	Colorectal disorder	1.63E-03	 	 	 	 	SALL4,PIK3R5,TFPI2,TMEM163,B3GAT1,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,TMPRSS2,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ESRP1	25	
+Nervous System Development and Function	morphology	Morphology of nervous system	1.66E-03	 	 	 	 	ATP13A2,KIF1B,CDK5R1,DACT1,SALL4,PRKCQ,MAP1B,DPYSL5,NKX2-2	9	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	outgrowth	Outgrowth of axons	1.74E-03	 	 	 	 	CDK5R1,KIF1B,MAP1B	3	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Hematological System Development and Function, Immune Cell Trafficking	cell-cell adhesion	Cell-cell adhesion of leukocytes	1.78E-03	 	 	 	 	ITGA4,DEPTOR	2	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance	extension	Extension of cellular protrusions	1.83E-03	 	 	 	 	CDK5R1,MAP1B,ITGA4,DPYSL5	4	
+Cancer, Organismal Injury and Abnormalities	breast or colorectal cancer	Breast or colorectal cancer	1.85E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,B3GAT1,DEPTOR,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,TMPRSS2,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ESRP1	27	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of hippocampus	1.87E-03	 	 	 	 	CDK5R1,KIF1B,MAP1B	3	
+Cancer, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	cancer	Liver cancer	1.87E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,TFPI2,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B	22	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of cloaca	1.89E-03	 	 	 	 	DACT1	1	
+Cell-To-Cell Signaling and Interaction	adhesion	Adhesion of bronchial epithelial cells	1.89E-03	 	 	 	 	ITGA4	1	
+Cell Cycle	G0/G1 phase transition	Arrest in G0/G1 phase transition of peripheral blood lymphocytes	1.89E-03	 	 	 	 	CHKA	1	
+Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities	ataxia-oculomotor apraxia 3	Ataxia-oculomotor apraxia 3	1.89E-03	 	 	 	 	PIK3R5	1	
+Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	Okihiro syndrome	Autosomal dominant Okihiro syndrome	1.89E-03	 	 	 	 	SALL4	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	autosomal recessive spastic paraplegia type 78	Autosomal recessive spastic paraplegia type 78	1.89E-03	 	 	 	 	ATP13A2	1	
+Cell Cycle, Gene Expression	binding	Binding of P1 element	1.89E-03	 	 	 	 	PRKCQ	1	
+Cell Cycle, Gene Expression	binding	Binding of positive regulatory domain I	1.89E-03	 	 	 	 	PRKCQ	1	
+Connective Tissue Disorders, Developmental Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	caudal agenesis	Caudal agenesis	1.89E-03	 	 	 	 	DACT1	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	cell-cell adhesion	Cell-cell adhesion of PBMCs	1.89E-03	 	 	 	 	DEPTOR	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	Charcot-Marie-Tooth disease type 2A1	Charcot-Marie-Tooth disease type 2A1	1.89E-03	 	 	 	 	KIF1B	1	
+Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response, Tissue Development	accumulation	Delay in accumulation of Th1 cells	1.89E-03	 	 	 	 	PRKCQ	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	differentiation	Delay in differentiation of Th1 cells	1.89E-03	 	 	 	 	PRKCQ	1	
+Cell Morphology, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	cell spreading	Delay in initiation of cell spreading of neutrophils	1.89E-03	 	 	 	 	PRKCQ	1	
+Cellular Development, Cellular Growth and Proliferation, Organ Development, Skeletal and Muscular System Development and Function, Tissue Development	growth	Delay in initiation of growth of myofiber	1.89E-03	 	 	 	 	PRKCQ	1	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	diameter	Diameter of primary dendrite	1.89E-03	 	 	 	 	DPYSL5	1	
+Cellular Response to Therapeutics	drug resistance	Drug resistance of myeloma cell lines	1.89E-03	 	 	 	 	ITGA4	1	
+Embryonic Development, Organismal Development, Tissue Development	formation	Formation of hindgut	1.89E-03	 	 	 	 	DACT1	1	
+Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	IVIC syndrome	IVIC syndrome	1.89E-03	 	 	 	 	SALL4	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Neurological Disease, Organismal Injury and Abnormalities	lipofuscinosis	Lipofuscinosis of striatum	1.89E-03	 	 	 	 	ATP13A2	1	
+Cellular Function and Maintenance, Cellular Movement, Nervous System Development and Function	localization	Localization of dentate granule cells	1.89E-03	 	 	 	 	CDK5R1	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Organismal Development, Tissue Development	morphogenesis	Morphogenesis of growth cone	1.89E-03	 	 	 	 	MAP1B	1	
+Nervous System Development and Function, Organ Morphology, Organismal Development	morphology	Morphology of motor cortex	1.89E-03	 	 	 	 	CDK5R1	1	
+Cellular Assembly and Organization, Nervous System Development and Function	origination	Origination of axons	1.89E-03	 	 	 	 	CDK5R1	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	Parkinson disease 9	Parkinson disease 9	1.89E-03	 	 	 	 	ATP13A2	1	
+Cardiovascular Disease, Developmental Disorder, Gastrointestinal Disease, Hereditary Disorder, Organismal Injury and Abnormalities, Respiratory Disease	primary ciliary dyskinesia type 28 with situs inversus	Primary ciliary dyskinesia type 28 with situs inversus	1.89E-03	 	 	 	 	SPAG1	1	
+Developmental Disorder, Hereditary Disorder, Organismal Injury and Abnormalities, Respiratory Disease	primary ciliary dyskinesia type 28 without situs inversus	Primary ciliary dyskinesia type 28 without situs inversus	1.89E-03	 	 	 	 	SPAG1	1	
+Nervous System Development and Function, Organ Morphology	reorganization	Reorganization of molecular layer	1.89E-03	 	 	 	 	CDK5R1	1	
+Inflammatory Disease, Neurological Disease, Skeletal and Muscular Disorders	relapsing-remitting multiple sclerosis	Severe relapsing-remitting multiple sclerosis	1.89E-03	 	 	 	 	ITGA4	1	
+Cell Morphology, Cellular Development, Nervous System Development and Function, Organ Morphology, Tissue Development	sprouting	Sprouting of mossy fiber cells	1.89E-03	 	 	 	 	CDK5R1	1	
+Auditory Disease, Developmental Disorder, Hereditary Disorder, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	Townes-Brocks syndrome 2	Townes-Brocks syndrome 2	1.89E-03	 	 	 	 	DACT1	1	
+Developmental Disorder, Endocrine System Disorders, Hereditary Disorder, Organismal Injury and Abnormalities, Reproductive System Disease	X-linked congenital bilateral aplasia of vas deferens	X-linked congenital bilateral aplasia of vas deferens	1.89E-03	 	 	 	 	ADGRG2	1	
+Neurological Disease	neurological disorder	Progressive neurological disorder	1.89E-03	 	 	 	 	ATP13A2,KIF1B,QPCT,CDK5R1,MAP1B,ITGA4,FRMD4B,GRIA4,SLC16A3	9	
+Nervous System Development and Function, Neurological Disease	abnormal morphology	Abnormal morphology of nervous system	1.98E-03	 	 	 	 	ATP13A2,CDK5R1,KIF1B,DACT1,PRKCQ,SALL4,MAP1B,NKX2-2	8	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	endometrial cancer	Endometrial cancer	2.02E-03	 	 	 	 	SALL4,PRKCQ,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	17	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	colorectal cancer	Colorectal cancer	2.05E-03	 	 	 	 	SALL4,ACTR3B,PIK3R5,TFPI2,TMEM163,B3GAT1,SLC16A3,LINGO2,UBASH3B,DIP2A,GSE1,ATP9A,KIF1B,QPCT,ATP10B,CHD9,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,IL17RB,ESRP1,NKX2-2	24	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of commissure	2.11E-03	 	 	 	 	KIF1B,MAP1B	2	
+Cancer, Organismal Injury and Abnormalities	metastasis	Secondary tumor	2.18E-03	 	 	 	 	GSE1,KIF1B,QPCT,CST7,TMPRSS2,PIK3R5,ITGA4,ESRP1,SLC16A3	9	
+Behavior, Nervous System Development and Function	spatial memory	Spatial memory	2.26E-03	 	 	 	 	CDK5R1,B3GAT1,GRIA4	3	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	development	Development of genital tumor	2.45E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	21	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	hepatobiliary carcinoma	Hepatobiliary carcinoma	2.54E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	22	
+Neurological Disease, Organismal Injury and Abnormalities	progressive encephalopathy	Progressive encephalopathy	2.55E-03	 	 	 	 	ATP13A2,KIF1B,QPCT,CDK5R1,MAP1B,FRMD4B,GRIA4,SLC16A3	8	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	uterine tumor	Uterine tumor	2.78E-03	 	 	 	 	SALL4,PRKCQ,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	18	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	endometrial carcinoma	Endometrial carcinoma	2.82E-03	 	 	 	 	SALL4,PRKCQ,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	16	
+Cancer, Endocrine System Disorders, Organismal Injury and Abnormalities	nonpituitary endocrine tumor	Nonpituitary endocrine tumor	2.84E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,UBASH3B,GSE1,TTC9,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	34	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell rolling	Cell rolling of granulocytes	2.87E-03	 	 	 	 	PRKCQ,ITGA4	2	
+Cancer, Organismal Injury and Abnormalities	neck neoplasm	Neck neoplasm	2.91E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,B3GAT1,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,UBASH3B,GSE1,TTC9,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	34	
+Cancer, Gastrointestinal Disease, Hepatic System Disease, Organismal Injury and Abnormalities	liver carcinoma	Liver carcinoma	2.95E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B	21	
+Organismal Injury and Abnormalities, Reproductive System Disease	endometrioma	Endometrioma	3.00E-03	 	 	 	 	PRKCQ,SLC16A3	2	
+Cellular Assembly and Organization	formation	Formation of actin bundles	3.00E-03	 	 	 	 	DMTN,CDK5R1	2	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction	binding	Binding of vascular endothelial cells	3.14E-03	 	 	 	 	DIP2A,ITGA4,DEPTOR	3	
+Developmental Disorder, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Renal and Urological Disease, Renal and Urological System Development and Function	agenesis	Agenesis of kidney	3.14E-03	 	 	 	 	DACT1,SALL4	2	
+Neurological Disease, Organismal Injury and Abnormalities	gliosis	Gliosis of brain	3.14E-03	 	 	 	 	ATP13A2,QPCT	2	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of brainstem	3.28E-03	 	 	 	 	KIF1B,MAP1B	2	
+Cell Signaling, Post-Translational Modification	activation	Activation of Protein kinase	3.33E-03	 	 	 	 	CDK5R1,DEPTOR,SH3BP5,UBASH3B	4	
+Cellular Movement	migration	Migration of lymphoma cell lines	3.58E-03	 	 	 	 	PRKCQ,ITGA4	2	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	outgrowth	Outgrowth of neurites	3.64E-03	 	 	 	 	CDK5R1,KIF1B,MAP1B,ITGA4,DPYSL5	5	
+Cancer, Organismal Injury and Abnormalities	cancer	Cancer of secretory structure	3.73E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,UBASH3B,GSE1,TTC9,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	36	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	abnormal morphology	Abnormal morphology of blind uterus	3.78E-03	 	 	 	 	DACT1	1	
+Gastrointestinal Disease, Immunological Disease, Organismal Injury and Abnormalities	acute intestinal graft versus-host disease	Acute intestinal graft versus-host disease	3.78E-03	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	aggregation	Aggregation of cortical neurons	3.78E-03	 	 	 	 	CDK5R1	1	
+Cell-mediated Immune Response, Hematological System Development and Function	anergy	Anergy of CD8+ T lymphocyte	3.78E-03	 	 	 	 	PRKCQ	1	
+Cell-To-Cell Signaling and Interaction, Inflammatory Response	antibody-dependent cell-mediated cytotoxicity	Antibody-dependent cell-mediated cytotoxicity of lymph node cells	3.78E-03	 	 	 	 	ITGA4	1	
+Cancer, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	neuroblastoma	Autosomal dominant neuroblastoma	3.78E-03	 	 	 	 	KIF1B	1	
+Cell Cycle, Gene Expression	binding	Binding of CD28RE/AP response element	3.78E-03	 	 	 	 	PRKCQ	1	
+Cell Signaling, Nucleic Acid Metabolism, Small Molecule Biochemistry	binding	Binding of cyclic AMP	3.78E-03	 	 	 	 	MAP1B	1	
+Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	chronic pouchitis	Chronic pouchitis	3.78E-03	 	 	 	 	ITGA4	1	
+Developmental Disorder, Hereditary Disorder, Neurological Disease, Ophthalmic Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	congenital fibrosis of extraocular muscles type 1	Congenital fibrosis of extraocular muscles type 1	3.78E-03	 	 	 	 	MAP1B	1	
+Connective Tissue Disorders, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	destruction	Destruction of knee joint	3.78E-03	 	 	 	 	PRKCQ	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	development	Development of pontine nucleus	3.78E-03	 	 	 	 	MAP1B	1	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	development	Development of serotonergic neurons	3.78E-03	 	 	 	 	NKX2-2	1	
+Neurological Disease, Organismal Injury and Abnormalities	dysplasia	Dysplasia of neurons	3.78E-03	 	 	 	 	CDK5R1	1	
+Neurological Disease, Organismal Injury and Abnormalities	gliosis	Gliosis of mesencephalon	3.78E-03	 	 	 	 	ATP13A2	1	
+Neurological Disease, Organismal Injury and Abnormalities	gliosis	Gliosis of striatum	3.78E-03	 	 	 	 	ATP13A2	1	
+Inflammatory Disease, Neurological Disease, Skeletal and Muscular Disorders	relapsing-remitting multiple sclerosis	Highly active disease stage relapsing-remitting multiple sclerosis	3.78E-03	 	 	 	 	ITGA4	1	
+Developmental Disorder, Neurological Disease, Organismal Injury and Abnormalities	hypoplasia	Hypoplasia of red nucleus	3.78E-03	 	 	 	 	NKX2-2	1	
+Cellular Development	differentiation	Initiation of differentiation of neuroblastoma cell lines	3.78E-03	 	 	 	 	CHKA	1	
+Cardiovascular System Development and Function, Cell Morphology, Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	innervation	Innervation of heart	3.78E-03	 	 	 	 	ITGA4	1	
+Developmental Disorder, Hereditary Disorder, Metabolic Disease, Neurological Disease, Organismal Injury and Abnormalities	lipofuscinosis	Lipofuscinosis of hippocampus	3.78E-03	 	 	 	 	ATP13A2	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long term synaptic depression	Long term synaptic depression of excitatory synapses	3.78E-03	 	 	 	 	DPYSL5	1	
+Cellular Movement	migration	Migration of cord blood cells	3.78E-03	 	 	 	 	ITGA4	1	
+Cell Morphology, Nervous System Development and Function, Organ Morphology, Organismal Development, Tissue Morphology	morphology	Morphology of dentate granule cells	3.78E-03	 	 	 	 	CDK5R1	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	nocturnal frontal lobe epilepsy type 5	Nocturnal frontal lobe epilepsy type 5	3.78E-03	 	 	 	 	SPAG1	1	
+Small Molecule Biochemistry	phosphorylation	Phosphorylation of choline	3.78E-03	 	 	 	 	CHKA	1	
+Cellular Assembly and Organization, Organ Morphology, Skeletal and Muscular System Development and Function, Tissue Morphology	quantity	Quantity of myonuclei	3.78E-03	 	 	 	 	PRKCQ	1	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities, Tissue Morphology, Tumor Morphology	size	Size of brain tumor	3.78E-03	 	 	 	 	B3GAT1	1	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	spinal muscular atrophy proximal adult dominant	Spinal muscular atrophy proximal adult dominant	3.78E-03	 	 	 	 	KIF1B	1	
+Cancer, Immunological Disease, Organismal Injury and Abnormalities	spleen metastasis	Spleen metastasis	3.78E-03	 	 	 	 	ITGA4	1	
+Cell Death and Survival, Organismal Survival	survival	Survival of Escherichia coli 25922	3.78E-03	 	 	 	 	TFPI2	1	
+Cellular Movement, Hematological System Development and Function, Hypersensitivity Response, Immune Cell Trafficking	trafficking	Trafficking of eosinophils	3.78E-03	 	 	 	 	ITGA4	1	
+Cellular Movement	transendothelial migration	Transendothelial migration of chronic lymphocytic leukemia cells	3.78E-03	 	 	 	 	ITGA4	1	
+Neurological Disease, Organismal Injury and Abnormalities	gliosis	Gliosis	4.07E-03	 	 	 	 	ATP13A2,CDK5R1,QPCT	3	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	colon cancer	Colon cancer	4.61E-03	 	 	 	 	ACTR3B,PIK3R5,TFPI2,TMEM163,B3GAT1,LINGO2,UBASH3B,DIP2A,GSE1,KIF1B,QPCT,ATP10B,CHD9,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,IL17RB,ESRP1,NKX2-2	21	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	female genital tract adenocarcinoma	Female genital tract adenocarcinoma	4.75E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,SLC16A3,LINGO2,ATP9A,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	18	
+Cell-To-Cell Signaling and Interaction, Renal and Urological System Development and Function	adhesion	Adhesion of kidney cell lines	5.04E-03	 	 	 	 	CDK5R1,ITGA4	2	
+Cancer, Organismal Injury and Abnormalities	development	Development of adenocarcinoma	5.11E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,B3GAT1,LINGO2,DMTN,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	22	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	colon adenocarcinoma	Colon adenocarcinoma	5.15E-03	 	 	 	 	ACTR3B,PIK3R5,TMEM163,B3GAT1,LINGO2,UBASH3B,DIP2A,GSE1,KIF1B,QPCT,ATP10B,CHD9,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,IL17RB,ESRP1,NKX2-2	20	
+Organismal Injury and Abnormalities	atresia	Atresia	5.22E-03	 	 	 	 	DACT1,SALL4	2	
+Cellular Development	differentiation	Differentiation of neuroblastoma cell lines	5.22E-03	 	 	 	 	KIF1B,CHKA	2	
+Cancer, Organismal Injury and Abnormalities	endometrioid carcinoma	Endometrioid carcinoma	5.27E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,LINGO2,ATP9A,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	16	
+Gastrointestinal Disease, Inflammatory Disease	Crohn disease	Crohn disease	5.36E-03	 	 	 	 	PRKCQ,B3GAT1,ITGA4,FRMD4B	4	
+Cellular Assembly and Organization	quantity	Quantity of nucleus	5.40E-03	 	 	 	 	PRKCQ,SALL4	2	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of genital tubercle	5.66E-03	 	 	 	 	DACT1	1	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of presomitic mesoderm	5.66E-03	 	 	 	 	DACT1	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Humoral Immune Response, Immune Cell Trafficking	adhesion	Adhesion of Ab-secreting B cells	5.66E-03	 	 	 	 	ITGA4	1	
+Cancer, Hematological Disease, Organismal Injury and Abnormalities	bone marrow metastasis	Bone marrow metastasis	5.66E-03	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Cell-mediated Immune Response, Cellular Assembly and Organization, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell-cell adhesion	Cell-cell adhesion of T lymphocytes	5.66E-03	 	 	 	 	DEPTOR	1	
+Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	Crohn disease of ileocolon	Crohn disease of ileocolon	5.66E-03	 	 	 	 	ITGA4	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	development	Development of superior olivary nucleus	5.66E-03	 	 	 	 	CDK5R1	1	
+Cellular Assembly and Organization, Developmental Disorder	ectopia	Ectopia of nucleus	5.66E-03	 	 	 	 	CDK5R1	1	
+Behavior	endurance training	Endurance training	5.66E-03	 	 	 	 	KLF15	1	
+Cellular Development	epithelial-mesenchymal transition	Epithelial-mesenchymal transition of endothelial cell lines	5.66E-03	 	 	 	 	ESRP1	1	
+Tissue Development, Tissue Morphology	expansion	Expansion of neuroepithelium	5.66E-03	 	 	 	 	NKX2-2	1	
+Gastrointestinal Disease, Inflammatory Disease, Organismal Injury and Abnormalities	fistulizing Crohn disease	Fistulizing Crohn disease	5.66E-03	 	 	 	 	ITGA4	1	
+Nervous System Development and Function, Tissue Development	formation	Formation of axon bundle	5.66E-03	 	 	 	 	MAP1B	1	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Renal and Urological Disease, Renal and Urological System Development and Function	fusion	Fusion of kidney	5.66E-03	 	 	 	 	DACT1	1	
+Infectious Diseases, Organismal Injury and Abnormalities, Renal and Urological Disease	HIV associated nephropathy	HIV associated nephropathy	5.66E-03	 	 	 	 	KLF15	1	
+Organismal Injury and Abnormalities, Reproductive System Disease	hydrometrocolpos	Hydrometrocolpos	5.66E-03	 	 	 	 	DACT1	1	
+Developmental Disorder, Organismal Injury and Abnormalities, Renal and Urological Disease	hypoplasia	Hypoplasia of ureter	5.66E-03	 	 	 	 	DACT1	1	
+Cellular Development, Nervous System Development and Function, Tissue Development	differentiation	Initiation of differentiation of neurons	5.66E-03	 	 	 	 	CHKA	1	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	lack	Lack of anus	5.66E-03	 	 	 	 	DACT1	1	
+Cardiovascular System Development and Function, Embryonic Development, Hematological System Development and Function, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	lymphangiogenesis	Lymphangiogenesis of thoracic duct	5.66E-03	 	 	 	 	ITGA4	1	
+Cell Morphology, Cellular Assembly and Organization, Nervous System Development and Function	orientation	Orientation of dendrites	5.66E-03	 	 	 	 	CDK5R1	1	
+Cellular Function and Maintenance, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	retention	Retention of monocytes	5.66E-03	 	 	 	 	ITGA4	1	
+Nervous System Development and Function	segregation	Segregation of thalamic nucleus	5.66E-03	 	 	 	 	CDK5R1	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	stabilization	Stabilization of lamellipodia	5.66E-03	 	 	 	 	ITGA4	1	
+Molecular Transport, Protein Trafficking	transport	Transport of reporter protein	5.66E-03	 	 	 	 	MAP1B	1	
+Developmental Disorder, Organismal Injury and Abnormalities, Renal and Urological Disease	urethral atresia	Urethral atresia	5.66E-03	 	 	 	 	DACT1	1	
+Cancer, Endocrine System Disorders, Organismal Injury and Abnormalities	epithelial thyroid cancer	Thyroid carcinoma	5.73E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,B3GAT1,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,UBASH3B,GSE1,TTC9,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	33	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	megacolon	Megacolon	5.77E-03	 	 	 	 	DACT1,SALL4	2	
+Behavior, Nervous System Development and Function	memory	Memory	5.77E-03	 	 	 	 	CDK5R1,QPCT,B3GAT1,GRIA4	4	
+Cancer, Organismal Injury and Abnormalities	extracranial solid tumor	Extracranial solid tumor	5.79E-03	 	 	 	 	KLF15,SALL4,PRKCQ,RGS17,PIK3R5,TMEM163,B3GAT1,TFPI2,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,TTC9,KIF1B,CDK5R1,ATP10B,ITGA4,ANKS1B,ESRP1	41	
+Organismal Injury and Abnormalities	pathological cyst	Pathological Cyst	5.87E-03	 	 	 	 	DACT1,PRKCQ,SLC16A3	3	
+Cell-To-Cell Signaling and Interaction, Embryonic Development	adhesion	Adhesion of embryonic cell lines	5.96E-03	 	 	 	 	DMTN,ITGA4	2	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	formation	Formation of olfactory bulb	6.15E-03	 	 	 	 	CDK5R1,MAP1B	2	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	migration	Migration of phagocytes	6.15E-03	 	 	 	 	QPCT,PRKCQ,PIK3R5,ITGA4	4	
+Cancer, Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	skin cancer	Skin cancer	6.19E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,B3GAT1,CHKA,DPYSL5,LINGO2,ATP9A,QPCT,DACT1,CHD9,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	27	
+Cancer, Organismal Injury and Abnormalities	genitourinary adenocarcinoma	Genitourinary adenocarcinoma	6.25E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,GRIA4,ATP13A2,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	25	
+Cancer, Dermatological Diseases and Conditions, Organismal Injury and Abnormalities	cutaneous melanoma	Cutaneous melanoma	6.40E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,B3GAT1,CHKA,DPYSL5,LINGO2,ATP9A,QPCT,DACT1,CHD9,MAP1B,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	26	
+Behavior	learning	Learning	6.49E-03	 	 	 	 	ATP13A2,QPCT,CDK5R1,B3GAT1,GRIA4	5	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	non-germinomatous germ cell tumor	Non-germinomatous germ cell tumor	6.74E-03	 	 	 	 	SALL4,ESRP1	2	
+Cancer, Organismal Injury and Abnormalities	melanoma	Melanoma	7.11E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,B3GAT1,DEPTOR,CHKA,DPYSL5,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,ACTR3B,UBASH3B,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	29	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance	formation	Formation of filopodia	7.21E-03	 	 	 	 	PRKCQ,MAP1B,DPYSL5	3	
+Cancer, Organismal Injury and Abnormalities	head and neck carcinoma	Head and neck carcinoma	7.23E-03	 	 	 	 	KLF15,SALL4,PRKCQ,PIK3R5,B3GAT1,DEPTOR,CHKA,DPYSL5,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,DACT1,CST7,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,NKX2-2,ATP13A2,ZNF239,UBASH3B,GSE1,TTC9,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	34	
+Hematological System Development and Function, Lymphoid Tissue Structure and Development, Tissue Morphology	quantity	Quantity of natural killer T lymphocytes	7.35E-03	 	 	 	 	PRKCQ,IL17RB	2	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	T-cell large granular lymphocytic leukemia	T-cell large granular lymphocytic leukemia	7.35E-03	 	 	 	 	B3GAT1,FRMD4B	2	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of cingulate gyrus	7.54E-03	 	 	 	 	MAP1B	1	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of parietal lobe	7.54E-03	 	 	 	 	MAP1B	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	adhesion	Adhesion of bone marrow-derived dendritic cells	7.54E-03	 	 	 	 	ITGA4	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	atresia	Atresia of anal canal	7.54E-03	 	 	 	 	SALL4	1	
+Cell Morphology, Cellular Function and Maintenance	autophagy	Autophagy of lymphoma cell lines	7.54E-03	 	 	 	 	UBASH3B	1	
+Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	behavioral variant frontotemporal dementia	Behavioral variant frontotemporal dementia	7.54E-03	 	 	 	 	GRIA4	1	
+Cell-To-Cell Signaling and Interaction	binding	Binding of Pseudomonas aeruginosa	7.54E-03	 	 	 	 	TFPI2	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Hematopoiesis	binding	Binding of T lymphoblasts	7.54E-03	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	binding	Binding of bone-marrow-derived monocyte/macrophage precursor cells	7.54E-03	 	 	 	 	ITGA4	1	
+Neurological Disease	chromatolysis	Chromatolysis	7.54E-03	 	 	 	 	CDK5R1	1	
+Amino Acid Metabolism, Post-Translational Modification, Small Molecule Biochemistry	conversion	Conversion of glutamine	7.54E-03	 	 	 	 	QPCT	1	
+Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	Crohn disease of colon	Crohn disease of colon	7.54E-03	 	 	 	 	ITGA4	1	
+Cancer, Cell-To-Cell Signaling and Interaction, Inflammatory Response	cytotoxic reaction	Cytotoxic reaction of neuroblastoma cell lines	7.54E-03	 	 	 	 	CDK5R1	1	
+Cellular Compromise, Inflammatory Response	degranulation	Degranulation of basophils	7.54E-03	 	 	 	 	IL17RB	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	formation	Formation of inferior olivary nucleus	7.54E-03	 	 	 	 	CDK5R1	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	formation	Formation of mitral cell layer	7.54E-03	 	 	 	 	CDK5R1	1	
+Cellular Compromise	fragmentation	Fragmentation of cellular membrane	7.54E-03	 	 	 	 	DMTN	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Skeletal and Muscular System Development and Function	fusion	Fusion of skeletal muscle satellite cells	7.54E-03	 	 	 	 	PRKCQ	1	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	lack	Lack of Purkinje's layer of cerebellum	7.54E-03	 	 	 	 	CDK5R1	1	
+Cell Morphology, Nervous System Development and Function, Neurological Disease	lack	Lack of oligodendrocytes	7.54E-03	 	 	 	 	NKX2-2	1	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Renal and Urological Disease, Renal and Urological System Development and Function	lack	Lack of urinary bladder	7.54E-03	 	 	 	 	DACT1	1	
+Cancer, Endocrine System Disorders, Gastrointestinal Disease, Organismal Injury and Abnormalities	primary pancreatic ductal adenocarcinoma	Primary pancreatic ductal adenocarcinoma	7.54E-03	 	 	 	 	CDK5R1	1	
+Cellular Movement, Nervous System Development and Function	scattering	Scattering of granule cells	7.54E-03	 	 	 	 	CDK5R1	1	
+Cellular Assembly and Organization	segregation	Segregation of nucleus	7.54E-03	 	 	 	 	CDK5R1	1	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of large intestine	7.56E-03	 	 	 	 	DACT1,SALL4	2	
+Cell Morphology	morphology	Morphology of cellular protrusions	7.83E-03	 	 	 	 	DMTN,CDK5R1,MAP1B,DPYSL5	4	
+Cellular Compromise, Lipid Metabolism, Small Molecule Biochemistry	peroxidation	Peroxidation of lipid	8.21E-03	 	 	 	 	KLF15,SH3BP5	2	
+Cancer, Organismal Injury and Abnormalities	pelvic adenocarcinoma	Pelvic adenocarcinoma	8.25E-03	 	 	 	 	ATP13A2,SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	23	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cellular infiltration	Cellular infiltration by lymphocytes	8.40E-03	 	 	 	 	PRKCQ,ITGA4,IL17RB	3	
+Nervous System Development and Function, Organ Morphology, Organismal Development	size	Size of brain	9.03E-03	 	 	 	 	CDK5R1,KIF1B,MAP1B	3	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	cell-cell contact	Cell-cell contact	9.08E-03	 	 	 	 	CDK5R1,DACT1,PRKCQ,ITGA4,DEPTOR,LINGO2	6	
+Cellular Development, Cellular Growth and Proliferation, Renal and Urological System Development and Function	cell proliferation	Cell proliferation of kidney cell lines	9.36E-03	 	 	 	 	QPCT,SALL4,CHKA	3	
+Cell-To-Cell Signaling and Interaction	aggregation	Aggregation of cells	9.41E-03	 	 	 	 	DMTN,CDK5R1,PRKCQ,UBASH3B	4	
+Cellular Function and Maintenance, Hematological Disease, Hematological System Development and Function, Tissue Development	function	Abnormal function of dense granule in blood platelets	9.42E-03	 	 	 	 	PRKCQ	1	
+Developmental Disorder, Tissue Morphology	abnormal morphology	Abnormal morphology of dilated allantois	9.42E-03	 	 	 	 	ITGA4	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of disorganized outer nuclear layer	9.42E-03	 	 	 	 	MAP1B	1	
+Connective Tissue Development and Function, Connective Tissue Disorders, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders, Skeletal and Muscular System Development and Function, Tissue Development	abnormal morphology	Abnormal morphology of ilium	9.42E-03	 	 	 	 	DACT1	1	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of inferior olivary nucleus	9.42E-03	 	 	 	 	MAP1B	1	
+Cell-To-Cell Signaling and Interaction, Cellular Compromise, Tumor Morphology	adhesion	Adhesion of small cell lung cancer cells	9.42E-03	 	 	 	 	ITGA4	1	
+Cell Cycle	G0/G1 phase transition	Arrest in G0/G1 phase transition of leukemia cell lines	9.42E-03	 	 	 	 	CHKA	1	
+Cell-To-Cell Signaling and Interaction	binding	Binding of Escherichia coli 25922	9.42E-03	 	 	 	 	TFPI2	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	binding	Binding of monocyte-derived dendritic cells	9.42E-03	 	 	 	 	ITGA4	1	
+Cellular Compromise	degradation	Degradation of autophagosomes	9.42E-03	 	 	 	 	ATP13A2	1	
+Cell-To-Cell Signaling and Interaction	delamination	Delamination of Purkinje's layer of cerebellum	9.42E-03	 	 	 	 	CDK5R1	1	
+Carbohydrate Metabolism, Molecular Transport, Small Molecule Biochemistry	deposition	Deposition of proteoglycan	9.42E-03	 	 	 	 	B3GAT1	1	
+Digestive System Development and Function, Embryonic Development, Organ Development, Organismal Development, Tissue Development	development	Development of anorectum	9.42E-03	 	 	 	 	SALL4	1	
+Nervous System Development and Function, Tissue Development	development	Development of fiber tract	9.42E-03	 	 	 	 	MAP1B	1	
+Cancer, Cellular Growth and Proliferation, Organismal Functions, Organismal Injury and Abnormalities, Tumor Morphology	inhibition	Inhibition of mammary tumor cells	9.42E-03	 	 	 	 	ATP9A	1	
+Organ Morphology, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	lack	Lack of external genitalia	9.42E-03	 	 	 	 	DACT1	1	
+Cell Morphology, Cellular Development, Embryonic Development, Nervous System Development and Function, Tissue Development	lamination	Lamination of neurons	9.42E-03	 	 	 	 	CDK5R1	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Compromise, Cellular Function and Maintenance	loss	Loss of microtubules	9.42E-03	 	 	 	 	MAP1B	1	
+Nervous System Development and Function	memory extinction	Memory extinction	9.42E-03	 	 	 	 	CDK5R1	1	
+Cellular Movement	mobility	Mobility of embryonic cell lines	9.42E-03	 	 	 	 	DMTN	1	
+Digestive System Development and Function, Embryonic Development, Organismal Development, Tissue Development	morphogenesis	Morphogenesis of embryonic hindgut	9.42E-03	 	 	 	 	DACT1	1	
+Neurological Disease, Organismal Injury and Abnormalities	pharmacologically induced seizure	Pharmacologically induced seizure	9.42E-03	 	 	 	 	GRIA4	1	
+Tissue Morphology	quantity	Quantity of E. coli	9.42E-03	 	 	 	 	TFPI2	1	
+Tissue Morphology	quantity	Quantity of acute myeloblastic leukemia cells	9.42E-03	 	 	 	 	SALL4	1	
+Cell-To-Cell Signaling and Interaction, Cellular Movement	recruitment	Recruitment of leukemia cell lines	9.42E-03	 	 	 	 	ITGA4	1	
+Gastrointestinal Disease, Inflammatory Disease	Crohn disease	Refractory Crohn disease	9.42E-03	 	 	 	 	ITGA4	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	tumorigenesis	Tumorigenesis of reproductive tract	9.63E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	20	
+Cellular Assembly and Organization	binding	Binding of cellular membrane	9.82E-03	 	 	 	 	DMTN,PRKCQ	2	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	female genital neoplasm	Female genital neoplasm	9.86E-03	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,ANKS1B,ESRP1	20	
+Cell Signaling, Molecular Transport, Vitamin and Mineral Metabolism	mobilization	Mobilization of Ca2+	1.00E-02	 	 	 	 	DMTN,PRKCQ,RGS17,SH3BP5	4	
+Cellular Movement	invasion	Invasion of tumor cell lines	1.03E-02	 	 	 	 	GSE1,CDK5R1,PRKCQ,PIK3R5,TFPI2,ITGA4,ESRP1	7	
+Cell-To-Cell Signaling and Interaction, Connective Tissue Development and Function	adhesion	Adhesion of fibroblast cell lines	1.03E-02	 	 	 	 	DMTN,CDK5R1	2	
+Cellular Movement	transmigration	Transmigration of myeloid cells	1.03E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell movement	Cell movement of mononuclear leukocytes	1.03E-02	 	 	 	 	QPCT,PRKCQ,ITGA4,DEPTOR,IL17RB	5	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Inflammatory Response	aggregation	Aggregation of blood platelets	1.07E-02	 	 	 	 	DMTN,PRKCQ,UBASH3B	3	
+Cellular Movement, Nervous System Development and Function	guidance	Guidance of axons	1.07E-02	 	 	 	 	CDK5R1,PRKCQ,DPYSL5	3	
+Cell Morphology, Cellular Assembly and Organization	morphology	Morphology of filaments	1.08E-02	 	 	 	 	DMTN,MAP1B	2	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of hindgut	1.13E-02	 	 	 	 	DACT1	1	
+Cell Morphology, Nervous System Development and Function, Neurological Disease, Tissue Morphology	abnormal morphology	Abnormal morphology of serotonergic neurons	1.13E-02	 	 	 	 	NKX2-2	1	
+Developmental Disorder, Embryonic Development, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease, Tissue Morphology	abnormal morphology	Abnormal morphology of urogenital sinus	1.13E-02	 	 	 	 	DACT1	1	
+Developmental Disorder, Hereditary Disorder, Organismal Injury and Abnormalities, Reproductive System Disease	androgen insensitivity	Androgen insensitivity	1.13E-02	 	 	 	 	FRMD4B	1	
+Cell Death and Survival	apoptosis	Apoptosis of basophils	1.13E-02	 	 	 	 	IL17RB	1	
+Cancer, Cell-To-Cell Signaling and Interaction, Organismal Injury and Abnormalities	binding	Binding of chronic lymphocytic leukemia cells	1.13E-02	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction	binding	Binding of cord blood cells	1.13E-02	 	 	 	 	ITGA4	1	
+Cardiovascular Disease, Organismal Injury and Abnormalities	bleeding	Bleeding of heart	1.13E-02	 	 	 	 	ITGA4	1	
+Cell Morphology, Cellular Compromise	deformability	Deformability of red blood cells	1.13E-02	 	 	 	 	DMTN	1	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	arrangement	Ectopic arrangement of cerebellar granule cell	1.13E-02	 	 	 	 	CDK5R1	1	
+Cardiovascular System Development and Function, Connective Tissue Development and Function, Embryonic Development, Organ Development, Organismal Development, Tissue Development	formation	Formation of epicardium	1.13E-02	 	 	 	 	ITGA4	1	
+Cellular Growth and Proliferation, Hematological System Development and Function	inhibition	Inhibition of monocytes	1.13E-02	 	 	 	 	ITGA4	1	
+Cell Morphology, Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	lack	Lack of trophoblast giant cells	1.13E-02	 	 	 	 	SALL4	1	
+Gastrointestinal Disease, Inflammatory Disease	Crohn disease	Moderate Crohn disease	1.13E-02	 	 	 	 	ITGA4	1	
+Auditory Disease, Inflammatory Disease, Organismal Injury and Abnormalities	otitis media with effusion	Otitis media with effusion	1.13E-02	 	 	 	 	SALL4	1	
+Endocrine System Development and Function, Organ Morphology, Tissue Morphology	quantity	Quantity of gamma cells	1.13E-02	 	 	 	 	NKX2-2	1	
+Embryonic Development, Hair and Skin Development and Function, Organ Development, Organismal Development, Tissue Development	re-epithelialization	Re-epithelialization of skin	1.13E-02	 	 	 	 	DMTN	1	
+Gastrointestinal Disease, Inflammatory Disease	Crohn disease	Severe Crohn disease	1.13E-02	 	 	 	 	ITGA4	1	
+Cellular Movement	migration	Migration of myeloid cells	1.14E-02	 	 	 	 	PRKCQ,PIK3R5,ITGA4	3	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	gastroesophageal adenocarcinoma	Gastroesophageal adenocarcinoma	1.14E-02	 	 	 	 	GSE1,ATP9A,SPAG1,RGS17,TFPI2,ITGA4,DEPTOR,CHKA,ESRP1,LINGO2	10	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of Purkinje's layer of cerebellum	1.18E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Organismal Injury and Abnormalities, Renal and Urological Disease	structural renal abnormality	Structural renal abnormality	1.19E-02	 	 	 	 	DACT1,SALL4,DEPTOR	3	
+Cell Death and Survival	cell death	Cell death of leukemia cell lines	1.19E-02	 	 	 	 	PRKCQ,SALL4,ITGA4,CHKA	4	
+Neurological Disease, Organismal Injury and Abnormalities	brain atrophy	Brain atrophy	1.21E-02	 	 	 	 	CDK5R1,GRIA4	2	
+Nervous System Development and Function	thermal nociception	Thermal nociception	1.21E-02	 	 	 	 	CDK5R1,GRIA4	2	
+Developmental Disorder	agenesis	Agenesis	1.29E-02	 	 	 	 	DACT1,SALL4,MAP1B	3	
+Neurological Disease, Skeletal and Muscular Disorders	neuromuscular disease	Neuromuscular disease	1.29E-02	 	 	 	 	ATP13A2,KIF1B,ZNF239,CDK5R1,MAP1B,ITGA4,FRMD4B	7	
+Carbohydrate Metabolism, Cellular Function and Maintenance, Molecular Transport, Small Molecule Biochemistry	import	Import of D-glucose	1.31E-02	 	 	 	 	CDK5R1,KLF15	2	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of disorganized inner nuclear layer	1.32E-02	 	 	 	 	MAP1B	1	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of fundus of eye	1.32E-02	 	 	 	 	PRKCQ	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Hypersensitivity Response, Immune Cell Trafficking, Inflammatory Response	adhesion	Adhesion of bone marrow-derived mast cells	1.32E-02	 	 	 	 	ITGA4	1	
+Hair and Skin Development and Function	appearance	Appearance of hair	1.32E-02	 	 	 	 	MAP1B	1	
+Cellular Movement, Hematological System Development and Function, Hypersensitivity Response, Immune Cell Trafficking	cell rolling	Arrest in cell rolling of eosinophils	1.32E-02	 	 	 	 	ITGA4	1	
+Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell rolling	Cell rolling of Th1 cells	1.32E-02	 	 	 	 	ITGA4	1	
+Cellular Compromise, Hematological System Development and Function	enucleation	Enucleation of erythroblasts	1.32E-02	 	 	 	 	DMTN	1	
+Cellular Assembly and Organization, Cellular Compromise	formation	Formation of Lewy bodies	1.32E-02	 	 	 	 	ATP13A2	1	
+Cell Morphology, Digestive System Development and Function, Endocrine System Disorders, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	lack	Lack of beta islet cells	1.32E-02	 	 	 	 	NKX2-2	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long term synaptic depression	Long term synaptic depression of collateral synapses	1.32E-02	 	 	 	 	CDK5R1	1	
+Inflammatory Disease, Inflammatory Response, Neurological Disease, Organismal Injury and Abnormalities	neuroinflammation	Neuroinflammation of brain	1.32E-02	 	 	 	 	CDK5R1	1	
+Hair and Skin Development and Function	pigmentation	Pigmentation of eye	1.32E-02	 	 	 	 	PRKCQ	1	
+Tissue Morphology	quantity	Quantity of Pseudomonas aeruginosa	1.32E-02	 	 	 	 	TFPI2	1	
+Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	sirenomelia	Sirenomelia	1.32E-02	 	 	 	 	DACT1	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	tumorigenesis	Tumorigenesis of prostatic adenocarcinoma	1.32E-02	 	 	 	 	TMPRSS2	1	
+Cellular Development	differentiation	Differentiation of nervous system	1.36E-02	 	 	 	 	CDK5R1,KLF15,MAP1B,CHKA,NKX2-2	5	
+Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of head	1.42E-02	 	 	 	 	CDK5R1,KIF1B,PRKCQ,SALL4,MAP1B,ITGA4,ESRP1	7	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities	nervous system neoplasm	Nervous system neoplasm	1.44E-02	 	 	 	 	KIF1B,SPAG1,TMPRSS2,ACTR3B,B3GAT1,TFPI2,FRMD4B,IL17RB,NKX2-2	9	
+Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Respiratory Disease	inflammation	Inflammation of airway	1.47E-02	 	 	 	 	SPAG1,ITGA4,FRMD4B,IL17RB	4	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of cortical subplate	1.50E-02	 	 	 	 	CDK5R1	1	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of tail bud	1.50E-02	 	 	 	 	DACT1	1	
+Gastrointestinal Disease, Inflammatory Disease	Crohn disease	Active stage Crohn disease	1.50E-02	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	adhesion	Adhesion of Th1 cells	1.50E-02	 	 	 	 	ITGA4	1	
+Cancer, Cell Death and Survival, Organismal Injury and Abnormalities, Tumor Morphology	apoptosis	Apoptosis of multiple myeloma cells	1.50E-02	 	 	 	 	DEPTOR	1	
+Cancer, Endocrine System Disorders, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	pheochromocytoma	Autosomal dominant pheochromocytoma	1.50E-02	 	 	 	 	KIF1B	1	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction	binding	Binding of high endothelial postcapillary venule	1.50E-02	 	 	 	 	ITGA4	1	
+Cellular Compromise, Neurological Disease, Organismal Injury and Abnormalities	dysfunction	Dysfunction of neurons	1.50E-02	 	 	 	 	KIF1B	1	
+Neurological Disease, Organismal Injury and Abnormalities	gliosis	Gliosis of cerebellum	1.50E-02	 	 	 	 	ATP13A2	1	
+Cellular Assembly and Organization	growth	Growth of filopodia	1.50E-02	 	 	 	 	DPYSL5	1	
+Cell Morphology, Digestive System Development and Function, Gastrointestinal Disease, Nervous System Development and Function, Neurological Disease, Tissue Morphology	lack	Lack of enteric neurons	1.50E-02	 	 	 	 	SALL4	1	
+Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	migration	Migration of effector memory T lymphocytes	1.50E-02	 	 	 	 	ITGA4	1	
+Cellular Movement, Connective Tissue Development and Function	mobility	Mobility of fibroblast cell lines	1.50E-02	 	 	 	 	DMTN	1	
+Connective Tissue Disorders, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Respiratory Disease	non-specific interstitial pneumonia	Non-specific interstitial pneumonia	1.50E-02	 	 	 	 	FRMD4B	1	
+Developmental Disorder, Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	periventricular nodular heterotopia	Periventricular nodular heterotopia	1.50E-02	 	 	 	 	MAP1B	1	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities, Tumor Morphology	chronic lymphocytic leukemia	Progressive chronic lymphocytic leukemia	1.50E-02	 	 	 	 	ITGA4	1	
+Cellular Movement	cell movement	Cell movement of squamous cell carcinoma cell lines	1.51E-02	 	 	 	 	ITGA4,ESRP1	2	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	female genital tract cancer	Female genital tract cancer	1.51E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	19	
+Cell Morphology, Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Nervous System Development and Function, Neurological Disease, Tissue Morphology	abnormal morphology	Abnormal morphology of synapse	1.54E-02	 	 	 	 	DACT1,PRKCQ	2	
+Cellular Assembly and Organization, Cellular Compromise	formation	Formation of cellular inclusion bodies	1.54E-02	 	 	 	 	ATP13A2,CDK5R1	2	
+Organismal Survival	viability	Viability	1.57E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	cell-cell adhesion	Cell-cell adhesion	1.57E-02	 	 	 	 	CDK5R1,ITGA4,DEPTOR	3	
+Cellular Development	differentiation	Differentiation of tumor cell lines	1.59E-02	 	 	 	 	CDK5R1,KIF1B,SALL4,CHKA	4	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	transmigration	Transmigration of phagocytes	1.60E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Neurological Disease, Organismal Injury and Abnormalities	astrocytosis	Astrocytosis	1.63E-02	 	 	 	 	ATP13A2,CDK5R1	2	
+Cell Death and Survival, Neurological Disease, Organismal Injury and Abnormalities	apoptosis	Apoptosis of cortical neurons	1.69E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	AMPA mediated synaptic current	AMPA mediated synaptic current	1.69E-02	 	 	 	 	GRIA4	1	
+Cell Morphology, Hematological System Development and Function, Immunological Disease, Lymphoid Tissue Structure and Development	abnormal morphology	Abnormal morphology of effector T lymphocytes	1.69E-02	 	 	 	 	PRKCQ	1	
+Cellular Assembly and Organization, Neurological Disease	accumulation	Accumulation of amyloid-beta plaques	1.69E-02	 	 	 	 	CDK5R1	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	action potential	Action potential of motor endplates	1.69E-02	 	 	 	 	PRKCQ	1	
+Cellular Development	differentiation	Differentiation of hippocampal cells	1.69E-02	 	 	 	 	CDK5R1	1	
+Developmental Disorder, Neurological Disease	ectopia	Ectopia of neurons	1.69E-02	 	 	 	 	CDK5R1	1	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	diarrhea	Grade 3-4 diarrhea	1.69E-02	 	 	 	 	ITGA4	1	
+Embryonic Development, Organismal Development, Tissue Development	growth	Growth of embryoblast	1.69E-02	 	 	 	 	SALL4	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	inhibitory postsynaptic potential	Inhibitory postsynaptic potential of neurons	1.69E-02	 	 	 	 	GRIA4	1	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	lack	Lack of hippocampal commissure	1.69E-02	 	 	 	 	MAP1B	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Nervous System Development and Function, Organismal Development, Tissue Development	polarization	Polarization of hippocampal neurons	1.69E-02	 	 	 	 	MAP1B	1	
+Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	severe active ulcerative colitis	Severe active ulcerative colitis	1.69E-02	 	 	 	 	ITGA4	1	
+Nervous System Development and Function, Organ Morphology, Organismal Development	size	Size of anterior commissure	1.69E-02	 	 	 	 	MAP1B	1	
+Cell Morphology, Cellular Compromise, Nervous System Development and Function, Neurological Disease, Organismal Injury and Abnormalities, Tissue Morphology	swelling	Swelling of axons	1.69E-02	 	 	 	 	CDK5R1	1	
+Cancer, Organismal Injury and Abnormalities	anogenital cancer	Anogenital cancer	1.70E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,DEPTOR,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,ATP13A2,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	27	
+Cell Death and Survival	cell viability	Cell viability of cervical cancer cell lines	1.71E-02	 	 	 	 	PRKCQ,CHKA,ANKS1B	3	
+Cellular Assembly and Organization, Cellular Function and Maintenance, Nervous System Development and Function, Tissue Morphology	quantity	Quantity of neurites	1.72E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Tissue Morphology	quantity	Quantity of cells	1.78E-02	 	 	 	 	DMTN,KIF1B,CDK5R1,SALL4,PRKCQ,MAP1B,PIK3R5,TFPI2,IL17RB,NKX2-2,UBASH3B	11	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	migration	Migration of monocytes	1.81E-02	 	 	 	 	QPCT,ITGA4	2	
+Organismal Survival	perinatal death	Perinatal death	1.83E-02	 	 	 	 	CDK5R1,KIF1B,DACT1,MAP1B,ESRP1	5	
+Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	disorder of basal ganglia	Disorder of basal ganglia	1.84E-02	 	 	 	 	ATP13A2,ZNF239,CDK5R1,KIF1B,MAP1B,FRMD4B	6	
+Behavior	exploratory behavior	Exploratory behavior	1.84E-02	 	 	 	 	MAP1B,GRIA4	2	
+Cancer, Organismal Injury and Abnormalities	neoplasia	Neoplasia of melanoma cell lines	1.84E-02	 	 	 	 	ITGA4,IL17RB	2	
+Nervous System Development and Function, Neurological Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of anterior horn of the spinal cord	1.88E-02	 	 	 	 	KIF1B	1	
+Digestive System Development and Function, Endocrine System Disorders, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of disorganized islets of Langerhans	1.88E-02	 	 	 	 	NKX2-2	1	
+Neurological Disease, Organismal Injury and Abnormalities	atrophy	Atrophy of forebrain	1.88E-02	 	 	 	 	CDK5R1	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	dynamics	Dynamics of actin cytoskeleton	1.88E-02	 	 	 	 	ESRP1	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	formation	Formation of cortical lamina	1.88E-02	 	 	 	 	CDK5R1	1	
+Cell Signaling, Small Molecule Biochemistry	generation	Generation of nitrite	1.88E-02	 	 	 	 	ITGA4	1	
+Cancer, Dermatological Diseases and Conditions, Inflammatory Disease, Metabolic Disease, Organismal Injury and Abnormalities	juvenile xanthogranuloma	Juvenile xanthogranuloma	1.88E-02	 	 	 	 	ATP9A	1	
+Small Molecule Biochemistry	metabolism	Metabolism of choline	1.88E-02	 	 	 	 	CHKA	1	
+Cell Cycle	senescence	Senescence of bone cancer cell lines	1.88E-02	 	 	 	 	CDK5R1	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	genital tumor	Genital tumor	1.89E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,ATP13A2,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	25	
+Developmental Disorder, Neurological Disease, Organismal Injury and Abnormalities	hypoplasia	Hypoplasia of brain	1.94E-02	 	 	 	 	MAP1B,NKX2-2	2	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell movement	Cell movement of granulocytes	1.95E-02	 	 	 	 	PRKCQ,PIK3R5,ITGA4,IL17RB	4	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	migration	Migration of mononuclear leukocytes	1.95E-02	 	 	 	 	QPCT,PRKCQ,ITGA4,DEPTOR	4	
+Cell Death and Survival, Neurological Disease, Organismal Injury and Abnormalities	cell death	Cell death of cerebral cortex cells	1.97E-02	 	 	 	 	ATP13A2,CDK5R1,MAP1B	3	
+Inflammatory Disease, Inflammatory Response, Neurological Disease, Organismal Injury and Abnormalities	encephalitis	Encephalitis	2.06E-02	 	 	 	 	CDK5R1,PRKCQ,ITGA4,UBASH3B	4	
+Molecular Transport, Small Molecule Biochemistry	accumulation	Accumulation of lactic acid	2.06E-02	 	 	 	 	SLC16A3	1	
+Post-Translational Modification	carbonylation	Carbonylation of protein	2.06E-02	 	 	 	 	SH3BP5	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	dysgerminoma	Dysgerminoma	2.06E-02	 	 	 	 	SALL4	1	
+Cancer, Organismal Injury and Abnormalities	metastasis	Metastasis of pancreatic cancer cell lines	2.06E-02	 	 	 	 	ESRP1	1	
+Cellular Assembly and Organization	quantity	Quantity of autophagic vacuoles	2.06E-02	 	 	 	 	KLF15	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	release	Release of exosomes	2.06E-02	 	 	 	 	ATP13A2	1	
+Cancer, Developmental Disorder, Organismal Injury and Abnormalities, Reproductive System Disease	yolk sac tumor	Yolk sac tumor	2.06E-02	 	 	 	 	SALL4	1	
+Organismal Development	abnormal morphology	Abnormal morphology of tail	2.07E-02	 	 	 	 	DACT1,SALL4	2	
+Cell-To-Cell Signaling and Interaction, Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	adhesion	Adhesion of T lymphocytes	2.10E-02	 	 	 	 	ITGA4,DEPTOR	2	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction	adhesion	Adhesion of vascular endothelial cells	2.10E-02	 	 	 	 	ITGA4,DEPTOR	2	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	familial motor neuron disease	Familial motor neuron disease	2.13E-02	 	 	 	 	ATP13A2,KIF1B	2	
+Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders	Alzheimer disease or frontotemporal dementia	Alzheimer disease or frontotemporal dementia	2.18E-02	 	 	 	 	QPCT,CDK5R1,FRMD4B,GRIA4,SLC16A3	5	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	gastric cancer	Gastric cancer	2.18E-02	 	 	 	 	GSE1,ATP9A,RGS17,TFPI2,ITGA4,DEPTOR,CHKA,ESRP1,LINGO2	9	
+Cellular Movement, Immune Cell Trafficking	migration	Leukocyte migration	2.20E-02	 	 	 	 	QPCT,PRKCQ,PIK3R5,ITGA4,DEPTOR,IL17RB,SLC16A3	7	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	morphology	Morphology of neurites	2.20E-02	 	 	 	 	CDK5R1,MAP1B,DPYSL5	3	
+Ophthalmic Disease, Organismal Injury and Abnormalities	ocular motility disorder	Ocular motility disorder	2.20E-02	 	 	 	 	PIK3R5,MAP1B	2	
+Cancer, Organismal Injury and Abnormalities	primary tumor	Primary tumor	2.20E-02	 	 	 	 	CDK5R1,SALL4,IL17RB,SLC16A3	4	
+Cellular Movement	cell movement	Cell movement of myeloid cells	2.24E-02	 	 	 	 	QPCT,PRKCQ,PIK3R5,ITGA4,IL17RB	5	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of cortical marginal zone	2.25E-02	 	 	 	 	CDK5R1	1	
+Cardiovascular Disease, Cardiovascular System Development and Function, Connective Tissue Development and Function, Connective Tissue Disorders, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Morphology	abnormal morphology	Abnormal morphology of epicardium	2.25E-02	 	 	 	 	ITGA4	1	
+Digestive System Development and Function, Gastrointestinal Disease, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities	abnormal morphology	Abnormal morphology of rectum	2.25E-02	 	 	 	 	SALL4	1	
+Auditory Disease, Neurological Disease	conductive hearing loss	Conductive hearing loss	2.25E-02	 	 	 	 	SALL4	1	
+Cellular Development	differentiation	Differentiation of breast cancer cell lines	2.25E-02	 	 	 	 	CHKA	1	
+Cellular Development, Renal and Urological System Development and Function	differentiation	Differentiation of podocytes	2.25E-02	 	 	 	 	KLF15	1	
+Cellular Assembly and Organization, Neurological Disease, Organismal Development, Tissue Development	formation	Formation of amyloid-beta plaques	2.25E-02	 	 	 	 	QPCT	1	
+Cellular Assembly and Organization, Cellular Compromise, Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	formation	Formation of neurofibrillary tangles	2.25E-02	 	 	 	 	CDK5R1	1	
+Embryonic Development, Organismal Development, Tissue Morphology	fusion	Fusion of allantois	2.25E-02	 	 	 	 	ITGA4	1	
+Embryonic Development, Organismal Development, Tissue Morphology	fusion	Fusion of chorion	2.25E-02	 	 	 	 	ITGA4	1	
+Connective Tissue Disorders, Hematological Disease, Organismal Injury and Abnormalities	spherocytosis	Spherocytosis	2.25E-02	 	 	 	 	DMTN	1	
+Cancer, Organismal Injury and Abnormalities	pelvic tumor	Pelvic tumor	2.26E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,ATP13A2,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	26	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	synaptic transmission	Synaptic transmission of nervous tissue	2.27E-02	 	 	 	 	KIF1B,ANKS1B	2	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	breast or gynecological cancer	Breast or gynecological cancer	2.33E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,DEPTOR,SLC16A3,LINGO2,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,MAP1B,SPATA6,ITGA4,FRMD4B,GRIA4,IL17RB,ANKS1B,ESRP1	22	
+Cell Morphology, Cellular Development	branching	Branching of cells	2.33E-02	 	 	 	 	CDK5R1,DACT1,MAP1B,DPYSL5	4	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	cell movement	Cell movement of phagocytes	2.34E-02	 	 	 	 	QPCT,PRKCQ,PIK3R5,ITGA4,IL17RB	5	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities	peripheral nervous system neoplasm	Peripheral nervous system neoplasm	2.34E-02	 	 	 	 	KIF1B,TMPRSS2	2	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	morphology	Morphology of dendrites	2.41E-02	 	 	 	 	MAP1B,DPYSL5	2	
+Cell Signaling	acetylcholine receptor signaling, muscarinic pathway	Acetylcholine receptor signaling, muscarinic pathway	2.43E-02	 	 	 	 	CDK5R1	1	
+Cell Morphology, Hematological System Development and Function	polarization	Polarization of leukocyte cell lines	2.43E-02	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	binding	Binding of neutrophils	2.44E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Cancer, Organismal Injury and Abnormalities	neoplasia	Neoplasia of tumor cell lines	2.45E-02	 	 	 	 	GSE1,ITGA4,IL17RB,ESRP1	4	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell movement	Cell movement of lymphocytes	2.47E-02	 	 	 	 	PRKCQ,ITGA4,DEPTOR,IL17RB	4	
+Cellular Movement, Hematological System Development and Function, Hypersensitivity Response, Immune Cell Trafficking	cell movement	Cell movement of eosinophils	2.48E-02	 	 	 	 	ITGA4,IL17RB	2	
+Cancer, Organismal Injury and Abnormalities	precancerous condition	Precancerous condition	2.48E-02	 	 	 	 	PRKCQ,FRMD4B	2	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	gastric adenocarcinoma	Gastric adenocarcinoma	2.49E-02	 	 	 	 	ATP9A,RGS17,TFPI2,ITGA4,DEPTOR,CHKA,ESRP1,LINGO2	8	
+Gastrointestinal Disease, Organismal Injury and Abnormalities	abnormality	Abnormality of large intestine	2.49E-02	 	 	 	 	DACT1,SALL4,ITGA4,IL17RB	4	
+Cancer, Organismal Injury and Abnormalities	malignant genitourinary solid tumor	Malignant genitourinary solid tumor	2.58E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,DEPTOR,SH3BP5,SLC16A3,LINGO2,DIP2A,DMTN,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,FRMD4B,GRIA4,IL17RB,ATP13A2,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	28	
+Cell Morphology, Cellular Function and Maintenance	autophagy	Autophagy of cells	2.59E-02	 	 	 	 	DACT1,PRKCQ,DEPTOR,UBASH3B	4	
+Cellular Compromise	acidification	Acidification of lysosome	2.62E-02	 	 	 	 	ATP13A2	1	
+Embryonic Development, Nervous System Development and Function, Organ Development, Organismal Development, Tissue Development	development	Development of anterior horn of the spinal cord	2.62E-02	 	 	 	 	NKX2-2	1	
+Cellular Movement	diapedesis	Diapedesis	2.62E-02	 	 	 	 	ITGA4	1	
+Cardiovascular Disease, Hematological Disease, Hereditary Disorder, Metabolic Disease, Organismal Injury and Abnormalities	familial combined hyperlipidemia	Familial combined hyperlipidemia	2.62E-02	 	 	 	 	FRMD4B	1	
+Cell Morphology, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Renal and Urological Disease, Renal and Urological System Development and Function	hypertrophy	Hypertrophy of mesangial cells	2.62E-02	 	 	 	 	DEPTOR	1	
+Auditory Disease, Inflammatory Response, Organismal Injury and Abnormalities	inflammation	Inflammation of ear	2.62E-02	 	 	 	 	SALL4	1	
+Gastrointestinal Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	moderate active ulcerative colitis	Moderate active ulcerative colitis	2.62E-02	 	 	 	 	ITGA4	1	
+Organ Morphology, Skeletal and Muscular System Development and Function	number	Number of caudal vertebra	2.62E-02	 	 	 	 	DACT1	1	
+Cell Cycle	senescence	Senescence of sarcoma cell lines	2.62E-02	 	 	 	 	CDK5R1	1	
+Neurological Disease, Skeletal and Muscular Disorders	progressive neuromuscular disease	Progressive neuromuscular disease	2.62E-02	 	 	 	 	ATP13A2,KIF1B,MAP1B,ITGA4	4	
+Cancer, Organismal Injury and Abnormalities, Renal and Urological Disease	urinary tract cancer	Urinary tract cancer	2.63E-02	 	 	 	 	DMTN,ATP9A,KIF1B,QPCT,DACT1,CHD9,PIK3R5,TFPI2,ITGA4,ANKS1B,ESRP1	11	
+Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities, Respiratory Disease	asthma	Asthma	2.67E-02	 	 	 	 	ITGA4,FRMD4B,IL17RB	3	
+Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Renal and Urological Disease, Renal and Urological System Development and Function	abnormal morphology	Abnormal morphology of kidney	2.71E-02	 	 	 	 	DACT1,SALL4,DEPTOR	3	
+Cancer, Endocrine System Disorders, Gastrointestinal Disease, Organismal Injury and Abnormalities	pancreatic tumor	Pancreatic tumor	2.71E-02	 	 	 	 	PIK3R5,TFPI2,CHKA,DPYSL5,DIP2A,KIF1B,CDK5R1,ATP10B,CST7,CHD9,MAP1B,FRMD4B,ESRP1	13	
+Cell Morphology	sprouting	Sprouting	2.74E-02	 	 	 	 	CDK5R1,DACT1,MAP1B,DPYSL5	4	
+Endocrine System Disorders, Organ Morphology, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	abnormal morphology	Abnormal morphology of vas deferens	2.80E-02	 	 	 	 	DACT1	1	
+Cardiovascular Disease, Immunological Disease, Inflammatory Disease, Inflammatory Response, Organismal Injury and Abnormalities	Churg-Strauss syndrome	Churg-Strauss syndrome	2.80E-02	 	 	 	 	IL17RB	1	
+Behavior, Nervous System Development and Function	context memory	Context memory	2.80E-02	 	 	 	 	QPCT	1	
+Cancer, Organismal Injury and Abnormalities	metastasis	Metastasis of stomach cancer cell lines	2.80E-02	 	 	 	 	GSE1	1	
+Behavior	rotation behavior	Rotation behavior	2.80E-02	 	 	 	 	SH3BP5	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance, Organismal Development	secretion	Secretion of dense granule	2.80E-02	 	 	 	 	DMTN	1	
+Molecular Transport, Small Molecule Biochemistry	secretion	Secretion of lactic acid	2.80E-02	 	 	 	 	SLC16A3	1	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	cell movement	Cell movement of leukocytes	2.82E-02	 	 	 	 	QPCT,PRKCQ,PIK3R5,ITGA4,DEPTOR,IL17RB	6	
+Cellular Development, Nervous System Development and Function, Tissue Development	differentiation	Differentiation of neurons	2.83E-02	 	 	 	 	CDK5R1,MAP1B,CHKA,NKX2-2	4	
+Nervous System Development and Function, Tissue Morphology	quantity	Quantity of neurons	2.83E-02	 	 	 	 	CDK5R1,KIF1B,MAP1B,NKX2-2	4	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking	adhesion	Adhesion of granulocytes	2.85E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance, Nervous System Development and Function	extension	Extension of axons	2.85E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Neurological Disease, Organismal Injury and Abnormalities, Psychological Disorders, Skeletal and Muscular Disorders	Parkinson disease	Parkinson's disease	2.86E-02	 	 	 	 	ATP13A2,KIF1B,MAP1B	3	
+Cancer, Organismal Injury and Abnormalities	embryonal tumor	Embryonal tumor	2.89E-02	 	 	 	 	KIF1B,SALL4,TMPRSS2,FRMD4B,NKX2-2	5	
+Cellular Development, Cellular Growth and Proliferation, Nervous System Development and Function, Tissue Development	development	Development of neurons	2.92E-02	 	 	 	 	CDK5R1,DACT1,MAP1B,DPYSL5,NKX2-2,LINGO2	6	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	hereditary neuropathy	Hereditary neuropathy	2.94E-02	 	 	 	 	ATP13A2,KIF1B,MAP1B	3	
+Developmental Disorder	midline defect	Midline defect	2.98E-02	 	 	 	 	DACT1,SALL4,ESRP1	3	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of cortical plate	2.98E-02	 	 	 	 	CDK5R1	1	
+Auditory Disease, Neurological Disease	absent pinna reflex	Absent pinna reflex	2.98E-02	 	 	 	 	SALL4	1	
+Cell Morphology, Cellular Movement, Reproductive System Development and Function	cell spreading	Cell spreading of gonadal cell lines	2.98E-02	 	 	 	 	ITGA4	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance	depolarization	Depolarization of plasma membrane	2.98E-02	 	 	 	 	GRIA4	1	
+Cellular Development, Endocrine System Development and Function	differentiation	Differentiation of beta islet cells	2.98E-02	 	 	 	 	NKX2-2	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance	extension	Extension of filopodia	2.98E-02	 	 	 	 	ITGA4	1	
+Organismal Injury and Abnormalities, Skeletal and Muscular Disorders	fatigue	Fatigue of muscle	2.98E-02	 	 	 	 	KLF15	1	
+Cellular Assembly and Organization	function	Function of lysosome	2.98E-02	 	 	 	 	ATP13A2	1	
+Cellular Assembly and Organization, Cellular Function and Maintenance, Organismal Development	secretion	Secretion of alpha granules	2.98E-02	 	 	 	 	DMTN	1	
+Cancer, Organismal Injury and Abnormalities, Reproductive System Disease	genital tract cancer	Genital tract cancer	3.04E-02	 	 	 	 	ATP13A2,SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,KIF1B,QPCT,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,ITGA4,GRIA4,ANKS1B,ESRP1	24	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities	neurogenic tumor	Neurogenic tumor	3.15E-02	 	 	 	 	KIF1B,TMPRSS2	2	
+Connective Tissue Development and Function, Connective Tissue Disorders, Nervous System Development and Function, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Skeletal and Muscular Disorders, Skeletal and Muscular System Development and Function, Tissue Development	abnormal morphology	Abnormal morphology of sacral vertebra	3.17E-02	 	 	 	 	DACT1	1	
+Cell-mediated Immune Response, Cellular Development, Cellular Function and Maintenance, Cellular Growth and Proliferation, Embryonic Development, Hematological System Development and Function, Hematopoiesis, Lymphoid Tissue Structure and Development, Organ Development, Organismal Development, Tissue Development	development	Development of natural killer T lymphocytes	3.17E-02	 	 	 	 	PRKCQ	1	
+Embryonic Development, Organismal Development	development	Development of tail	3.17E-02	 	 	 	 	DACT1	1	
+Cellular Compromise	disorganization	Disorganization of cytoskeleton	3.17E-02	 	 	 	 	CDK5R1	1	
+Cellular Function and Maintenance	endocytosis	Endocytosis by neurons	3.17E-02	 	 	 	 	MAP1B	1	
+Infectious Diseases, Organismal Development	growth	Growth of Influenza A virus	3.17E-02	 	 	 	 	TMPRSS2	1	
+Cellular Function and Maintenance, Molecular Transport, Small Molecule Biochemistry	homeostasis	Homeostasis of Zn2+	3.17E-02	 	 	 	 	ATP13A2	1	
+Cellular Development	maturation	Maturation of oligodendrocytes	3.17E-02	 	 	 	 	NKX2-2	1	
+Cellular Development, Cellular Growth and Proliferation, Embryonic Development	proliferation	Proliferation of embryonic cell lines	3.20E-02	 	 	 	 	QPCT,SALL4,CHKA	3	
+Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	migration	Migration of neutrophils	3.23E-02	 	 	 	 	PRKCQ,PIK3R5	2	
+Cell-mediated Immune Response, Cellular Movement, Hematological System Development and Function, Immune Cell Trafficking	infiltration	Infiltration by T lymphocytes	3.27E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Cellular Development, Cellular Growth and Proliferation, Hair and Skin Development and Function	proliferation	Proliferation of epithelial cell lines	3.29E-02	 	 	 	 	QPCT,SALL4,CHKA	3	
+Cancer, Hematological Disease, Immunological Disease, Organismal Injury and Abnormalities	T-cell leukemia	T-cell leukemia	3.31E-02	 	 	 	 	PRKCQ,B3GAT1,FRMD4B	3	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	excitatory postsynaptic potential	Excitatory postsynaptic potential	3.31E-02	 	 	 	 	DACT1,GRIA4	2	
+Hereditary Disorder, Neurological Disease, Organismal Injury and Abnormalities	hereditary motor and sensory neuropathy	Hereditary motor and sensory neuropathy	3.31E-02	 	 	 	 	ATP13A2,KIF1B	2	
+Neurological Disease, Skeletal and Muscular Disorders	motor dysfunction	Motor dysfunction	3.31E-02	 	 	 	 	ATP13A2,CDK5R1	2	
+Post-Translational Modification	autoprocessing	Autoprocessing of protein	3.35E-02	 	 	 	 	TMPRSS2	1	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization	cell-cell adhesion	Cell-cell adhesion of vascular endothelial cells	3.35E-02	 	 	 	 	DEPTOR	1	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	morphology	Morphology of growth cone	3.35E-02	 	 	 	 	DPYSL5	1	
+Nervous System Development and Function, Organ Morphology, Organismal Development	size	Size of cerebellum	3.35E-02	 	 	 	 	CDK5R1	1	
+Cellular Development, Cellular Growth and Proliferation	cell proliferation	Cell proliferation of tumor cell lines	3.42E-02	 	 	 	 	GSE1,CDK5R1,SALL4,PRKCQ,MAP1B,B3GAT1,TFPI2,CHKA,ESRP1,SLC16A3	10	
+Cancer, Gastrointestinal Disease, Organismal Injury and Abnormalities	pancreatobiliary tumor	Pancreatobiliary tumor	3.43E-02	 	 	 	 	ATP13A2,PIK3R5,TFPI2,CHKA,DPYSL5,DIP2A,KIF1B,CDK5R1,ATP10B,CST7,CHD9,MAP1B,FRMD4B,ESRP1	14	
+Cell-To-Cell Signaling and Interaction, Hematological System Development and Function, Immune Cell Trafficking, Inflammatory Response	activation	Activation of natural killer cells	3.43E-02	 	 	 	 	PRKCQ,ITGA4	2	
+Cell Morphology, Nervous System Development and Function, Tissue Morphology	morphology	Morphology of axons	3.43E-02	 	 	 	 	CDK5R1,MAP1B	2	
+Embryonic Development, Nervous System Development and Function, Ophthalmic Disease, Organ Development, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Tissue Development, Visual System Development and Function	abnormal morphology	Abnormal morphology of outer plexiform layer	3.53E-02	 	 	 	 	MAP1B	1	
+Developmental Disorder, Embryonic Development, Organismal Development, Tissue Morphology	abnormal morphology	Abnormal morphology of paraxial mesoderm	3.53E-02	 	 	 	 	DACT1	1	
+Cell-To-Cell Signaling and Interaction	binding	Binding of neuroblastoma cell lines	3.53E-02	 	 	 	 	GRIA4	1	
+Cell-To-Cell Signaling and Interaction, Cellular Assembly and Organization, Nervous System Development and Function	cell-cell adhesion	Cell-cell adhesion of neurons	3.53E-02	 	 	 	 	CDK5R1	1	
+Cell Morphology	morphology	Morphology of plasma membrane projections	3.53E-02	 	 	 	 	DMTN	1	
+Cancer, Neurological Disease, Organismal Injury and Abnormalities	neuroblastoma	Neuroblastoma in autonomic ganglion	3.53E-02	 	 	 	 	TMPRSS2	1	
+Cellular Movement, Nervous System Development and Function	positioning	Positioning of neurons	3.53E-02	 	 	 	 	CDK5R1	1	
+Cell Morphology, Cellular Assembly and Organization, Nervous System Development and Function	thickness	Thickness of myelin sheath	3.53E-02	 	 	 	 	MAP1B	1	
+Cancer, Organismal Injury and Abnormalities	pelvic cancer	Pelvic cancer	3.63E-02	 	 	 	 	SALL4,PRKCQ,PIK3R5,TFPI2,TMEM163,SH3BP5,SLC16A3,LINGO2,DIP2A,ATP9A,QPCT,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,SPATA6,GRIA4,ATP13A2,GSE1,KIF1B,ATP10B,ITGA4,ANKS1B,ESRP1	25	
+Developmental Disorder	hypoplasia	Hypoplasia of organ	3.64E-02	 	 	 	 	DACT1,SALL4,MAP1B,NKX2-2	4	
+Developmental Disorder, Neurological Disease, Organismal Injury and Abnormalities	congenital malformation	Congenital malformation of brain	3.66E-02	 	 	 	 	SALL4,MAP1B,NKX2-2	3	
+Cancer, Organismal Injury and Abnormalities	epithelial cancer in situ	Carcinoma in situ	3.68E-02	 	 	 	 	DACT1,FRMD4B	2	
+Cancer, Organismal Injury and Abnormalities	metastasis	Metastasis of tumor cell lines	3.68E-02	 	 	 	 	GSE1,ITGA4,ESRP1	3	
+Cell Death and Survival	apoptosis	Apoptosis of leukemia cell lines	3.71E-02	 	 	 	 	PRKCQ,ITGA4,CHKA	3	
+Cardiovascular System Development and Function, Cell-To-Cell Signaling and Interaction	attachment	Attachment of endothelial cells	3.72E-02	 	 	 	 	TFPI2	1	
+Cardiovascular Disease, Immunological Disease, Inflammatory Disease, Organismal Injury and Abnormalities	experimental autoimmune myocarditis	Experimental autoimmune myocarditis	3.72E-02	 	 	 	 	PRKCQ	1	
+Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance	extension	Extension of plasma membrane projections	3.72E-02	 	 	 	 	DPYSL5	1	
+Cardiovascular System Development and Function, Cellular Movement, Immune Cell Trafficking	migration	Migration of lymphatic endothelial cells	3.72E-02	 	 	 	 	ITGA4	1	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	synaptic transmission	Synaptic transmission of neuromuscular synapse	3.72E-02	 	 	 	 	KIF1B	1	
+Carbohydrate Metabolism, Lipid Metabolism, Small Molecule Biochemistry	synthesis	Synthesis of phosphatidylethanolamine	3.72E-02	 	 	 	 	CHKA	1	
+Developmental Disorder, Organ Morphology, Organismal Development, Organismal Injury and Abnormalities, Reproductive System Development and Function, Reproductive System Disease	vaginal atresia	Vaginal atresia	3.72E-02	 	 	 	 	DACT1	1	
+Cellular Development	differentiation	Differentiation of central nervous system cells	3.81E-02	 	 	 	 	CDK5R1,NKX2-2	2	
+Connective Tissue Development and Function, Hematological System Development and Function, Hematopoiesis, Organismal Development, Tissue Morphology	quantity	Quantity of erythroid precursor cells	3.89E-02	 	 	 	 	DMTN,SALL4	2	
+Cell-To-Cell Signaling and Interaction, Nervous System Development and Function	long-term potentiation	Long-term potentiation	3.90E-02	 	 	 	 	CDK5R1,B3GAT1,GRIA4	3	
+
+Tox Functions for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Categories	Functions	Diseases or Functions Annotation	p-Value	Predicted Activation State	Activation z-score	Notes	Bias-corrected z-score	Molecules	# Molecules	
+Liver Hyperplasia/Hyperproliferation	cancer	Liver cancer	1.87E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,TFPI2,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B	22	
+Liver Hyperplasia/Hyperproliferation	liver carcinoma	Liver carcinoma	2.95E-03	 	 	 	 	ATP13A2,PRKCQ,ACTR3B,PIK3R5,B3GAT1,SH3BP5,LINGO2,UBASH3B,DIP2A,KIF1B,CDK5R1,ATP10B,DACT1,CHD9,SPAG1,TMPRSS2,MAP1B,ITGA4,FRMD4B,GRIA4,ANKS1B	21	
+Renal Hypoplasia	agenesis	Agenesis of kidney	3.14E-03	 	 	 	 	DACT1,SALL4	2	
+Renal Proliferation	cell proliferation	Cell proliferation of kidney cell lines	9.36E-03	 	 	 	 	QPCT,SALL4,CHKA	3	
+Cardiac Hemorrhaging	bleeding	Bleeding of heart	1.13E-02	 	 	 	 	ITGA4	1	
+Renal Enlargement	hypertrophy	Hypertrophy of mesangial cells	2.62E-02	 	 	 	 	DEPTOR	1	
+Cardiac Inflammation	experimental autoimmune myocarditis	Experimental autoimmune myocarditis	3.72E-02	 	 	 	 	PRKCQ	1	
+Cardiac Dilation	dilation	Dilation of left ventricle	4.99E-02	 	 	 	 	KLF15	1	
+Glomerular Injury, Renal Inflammation, Renal Nephritis	membranous glomerulonephritis	Membranous glomerulonephritis	4.99E-02	 	 	 	 	ITGA4	1	
+Liver Necrosis/Cell Death	cell death	Cell death of hepatocytes	5.54E-02	 	 	 	 	PRKCQ,SH3BP5	2	
+Cardiac Dilation, Cardiac Enlargement	idiopathic dilated cardiomyopathy	Idiopathic dilated cardiomyopathy	5.70E-02	 	 	 	 	CDK5R1	1	
+Glomerular Injury	focal segmental glomerulosclerosis	Focal segmental glomerulosclerosis	6.77E-02	 	 	 	 	KLF15	1	
+Cardiac Necrosis/Cell Death	apoptosis	Apoptosis of ventricular myocytes	6.95E-02	 	 	 	 	DIP2A	1	
+Cardiac Necrosis/Cell Death	cell death	Cell death of cardiomyocytes	9.65E-02	 	 	 	 	DIP2A,SH3BP5	2	
+Cardiac Arteriopathy	coronary artery disease	Coronary artery disease	1.01E-01	 	 	 	 	TMEM163,GRIA4	2	
+Cardiac Stenosis	stenosis	Stenosis of aortic valve	1.06E-01	 	 	 	 	KLF15	1	
+Nephrosis	familial nephrotic syndrome	Familial nephrotic syndrome	1.14E-01	 	 	 	 	ITGA4	1	
+Renal Hydronephrosis	hydronephrosis	Hydronephrosis	1.66E-01	 	 	 	 	DACT1	1	
+Increased Levels of Hematocrit	hematocrit	Increased Levels of Hematocrit	1.70E-01	 	 	 	 	DMTN	1	
+Increased Levels of Red Blood Cells	quantity	Increased Levels of Red Blood Cells	1.85E-01	 	 	 	 	SALL4	1	
+Cardiac Dysfunction, Cardiac Enlargement	hypertrophy	Hypertrophy of left ventricle	1.88E-01	 	 	 	 	KLF15	1	
+Cardiac Enlargement	enlargement	Enlargement of heart	2.08E-01	 	 	 	 	CDK5R1,KLF15,DACT1	3	
+Congenital Heart Anomaly	ventricular septal defect	Ventricular septal defect	2.33E-01	 	 	 	 	SALL4	1	
+Cardiac Enlargement	hypertrophy	Hypertrophy of heart	2.36E-01	 	 	 	 	KLF15,DACT1	2	
+Liver Damage	hepatic injury	Hepatic injury	2.58E-01	 	 	 	 	SH3BP5	1	
+Cardiac Arrythmia	atrial fibrillation	Atrial fibrillation	2.66E-01	 	 	 	 	FRMD4B	1	
+Liver Necrosis/Cell Death	apoptosis	Apoptosis of hepatocytes	2.68E-01	 	 	 	 	PRKCQ	1	
+Cardiac Enlargement	hypertrophy	Hypertrophy of cardiomyocytes	2.68E-01	 	 	 	 	DACT1	1	
+Cardiac Fibrosis	fibrosis	Fibrosis of heart	3.88E-01	 	 	 	 	KLF15	1	
+Heart Failure	failure	Failure of heart	5.17E-01	 	 	 	 	KLF15	1	
+Renal Necrosis/Cell Death	cell death	Cell death of kidney cell lines	5.47E-01	 	 	 	 	ATP13A2	1	
+Hepatocellular carcinoma, Liver Hyperplasia/Hyperproliferation	hepatocellular carcinoma	Hepatocellular carcinoma	1.00E00	 	 	 	 	FRMD4B	1	
+
+Regulator Effects for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+
+Networks for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+ID	Analysis	Molecules in Network	Score	Focus Molecules	Top Diseases and Functions	
+1	longFragmentHuman - 2020-01-20 08:06 PM	Actin,Akt,B3GAT1,CD3,CDK5R1,CHKA,CST7,CaMKII,DACT1,DEPTOR,DIP2A,DMTN,DPYSL5,ERK,ERK1/2,Focal adhesion kinase,GRIA4,IL17RB,ITGA4,Immunoglobulin,Jnk,KLF15,MAP1B,Mapk,NFkB (complex),NKX2-2,PI3K (complex),PI3K (family),PIK3R5,PRKCQ,SLC16A3,SPAG1,TFPI2,UBASH3B,calpain	53	21	Embryonic Development, Nervous System Development and Function, Organ Development	
+2	longFragmentHuman - 2020-01-20 08:06 PM	ADGRG2,ATP13A2,ATP9A,Apon,CHD9,Crb3,DISP2,EGFR,ESRP1,FUT6,GGT6,GIN1,GPR149,GPR20,GSE1,HNF4A,KIF1B,MS4A8,NUDT18,PPP1R14D,PRSS22,PRSS42P,SALL4,SLC25A40,SLC26A11,SOX2,SPATA6,TGFB1,TMEM163,TMIGD1,TMPRSS11E,TMPRSS2,TTC22,VN1R1,dihydrotestosterone	26	12	Cancer, Cellular Response to Therapeutics, Organismal Injury and Abnormalities	
+3	longFragmentHuman - 2020-01-20 08:06 PM	ABCC11,ACTR3B,ADGRG2,ANKS1B,CFTR,CUZD1,D-glucose,FRMD4B,GPR12,GPR139,GPR173,GPR88,HCRTR2,HTR5A,INHIBIN B,LINGO2,NFkB1-CRel,NPBWR1,PON2,PRR15L,PTGER3,QPCT,REL,RGS17,SH3BP5,SHOC1,SIGLEC8,STAT5A,SUSD2,TACR3,TLR4,TTC9,ZNF239,beta-estradiol,mir-802	21	10	Molecular Transport, Cell-To-Cell Signaling and Interaction, Cell Death and Survival	
+4	longFragmentHuman - 2020-01-20 08:06 PM	ATP10B,PHACTR3	3	1	Gastrointestinal Disease, Inflammatory Disease, Cell Morphology	
+
+My Lists for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+My Lists	 -log(p-value)	Ratio	Molecules 
+
+Tox Lists for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+Ingenuity Toxicity Lists	 -log(p-value)	Ratio	Molecules 
+TR/RXR Activation	1.96E00	2.38E-02	PIK3R5,SLC16A3
+Increases Renal Proliferation	1.43E00	1.24E-02	SALL4,CHKA
+NRF2-mediated Oxidative Stress Response	1.12E00	8.37E-03	PRKCQ,PIK3R5
+NF-κB Signaling	1.04E00	7.46E-03	PRKCQ,PIK3R5
+Cardiac Necrosis/Cell Death	9.48E-01	6.58E-03	DIP2A,SH3BP5
+Liver Necrosis/Cell Death	9.07E-01	6.21E-03	PRKCQ,SH3BP5
+VDR/RXR Activation	8.62E-01	1.28E-02	PRKCQ
+Xenobiotic Metabolism Signaling	8.51E-01	5.73E-03	PRKCQ,PIK3R5
+Cardiac Hypertrophy	8.03E-01	5.35E-03	KLF15,DACT1
+Increases Liver Damage	7.87E-01	1.06E-02	SH3BP5
+p53 Signaling	7.66E-01	1.01E-02	PIK3R5
+Hepatic Cholestasis	5.24E-01	5.35E-03	PRKCQ
+RAR Activation	5.13E-01	5.18E-03	PRKCQ
+Cardiac Fibrosis	4.26E-01	4.05E-03	KLF15
+Renal Necrosis/Cell Death	0E00	1.73E-03	ATP13A2
+
+My Pathways for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+My Pathways	 -log(p-value)	Ratio	Molecules 
+
+Analysis Ready Molecules for My Projects->hd_microarray->longFragmentHuman - 2020-01-20 08:06 PM
+ID	Symbol
+ENSG00000133627	ACTR3B
+ENSG00000173698	ADGRG2
+ENSG00000185046	ANKS1B
+ENSG00000118322	ATP10B
+ENSG00000159363	ATP13A2
+ENSG00000054793	ATP9A
+ENSG00000109956	B3GAT1
+ENSG00000176749	CDK5R1
+ENSG00000177200	CHD9
+ENSG00000110721	CHKA
+ENSG00000077984	CST7
+ENSG00000165617	DACT1
+ENSG00000155792	DEPTOR
+ENSG00000160305	DIP2A
+ENSG00000158856	DMTN
+ENSG00000157851	DPYSL5
+ENSG00000104413	ESRP1
+ENSG00000114541	FRMD4B
+ENSG00000152578	GRIA4
+ENSG00000131149	GSE1
+ENSG00000056736	IL17RB
+ENSG00000115232	ITGA4
+ENSG00000054523	KIF1B
+ENSG00000163884	KLF15
+ENSG00000174482	LINGO2
+ENSG00000131711	MAP1B
+ENSG00000125820	NKX2-2
+ENSG00000275074	NUDT18
+ENSG00000141506	PIK3R5
+ENSG00000065675	PRKCQ
+ENSG00000115828	QPCT
+ENSG00000091844	RGS17
+ENSG00000101115	SALL4
+ENSG00000131370	SH3BP5
+ENSG00000141526	SLC16A3
+ENSG00000104450	SPAG1
+ENSG00000132122	SPATA6
+ENSG00000105825	TFPI2
+ENSG00000152128	TMEM163
+ENSG00000184012	TMPRSS2
+ENSG00000133985	TTC9
+ENSG00000154127	UBASH3B
+ENSG00000196793	ZNF239
+
