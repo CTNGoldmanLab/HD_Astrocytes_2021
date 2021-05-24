@@ -1,14 +1,8 @@
 Integrated analysis of Mouse/Human Microarray/RNA-Seq data from HD
-astrocytes
+astrocytes and microglia
 ================
 John Mariani
 1/12/2020
-
-<style>
-    body .main-container {
-        max-width: 1500px;
-    }
-</style>
 
 ## Import of Mouse Microarray Data
 
@@ -2692,161 +2686,163 @@ session_info()
     ## ─ Session info ───────────────────────────────────────────────────────────────
     ##  setting  value                       
     ##  version  R version 3.6.1 (2019-07-05)
-    ##  os       macOS Mojave 10.14.6        
+    ##  os       macOS High Sierra 10.13.6   
     ##  system   x86_64, darwin15.6.0        
     ##  ui       X11                         
     ##  language (EN)                        
     ##  collate  en_US.UTF-8                 
     ##  ctype    en_US.UTF-8                 
     ##  tz       America/New_York            
-    ##  date     2021-05-20                  
+    ##  date     2021-05-24                  
     ## 
     ## ─ Packages ───────────────────────────────────────────────────────────────────
-    ##  package              * version    date       lib
-    ##  acepack                1.4.1      2016-10-29 [1]
-    ##  affxparser             1.56.0     2019-05-02 [1]
-    ##  affy                 * 1.62.0     2019-05-02 [1]
-    ##  affyio                 1.54.0     2019-05-02 [1]
-    ##  annotate               1.62.0     2019-05-02 [1]
-    ##  AnnotationDbi          1.46.1     2019-08-20 [1]
-    ##  assertthat             0.2.1      2019-03-21 [1]
-    ##  backports              1.1.10     2020-09-15 [1]
-    ##  base64enc              0.1-3      2015-07-28 [1]
-    ##  Biobase              * 2.44.0     2019-05-02 [1]
-    ##  BiocGenerics         * 0.30.0     2019-05-02 [1]
-    ##  BiocManager            1.30.10    2019-11-16 [1]
-    ##  BiocParallel         * 1.18.1     2019-08-06 [1]
-    ##  biomaRt              * 2.40.5     2019-10-01 [1]
-    ##  Biostrings           * 2.52.0     2019-05-02 [1]
-    ##  bit                    4.0.4      2020-08-04 [1]
-    ##  bit64                  4.0.5      2020-08-30 [1]
-    ##  bitops                 1.0-6      2013-08-17 [1]
-    ##  blob                   1.2.1      2020-01-20 [1]
-    ##  callr                  3.5.1      2020-10-13 [1]
-    ##  checkmate              1.9.4      2019-07-04 [1]
-    ##  class                  7.3-15     2019-01-01 [1]
-    ##  classInt               0.4-2      2019-10-17 [1]
-    ##  cli                    2.1.0      2020-10-12 [1]
-    ##  cluster                2.1.0      2019-06-19 [1]
-    ##  codetools              0.2-16     2018-12-24 [1]
-    ##  colorspace             1.4-1      2019-03-18 [1]
-    ##  cowplot              * 1.0.0      2019-07-11 [1]
-    ##  crayon                 1.3.4      2017-09-16 [1]
-    ##  data.table           * 1.12.6     2019-10-18 [1]
-    ##  DBI                    1.1.0      2019-12-15 [1]
-    ##  DelayedArray           0.10.0     2019-05-02 [1]
-    ##  desc                   1.2.0      2018-05-01 [1]
-    ##  devtools             * 2.2.1      2019-09-24 [1]
-    ##  digest                 0.6.26     2020-10-17 [1]
-    ##  dplyr                * 1.0.2      2020-08-18 [1]
-    ##  e1071                  1.7-3      2019-11-26 [1]
-    ##  ellipsis               0.3.1      2020-05-15 [1]
-    ##  EnhancedVolcano      * 1.5.0      2020-01-02 [1]
-    ##  evaluate               0.14       2019-05-28 [1]
-    ##  fansi                  0.4.1      2020-01-08 [1]
-    ##  farver                 2.0.3      2020-01-16 [1]
-    ##  ff                     2.2-14     2018-05-15 [1]
-    ##  foreach                1.5.1      2020-10-15 [1]
-    ##  foreign                0.8-72     2019-08-02 [1]
-    ##  formatR                1.7        2019-06-11 [1]
-    ##  Formula              * 1.2-3      2018-05-03 [1]
-    ##  fs                     1.3.1      2019-05-06 [1]
-    ##  futile.logger          1.4.3      2016-07-10 [1]
-    ##  futile.options         1.0.1      2018-04-20 [1]
-    ##  genefilter           * 1.66.0     2019-05-02 [1]
-    ##  generics               0.0.2      2018-11-29 [1]
-    ##  GenomeInfoDb           1.20.0     2019-05-02 [1]
-    ##  GenomeInfoDbData       1.2.1      2019-09-12 [1]
-    ##  GenomicRanges          1.36.1     2019-09-06 [1]
-    ##  ggfortify            * 0.4.8      2019-11-10 [1]
-    ##  ggplot2              * 3.3.2      2020-06-19 [1]
-    ##  ggrepel              * 0.8.2      2020-03-08 [1]
-    ##  ggVennDiagram        * 0.3        2019-10-09 [1]
-    ##  glue                   1.4.2      2020-08-27 [1]
-    ##  graph                  1.62.0     2019-05-02 [1]
-    ##  gridExtra              2.3        2017-09-09 [1]
-    ##  gtable                 0.3.0      2019-03-25 [1]
-    ##  Hmisc                * 4.3-0      2019-11-07 [1]
-    ##  hms                    0.5.3      2020-01-08 [1]
-    ##  htmlTable              1.13.3     2019-12-04 [1]
-    ##  htmltools              0.5.0      2020-06-16 [1]
-    ##  htmlwidgets            1.5.2      2020-10-03 [1]
-    ##  httr                   1.4.2      2020-07-20 [1]
-    ##  IRanges              * 2.18.3     2019-09-24 [1]
-    ##  iterators              1.0.13     2020-10-15 [1]
-    ##  KernSmooth             2.23-16    2019-10-15 [1]
-    ##  knitr                  1.30       2020-09-22 [1]
-    ##  labeling               0.4.2      2020-10-20 [1]
-    ##  lambda.r               1.2.4      2019-09-18 [1]
-    ##  lattice              * 0.20-38    2018-11-04 [1]
-    ##  latticeExtra           0.6-28     2016-02-09 [1]
-    ##  lifecycle              0.2.0      2020-03-06 [1]
-    ##  limma                * 3.40.6     2019-07-26 [1]
-    ##  magrittr               1.5        2014-11-22 [1]
-    ##  Matrix                 1.2-18     2019-11-27 [1]
-    ##  matrixStats            0.57.0     2020-09-25 [1]
-    ##  memoise                1.1.0      2017-04-21 [1]
-    ##  mgcv                 * 1.8-31     2019-11-09 [1]
-    ##  munsell                0.5.0      2018-06-12 [1]
-    ##  nlme                 * 3.1-142    2019-11-07 [1]
-    ##  nnet                   7.3-12     2016-02-02 [1]
-    ##  oligo                * 1.48.0     2019-05-02 [1]
-    ##  oligoClasses         * 1.46.0     2019-05-02 [1]
-    ##  patchwork            * 1.0.0.9000 2020-03-17 [1]
-    ##  pheatmap             * 1.0.12     2019-01-04 [1]
-    ##  pillar                 1.4.6      2020-07-10 [1]
-    ##  pkgbuild               1.1.0      2020-07-13 [1]
-    ##  pkgconfig              2.0.3      2019-09-22 [1]
-    ##  pkgload                1.1.0      2020-05-29 [1]
-    ##  plyr                 * 1.8.6      2020-03-03 [1]
-    ##  preprocessCore         1.46.0     2019-05-02 [1]
-    ##  prettyunits            1.1.1      2020-01-24 [1]
-    ##  processx               3.4.4      2020-09-03 [1]
-    ##  progress               1.2.2      2019-05-16 [1]
-    ##  ps                     1.4.0      2020-10-07 [1]
-    ##  purrr                  0.3.4      2020-04-17 [1]
-    ##  R6                     2.4.1      2019-11-12 [1]
-    ##  RBGL                   1.60.0     2019-05-02 [1]
-    ##  RColorBrewer           1.1-2      2014-12-07 [1]
-    ##  Rcpp                   1.0.5      2020-07-06 [1]
-    ##  RCurl                  1.98-1.2   2020-04-18 [1]
-    ##  readr                * 1.3.1      2018-12-21 [1]
-    ##  remotes                2.1.0      2019-06-24 [1]
-    ##  reshape2             * 1.4.4      2020-04-09 [1]
-    ##  rlang                  0.4.8      2020-10-08 [1]
-    ##  rmarkdown              2.0        2019-12-12 [1]
-    ##  Rmisc                * 1.5        2013-10-22 [1]
-    ##  rpart                  4.1-15     2019-04-12 [1]
-    ##  rprojroot              1.3-2      2018-01-03 [1]
-    ##  RSQLite                2.2.1      2020-09-30 [1]
-    ##  rstudioapi             0.11       2020-02-07 [1]
-    ##  S4Vectors            * 0.22.1     2019-09-09 [1]
-    ##  scales                 1.1.1      2020-05-11 [1]
-    ##  sessioninfo            1.1.1      2018-11-05 [1]
-    ##  sf                     0.8-1      2020-01-28 [1]
-    ##  stringi                1.5.3      2020-09-09 [1]
-    ##  stringr                1.4.0      2019-02-10 [1]
-    ##  SummarizedExperiment   1.14.1     2019-07-31 [1]
-    ##  survival             * 3.1-7      2019-11-09 [1]
-    ##  sva                  * 3.32.1     2019-05-22 [1]
-    ##  testthat               2.3.2      2020-03-02 [1]
-    ##  tibble                 3.0.4      2020-10-12 [1]
-    ##  tidyr                * 1.1.2      2020-08-27 [1]
-    ##  tidyselect             1.1.0      2020-05-11 [1]
-    ##  tximport             * 1.12.3     2019-06-25 [1]
-    ##  units                  0.6-5      2019-10-08 [1]
-    ##  UpSetR               * 1.4.0      2019-05-22 [1]
-    ##  usethis              * 1.5.1      2019-07-04 [1]
-    ##  vctrs                  0.3.4      2020-08-29 [1]
-    ##  VennDiagram            1.6.20     2018-03-28 [1]
-    ##  Vennerable           * 3.1.0.9000 2019-10-12 [1]
-    ##  withr                  2.3.0      2020-09-22 [1]
-    ##  xfun                   0.18       2020-09-29 [1]
-    ##  XML                    3.99-0.3   2020-01-20 [1]
-    ##  xtable                 1.8-4      2019-04-21 [1]
-    ##  XVector              * 0.24.0     2019-05-02 [1]
-    ##  yaml                   2.2.1      2020-02-01 [1]
-    ##  zlibbioc               1.30.0     2019-05-02 [1]
+    ##  package              * version  date       lib
+    ##  acepack                1.4.1    2016-10-29 [1]
+    ##  affxparser             1.56.0   2019-05-02 [1]
+    ##  affy                 * 1.62.0   2019-05-02 [1]
+    ##  affyio                 1.54.0   2019-05-02 [1]
+    ##  annotate               1.62.0   2019-05-02 [1]
+    ##  AnnotationDbi          1.46.1   2019-08-20 [1]
+    ##  assertthat             0.2.1    2019-03-21 [1]
+    ##  backports              1.1.9    2020-08-24 [1]
+    ##  base64enc              0.1-3    2015-07-28 [1]
+    ##  Biobase              * 2.44.0   2019-05-02 [1]
+    ##  BiocGenerics         * 0.30.0   2019-05-02 [1]
+    ##  BiocManager            1.30.10  2019-11-16 [1]
+    ##  BiocParallel         * 1.18.1   2019-08-06 [1]
+    ##  biomaRt              * 2.40.5   2019-10-01 [1]
+    ##  Biostrings           * 2.52.0   2019-05-02 [1]
+    ##  bit                    4.0.4    2020-08-04 [1]
+    ##  bit64                  4.0.5    2020-08-30 [1]
+    ##  bitops                 1.0-6    2013-08-17 [1]
+    ##  blob                   1.2.1    2020-01-20 [1]
+    ##  callr                  3.4.4    2020-09-07 [1]
+    ##  checkmate              1.9.4    2019-07-04 [1]
+    ##  class                  7.3-15   2019-01-01 [1]
+    ##  classInt               0.4-2    2019-10-17 [1]
+    ##  cli                    2.0.2    2020-02-28 [1]
+    ##  cluster                2.1.0    2019-06-19 [1]
+    ##  codetools              0.2-16   2018-12-24 [1]
+    ##  colorspace             1.4-1    2019-03-18 [1]
+    ##  cowplot              * 1.0.0    2019-07-11 [1]
+    ##  crayon                 1.3.4    2017-09-16 [1]
+    ##  data.table           * 1.12.8   2019-12-09 [1]
+    ##  DBI                    1.1.0    2019-12-15 [1]
+    ##  DelayedArray           0.10.0   2019-05-02 [1]
+    ##  desc                   1.2.0    2018-05-01 [1]
+    ##  devtools             * 2.2.1    2019-09-24 [1]
+    ##  digest                 0.6.25   2020-02-23 [1]
+    ##  dplyr                * 1.0.2    2020-08-18 [1]
+    ##  e1071                  1.7-3    2019-11-26 [1]
+    ##  ellipsis               0.3.1    2020-05-15 [1]
+    ##  EnhancedVolcano      * 1.3.5    2019-09-18 [1]
+    ##  evaluate               0.14     2019-05-28 [1]
+    ##  fansi                  0.4.1    2020-01-08 [1]
+    ##  farver                 2.0.3    2020-01-16 [1]
+    ##  ff                     2.2-14   2018-05-15 [1]
+    ##  foreach                1.5.0    2020-03-30 [1]
+    ##  foreign                0.8-72   2019-08-02 [1]
+    ##  formatR                1.7      2019-06-11 [1]
+    ##  Formula              * 1.2-3    2018-05-03 [1]
+    ##  fs                     1.3.1    2019-05-06 [1]
+    ##  futile.logger          1.4.3    2016-07-10 [1]
+    ##  futile.options         1.0.1    2018-04-20 [1]
+    ##  genefilter           * 1.66.0   2019-05-02 [1]
+    ##  generics               0.0.2    2018-11-29 [1]
+    ##  GenomeInfoDb           1.20.0   2019-05-02 [1]
+    ##  GenomeInfoDbData       1.2.1    2019-08-26 [1]
+    ##  GenomicRanges          1.36.1   2019-09-06 [1]
+    ##  ggfortify            * 0.4.8    2019-11-10 [1]
+    ##  ggplot2              * 3.3.2    2020-06-19 [1]
+    ##  ggrepel              * 0.8.2    2020-03-08 [1]
+    ##  ggVennDiagram        * 0.3      2019-10-09 [1]
+    ##  glue                   1.4.2    2020-08-27 [1]
+    ##  graph                * 1.62.0   2019-05-02 [1]
+    ##  gridExtra              2.3      2017-09-09 [1]
+    ##  gtable                 0.3.0    2019-03-25 [1]
+    ##  gtools               * 3.8.1    2018-06-26 [1]
+    ##  Hmisc                * 4.3-0    2019-11-07 [1]
+    ##  hms                    0.5.3    2020-01-08 [1]
+    ##  htmlTable              1.13.2   2019-09-22 [1]
+    ##  htmltools              0.5.0    2020-06-16 [1]
+    ##  htmlwidgets            1.5.1    2019-10-08 [1]
+    ##  httr                   1.4.2    2020-07-20 [1]
+    ##  IRanges              * 2.18.3   2019-09-24 [1]
+    ##  iterators              1.0.12   2019-07-26 [1]
+    ##  KernSmooth             2.23-16  2019-10-15 [1]
+    ##  knitr                  1.29     2020-06-23 [1]
+    ##  labeling               0.3      2014-08-23 [1]
+    ##  lambda.r               1.2.4    2019-09-18 [1]
+    ##  lattice              * 0.20-38  2018-11-04 [1]
+    ##  latticeExtra           0.6-28   2016-02-09 [1]
+    ##  lifecycle              0.2.0    2020-03-06 [1]
+    ##  limma                * 3.40.6   2019-07-26 [1]
+    ##  magrittr               1.5      2014-11-22 [1]
+    ##  Matrix                 1.2-18   2019-11-27 [1]
+    ##  matrixStats            0.56.0   2020-03-13 [1]
+    ##  memoise                1.1.0    2017-04-21 [1]
+    ##  mgcv                 * 1.8-31   2019-11-09 [1]
+    ##  munsell                0.5.0    2018-06-12 [1]
+    ##  nlme                 * 3.1-142  2019-11-07 [1]
+    ##  nnet                   7.3-12   2016-02-02 [1]
+    ##  oligo                * 1.48.0   2019-05-02 [1]
+    ##  oligoClasses         * 1.46.0   2019-05-02 [1]
+    ##  patchwork            * 1.0.0    2019-12-01 [1]
+    ##  pheatmap             * 1.0.12   2019-01-04 [1]
+    ##  pillar                 1.4.6    2020-07-10 [1]
+    ##  pkgbuild               1.1.0    2020-07-13 [1]
+    ##  pkgconfig              2.0.3    2019-09-22 [1]
+    ##  pkgload                1.1.0    2020-05-29 [1]
+    ##  plyr                 * 1.8.6    2020-03-03 [1]
+    ##  preprocessCore         1.46.0   2019-05-02 [1]
+    ##  prettyunits            1.1.1    2020-01-24 [1]
+    ##  processx               3.4.4    2020-09-03 [1]
+    ##  progress               1.2.2    2019-05-16 [1]
+    ##  ps                     1.3.4    2020-08-11 [1]
+    ##  purrr                  0.3.4    2020-04-17 [1]
+    ##  R6                     2.4.1    2019-11-12 [1]
+    ##  RBGL                 * 1.60.0   2019-05-02 [1]
+    ##  RColorBrewer         * 1.1-2    2014-12-07 [1]
+    ##  Rcpp                   1.0.5    2020-07-06 [1]
+    ##  RCurl                  1.98-1.2 2020-04-18 [1]
+    ##  readr                * 1.3.1    2018-12-21 [1]
+    ##  remotes                2.1.0    2019-06-24 [1]
+    ##  reshape              * 0.8.8    2018-10-23 [1]
+    ##  reshape2             * 1.4.4    2020-04-09 [1]
+    ##  rlang                  0.4.7    2020-07-09 [1]
+    ##  rmarkdown              1.18     2019-11-27 [1]
+    ##  Rmisc                * 1.5      2013-10-22 [1]
+    ##  rpart                  4.1-15   2019-04-12 [1]
+    ##  rprojroot              1.3-2    2018-01-03 [1]
+    ##  RSQLite                2.2.0    2020-01-07 [1]
+    ##  rstudioapi             0.11     2020-02-07 [1]
+    ##  S4Vectors            * 0.22.1   2019-09-09 [1]
+    ##  scales                 1.1.1    2020-05-11 [1]
+    ##  sessioninfo            1.1.1    2018-11-05 [1]
+    ##  sf                     0.8-0    2019-09-17 [1]
+    ##  stringi                1.4.6    2020-02-17 [1]
+    ##  stringr                1.4.0    2019-02-10 [1]
+    ##  SummarizedExperiment   1.14.1   2019-07-31 [1]
+    ##  survival             * 3.1-7    2019-11-09 [1]
+    ##  sva                  * 3.32.1   2019-05-22 [1]
+    ##  testthat               2.3.2    2020-03-02 [1]
+    ##  tibble                 3.0.3    2020-07-10 [1]
+    ##  tidyr                * 1.1.2    2020-08-27 [1]
+    ##  tidyselect             1.1.0    2020-05-11 [1]
+    ##  tximport             * 1.12.3   2019-06-25 [1]
+    ##  units                  0.6-5    2019-10-08 [1]
+    ##  UpSetR               * 1.4.0    2019-05-22 [1]
+    ##  usethis              * 1.5.1    2019-07-04 [1]
+    ##  vctrs                  0.3.4    2020-08-29 [1]
+    ##  VennDiagram            1.6.20   2018-03-28 [1]
+    ##  Vennerable           * 3.0      2013-07-24 [1]
+    ##  withr                  2.2.0    2020-04-20 [1]
+    ##  xfun                   0.16     2020-07-24 [1]
+    ##  XML                    3.99-0.3 2020-01-20 [1]
+    ##  xtable               * 1.8-4    2019-04-21 [1]
+    ##  XVector              * 0.24.0   2019-05-02 [1]
+    ##  yaml                   2.2.1    2020-02-01 [1]
+    ##  zlibbioc               1.30.0   2019-05-02 [1]
     ##  source                                      
     ##  CRAN (R 3.6.0)                              
     ##  Bioconductor                                
@@ -2867,69 +2863,70 @@ session_info()
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.1)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.1)                              
-    ##  CRAN (R 3.6.1)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  Bioconductor                                
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  Github (kevinblighe/EnhancedVolcano@72fa2e2)
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  Bioconductor                                
-    ##  CRAN (R 3.6.0)                              
-    ##  Bioconductor                                
-    ##  Bioconductor                                
-    ##  Bioconductor                                
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  Bioconductor                                
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.1)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.2)                              
-    ##  Bioconductor                                
-    ##  CRAN (R 3.6.2)                              
-    ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.1)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.1)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.1)                              
+    ##  CRAN (R 3.6.1)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  Bioconductor                                
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  Github (kevinblighe/EnhancedVolcano@b7aab27)
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  Bioconductor                                
+    ##  CRAN (R 3.6.0)                              
+    ##  Bioconductor                                
+    ##  Bioconductor                                
+    ##  Bioconductor                                
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.1)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  Bioconductor                                
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.2)                              
     ##  Bioconductor                                
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.1)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  Bioconductor                                
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
@@ -2937,7 +2934,7 @@ session_info()
     ##  CRAN (R 3.6.1)                              
     ##  Bioconductor                                
     ##  Bioconductor                                
-    ##  Github (thomasp85/patchwork@012fb8b)        
+    ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.2)                              
@@ -2957,19 +2954,20 @@ session_info()
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
+    ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.1)                              
     ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.1)                              
     ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              
     ##  Bioconductor                                
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
-    ##  CRAN (R 3.6.2)                              
+    ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.0)                              
     ##  Bioconductor                                
     ##  CRAN (R 3.6.0)                              
@@ -2984,7 +2982,7 @@ session_info()
     ##  CRAN (R 3.6.0)                              
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              
-    ##  Github (js229/Vennerable@46057c9)           
+    ##  R-Forge (R 3.6.1)                           
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.2)                              
     ##  CRAN (R 3.6.0)                              

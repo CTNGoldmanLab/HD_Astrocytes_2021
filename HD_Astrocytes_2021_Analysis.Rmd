@@ -6,11 +6,6 @@ output:
   github_document
 ---
 
-<style>
-    body .main-container {
-        max-width: 1500px;
-    }
-</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
